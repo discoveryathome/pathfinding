@@ -1,0 +1,40 @@
+[  3%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/collision_table.cpp.o
+[  6%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/dist_table.cpp.o
+[  9%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/graph.cpp.o
+[ 12%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/heuristic.cpp.o
+[ 15%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/hnode.cpp.o
+[ 18%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/instance.cpp.o
+[ 21%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/lacam.cpp.o
+[ 25%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/lnode.cpp.o
+[ 28%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/metrics.cpp.o
+[ 31%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/pibt.cpp.o
+[ 34%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/planner.cpp.o
+[ 37%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/post_processing.cpp.o
+[ 40%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/refiner.cpp.o
+[ 43%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/scatter.cpp.o
+[ 46%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/sipp.cpp.o
+[ 50%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/translator.cpp.o
+[ 53%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/utils.cpp.o
+[ 56%] Linking CXX static library liblacam3.a
+[ 56%] Built target lacam3
+[ 59%] Building CXX object CMakeFiles/main.dir/main.cpp.o
+[ 62%] Building CXX object CMakeFiles/test_dist_table.dir/tests/test_dist_table.cpp.o
+[ 65%] Linking CXX executable test_dist_table
+[ 65%] Built target test_dist_table
+[ 68%] Building CXX object CMakeFiles/test_graph.dir/tests/test_graph.cpp.o
+[ 71%] Linking CXX executable test_graph
+[ 71%] Built target test_graph
+[ 75%] Building CXX object CMakeFiles/test_instance.dir/tests/test_instance.cpp.o
+[ 78%] Linking CXX executable main
+[ 78%] Built target main
+[ 81%] Building CXX object CMakeFiles/test_planner.dir/tests/test_planner.cpp.o
+[ 84%] Linking CXX executable test_instance
+[ 84%] Built target test_instance
+[ 87%] Building CXX object CMakeFiles/test_post_processing.dir/tests/test_post_processing.cpp.o
+[ 90%] Linking CXX executable test_planner
+[ 90%] Built target test_planner
+[ 93%] Building CXX object CMakeFiles/test_sipp.dir/tests/test_sipp.cpp.o
+[ 96%] Linking CXX executable test_post_processing
+[ 96%] Built target test_post_processing
+[100%] Linking CXX executable test_sipp
+[100%] Built target test_sipp

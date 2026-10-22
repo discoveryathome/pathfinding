@@ -1,0 +1,66 @@
+{
+  "paired_totals": {
+    "development": {
+      "random4": {
+        "runs": 8,
+        "initial": {
+          "soc": 32708,
+          "sol": 31512
+        },
+        "final": {
+          "soc": 32694,
+          "sol": 31493
+        },
+        "runs_with_improvement": 5,
+        "nodes_used": 207399
+      },
+      "proximity4": {
+        "runs": 8,
+        "initial": {
+          "soc": 32708,
+          "sol": 31512
+        },
+        "final": {
+          "soc": 32619,
+          "sol": 31486
+        },
+        "runs_with_improvement": 7,
+        "nodes_used": 230711
+      }
+    },
+    "heldout": {
+      "random4": {
+        "runs": 8,
+        "initial": {
+          "soc": 41562,
+          "sol": 39150
+        },
+        "final": {
+          "soc": 41549,
+          "sol": 39119
+        },
+        "runs_with_improvement": 7,
+        "nodes_used": 240000
+      },
+      "proximity4": {
+        "runs": 8,
+        "initial": {
+          "soc": 41562,
+          "sol": 39150
+        },
+        "final": {
+          "soc": 41539,
+          "sol": 39126
+        },
+        "runs_with_improvement": 4,
+        "nodes_used": 240000
+      }
+    }
+  },
+  "selected": "proximity4",
+  "trials": 56,
+  "all_certificates_valid": true,
+  "deterministic_replay": true,
+  "global_optimality_claimed": false,
+  "heldout_primary_advantage": false
+}

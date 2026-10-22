@@ -1,0 +1,9 @@
+{
+  "status": "pending",
+  "scientific_owner": null,
+  "independent_review": false,
+  "human_signoff": false,
+  "scope": "collision/cost semantics, competitive baseline and useful workloads, transfer, review of open local candidate archive",
+  "reviewed_commit": null,
+  "findings": []
+}

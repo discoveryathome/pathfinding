@@ -1,0 +1,1 @@
+Discovery@Home v0 schemas copied from the already pinned protocol reference in cancer-dependencies/start-cancer-dependencies/setup/sources on 2026-10-22. SHA-256 bindings are in research/manifest.json. The earlier pyz-src snapshot predates the review field and was rejected in setup; no schema rules were relaxed. Upstream: https://github.com/discoveryathome/discover .

@@ -1,0 +1,188 @@
+[
+  {
+    "instance": "data/instances/empty-32-32-n128.json",
+    "case": "empty-32-32-n128",
+    "status": "author-checked local candidates; not literature records or scientific acceptance",
+    "pareto_candidates": [
+      {
+        "source": "LaCAM3-6s",
+        "path": "results/baselines/empty-32-32-n128-6s.json",
+        "metrics": {
+          "soc": 2776,
+          "sol": 2776,
+          "makespan": 48
+        },
+        "sha256": "82e50253ecd14898079ad6ef0992230a17bce141bf2f27ed372e643622209180"
+      }
+    ]
+  },
+  {
+    "instance": "data/instances/empty-32-32-n256.json",
+    "case": "empty-32-32-n256",
+    "status": "author-checked local candidates; not literature records or scientific acceptance",
+    "pareto_candidates": [
+      {
+        "source": "LaCAM3-6s",
+        "path": "results/baselines/empty-32-32-n256-6s.json",
+        "metrics": {
+          "soc": 5845,
+          "sol": 5699,
+          "makespan": 52
+        },
+        "sha256": "8a41f2f3b2e61dfb6dde53c822f3e5712badd5c55ef0a185e4ba459c468bc232"
+      },
+      {
+        "source": "proximity4-seed17",
+        "path": "results/repair/empty-32-32-n256-proximity4-s17.json",
+        "metrics": {
+          "soc": 5831,
+          "sol": 5703,
+          "makespan": 52
+        },
+        "sha256": "9e2412978f2ac76cef3979a769439221ce73d1c4d8e402a2ac98c6d5caa581ba"
+      }
+    ]
+  },
+  {
+    "instance": "data/instances/random-32-32-20-n96.json",
+    "case": "random-32-32-20-n96",
+    "status": "author-checked local candidates; not literature records or scientific acceptance",
+    "pareto_candidates": [
+      {
+        "source": "proximity4-seed29",
+        "path": "results/repair/random-32-32-20-n96-proximity4-s29.json",
+        "metrics": {
+          "soc": 2422,
+          "sol": 2310,
+          "makespan": 51
+        },
+        "sha256": "d37b2736d7e66f0d0e67cd46e7ef2249a47ba6b8a2c343e03c08cfbd6bb127b1"
+      },
+      {
+        "source": "LaCAM3-6s",
+        "path": "results/baselines/random-32-32-20-n96-6s.json",
+        "metrics": {
+          "soc": 2451,
+          "sol": 2310,
+          "makespan": 48
+        },
+        "sha256": "bafb30ea38e5a1e999269c067bfe09d51d84126ddc0bc2dad31458d5122fcdc6"
+      }
+    ]
+  },
+  {
+    "instance": "data/instances/random-32-32-20-n192.json",
+    "case": "random-32-32-20-n192",
+    "status": "author-checked local candidates; not literature records or scientific acceptance",
+    "pareto_candidates": [
+      {
+        "source": "LaCAM3-6s",
+        "path": "results/baselines/random-32-32-20-n192-6s.json",
+        "metrics": {
+          "soc": 5416,
+          "sol": 4929,
+          "makespan": 55
+        },
+        "sha256": "9f33c528c451f215981922072483890a6b287ff32757a05b36c0802eb00dee5c"
+      },
+      {
+        "source": "random4-seed17",
+        "path": "results/repair/random-32-32-20-n192-random4-s17.json",
+        "metrics": {
+          "soc": 5270,
+          "sol": 4942,
+          "makespan": 56
+        },
+        "sha256": "2753ae0d6eb14d2c7d3a3dabdbced7d2852dafcd44ae16853040fe8ebcd2b413"
+      },
+      {
+        "source": "proximity8-seed29",
+        "path": "results/repair/random-32-32-20-n192-proximity8-s29.json",
+        "metrics": {
+          "soc": 5268,
+          "sol": 4944,
+          "makespan": 56
+        },
+        "sha256": "87336956eaf45572e6f59abe89531cb6abd3134f4188f051f0708097e3811fe6"
+      },
+      {
+        "source": "proximity4-seed29",
+        "path": "results/repair/random-32-32-20-n192-proximity4-s29.json",
+        "metrics": {
+          "soc": 5264,
+          "sol": 4946,
+          "makespan": 56
+        },
+        "sha256": "5138089068dd3cab6c98118338c6f4af6f0c63c9bc060f730160c3dcf0b7e88b"
+      }
+    ]
+  },
+  {
+    "instance": "data/instances/room-32-32-4-n96.json",
+    "case": "room-32-32-4-n96",
+    "status": "author-checked local candidates; not literature records or scientific acceptance",
+    "pareto_candidates": [
+      {
+        "source": "LaCAM3-6s",
+        "path": "results/baselines/room-32-32-4-n96-6s.json",
+        "metrics": {
+          "soc": 3047,
+          "sol": 2830,
+          "makespan": 61
+        },
+        "sha256": "676866216b2d8b583ed39bf3b6cf5fded91675e0106dfc8ddf58e248a6864552"
+      }
+    ]
+  },
+  {
+    "instance": "data/instances/room-32-32-4-n160.json",
+    "case": "room-32-32-4-n160",
+    "status": "author-checked local candidates; not literature records or scientific acceptance",
+    "pareto_candidates": [
+      {
+        "source": "LaCAM3-6s",
+        "path": "results/baselines/room-32-32-4-n160-6s.json",
+        "metrics": {
+          "soc": 6185,
+          "sol": 5732,
+          "makespan": 68
+        },
+        "sha256": "51c2c56f97bb672e6b9174e8597d8114be5d6f984a3cd53a8fbbb5d233040b47"
+      }
+    ]
+  },
+  {
+    "instance": "data/instances/maze-32-32-4-n64.json",
+    "case": "maze-32-32-4-n64",
+    "status": "author-checked local candidates; not literature records or scientific acceptance",
+    "pareto_candidates": [
+      {
+        "source": "LaCAM3-6s",
+        "path": "results/baselines/maze-32-32-4-n64-6s.json",
+        "metrics": {
+          "soc": 3197,
+          "sol": 3107,
+          "makespan": 92
+        },
+        "sha256": "dc3cb8368f1896f3df9d9754976564d5173c6dc0e85c3c25524646a41ad74d21"
+      }
+    ]
+  },
+  {
+    "instance": "data/instances/maze-32-32-4-n128.json",
+    "case": "maze-32-32-4-n128",
+    "status": "author-checked local candidates; not literature records or scientific acceptance",
+    "pareto_candidates": [
+      {
+        "source": "random4-seed29",
+        "path": "results/repair/maze-32-32-4-n128-random4-s29.json",
+        "metrics": {
+          "soc": 8225,
+          "sol": 7815,
+          "makespan": 125
+        },
+        "sha256": "3252b87901a11be179737867b595060b01f84b4f285be35cdadc6c5c52bfab72"
+      }
+    ]
+  }
+]

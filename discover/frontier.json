@@ -1,0 +1,43 @@
+{
+  "schema": "discover-frontier/v0",
+  "statement": "Eight benchmark instances have independently implemented feasibility/cost checks for LaCAM3 witnesses and 56 bounded repair runs. Local route gains exist; selected policy failed held-out primary superiority.",
+  "status": "Author-checked local candidate archive; local intake open; scientific acceptance pending.",
+  "evidence_level": [
+    "author-checked"
+  ],
+  "scope": "Four-neighbor discrete point agents on 32x32 benchmark grids, 64\u2013256 agents, static goals, fixed recorded search allowances; no novelty, optimality or physical robot claims.",
+  "review": "research/review.json",
+  "updated_on": "2026-10-22",
+  "artifacts": [
+    {
+      "path": "results/trial.json",
+      "sha256": "d99c8b219e36c7d8e9df18f5067c1d367e74e81d8f2c465d85ad0ec806ae5ac3"
+    },
+    {
+      "path": "results/summary.json",
+      "sha256": "8a94af78d764544fce1bd0acf2ea1fc610157281443a2913fb886987bd5054ae"
+    },
+    {
+      "path": "discover/incumbents.json",
+      "sha256": "dac239f57d42b8c746fd0bc0f8d9b5617b8291fe7f1b49c39aaed8ae9d297678"
+    },
+    {
+      "path": "research/PROTOCOL.md",
+      "sha256": "5eb91400d4d96b95bca71632a2838ac5715d567329e9dfc8325d2ee21db67853"
+    }
+  ],
+  "reproduce": "python tools/check.py",
+  "reproduce_full": "python tools/prepare.py; python tools/run_trial.py (in a copy; native deadline runs may differ)",
+  "assumptions": [
+    {
+      "id": "baseline",
+      "statement": "LaCAM3 and local random-neighborhood repair are substantive baselines but are not an exhaustive current-state-of-the-art comparison.",
+      "status": "open"
+    },
+    {
+      "id": "transfer",
+      "statement": "Selected proximity heuristic did not improve the primary held-out aggregate; fresh validation needed.",
+      "status": "open"
+    }
+  ]
+}

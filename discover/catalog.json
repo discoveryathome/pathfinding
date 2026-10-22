@@ -1,0 +1,144 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 1,
+  "assessed_on": "2026-10-22",
+  "status": "Open for local contributions and expert-agent review",
+  "tracks": [
+    {
+      "id": "repair",
+      "weight": 35,
+      "tasks": [
+        {
+          "id": "repair",
+          "question": "Can a bounded repair improve an inherited Pareto candidate without worsening another recorded metric?",
+          "starting_points": [
+            "research/ASSESSMENT.md",
+            "discover/incumbents.json",
+            "research/PROTOCOL.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "independent certificate check",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correct input binding and all route checks; report SOC, SOL, makespan, failure rates, budget and all attempts. Scientific acceptance remains separate.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Pinned artifacts and schemas pass; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Start from discover/incumbents.json, not the old 3-second plan. Propose one new neighborhood rule and freeze new evaluation cases before selection.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verification",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "verification",
+          "question": "Can a minimized input expose a collision or cost-accounting error?",
+          "starting_points": [
+            "research/ASSESSMENT.md",
+            "discover/incumbents.json",
+            "research/PROTOCOL.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "independent certificate check",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correct input binding and all route checks; report SOC, SOL, makespan, failure rates, budget and all attempts. Scientific acceptance remains separate.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Pinned artifacts and schemas pass; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Audit goal revisits, future goal occupancy, edge swaps, map identity and independent lower bounds; retain a failing certificate.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workloads",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "workloads",
+          "question": "Does the chosen method transfer to a useful workload or a larger problem?",
+          "starting_points": [
+            "research/ASSESSMENT.md",
+            "discover/incumbents.json",
+            "research/PROTOCOL.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "independent certificate check",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correct input binding and all route checks; report SOC, SOL, makespan, failure rates, budget and all attempts. Scientific acceptance remains separate.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Pinned artifacts and schemas pass; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Source new maps/scenarios or dynamic tasks with provenance; compare against MAPF-LNS2 and newer PIBT preference methods.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expert-review",
+      "weight": 15,
+      "tasks": [
+        {
+          "id": "expert-review",
+          "question": "Is there useful research headroom beyond known neighborhood repair?",
+          "starting_points": [
+            "research/ASSESSMENT.md",
+            "discover/incumbents.json",
+            "research/PROTOCOL.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "independent certificate check",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correct input binding and all route checks; report SOC, SOL, makespan, failure rates, budget and all attempts. Scientific acceptance remains separate.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Pinned artifacts and schemas pass; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Review the exact source/instance hashes and literature; distinguish verified route improvements from algorithm novelty and robot applicability.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
+          ]
+        }
+      ]
+    }
+  ]
+}

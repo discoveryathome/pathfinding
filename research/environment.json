@@ -1,0 +1,24 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.12.11",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+  "load": "1:05  up 12 days, 13:16, 17 users, load averages: 32.06 20.26 17.99",
+  "trial_kind": "fixed search-state budget; no timing superiority claim",
+  "dependencies": [
+    "attrs==26.1.0",
+    "cmake==4.4.4",
+    "greenlet==3.5.6",
+    "iniconfig==2.3.1",
+    "jsonschema==4.26.0",
+    "jsonschema-specifications==2025.9.1",
+    "packaging==26.3",
+    "playwright==1.64.0",
+    "pluggy==1.7.0",
+    "pyee==14.0.0",
+    "pygments==2.21.0",
+    "pytest==9.1.1",
+    "referencing==0.37.0",
+    "rpds-py==2026.9.1",
+    "typing-extensions==4.16.0"
+  ]
+}

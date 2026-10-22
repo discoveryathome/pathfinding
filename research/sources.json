@@ -1,0 +1,67 @@
+{
+  "downloaded_on": "2026-10-22",
+  "upstream": {
+    "url": "https://github.com/Kei18/lacam3",
+    "commit": "1c3ecf8ade40298f16047544634e9c0c1cf3b93c",
+    "submodules": "69dabd88a8e6680b1a1a18397eb3e165e4019ce6 third_party/argparse (v3.0-3-g69dabd8)",
+    "license": "MIT"
+  },
+  "data": [
+    {
+      "url": "https://movingai.com/benchmarks/mapf/mapf-map.zip",
+      "archive_sha256": "9da2e4c5ce03aa4e063b3a283ce874590b36cc4f31a297fe7ecb00d105abf288",
+      "selected": [
+        {
+          "archive_member": "empty-32-32.map",
+          "path": "data/maps/empty-32-32.map",
+          "sha256": "5b11a28f65d09a0ba260b77cb698bb22c73cfe1e1f5e159997de6108cd31bf68"
+        },
+        {
+          "archive_member": "maze-32-32-4.map",
+          "path": "data/maps/maze-32-32-4.map",
+          "sha256": "7ff67aa59f71933b8cf2605e12631b8a28d9ebcfb9b941de3afdc7dce3123fee"
+        },
+        {
+          "archive_member": "random-32-32-20.map",
+          "path": "data/maps/random-32-32-20.map",
+          "sha256": "8c5a83498ab92a2579aeef91c5f42d9ecf9019ef038cf98e623061a15beb6f56"
+        },
+        {
+          "archive_member": "room-32-32-4.map",
+          "path": "data/maps/room-32-32-4.map",
+          "sha256": "f107fefbf63c7a1a3753e4a033452301a1cdd7043cab7f45e4ed0e7dec1e90a9"
+        }
+      ],
+      "license": "ODC Attribution License 1.0; attribute Moving AI Lab and original map creators",
+      "attribution": "Sturtevant, Benchmarks for Grid-Based Pathfinding, TCIAIG 4(2), 144\u2013148, 2012"
+    },
+    {
+      "url": "https://movingai.com/benchmarks/mapf/mapf-scen-random.zip",
+      "archive_sha256": "20b7838f7a51f13e90a63ee138e9435fb4e41b0381becbc7313b7d3a7d859276",
+      "selected": [
+        {
+          "archive_member": "scen-random/empty-32-32-random-1.scen",
+          "path": "data/scenarios/empty-32-32-random-1.scen",
+          "sha256": "4ce49401f9d9b9aece505bddb5da1e720450a9325c17f3817e0fa98069454342"
+        },
+        {
+          "archive_member": "scen-random/maze-32-32-4-random-1.scen",
+          "path": "data/scenarios/maze-32-32-4-random-1.scen",
+          "sha256": "7dca5619667781bf8a7094a4f9257cb1a5bfca2861eb4079028f62840c261cf7"
+        },
+        {
+          "archive_member": "scen-random/random-32-32-20-random-1.scen",
+          "path": "data/scenarios/random-32-32-20-random-1.scen",
+          "sha256": "c239c49e4afaac2a4ff7ba9d005f56f2081b64055e524cc49918521c9bd58a40"
+        },
+        {
+          "archive_member": "scen-random/room-32-32-4-random-1.scen",
+          "path": "data/scenarios/room-32-32-4-random-1.scen",
+          "sha256": "a7b890d6e18853407bdff49e1f625d6d39080e353fb3cdbcb2ecb6f057c267d4"
+        }
+      ],
+      "license": "ODC Attribution License 1.0; attribute Moving AI Lab and original map creators",
+      "attribution": "Sturtevant, Benchmarks for Grid-Based Pathfinding, TCIAIG 4(2), 144\u2013148, 2012"
+    }
+  ]
+}

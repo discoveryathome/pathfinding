@@ -1,0 +1,35 @@
+Test project /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream
+    Start 1: test_dist_table
+1/6 Test #1: test_dist_table ..................***Exception: SegFault  0.00 sec
+file ../assets/random-32-32-10.map is not found.
+../assets/random-32-32-10-random-1.scen is not found
+
+    Start 2: test_graph
+2/6 Test #2: test_graph .......................   Passed    0.00 sec
+    Start 3: test_instance
+3/6 Test #3: test_instance ....................   Passed    0.00 sec
+    Start 4: test_planner
+4/6 Test #4: test_planner .....................***Exception: SegFault  0.00 sec
+file ../assets/random-32-32-10.map is not found.
+../assets/random-32-32-10-random-1.scen is not found
+
+    Start 5: test_post_processing
+5/6 Test #5: test_post_processing .............***Exception: SegFault  0.00 sec
+file ../assets/empty-8-8.map is not found.
+
+    Start 6: test_sipp
+6/6 Test #6: test_sipp ........................***Exception: SegFault  0.00 sec
+file ../tests/assets/sapp.map is not found.
+../tests/assets/sapp.scen is not found
+
+
+33% tests passed, 4 tests failed out of 6
+
+Total Test time (real) =   0.02 sec
+
+The following tests FAILED:
+	  1 - test_dist_table (SEGFAULT)
+	  4 - test_planner (SEGFAULT)
+	  5 - test_post_processing (SEGFAULT)
+	  6 - test_sipp (SEGFAULT)
+Errors while running CTest

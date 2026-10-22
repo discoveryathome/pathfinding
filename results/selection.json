@@ -1,0 +1,32 @@
+{
+  "selected": "proximity4",
+  "development_scores": {
+    "random4": {
+      "sol": 31493,
+      "soc": 32694,
+      "runs": 8
+    },
+    "regret1": {
+      "sol": 31498,
+      "soc": 32697,
+      "runs": 8
+    },
+    "regret4": {
+      "sol": 31509,
+      "soc": 32695,
+      "runs": 8
+    },
+    "proximity4": {
+      "sol": 31486,
+      "soc": 32619,
+      "runs": 8
+    },
+    "proximity8": {
+      "sol": 31506,
+      "soc": 32691,
+      "runs": 8
+    }
+  },
+  "rule": "lowest total SOL then SOC across development runs; promote only if lexicographically better than random4; frozen before held-out repair",
+  "heldout_started_at_selection": false
+}

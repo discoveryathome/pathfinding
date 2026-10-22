@@ -1,0 +1,8 @@
+{
+  "cases": 8,
+  "plans": 32,
+  "all_endpoints_verified_in_view": true,
+  "play_pause_reset_slider": true,
+  "mobile_no_horizontal_overflow": true,
+  "javascript_errors": []
+}

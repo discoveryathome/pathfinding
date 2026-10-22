@@ -1,0 +1,1724 @@
+{
+  "kind": "author-run bounded MAPF repair trial",
+  "selected": "proximity4",
+  "development_scores": {
+    "random4": {
+      "sol": 31493,
+      "soc": 32694,
+      "runs": 8
+    },
+    "regret1": {
+      "sol": 31498,
+      "soc": 32697,
+      "runs": 8
+    },
+    "regret4": {
+      "sol": 31509,
+      "soc": 32695,
+      "runs": 8
+    },
+    "proximity4": {
+      "sol": 31486,
+      "soc": 32619,
+      "runs": 8
+    },
+    "proximity8": {
+      "sol": 31506,
+      "soc": 32691,
+      "runs": 8
+    }
+  },
+  "runs": [
+    {
+      "case": "empty-32-32-n128",
+      "split": "development",
+      "variant": "random4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48
+      },
+      "metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48,
+        "individual_distance_lower_bound": 2740,
+        "agents": 128,
+        "checked_timesteps": 49
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 13384,
+        "attempt_limit": 64,
+        "attempts_used": 64,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.4409411670640111,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/empty-32-32-n128-random4-s17.json",
+      "trace": "results/repair/empty-32-32-n128-random4-s17-trace.json"
+    },
+    {
+      "case": "empty-32-32-n128",
+      "split": "development",
+      "variant": "random4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48
+      },
+      "metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48,
+        "individual_distance_lower_bound": 2740,
+        "agents": 128,
+        "checked_timesteps": 49
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 17285,
+        "attempt_limit": 64,
+        "attempts_used": 64,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.4384556249715388,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/empty-32-32-n128-random4-s29.json",
+      "trace": "results/repair/empty-32-32-n128-random4-s29-trace.json"
+    },
+    {
+      "case": "empty-32-32-n128",
+      "split": "development",
+      "variant": "regret1",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48
+      },
+      "metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48,
+        "individual_distance_lower_bound": 2740,
+        "agents": 128,
+        "checked_timesteps": 49
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 6505,
+        "attempt_limit": 64,
+        "attempts_used": 64,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.3996434999862686,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/empty-32-32-n128-regret1-s17.json",
+      "trace": "results/repair/empty-32-32-n128-regret1-s17-trace.json"
+    },
+    {
+      "case": "empty-32-32-n128",
+      "split": "development",
+      "variant": "regret1",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48
+      },
+      "metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48,
+        "individual_distance_lower_bound": 2740,
+        "agents": 128,
+        "checked_timesteps": 49
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 3771,
+        "attempt_limit": 64,
+        "attempts_used": 64,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.4084824590245262,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/empty-32-32-n128-regret1-s29.json",
+      "trace": "results/repair/empty-32-32-n128-regret1-s29-trace.json"
+    },
+    {
+      "case": "empty-32-32-n128",
+      "split": "development",
+      "variant": "regret4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48
+      },
+      "metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48,
+        "individual_distance_lower_bound": 2740,
+        "agents": 128,
+        "checked_timesteps": 49
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 26,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.2857083750423044,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/empty-32-32-n128-regret4-s17.json",
+      "trace": "results/repair/empty-32-32-n128-regret4-s17-trace.json"
+    },
+    {
+      "case": "empty-32-32-n128",
+      "split": "development",
+      "variant": "regret4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48
+      },
+      "metrics": {
+        "soc": 2787,
+        "sol": 2783,
+        "makespan": 48,
+        "individual_distance_lower_bound": 2740,
+        "agents": 128,
+        "checked_timesteps": 49
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 30,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.30159958300646394,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/empty-32-32-n128-regret4-s29.json",
+      "trace": "results/repair/empty-32-32-n128-regret4-s29-trace.json"
+    },
+    {
+      "case": "empty-32-32-n128",
+      "split": "development",
+      "variant": "proximity4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48
+      },
+      "metrics": {
+        "soc": 2787,
+        "sol": 2783,
+        "makespan": 48,
+        "individual_distance_lower_bound": 2740,
+        "agents": 128,
+        "checked_timesteps": 49
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 26138,
+        "attempt_limit": 64,
+        "attempts_used": 64,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.7517130000051111,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/empty-32-32-n128-proximity4-s17.json",
+      "trace": "results/repair/empty-32-32-n128-proximity4-s17-trace.json"
+    },
+    {
+      "case": "empty-32-32-n128",
+      "split": "development",
+      "variant": "proximity4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48
+      },
+      "metrics": {
+        "soc": 2787,
+        "sol": 2783,
+        "makespan": 48,
+        "individual_distance_lower_bound": 2740,
+        "agents": 128,
+        "checked_timesteps": 49
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 24573,
+        "attempt_limit": 64,
+        "attempts_used": 64,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.7695829999865964,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/empty-32-32-n128-proximity4-s29.json",
+      "trace": "results/repair/empty-32-32-n128-proximity4-s29-trace.json"
+    },
+    {
+      "case": "empty-32-32-n128",
+      "split": "development",
+      "variant": "proximity8",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48
+      },
+      "metrics": {
+        "soc": 2792,
+        "sol": 2781,
+        "makespan": 48,
+        "individual_distance_lower_bound": 2740,
+        "agents": 128,
+        "checked_timesteps": 49
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 36,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.4803100830176845,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/empty-32-32-n128-proximity8-s17.json",
+      "trace": "results/repair/empty-32-32-n128-proximity8-s17-trace.json"
+    },
+    {
+      "case": "empty-32-32-n128",
+      "split": "development",
+      "variant": "proximity8",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 2794,
+        "sol": 2783,
+        "makespan": 48
+      },
+      "metrics": {
+        "soc": 2787,
+        "sol": 2783,
+        "makespan": 48,
+        "individual_distance_lower_bound": 2740,
+        "agents": 128,
+        "checked_timesteps": 49
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 32,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.43216504203155637,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/empty-32-32-n128-proximity8-s29.json",
+      "trace": "results/repair/empty-32-32-n128-proximity8-s29-trace.json"
+    },
+    {
+      "case": "empty-32-32-n256",
+      "split": "development",
+      "variant": "random4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 5864,
+        "sol": 5715,
+        "makespan": 52
+      },
+      "metrics": {
+        "soc": 5859,
+        "sol": 5710,
+        "makespan": 52,
+        "individual_distance_lower_bound": 5341,
+        "agents": 256,
+        "checked_timesteps": 53
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 28567,
+        "attempt_limit": 64,
+        "attempts_used": 64,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 1.0548749580048025,
+      "accepted_repairs": 4,
+      "certificate": "results/repair/empty-32-32-n256-random4-s17.json",
+      "trace": "results/repair/empty-32-32-n256-random4-s17-trace.json"
+    },
+    {
+      "case": "empty-32-32-n256",
+      "split": "development",
+      "variant": "random4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 5864,
+        "sol": 5715,
+        "makespan": 52
+      },
+      "metrics": {
+        "soc": 5857,
+        "sol": 5711,
+        "makespan": 52,
+        "individual_distance_lower_bound": 5341,
+        "agents": 256,
+        "checked_timesteps": 53
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 28163,
+        "attempt_limit": 64,
+        "attempts_used": 64,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.9292227500118315,
+      "accepted_repairs": 4,
+      "certificate": "results/repair/empty-32-32-n256-random4-s29.json",
+      "trace": "results/repair/empty-32-32-n256-random4-s29-trace.json"
+    },
+    {
+      "case": "empty-32-32-n256",
+      "split": "development",
+      "variant": "regret1",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 5864,
+        "sol": 5715,
+        "makespan": 52
+      },
+      "metrics": {
+        "soc": 5861,
+        "sol": 5713,
+        "makespan": 52,
+        "individual_distance_lower_bound": 5341,
+        "agents": 256,
+        "checked_timesteps": 53
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 17285,
+        "attempt_limit": 64,
+        "attempts_used": 64,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.9072685419814661,
+      "accepted_repairs": 2,
+      "certificate": "results/repair/empty-32-32-n256-regret1-s17.json",
+      "trace": "results/repair/empty-32-32-n256-regret1-s17-trace.json"
+    },
+    {
+      "case": "empty-32-32-n256",
+      "split": "development",
+      "variant": "regret1",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 5864,
+        "sol": 5715,
+        "makespan": 52
+      },
+      "metrics": {
+        "soc": 5856,
+        "sol": 5711,
+        "makespan": 52,
+        "individual_distance_lower_bound": 5341,
+        "agents": 256,
+        "checked_timesteps": 53
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 24382,
+        "attempt_limit": 64,
+        "attempts_used": 64,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.917367749963887,
+      "accepted_repairs": 3,
+      "certificate": "results/repair/empty-32-32-n256-regret1-s29.json",
+      "trace": "results/repair/empty-32-32-n256-regret1-s29-trace.json"
+    },
+    {
+      "case": "empty-32-32-n256",
+      "split": "development",
+      "variant": "regret4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 5864,
+        "sol": 5715,
+        "makespan": 52
+      },
+      "metrics": {
+        "soc": 5861,
+        "sol": 5713,
+        "makespan": 52,
+        "individual_distance_lower_bound": 5341,
+        "agents": 256,
+        "checked_timesteps": 53
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 7,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.26284824998583645,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/empty-32-32-n256-regret4-s17.json",
+      "trace": "results/repair/empty-32-32-n256-regret4-s17-trace.json"
+    },
+    {
+      "case": "empty-32-32-n256",
+      "split": "development",
+      "variant": "regret4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 5864,
+        "sol": 5715,
+        "makespan": 52
+      },
+      "metrics": {
+        "soc": 5861,
+        "sol": 5714,
+        "makespan": 52,
+        "individual_distance_lower_bound": 5341,
+        "agents": 256,
+        "checked_timesteps": 53
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 7,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.28169566590804607,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/empty-32-32-n256-regret4-s29.json",
+      "trace": "results/repair/empty-32-32-n256-regret4-s29-trace.json"
+    },
+    {
+      "case": "empty-32-32-n256",
+      "split": "development",
+      "variant": "proximity4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 5864,
+        "sol": 5715,
+        "makespan": 52
+      },
+      "metrics": {
+        "soc": 5831,
+        "sol": 5703,
+        "makespan": 52,
+        "individual_distance_lower_bound": 5341,
+        "agents": 256,
+        "checked_timesteps": 53
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 39,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.909860041923821,
+      "accepted_repairs": 7,
+      "certificate": "results/repair/empty-32-32-n256-proximity4-s17.json",
+      "trace": "results/repair/empty-32-32-n256-proximity4-s17-trace.json"
+    },
+    {
+      "case": "empty-32-32-n256",
+      "split": "development",
+      "variant": "proximity4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 5864,
+        "sol": 5715,
+        "makespan": 52
+      },
+      "metrics": {
+        "soc": 5833,
+        "sol": 5704,
+        "makespan": 52,
+        "individual_distance_lower_bound": 5341,
+        "agents": 256,
+        "checked_timesteps": 53
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 31,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.7886227909475565,
+      "accepted_repairs": 8,
+      "certificate": "results/repair/empty-32-32-n256-proximity4-s29.json",
+      "trace": "results/repair/empty-32-32-n256-proximity4-s29-trace.json"
+    },
+    {
+      "case": "empty-32-32-n256",
+      "split": "development",
+      "variant": "proximity8",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 5864,
+        "sol": 5715,
+        "makespan": 52
+      },
+      "metrics": {
+        "soc": 5858,
+        "sol": 5713,
+        "makespan": 52,
+        "individual_distance_lower_bound": 5341,
+        "agents": 256,
+        "checked_timesteps": 53
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 14,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.44247512496076524,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/empty-32-32-n256-proximity8-s17.json",
+      "trace": "results/repair/empty-32-32-n256-proximity8-s17-trace.json"
+    },
+    {
+      "case": "empty-32-32-n256",
+      "split": "development",
+      "variant": "proximity8",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 5864,
+        "sol": 5715,
+        "makespan": 52
+      },
+      "metrics": {
+        "soc": 5864,
+        "sol": 5715,
+        "makespan": 52,
+        "individual_distance_lower_bound": 5341,
+        "agents": 256,
+        "checked_timesteps": 53
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 11,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.3662297079572454,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/empty-32-32-n256-proximity8-s29.json",
+      "trace": "results/repair/empty-32-32-n256-proximity8-s29-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "split": "development",
+      "variant": "random4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51
+      },
+      "metrics": {
+        "soc": 2424,
+        "sol": 2310,
+        "makespan": 51,
+        "individual_distance_lower_bound": 2175,
+        "agents": 96,
+        "checked_timesteps": 52
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 40,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.2820941670797765,
+      "accepted_repairs": 2,
+      "certificate": "results/repair/random-32-32-20-n96-random4-s17.json",
+      "trace": "results/repair/random-32-32-20-n96-random4-s17-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "split": "development",
+      "variant": "random4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51
+      },
+      "metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51,
+        "individual_distance_lower_bound": 2175,
+        "agents": 96,
+        "checked_timesteps": 52
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 28,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.2522975830361247,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/random-32-32-20-n96-random4-s29.json",
+      "trace": "results/repair/random-32-32-20-n96-random4-s29-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "split": "development",
+      "variant": "regret1",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51
+      },
+      "metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51,
+        "individual_distance_lower_bound": 2175,
+        "agents": 96,
+        "checked_timesteps": 52
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 32,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.21864258300047368,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/random-32-32-20-n96-regret1-s17.json",
+      "trace": "results/repair/random-32-32-20-n96-regret1-s17-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "split": "development",
+      "variant": "regret1",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51
+      },
+      "metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51,
+        "individual_distance_lower_bound": 2175,
+        "agents": 96,
+        "checked_timesteps": 52
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 21,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.19741887506097555,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/random-32-32-20-n96-regret1-s29.json",
+      "trace": "results/repair/random-32-32-20-n96-regret1-s29-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "split": "development",
+      "variant": "regret4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51
+      },
+      "metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51,
+        "individual_distance_lower_bound": 2175,
+        "agents": 96,
+        "checked_timesteps": 52
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 7,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.11809087509755045,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/random-32-32-20-n96-regret4-s17.json",
+      "trace": "results/repair/random-32-32-20-n96-regret4-s17-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "split": "development",
+      "variant": "regret4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51
+      },
+      "metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51,
+        "individual_distance_lower_bound": 2175,
+        "agents": 96,
+        "checked_timesteps": 52
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 7,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.14495424996130168,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/random-32-32-20-n96-regret4-s29.json",
+      "trace": "results/repair/random-32-32-20-n96-regret4-s29-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "split": "development",
+      "variant": "proximity4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51
+      },
+      "metrics": {
+        "soc": 2425,
+        "sol": 2311,
+        "makespan": 51,
+        "individual_distance_lower_bound": 2175,
+        "agents": 96,
+        "checked_timesteps": 52
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 13,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.19422675005625933,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/random-32-32-20-n96-proximity4-s17.json",
+      "trace": "results/repair/random-32-32-20-n96-proximity4-s17-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "split": "development",
+      "variant": "proximity4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51
+      },
+      "metrics": {
+        "soc": 2422,
+        "sol": 2310,
+        "makespan": 51,
+        "individual_distance_lower_bound": 2175,
+        "agents": 96,
+        "checked_timesteps": 52
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 16,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.2238885840633884,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/random-32-32-20-n96-proximity4-s29.json",
+      "trace": "results/repair/random-32-32-20-n96-proximity4-s29-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "split": "development",
+      "variant": "proximity8",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51
+      },
+      "metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51,
+        "individual_distance_lower_bound": 2175,
+        "agents": 96,
+        "checked_timesteps": 52
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 10,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.19644945906475186,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/random-32-32-20-n96-proximity8-s17.json",
+      "trace": "results/repair/random-32-32-20-n96-proximity8-s17-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "split": "development",
+      "variant": "proximity8",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51
+      },
+      "metrics": {
+        "soc": 2426,
+        "sol": 2312,
+        "makespan": 51,
+        "individual_distance_lower_bound": 2175,
+        "agents": 96,
+        "checked_timesteps": 52
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 9,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.15674729098100215,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/random-32-32-20-n96-proximity8-s29.json",
+      "trace": "results/repair/random-32-32-20-n96-proximity8-s29-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "split": "development",
+      "variant": "random4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56
+      },
+      "metrics": {
+        "soc": 5270,
+        "sol": 4942,
+        "makespan": 56,
+        "individual_distance_lower_bound": 4209,
+        "agents": 192,
+        "checked_timesteps": 57
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 32,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.41933170799165964,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/random-32-32-20-n192-random4-s17.json",
+      "trace": "results/repair/random-32-32-20-n192-random4-s17-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "split": "development",
+      "variant": "random4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56
+      },
+      "metrics": {
+        "soc": 5270,
+        "sol": 4942,
+        "makespan": 56,
+        "individual_distance_lower_bound": 4209,
+        "agents": 192,
+        "checked_timesteps": 57
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 27,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.3690425829263404,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/random-32-32-20-n192-random4-s29.json",
+      "trace": "results/repair/random-32-32-20-n192-random4-s29-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "split": "development",
+      "variant": "regret1",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56
+      },
+      "metrics": {
+        "soc": 5270,
+        "sol": 4942,
+        "makespan": 56,
+        "individual_distance_lower_bound": 4209,
+        "agents": 192,
+        "checked_timesteps": 57
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 41,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.5016853749984875,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/random-32-32-20-n192-regret1-s17.json",
+      "trace": "results/repair/random-32-32-20-n192-regret1-s17-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "split": "development",
+      "variant": "regret1",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56
+      },
+      "metrics": {
+        "soc": 5270,
+        "sol": 4942,
+        "makespan": 56,
+        "individual_distance_lower_bound": 4209,
+        "agents": 192,
+        "checked_timesteps": 57
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 37,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.46019262494519353,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/random-32-32-20-n192-regret1-s29.json",
+      "trace": "results/repair/random-32-32-20-n192-regret1-s29-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "split": "development",
+      "variant": "regret4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56
+      },
+      "metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56,
+        "individual_distance_lower_bound": 4209,
+        "agents": 192,
+        "checked_timesteps": 57
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 10,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.21763441700022668,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/random-32-32-20-n192-regret4-s17.json",
+      "trace": "results/repair/random-32-32-20-n192-regret4-s17-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "split": "development",
+      "variant": "regret4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56
+      },
+      "metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56,
+        "individual_distance_lower_bound": 4209,
+        "agents": 192,
+        "checked_timesteps": 57
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 10,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.2020963750546798,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/random-32-32-20-n192-regret4-s29.json",
+      "trace": "results/repair/random-32-32-20-n192-regret4-s29-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "split": "development",
+      "variant": "proximity4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56
+      },
+      "metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56,
+        "individual_distance_lower_bound": 4209,
+        "agents": 192,
+        "checked_timesteps": 57
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 14,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.3301208330085501,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/random-32-32-20-n192-proximity4-s17.json",
+      "trace": "results/repair/random-32-32-20-n192-proximity4-s17-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "split": "development",
+      "variant": "proximity4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56
+      },
+      "metrics": {
+        "soc": 5264,
+        "sol": 4946,
+        "makespan": 56,
+        "individual_distance_lower_bound": 4209,
+        "agents": 192,
+        "checked_timesteps": 57
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 13,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.3217395000392571,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/random-32-32-20-n192-proximity4-s29.json",
+      "trace": "results/repair/random-32-32-20-n192-proximity4-s29-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "split": "development",
+      "variant": "proximity8",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56
+      },
+      "metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56,
+        "individual_distance_lower_bound": 4209,
+        "agents": 192,
+        "checked_timesteps": 57
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 8,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.26051304198335856,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/random-32-32-20-n192-proximity8-s17.json",
+      "trace": "results/repair/random-32-32-20-n192-proximity8-s17-trace.json"
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "split": "development",
+      "variant": "proximity8",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 5270,
+        "sol": 4946,
+        "makespan": 56
+      },
+      "metrics": {
+        "soc": 5268,
+        "sol": 4944,
+        "makespan": 56,
+        "individual_distance_lower_bound": 4209,
+        "agents": 192,
+        "checked_timesteps": 57
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 7,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.22522829100489616,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/random-32-32-20-n192-proximity8-s29.json",
+      "trace": "results/repair/random-32-32-20-n192-proximity8-s29-trace.json"
+    },
+    {
+      "case": "room-32-32-4-n96",
+      "split": "heldout",
+      "variant": "proximity4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 3071,
+        "sol": 2870,
+        "makespan": 61
+      },
+      "metrics": {
+        "soc": 3060,
+        "sol": 2857,
+        "makespan": 61,
+        "individual_distance_lower_bound": 2434,
+        "agents": 96,
+        "checked_timesteps": 62
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 11,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.17490866698790342,
+      "accepted_repairs": 3,
+      "certificate": "results/repair/room-32-32-4-n96-proximity4-s17.json",
+      "trace": "results/repair/room-32-32-4-n96-proximity4-s17-trace.json"
+    },
+    {
+      "case": "room-32-32-4-n96",
+      "split": "heldout",
+      "variant": "proximity4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 3071,
+        "sol": 2870,
+        "makespan": 61
+      },
+      "metrics": {
+        "soc": 3069,
+        "sol": 2870,
+        "makespan": 61,
+        "individual_distance_lower_bound": 2434,
+        "agents": 96,
+        "checked_timesteps": 62
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 15,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.21365304198116064,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/room-32-32-4-n96-proximity4-s29.json",
+      "trace": "results/repair/room-32-32-4-n96-proximity4-s29-trace.json"
+    },
+    {
+      "case": "room-32-32-4-n96",
+      "split": "heldout",
+      "variant": "random4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 3071,
+        "sol": 2870,
+        "makespan": 61
+      },
+      "metrics": {
+        "soc": 3067,
+        "sol": 2866,
+        "makespan": 61,
+        "individual_distance_lower_bound": 2434,
+        "agents": 96,
+        "checked_timesteps": 62
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 19,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.19808724999893457,
+      "accepted_repairs": 3,
+      "certificate": "results/repair/room-32-32-4-n96-random4-s17.json",
+      "trace": "results/repair/room-32-32-4-n96-random4-s17-trace.json"
+    },
+    {
+      "case": "room-32-32-4-n96",
+      "split": "heldout",
+      "variant": "random4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 3071,
+        "sol": 2870,
+        "makespan": 61
+      },
+      "metrics": {
+        "soc": 3065,
+        "sol": 2867,
+        "makespan": 61,
+        "individual_distance_lower_bound": 2434,
+        "agents": 96,
+        "checked_timesteps": 62
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 21,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.19978687504772097,
+      "accepted_repairs": 3,
+      "certificate": "results/repair/room-32-32-4-n96-random4-s29.json",
+      "trace": "results/repair/room-32-32-4-n96-random4-s29-trace.json"
+    },
+    {
+      "case": "room-32-32-4-n160",
+      "split": "heldout",
+      "variant": "proximity4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 6288,
+        "sol": 5772,
+        "makespan": 68
+      },
+      "metrics": {
+        "soc": 6282,
+        "sol": 5765,
+        "makespan": 68,
+        "individual_distance_lower_bound": 3952,
+        "agents": 160,
+        "checked_timesteps": 69
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 11,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.28754683292936534,
+      "accepted_repairs": 3,
+      "certificate": "results/repair/room-32-32-4-n160-proximity4-s17.json",
+      "trace": "results/repair/room-32-32-4-n160-proximity4-s17-trace.json"
+    },
+    {
+      "case": "room-32-32-4-n160",
+      "split": "heldout",
+      "variant": "proximity4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 6288,
+        "sol": 5772,
+        "makespan": 68
+      },
+      "metrics": {
+        "soc": 6284,
+        "sol": 5768,
+        "makespan": 68,
+        "individual_distance_lower_bound": 3952,
+        "agents": 160,
+        "checked_timesteps": 69
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 12,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.30730024992953986,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/room-32-32-4-n160-proximity4-s29.json",
+      "trace": "results/repair/room-32-32-4-n160-proximity4-s29-trace.json"
+    },
+    {
+      "case": "room-32-32-4-n160",
+      "split": "heldout",
+      "variant": "random4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 6288,
+        "sol": 5772,
+        "makespan": 68
+      },
+      "metrics": {
+        "soc": 6286,
+        "sol": 5759,
+        "makespan": 68,
+        "individual_distance_lower_bound": 3952,
+        "agents": 160,
+        "checked_timesteps": 69
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 16,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.2525982919614762,
+      "accepted_repairs": 6,
+      "certificate": "results/repair/room-32-32-4-n160-random4-s17.json",
+      "trace": "results/repair/room-32-32-4-n160-random4-s17-trace.json"
+    },
+    {
+      "case": "room-32-32-4-n160",
+      "split": "heldout",
+      "variant": "random4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 6288,
+        "sol": 5772,
+        "makespan": 68
+      },
+      "metrics": {
+        "soc": 6287,
+        "sol": 5769,
+        "makespan": 68,
+        "individual_distance_lower_bound": 3952,
+        "agents": 160,
+        "checked_timesteps": 69
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 13,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.233380833058618,
+      "accepted_repairs": 2,
+      "certificate": "results/repair/room-32-32-4-n160-random4-s29.json",
+      "trace": "results/repair/room-32-32-4-n160-random4-s29-trace.json"
+    },
+    {
+      "case": "maze-32-32-4-n64",
+      "split": "heldout",
+      "variant": "proximity4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 3197,
+        "sol": 3116,
+        "makespan": 94
+      },
+      "metrics": {
+        "soc": 3197,
+        "sol": 3116,
+        "makespan": 94,
+        "individual_distance_lower_bound": 2884,
+        "agents": 64,
+        "checked_timesteps": 95
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 9,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.1719872080720961,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/maze-32-32-4-n64-proximity4-s17.json",
+      "trace": "results/repair/maze-32-32-4-n64-proximity4-s17-trace.json"
+    },
+    {
+      "case": "maze-32-32-4-n64",
+      "split": "heldout",
+      "variant": "proximity4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 3197,
+        "sol": 3116,
+        "makespan": 94
+      },
+      "metrics": {
+        "soc": 3197,
+        "sol": 3116,
+        "makespan": 94,
+        "individual_distance_lower_bound": 2884,
+        "agents": 64,
+        "checked_timesteps": 95
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 7,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.1566229579038918,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/maze-32-32-4-n64-proximity4-s29.json",
+      "trace": "results/repair/maze-32-32-4-n64-proximity4-s29-trace.json"
+    },
+    {
+      "case": "maze-32-32-4-n64",
+      "split": "heldout",
+      "variant": "random4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 3197,
+        "sol": 3116,
+        "makespan": 94
+      },
+      "metrics": {
+        "soc": 3197,
+        "sol": 3113,
+        "makespan": 94,
+        "individual_distance_lower_bound": 2884,
+        "agents": 64,
+        "checked_timesteps": 95
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 16,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.22176829201634973,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/maze-32-32-4-n64-random4-s17.json",
+      "trace": "results/repair/maze-32-32-4-n64-random4-s17-trace.json"
+    },
+    {
+      "case": "maze-32-32-4-n64",
+      "split": "heldout",
+      "variant": "random4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 3197,
+        "sol": 3116,
+        "makespan": 94
+      },
+      "metrics": {
+        "soc": 3197,
+        "sol": 3113,
+        "makespan": 94,
+        "individual_distance_lower_bound": 2884,
+        "agents": 64,
+        "checked_timesteps": 95
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 18,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.21293833304662257,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/maze-32-32-4-n64-random4-s29.json",
+      "trace": "results/repair/maze-32-32-4-n64-random4-s29-trace.json"
+    },
+    {
+      "case": "maze-32-32-4-n128",
+      "split": "heldout",
+      "variant": "proximity4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 8225,
+        "sol": 7817,
+        "makespan": 125
+      },
+      "metrics": {
+        "soc": 8225,
+        "sol": 7817,
+        "makespan": 125,
+        "individual_distance_lower_bound": 5926,
+        "agents": 128,
+        "checked_timesteps": 126
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 10,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.3081510830670595,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/maze-32-32-4-n128-proximity4-s17.json",
+      "trace": "results/repair/maze-32-32-4-n128-proximity4-s17-trace.json"
+    },
+    {
+      "case": "maze-32-32-4-n128",
+      "split": "heldout",
+      "variant": "proximity4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 8225,
+        "sol": 7817,
+        "makespan": 125
+      },
+      "metrics": {
+        "soc": 8225,
+        "sol": 7817,
+        "makespan": 125,
+        "individual_distance_lower_bound": 5926,
+        "agents": 128,
+        "checked_timesteps": 126
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 11,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.3528446670388803,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/maze-32-32-4-n128-proximity4-s29.json",
+      "trace": "results/repair/maze-32-32-4-n128-proximity4-s29-trace.json"
+    },
+    {
+      "case": "maze-32-32-4-n128",
+      "split": "heldout",
+      "variant": "random4",
+      "seed": 17,
+      "initial_metrics": {
+        "soc": 8225,
+        "sol": 7817,
+        "makespan": 125
+      },
+      "metrics": {
+        "soc": 8225,
+        "sol": 7817,
+        "makespan": 125,
+        "individual_distance_lower_bound": 5926,
+        "agents": 128,
+        "checked_timesteps": 126
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 10,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.24486445891670883,
+      "accepted_repairs": 0,
+      "certificate": "results/repair/maze-32-32-4-n128-random4-s17.json",
+      "trace": "results/repair/maze-32-32-4-n128-random4-s17-trace.json"
+    },
+    {
+      "case": "maze-32-32-4-n128",
+      "split": "heldout",
+      "variant": "random4",
+      "seed": 29,
+      "initial_metrics": {
+        "soc": 8225,
+        "sol": 7817,
+        "makespan": 125
+      },
+      "metrics": {
+        "soc": 8225,
+        "sol": 7815,
+        "makespan": 125,
+        "individual_distance_lower_bound": 5926,
+        "agents": 128,
+        "checked_timesteps": 126
+      },
+      "budget": {
+        "node_limit": 30000,
+        "nodes_used": 30000,
+        "attempt_limit": 64,
+        "attempts_used": 10,
+        "per_agent_limit": 3000
+      },
+      "elapsed_seconds": 0.23183187504764646,
+      "accepted_repairs": 1,
+      "certificate": "results/repair/maze-32-32-4-n128-random4-s29.json",
+      "trace": "results/repair/maze-32-32-4-n128-random4-s29-trace.json"
+    }
+  ],
+  "deterministic_replay": true,
+  "total_elapsed_seconds": 47.442623138427734,
+  "machine": "macOS-26.6.2-arm64-arm-64bit",
+  "baseline_failures": [],
+  "limitations": [
+    "Known neighborhood repair, no novelty claim",
+    "Fixed search states are not equal CPU or all-operation budgets",
+    "LaCAM baseline and context runs are wall-deadline-limited and asynchronous; exact witnesses are frozen",
+    "No global optimality unless independently proved; individual BFS bound may be loose",
+    "Synthetic grids and discrete point agents, not robot safety validation"
+  ]
+}

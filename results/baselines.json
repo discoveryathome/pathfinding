@@ -1,0 +1,514 @@
+[
+  {
+    "id": "empty-32-32-n128",
+    "split": "development",
+    "instance": "data/instances/empty-32-32-n128.json",
+    "runs": {
+      "3": {
+        "status": "verified",
+        "certificate": "results/baselines/empty-32-32-n128-3s.json",
+        "metrics": {
+          "soc": 2794,
+          "sol": 2783,
+          "makespan": 48,
+          "individual_distance_lower_bound": 2740,
+          "agents": 128,
+          "checked_timesteps": 49
+        },
+        "elapsed_seconds": 3.024784803390503,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/empty-32-32.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/empty-32-32-random-1.scen",
+          "-N",
+          "128",
+          "-s",
+          "0",
+          "-t",
+          "3",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/empty-32-32-n128-3s.txt"
+        ]
+      },
+      "6": {
+        "status": "verified",
+        "certificate": "results/baselines/empty-32-32-n128-6s.json",
+        "metrics": {
+          "soc": 2776,
+          "sol": 2776,
+          "makespan": 48,
+          "individual_distance_lower_bound": 2740,
+          "agents": 128,
+          "checked_timesteps": 49
+        },
+        "elapsed_seconds": 6.0314648151397705,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/empty-32-32.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/empty-32-32-random-1.scen",
+          "-N",
+          "128",
+          "-s",
+          "0",
+          "-t",
+          "6",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/empty-32-32-n128-6s.txt"
+        ]
+      }
+    },
+    "inherited": "results/baselines/empty-32-32-n128-3s.json"
+  },
+  {
+    "id": "empty-32-32-n256",
+    "split": "development",
+    "instance": "data/instances/empty-32-32-n256.json",
+    "runs": {
+      "3": {
+        "status": "verified",
+        "certificate": "results/baselines/empty-32-32-n256-3s.json",
+        "metrics": {
+          "soc": 5864,
+          "sol": 5715,
+          "makespan": 52,
+          "individual_distance_lower_bound": 5341,
+          "agents": 256,
+          "checked_timesteps": 53
+        },
+        "elapsed_seconds": 3.0387179851531982,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/empty-32-32.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/empty-32-32-random-1.scen",
+          "-N",
+          "256",
+          "-s",
+          "0",
+          "-t",
+          "3",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/empty-32-32-n256-3s.txt"
+        ]
+      },
+      "6": {
+        "status": "verified",
+        "certificate": "results/baselines/empty-32-32-n256-6s.json",
+        "metrics": {
+          "soc": 5845,
+          "sol": 5699,
+          "makespan": 52,
+          "individual_distance_lower_bound": 5341,
+          "agents": 256,
+          "checked_timesteps": 53
+        },
+        "elapsed_seconds": 6.0480101108551025,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/empty-32-32.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/empty-32-32-random-1.scen",
+          "-N",
+          "256",
+          "-s",
+          "0",
+          "-t",
+          "6",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/empty-32-32-n256-6s.txt"
+        ]
+      }
+    },
+    "inherited": "results/baselines/empty-32-32-n256-3s.json"
+  },
+  {
+    "id": "random-32-32-20-n96",
+    "split": "development",
+    "instance": "data/instances/random-32-32-20-n96.json",
+    "runs": {
+      "3": {
+        "status": "verified",
+        "certificate": "results/baselines/random-32-32-20-n96-3s.json",
+        "metrics": {
+          "soc": 2426,
+          "sol": 2312,
+          "makespan": 51,
+          "individual_distance_lower_bound": 2175,
+          "agents": 96,
+          "checked_timesteps": 52
+        },
+        "elapsed_seconds": 3.023699998855591,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/random-32-32-20.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/random-32-32-20-random-1.scen",
+          "-N",
+          "96",
+          "-s",
+          "0",
+          "-t",
+          "3",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/random-32-32-20-n96-3s.txt"
+        ]
+      },
+      "6": {
+        "status": "verified",
+        "certificate": "results/baselines/random-32-32-20-n96-6s.json",
+        "metrics": {
+          "soc": 2451,
+          "sol": 2310,
+          "makespan": 48,
+          "individual_distance_lower_bound": 2175,
+          "agents": 96,
+          "checked_timesteps": 49
+        },
+        "elapsed_seconds": 6.029958009719849,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/random-32-32-20.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/random-32-32-20-random-1.scen",
+          "-N",
+          "96",
+          "-s",
+          "0",
+          "-t",
+          "6",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/random-32-32-20-n96-6s.txt"
+        ]
+      }
+    },
+    "inherited": "results/baselines/random-32-32-20-n96-3s.json"
+  },
+  {
+    "id": "random-32-32-20-n192",
+    "split": "development",
+    "instance": "data/instances/random-32-32-20-n192.json",
+    "runs": {
+      "3": {
+        "status": "verified",
+        "certificate": "results/baselines/random-32-32-20-n192-3s.json",
+        "metrics": {
+          "soc": 5270,
+          "sol": 4946,
+          "makespan": 56,
+          "individual_distance_lower_bound": 4209,
+          "agents": 192,
+          "checked_timesteps": 57
+        },
+        "elapsed_seconds": 3.0419938564300537,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/random-32-32-20.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/random-32-32-20-random-1.scen",
+          "-N",
+          "192",
+          "-s",
+          "0",
+          "-t",
+          "3",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/random-32-32-20-n192-3s.txt"
+        ]
+      },
+      "6": {
+        "status": "verified",
+        "certificate": "results/baselines/random-32-32-20-n192-6s.json",
+        "metrics": {
+          "soc": 5416,
+          "sol": 4929,
+          "makespan": 55,
+          "individual_distance_lower_bound": 4209,
+          "agents": 192,
+          "checked_timesteps": 56
+        },
+        "elapsed_seconds": 6.037938117980957,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/random-32-32-20.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/random-32-32-20-random-1.scen",
+          "-N",
+          "192",
+          "-s",
+          "0",
+          "-t",
+          "6",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/random-32-32-20-n192-6s.txt"
+        ]
+      }
+    },
+    "inherited": "results/baselines/random-32-32-20-n192-3s.json"
+  },
+  {
+    "id": "room-32-32-4-n96",
+    "split": "heldout",
+    "instance": "data/instances/room-32-32-4-n96.json",
+    "runs": {
+      "3": {
+        "status": "verified",
+        "certificate": "results/baselines/room-32-32-4-n96-3s.json",
+        "metrics": {
+          "soc": 3071,
+          "sol": 2870,
+          "makespan": 61,
+          "individual_distance_lower_bound": 2434,
+          "agents": 96,
+          "checked_timesteps": 62
+        },
+        "elapsed_seconds": 3.025832176208496,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/room-32-32-4.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/room-32-32-4-random-1.scen",
+          "-N",
+          "96",
+          "-s",
+          "0",
+          "-t",
+          "3",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/room-32-32-4-n96-3s.txt"
+        ]
+      },
+      "6": {
+        "status": "verified",
+        "certificate": "results/baselines/room-32-32-4-n96-6s.json",
+        "metrics": {
+          "soc": 3047,
+          "sol": 2830,
+          "makespan": 61,
+          "individual_distance_lower_bound": 2434,
+          "agents": 96,
+          "checked_timesteps": 62
+        },
+        "elapsed_seconds": 6.032362937927246,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/room-32-32-4.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/room-32-32-4-random-1.scen",
+          "-N",
+          "96",
+          "-s",
+          "0",
+          "-t",
+          "6",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/room-32-32-4-n96-6s.txt"
+        ]
+      }
+    },
+    "inherited": "results/baselines/room-32-32-4-n96-3s.json"
+  },
+  {
+    "id": "room-32-32-4-n160",
+    "split": "heldout",
+    "instance": "data/instances/room-32-32-4-n160.json",
+    "runs": {
+      "3": {
+        "status": "verified",
+        "certificate": "results/baselines/room-32-32-4-n160-3s.json",
+        "metrics": {
+          "soc": 6288,
+          "sol": 5772,
+          "makespan": 68,
+          "individual_distance_lower_bound": 3952,
+          "agents": 160,
+          "checked_timesteps": 69
+        },
+        "elapsed_seconds": 3.0469202995300293,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/room-32-32-4.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/room-32-32-4-random-1.scen",
+          "-N",
+          "160",
+          "-s",
+          "0",
+          "-t",
+          "3",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/room-32-32-4-n160-3s.txt"
+        ]
+      },
+      "6": {
+        "status": "verified",
+        "certificate": "results/baselines/room-32-32-4-n160-6s.json",
+        "metrics": {
+          "soc": 6185,
+          "sol": 5732,
+          "makespan": 68,
+          "individual_distance_lower_bound": 3952,
+          "agents": 160,
+          "checked_timesteps": 69
+        },
+        "elapsed_seconds": 6.0454957485198975,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/room-32-32-4.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/room-32-32-4-random-1.scen",
+          "-N",
+          "160",
+          "-s",
+          "0",
+          "-t",
+          "6",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/room-32-32-4-n160-6s.txt"
+        ]
+      }
+    },
+    "inherited": "results/baselines/room-32-32-4-n160-3s.json"
+  },
+  {
+    "id": "maze-32-32-4-n64",
+    "split": "heldout",
+    "instance": "data/instances/maze-32-32-4-n64.json",
+    "runs": {
+      "3": {
+        "status": "verified",
+        "certificate": "results/baselines/maze-32-32-4-n64-3s.json",
+        "metrics": {
+          "soc": 3197,
+          "sol": 3116,
+          "makespan": 94,
+          "individual_distance_lower_bound": 2884,
+          "agents": 64,
+          "checked_timesteps": 95
+        },
+        "elapsed_seconds": 3.029081106185913,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/maze-32-32-4.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/maze-32-32-4-random-1.scen",
+          "-N",
+          "64",
+          "-s",
+          "0",
+          "-t",
+          "3",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/maze-32-32-4-n64-3s.txt"
+        ]
+      },
+      "6": {
+        "status": "verified",
+        "certificate": "results/baselines/maze-32-32-4-n64-6s.json",
+        "metrics": {
+          "soc": 3197,
+          "sol": 3107,
+          "makespan": 92,
+          "individual_distance_lower_bound": 2884,
+          "agents": 64,
+          "checked_timesteps": 93
+        },
+        "elapsed_seconds": 6.036343097686768,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/maze-32-32-4.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/maze-32-32-4-random-1.scen",
+          "-N",
+          "64",
+          "-s",
+          "0",
+          "-t",
+          "6",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/maze-32-32-4-n64-6s.txt"
+        ]
+      }
+    },
+    "inherited": "results/baselines/maze-32-32-4-n64-3s.json"
+  },
+  {
+    "id": "maze-32-32-4-n128",
+    "split": "heldout",
+    "instance": "data/instances/maze-32-32-4-n128.json",
+    "runs": {
+      "3": {
+        "status": "verified",
+        "certificate": "results/baselines/maze-32-32-4-n128-3s.json",
+        "metrics": {
+          "soc": 8225,
+          "sol": 7817,
+          "makespan": 125,
+          "individual_distance_lower_bound": 5926,
+          "agents": 128,
+          "checked_timesteps": 126
+        },
+        "elapsed_seconds": 3.0350258350372314,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/maze-32-32-4.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/maze-32-32-4-random-1.scen",
+          "-N",
+          "128",
+          "-s",
+          "0",
+          "-t",
+          "3",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/maze-32-32-4-n128-3s.txt"
+        ]
+      },
+      "6": {
+        "status": "verified",
+        "certificate": "results/baselines/maze-32-32-4-n128-6s.json",
+        "metrics": {
+          "soc": 8354,
+          "sol": 7951,
+          "makespan": 128,
+          "individual_distance_lower_bound": 5926,
+          "agents": 128,
+          "checked_timesteps": 129
+        },
+        "elapsed_seconds": 6.0568320751190186,
+        "command": [
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream/main",
+          "-m",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/maps/maze-32-32-4.map",
+          "-i",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/scenarios/maze-32-32-4-random-1.scen",
+          "-N",
+          "128",
+          "-s",
+          "0",
+          "-t",
+          "6",
+          "-o",
+          "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/results/baselines/maze-32-32-4-n128-6s.txt"
+        ]
+      }
+    },
+    "inherited": "results/baselines/maze-32-32-4-n128-3s.json"
+  }
+]

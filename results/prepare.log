@@ -1,0 +1,8 @@
+empty-32-32-n128 {'3': 'verified', '6': 'verified'}
+empty-32-32-n256 {'3': 'verified', '6': 'verified'}
+random-32-32-20-n96 {'3': 'verified', '6': 'verified'}
+random-32-32-20-n192 {'3': 'verified', '6': 'verified'}
+room-32-32-4-n96 {'3': 'verified', '6': 'verified'}
+room-32-32-4-n160 {'3': 'verified', '6': 'verified'}
+maze-32-32-4-n64 {'3': 'verified', '6': 'verified'}
+maze-32-32-4-n128 {'3': 'verified', '6': 'verified'}

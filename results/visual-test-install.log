@@ -1,0 +1,8 @@
+Resolved 4 packages in 844ms
+Downloading playwright (41.0MiB)
+ Downloaded playwright
+Prepared 3 packages in 1.90s
+Installed 3 packages in 43ms
+ + greenlet==3.5.6
+ + playwright==1.64.0
+ + pyee==14.0.0

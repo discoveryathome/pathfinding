@@ -1,0 +1,14 @@
+Checked 3 packages in 26ms
+-- Configuring done (0.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/upstream
+[ 56%] Built target lacam3
+[ 65%] Built target main
+[ 68%] Built target test_dist_table
+[ 75%] Built target test_graph
+[ 81%] Built target test_instance
+[ 87%] Built target test_post_processing
+[ 93%] Built target test_planner
+[100%] Built target test_sipp
+Activate with: source .venv/bin/activate
+Then run: python tools/check.py

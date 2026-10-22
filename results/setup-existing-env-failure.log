@@ -1,0 +1,4 @@
+Using CPython 3.12.11
+Creating virtual environment at: .venv
+error: Failed to create virtual environment
+  Caused by: A virtual environment already exists at `.venv`. Use `--clear` to replace it

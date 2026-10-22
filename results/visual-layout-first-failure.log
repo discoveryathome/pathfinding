@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/tools/test_visual.py", line 26, in <module>
+    assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
