@@ -24,7 +24,7 @@
     "attempts_used": 15,
     "per_agent_limit": 10000
   },
-  "agent_provenance": "Fill in before review",
+  "agent_provenance": "Codex assistant in maintainer session; same author as setup/trials, not an independent donor or scientific reviewer.",
   "independent_review": false,
   "exposed_inputs": true
 }

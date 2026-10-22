@@ -1,0 +1,14 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "cpu_count": 8,
+  "capture_load": [
+    5.4931640625,
+    10.39306640625,
+    15.8544921875
+  ],
+  "performance_context": "Shared machine; timings not CPU isolated; per-round observations retained.",
+  "flags": "Upstream optimized library, assertions retained via -UNDEBUG; Python deterministic repair state caps",
+  "scope": "Round-two author-run computational software experiment; exact witness validity independent of noisy timing"
+}

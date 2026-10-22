@@ -10,8 +10,8 @@ physical-robot result has been established. Intake is open; scientific review is
 Twelve fresh Moving AI scenarios on six maps, 128–256 agents, now supplement the
 original eight cases. Map sizes are 32×32, 48×48 and 64×64. Scenario 2 on empty32,
 random32 and room32 was development; the other nine cases were evaluation. Larger
-maps are new families/sizes; fresh scenarios on prior families are not entirely
-new distribution evidence. Three repair seeds per case are not independent maps.
+maps add new map instances and sizes; fresh scenarios on prior families are not
+entirely new distribution evidence. Three repair seeds per case are not independent maps.
 
 Sixty native runs supplied 57 independently checker-validated witnesses. Unmodified
 LaCAM3 ran for 6 and 12 seconds; the newer SoCS-2025 PIBT preference implementation
