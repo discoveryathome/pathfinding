@@ -22,16 +22,20 @@ def main():
     archive=json.loads((ROOT/'discover/incumbents.json').read_text())
     old=[c for c in archive if c['case'] not in {c['id'] for c in bases}]
     percase=[];trial_primary_gain=0
-    smoke_path=ROOT/'research/round2-smoke/candidate.json'
-    smoke_handoff=json.loads((ROOT/'research/round2-smoke/handoff.json').read_text()) if smoke_path.exists() else None
+    smokes=[]
+    for directory in ['round2-smoke','round2-clean-smoke']:
+        smoke_path=ROOT/f'research/{directory}/candidate.json'
+        if smoke_path.exists():
+            smokes.append((smoke_path,json.loads(smoke_path.with_name('handoff.json').read_text())))
     for case in bases:
         paths=[r['certificate'] for r in case['runs'] if r['status']=='verified']
         paths += [r['certificate'] for r in rows if r['case']==case['id']]
         best_native_sol=min(r['metrics']['sol'] for r in case['runs'] if r['status']=='verified')
         best_trial_sol=min(json.loads((ROOT/p).read_text())['metrics']['sol'] for p in paths)
         trial_primary_gain+=best_native_sol-best_trial_sol
-        if smoke_handoff and smoke_handoff['case']==case['id']:
-            paths.append(str(smoke_path.relative_to(ROOT)))
+        for smoke_path,smoke_handoff in smokes:
+            if smoke_handoff['case']==case['id']:
+                paths.append(str(smoke_path.relative_to(ROOT)))
         candidates=[]
         for path in paths:
             cp=ROOT/path;cert=json.loads(cp.read_text());m=cert['metrics']

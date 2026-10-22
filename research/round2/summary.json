@@ -183,9 +183,9 @@
     }
   ],
   "cases_with_primary_archive_gain": 12,
-  "sum_best_case_primary_gains": 120,
+  "sum_best_case_primary_gains": 122,
   "trial_only_sum_primary_gains": 118,
-  "additional_author_smoke_primary_gain": 2,
+  "additional_author_smoke_primary_gain": 4,
   "cases": [
     {
       "case": "empty-32-32-s2-n256",
@@ -307,12 +307,12 @@
         "makespan": 109
       },
       "archive_best": {
-        "soc": 6478,
-        "sol": 6202,
+        "soc": 6474,
+        "sol": 6200,
         "makespan": 108
       },
-      "primary_gain": 11,
-      "best_path": "research/round2-smoke/candidate.json",
+      "primary_gain": 13,
+      "best_path": "research/round2-clean-smoke/candidate.json",
       "pareto_candidates": 2
     },
     {

@@ -81,6 +81,13 @@ Sources: [LaCAM3](https://github.com/Kei18/lacam3),
 A subsequent author-run 30,000-state contribution inherited the improved maze
 archive and found two further SOL units (6,204 → 6,202), two SOC units (6,480 →
 6,478), and one makespan step (109 → 108). Its verified candidate is now inherited.
-This raises the current archive gain to 120 units across the 12 new cases; the
+This first smoke raised the archive gain to 120 units across the 12 new cases; the
 predeclared 90-run experiment remains 118. It demonstrates incremental handoff
 progress, not an independent donor study. Evidence: ../round2-smoke/.
+
+A clean Git-bundle checkout then ran a separately bounded 3,000-state author smoke
+(seed 503), improving that inherited plan from SOL 6,202 to 6,200 and SOC 6,478
+to 6,474, with makespan unchanged at 108. The candidate was verified and incorporated.
+The release archive therefore gains **122 summed SOL units** over the native
+starting plans: 118 in the declared experiment and 4 in the two handoff smokes.
+This is operational replication by the same author, not independent review.

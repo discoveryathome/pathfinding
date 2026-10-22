@@ -103,8 +103,8 @@
   "native_runs": 60,
   "native_verified": 57,
   "cases_with_primary_archive_gain": 12,
-  "sum_best_case_primary_gains": 120,
+  "sum_best_case_primary_gains": 122,
   "trial_only_sum_primary_gains": 118,
-  "additional_author_smoke_primary_gain": 2,
+  "additional_author_smoke_primary_gain": 4,
   "replay_equal": true
 }

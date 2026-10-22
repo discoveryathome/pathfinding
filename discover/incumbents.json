@@ -358,11 +358,11 @@
     "instance": "data/round2/maze-32-32-4-s3-n128.json",
     "pareto_candidates": [
       {
-        "path": "research/round2-smoke/candidate.json",
-        "sha256": "a29efeead23e34be5d5bcbdedf4f8f3be0b0c0537d1a16371180506e9b7f1691",
+        "path": "research/round2-clean-smoke/candidate.json",
+        "sha256": "e99be2c8b8d6ffd498182ffc6b286fd766192b61002beee0328691f7e27af6b4",
         "metrics": {
-          "soc": 6478,
-          "sol": 6202,
+          "soc": 6474,
+          "sol": 6200,
           "makespan": 108
         }
       },

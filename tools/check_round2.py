@@ -25,8 +25,9 @@ def main():
             source=ROOT/row['path'];assert hashlib.sha256(source.read_bytes()).hexdigest()==row['sha256']
             result=check(ROOT/case['instance'],json.loads(source.read_text()))
             assert all(result[k]==row['metrics'][k] for k in ['soc','sol','makespan'])
-    smoke=ROOT/'research/round2-smoke'
-    if smoke.exists():
+    for directory in ['round2-smoke','round2-clean-smoke']:
+        smoke=ROOT/f'research/{directory}'
+        if not smoke.exists():continue
         handoff=json.loads((smoke/'handoff.json').read_text())
         case=next(c for c in json.loads((ROOT/'discover/incumbents.json').read_text()) if c['case']==handoff['case'])
         cert=json.loads((smoke/'candidate.json').read_text());check(ROOT/case['instance'],cert);count+=1

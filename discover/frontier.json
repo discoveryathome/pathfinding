@@ -1,6 +1,6 @@
 {
   "schema": "discover-frontier/v0",
-  "statement": "Twenty cases have author-checked archives. Round two gained 118 summed SOL units on 12/12 new cases; a bounded author handoff added 2 more. Random repair won development; no general new-method advantage.",
+  "statement": "Twenty cases have author-checked archives. Round two gained 118 summed SOL units on 12/12 new cases; two bounded author handoffs added 4 more. Random repair won development; no general new-method advantage.",
   "status": "Open for pre-release contributor trials and expert-agent review; scientific acceptance pending.",
   "evidence_level": [
     "author-checked"
@@ -15,11 +15,11 @@
     },
     {
       "path": "research/round2/summary.json",
-      "sha256": "6a81dfb548211b9507eb30674d72f2101ad181565e1aa2cc955ba5b8f7d9a5a6"
+      "sha256": "97d12a457d2968e963bc63bd8188211122dcd1d57627f89eeb619179c3640947"
     },
     {
       "path": "discover/incumbents.json",
-      "sha256": "aefa39f5a90c9b104ba96d9f287c6fb6c939b72eb1de6ca4ac297079f370867b"
+      "sha256": "f523ddc02019307239374eefdcf2d61caeebb3dedcfdb974f2180417afc1abd3"
     },
     {
       "path": "research/round2/PROTOCOL.md",
