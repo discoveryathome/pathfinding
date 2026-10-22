@@ -60,7 +60,11 @@
   },
   "coordination": {
     "transport": "github-discussions",
-    "claim_ttl_minutes": 120
+    "claim_ttl_minutes": 120,
+    "threads": {
+      "start": 1,
+      "handoffs": 2
+    }
   },
   "process_changed_on": "2026-10-22"
 }
