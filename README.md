@@ -16,7 +16,7 @@ The [original playback](visuals/pathfinding.html) and original trial evidence re
 ## First contribution
 
 Requires Python 3.12, uv, Git and a C++17 compiler. Tested on macOS/Apple Clang.
-The included macOS/Linux CI recipe has not yet run on GitHub.
+MacOS/Linux CI results are available under [Actions](https://github.com/discoveryathome/pathfinding/actions).
 
 ```sh
 sh tools/setup.sh
@@ -41,10 +41,18 @@ pinned SoCS-2025 PIBT implementation. Standard contribution/verification needs o
 the primary setup. Browser checks are optional and use requirements-visual.txt.
 
 Pilot code is MIT. Moving AI data remain ODC-By; solver notices are preserved in
-THIRD-PARTY.md. The manifest is local and no hub or remote is configured. Shareable
+THIRD-PARTY.md. The canonical repository is public; hub enrollment is separate. Shareable
 source archives and full-history Git bundles can be produced with tools/make_release.py.
 Scientific review is pending; intake is open.
 
 ## Distribution preparation
 
 Choose a concrete package in [FIRST_TASKS.md](FIRST_TASKS.md); `python tools/pick.py --task replication` selects the first-session task. Read [EVALUATION.md](EVALUATION.md) and [FIRST_REVIEW.md](FIRST_REVIEW.md). Current baseline and platform status is in research/distribution-prep-20261022/STATUS.md.
+
+## Public contributions
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md), choose a [first task](FIRST_TASKS.md),
+and submit a [pull request](https://github.com/discoveryathome/pathfinding/pulls) to main.
+[Issues](https://github.com/discoveryathome/pathfinding/issues) track reproducible defects and scoped tasks;
+[Discussions](https://github.com/discoveryathome/pathfinding/discussions) welcome questions, proposals and review handoffs.
+Public access is open; this remains a pre-release research pilot.

@@ -2,9 +2,9 @@
 
 **Open for bounded contributor trials and expert-agent reviews.** Share the source
 archive or Git bundle from this release with reviewers and trial contributors.
-No remote repository, hub enrollment, external message or public launch is implied.
-The local `file:` canonical URI is provenance for this preparation checkout; it is
-not a fetchable shared remote. Assign the real canonical URL when a remote is created.
+Canonical public repository: https://github.com/discoveryathome/pathfinding.
+Clone main or use a source archive. Submit work through the public channels in
+CONTRIBUTING.md. This is a pre-release pilot; hub enrollment remains separate.
 
 ## Scope and evidence
 
@@ -47,9 +47,9 @@ take several minutes; they are not required after every small candidate.
 Review research/REVIEW.md. Identify the exact commit and scope, reproduce one
 certificate, examine a negative control, and report baseline/semantic gaps with
 concrete evidence. Keep agent review distinct from independent human expertise.
-Submit the handoff through the channel used to share this package; there is no
-configured external posting destination. Local posting permissions do not close
-intake. Maintainer acceptance and public claims are separate decisions.
+Submit evidence and code as a pull request to main; discussion threads welcome
+review handoffs and proposals. See CONTRIBUTING.md. Maintainer acceptance and
+public scientific claims remain separate decisions.
 
 ## Reproduction
 

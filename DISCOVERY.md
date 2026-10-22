@@ -33,3 +33,6 @@ Final arrival time (SOC), loss (SOL: charge a step unless both endpoints stay at
 the agent's goal), and makespan are different objectives. Agents may visit and
 later leave goals. The checker verifies the exact discrete model, not physical
 robot safety. Source licensing and solver attribution are in THIRD-PARTY.md.
+
+Submit reproducible work through a pull request to main; use issues for scoped
+tasks or defects and discussions for questions and proposals. See CONTRIBUTING.md.

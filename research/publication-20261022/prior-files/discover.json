@@ -1,0 +1,59 @@
+{
+  "schema": "discover/v0",
+  "title": "Multi-agent pathfinding \u2014 pre-release pilot",
+  "summary": "Improve collision-free grid plans under bounded search budgets. Local trials and expert-agent reviews are open.",
+  "domains": [
+    "algorithms",
+    "multi-agent planning",
+    "combinatorial optimization"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Douglas Colkitt",
+      "github": "Mister-Meeseeks"
+    }
+  ],
+  "canonical_repo": "file:///Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding",
+  "entry": {
+    "agents": "AGENTS.md",
+    "project": "DISCOVERY.md",
+    "brief": "research/ASSESSMENT.md"
+  },
+  "frontier": "discover/frontier.json",
+  "catalog": "discover/catalog.json",
+  "priority_log": "discover/priority-log.md",
+  "ledger": "discover/ledger.jsonl",
+  "packages": "research/*/",
+  "session": {
+    "default_minutes": 30,
+    "orient_fraction": 0.2,
+    "verify_fraction": 0.3
+  },
+  "permissions": {
+    "post_messages": false,
+    "open_prs": false,
+    "maintainer_only": [
+      "accept-results",
+      "publish",
+      "change-frontier"
+    ]
+  },
+  "verification_profile": "exact-certificate",
+  "hubs": [],
+  "credit": {
+    "policy": "Credit original solvers, methods, Moving AI benchmarks and substantive contributors. Disclose agent assistance; preserve source/data notices."
+  },
+  "review": {
+    "paused": false,
+    "note": "Open for pre-release trials and expert-agent reviews. Author-run round two complete; scientific acceptance pending. No external posting destination configured."
+  },
+  "picker": {
+    "command": [
+      "python",
+      "tools/pick.py",
+      "--seed",
+      "{seed}"
+    ]
+  }
+}

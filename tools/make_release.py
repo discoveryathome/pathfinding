@@ -13,7 +13,7 @@ if archive.exists() or bundle.exists():raise SystemExit('Release files already e
 subprocess.run(['git','archive','--format=tar.gz','--prefix='+ROOT.name+'/', '-o',str(archive),commit],cwd=ROOT,check=True)
 subprocess.run(['git','bundle','create',str(bundle),'--all'],cwd=ROOT,check=True)
 subprocess.run(['git','bundle','verify',str(bundle)],cwd=ROOT,check=True,capture_output=True)
-receipt={'project':ROOT.name,'commit':commit,'stage':'pre-release contributor/expert review','remote_created':False,
+receipt={'project':ROOT.name,'commit':commit,'stage':'pre-release contributor/expert review','canonical_repo':json.loads((ROOT/'discover.json').read_text())['canonical_repo'],
          'intake':'open','independent_review':'pending','artifacts':[]}
 for file in [archive,bundle]:receipt['artifacts'].append({'file':file.name,'bytes':file.stat().st_size,'sha256':hashlib.sha256(file.read_bytes()).hexdigest()})
 (out/(name+'-receipt.json')).write_text(json.dumps(receipt,indent=2)+'\n')

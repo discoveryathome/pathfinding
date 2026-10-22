@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions, proposals and research handoffs
+    url: https://github.com/discoveryathome/pathfinding/discussions
+    about: Discuss the project and coordinate contributions.
+  - name: First contribution tasks
+    url: https://github.com/discoveryathome/pathfinding/blob/main/FIRST_TASKS.md
+    about: Choose a bounded task with a concrete deliverable.

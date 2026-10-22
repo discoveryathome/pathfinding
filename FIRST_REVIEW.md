@@ -5,9 +5,9 @@ No such independent session is claimed yet. The local clean-checkout smoke is
 an author test, and alternate oracle code is not an independent reviewer.
 
 Start with README.md and FIRST_TASKS.md only. Install from a clean source archive,
-choose the replication task, and submit its entire output directory through the
-channel by which you received the archive. Do not contact upstream authors or
-post externally as part of this exercise.
+choose the replication task, and submit its entire output directory in a pull
+request to main, with a scoped review in the PR or repository Discussions. Follow
+CONTRIBUTING.md. Contacting upstream authors requires separate authorization.
 
 Record: commit/archive hash; OS/compiler/Python; identity or agent/model and prior
 involvement; time to setup and first verified handoff; every command/failure;
