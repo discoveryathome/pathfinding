@@ -1,0 +1,2 @@
+runtime,num of collisions,solution cost,initial collisions,initial solution cost,sum of distances,iterations,group size,runtime of initial solution,area under curve,LL expanded nodes,LL generated,LL reopened,LL runs,preprocessing runtime,solver name,instance name
+0.892724,0,8852,96,8901,5315,17,8,0.331933,16.0857,312193,330929,102617,248,0.029143,InitLNS(PP),/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/round2/maze-32-32-4-random-2.scen

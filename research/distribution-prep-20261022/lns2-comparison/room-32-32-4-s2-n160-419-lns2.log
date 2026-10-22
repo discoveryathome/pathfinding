@@ -1,0 +1,2 @@
+	InitLNS(PP): runtime = 0.854952, iterations = 55, colliding pairs = 0, initial colliding pairs = 51, solution cost = 7882, initial solution cost = 7395, failed iterations = 13
+LNS(PP;PP): runtime = 0.860457, iterations = 1, solution cost = 7882, initial solution cost = 7882, failed iterations = 1

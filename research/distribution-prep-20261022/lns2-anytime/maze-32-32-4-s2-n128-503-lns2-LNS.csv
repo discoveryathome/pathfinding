@@ -1,0 +1,2 @@
+runtime,solution cost,initial solution cost,lower bound,sum of distance,iterations,group size,runtime of initial solution,restart times,area under curve,LL expanded nodes,LL generated,LL reopened,LL runs,preprocessing runtime,solver name,instance name
+6.00013,6918,8852,5315,5315,576,8.03304,1.16256,0,10178,1833272,1857916,637518,4647,0.0355985,LNS(PP;PP),/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/round2/maze-32-32-4-random-2.scen

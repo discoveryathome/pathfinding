@@ -22,3 +22,10 @@ if not a.quick:
   trace=json.loads((ROOT/r['trace']).read_text())
   for item in trace['improvements']:check(ip,{**cert,'paths':item['paths'],'metrics':item['metrics']});count+=1
 print(json.dumps({'passed':True,'intake':'open','scientific_review':'pending','certificates_checked':count,'elapsed_seconds':time.perf_counter()-start}))
+
+# Preserve prior package identities across explicit onboarding/frontier migrations.
+import sys
+root=Path(__file__).resolve().parents[1]
+prior=root/'research/distribution-prep-20261022'
+for path,h in json.loads((prior/'prior-manifest.json').read_text())['sha256'].items():
+ assert any(f.is_file() and hashlib.sha256(f.read_bytes()).hexdigest()==h for f in [root/path,prior/'prior-files'/path]),('historical',path)

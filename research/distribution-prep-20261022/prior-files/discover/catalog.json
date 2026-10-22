@@ -1,0 +1,144 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 2,
+  "assessed_on": "2026-10-22",
+  "status": "Open for local contributions and expert-agent review",
+  "tracks": [
+    {
+      "id": "repair",
+      "weight": 35,
+      "tasks": [
+        {
+          "id": "repair",
+          "question": "Can a new bounded repair improve the current archive without metric regression?",
+          "starting_points": [
+            "research/round2/ASSESSMENT.md",
+            "discover/incumbents.json",
+            "DISTRIBUTION.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "independent certificate check",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correct input binding and all route checks; report SOC, SOL, makespan, failure rates, budget and all attempts. Scientific acceptance remains separate.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Pinned artifacts and schemas pass; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Begin from the current archive; compare to random4 and proximity4. Corridor4 and joint2 are exposed losing development alternatives.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verification",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "verification",
+          "question": "Does an independent audit find a collision, source-binding or metric-accounting defect?",
+          "starting_points": [
+            "research/round2/ASSESSMENT.md",
+            "discover/incumbents.json",
+            "DISTRIBUTION.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "independent certificate check",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correct input binding and all route checks; report SOC, SOL, makespan, failure rates, budget and all attempts. Scientific acceptance remains separate.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Pinned artifacts and schemas pass; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Audit a round-two witness, joint-search control or goal-revisit case; preserve a minimized counterexample.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workloads",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "workloads",
+          "question": "Does a worthwhile fresh workload reveal useful headroom with competitive baselines?",
+          "starting_points": [
+            "research/round2/ASSESSMENT.md",
+            "discover/incumbents.json",
+            "DISTRIBUTION.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "independent certificate check",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correct input binding and all route checks; report SOC, SOL, makespan, failure rates, budget and all attempts. Scientific acceptance remains separate.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Pinned artifacts and schemas pass; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Predeclare new scenarios and matched objectives; reproduce MAPF-LNS2 or another substantial current baseline.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expert-review",
+      "weight": 15,
+      "tasks": [
+        {
+          "id": "expert-review",
+          "question": "Are the baseline set, budgets and small gains a useful research direction?",
+          "starting_points": [
+            "research/round2/ASSESSMENT.md",
+            "discover/incumbents.json",
+            "DISTRIBUTION.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "independent certificate check",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correct input binding and all route checks; report SOC, SOL, makespan, failure rates, budget and all attempts. Scientific acceptance remains separate.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Pinned artifacts and schemas pass; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Review round-two protocol, all failures, archive selection and computation differences; propose one testable next question.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
+          ]
+        }
+      ]
+    }
+  ]
+}

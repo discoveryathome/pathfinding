@@ -57,3 +57,7 @@ Original trial outputs remain frozen. Re-run an experiment in a separate copy an
 use a fresh research package; native deadlines and performance timings can differ.
 Pinned sources, benchmark licenses and data attribution are in THIRD-PARTY.md and
 research/round2/. A Git bundle preserves both original and current commits.
+
+## Distribution preparation
+
+Choose a concrete package in [FIRST_TASKS.md](FIRST_TASKS.md); `python tools/pick.py --task replication` selects the first-session task. Read [EVALUATION.md](EVALUATION.md) and [FIRST_REVIEW.md](FIRST_REVIEW.md). Current baseline and platform status is in research/distribution-prep-20261022/STATUS.md.

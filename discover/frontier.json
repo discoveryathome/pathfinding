@@ -1,6 +1,6 @@
 {
   "schema": "discover-frontier/v0",
-  "statement": "Twenty cases have author-checked archives. Round two gained 118 summed SOL units on 12/12 new cases; two bounded author handoffs added 4 more. Random repair won development; no general new-method advantage.",
+  "statement": "Twenty cases have author-checked archives. Round two gained 118 summed SOL units on 12/12 new cases; two bounded author handoffs added 4 more. Random repair won development; no general new-method advantage. Distribution preparation adds verified LNS2 metric tradeoffs and stronger pair-conflict lower bounds; internal-objective comparison remains qualified.",
   "status": "Open for pre-release contributor trials and expert-agent review; scientific acceptance pending.",
   "evidence_level": [
     "author-checked"
@@ -19,11 +19,19 @@
     },
     {
       "path": "discover/incumbents.json",
-      "sha256": "f523ddc02019307239374eefdcf2d61caeebb3dedcfdb974f2180417afc1abd3"
+      "sha256": "86a98c908b02fa2b69af9bb63f38915f6e911a9390c3d3dce53dd909d67a744c"
     },
     {
       "path": "research/round2/PROTOCOL.md",
       "sha256": "6453e88d0e068f1d1d67bd1371b1ccece2d7f48b4157edf4b0642fe5a9b31d40"
+    },
+    {
+      "path": "research/distribution-prep-20261022/lns2-anytime/results.json",
+      "sha256": "9a65fbdaae36323648339db827d515b6f7b60ba807615bf19688a813f02159ba"
+    },
+    {
+      "path": "research/distribution-prep-20261022/headroom.json",
+      "sha256": "18a57ffab7f44ae9659ff55f137b02d8313b1a0873839c4090deab2ab300a350"
     }
   ],
   "reproduce": "python tools/check.py",

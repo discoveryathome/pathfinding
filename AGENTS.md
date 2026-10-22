@@ -19,3 +19,7 @@ No remote exists; external posting requires the running user's actual permission
 
 Round two is the current handoff: read DISTRIBUTION.md and research/round2/ASSESSMENT.md.
 Use the current archive/baselines and the bounded contribution command. Intake remains open.
+
+## Distribution preparation
+
+Choose a concrete package in [FIRST_TASKS.md](FIRST_TASKS.md); `python tools/pick.py --task replication` selects the first-session task. Read [EVALUATION.md](EVALUATION.md) and [FIRST_REVIEW.md](FIRST_REVIEW.md). Current baseline and platform status is in research/distribution-prep-20261022/STATUS.md.

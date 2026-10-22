@@ -1,0 +1,19 @@
+name: Candidate verification
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  check:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m venv .venv
+      - run: .venv/bin/python -m pip install -r requirements.txt
+      - run: .venv/bin/python tools/fetch_upstream.py
+      - run: sh tools/build.sh
+      - run: .venv/bin/python tools/check.py
+      - run: .venv/bin/python tools/check_round2.py

@@ -1,40 +1,111 @@
 {
   "schema": "discover-catalog/v0",
-  "priority_revision": 2,
+  "priority_revision": 3,
   "assessed_on": "2026-10-22",
   "status": "Open for local contributions and expert-agent review",
   "tracks": [
     {
-      "id": "repair",
-      "weight": 35,
+      "id": "replication",
+      "weight": 25,
       "tasks": [
         {
-          "id": "repair",
-          "question": "Can a new bounded repair improve the current archive without metric regression?",
+          "id": "replication",
+          "question": "Produce one verified handoff from the current maze incumbent",
           "starting_points": [
-            "research/round2/ASSESSMENT.md",
-            "discover/incumbents.json",
-            "DISTRIBUTION.md"
+            "FIRST_TASKS.md",
+            "EVALUATION.md",
+            "research/distribution-prep-20261022/STATUS.md"
           ],
           "methods": [
             "bounded experiment",
             "independent certificate check",
             "scoped review"
           ],
-          "acceptance_gate": "Correct input binding and all route checks; report SOC, SOL, makespan, failure rates, budget and all attempts. Scientific acceptance remains separate.",
+          "acceptance_gate": "candidate.json, trace.json and handoff.json; verify with tools/verify_candidate.py against data/round2/maze-32-32-4-s3-n128.json. An unchanged valid plan completes the task.",
           "first_step": {
             "command": [
               "python",
               "tools/check.py",
               "--quick"
             ],
-            "expected": "Pinned artifacts and schemas pass; intake open."
+            "expected": "Current source and evidence identities pass; intake open."
           },
-          "bottleneck_link": "research/ASSESSMENT.md",
-          "first_experiment": "Begin from the current archive; compare to random4 and proximity4. Corridor4 and joint2 are exposed losing development alternatives.",
+          "bottleneck_link": "research/distribution-prep-20261022/STATUS.md",
+          "first_experiment": "python tools/contribute.py --case maze-32-32-4-s3-n128 --variant random4 --seed 419 --nodes 3000 --out research/my-first-trial",
           "scope_change_triggers": [
-            "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
-          ]
+            "Record a separate protocol before expanding the declared experiment."
+          ],
+          "budget": "30 minutes; 3,000 popped search states"
+        }
+      ]
+    },
+    {
+      "id": "baseline",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "baseline",
+          "question": "Audit LNS2/LaCAM objective mismatch and common verified metrics",
+          "starting_points": [
+            "FIRST_TASKS.md",
+            "EVALUATION.md",
+            "research/distribution-prep-20261022/STATUS.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "independent certificate check",
+            "scoped review"
+          ],
+          "acceptance_gate": "Reproduce one comparison, check route semantics and report SOC, SOL, makespan, failures, wall/CPU time and source identity. A reproduced failure or budget mismatch is useful.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Current source and evidence identities pass; intake open."
+          },
+          "bottleneck_link": "research/distribution-prep-20261022/STATUS.md",
+          "first_experiment": "python tools/check.py --quick",
+          "scope_change_triggers": [
+            "Record a separate protocol before expanding the declared experiment."
+          ],
+          "budget": "60 minutes; use the fixed baseline protocol, no parameter search"
+        }
+      ]
+    },
+    {
+      "id": "headroom",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "headroom",
+          "question": "Rank current cases by obstacle-aware lower-bound gaps",
+          "starting_points": [
+            "FIRST_TASKS.md",
+            "EVALUATION.md",
+            "research/distribution-prep-20261022/STATUS.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "independent certificate check",
+            "scoped review"
+          ],
+          "acceptance_gate": "Audit one lower bound and identify a case whose remaining gap justifies repair. A loose bound is not evidence that the gap is achievable.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Current source and evidence identities pass; intake open."
+          },
+          "bottleneck_link": "research/distribution-prep-20261022/STATUS.md",
+          "first_experiment": "python tools/headroom.py --out research/headroom-review.json",
+          "scope_change_triggers": [
+            "Record a separate protocol before expanding the declared experiment."
+          ],
+          "budget": "30 minutes; all 20 existing cases"
         }
       ]
     },
@@ -44,99 +115,32 @@
       "tasks": [
         {
           "id": "verification",
-          "question": "Does an independent audit find a collision, source-binding or metric-accounting defect?",
+          "question": "Audit goal revisits and collision rejection",
           "starting_points": [
-            "research/round2/ASSESSMENT.md",
-            "discover/incumbents.json",
-            "DISTRIBUTION.md"
+            "FIRST_TASKS.md",
+            "EVALUATION.md",
+            "research/distribution-prep-20261022/STATUS.md"
           ],
           "methods": [
             "bounded experiment",
             "independent certificate check",
             "scoped review"
           ],
-          "acceptance_gate": "Correct input binding and all route checks; report SOC, SOL, makespan, failure rates, budget and all attempts. Scientific acceptance remains separate.",
+          "acceptance_gate": "Report exact case, claim, commands and outcome; never weaken the checker to accept the witness.",
           "first_step": {
             "command": [
               "python",
               "tools/check.py",
               "--quick"
             ],
-            "expected": "Pinned artifacts and schemas pass; intake open."
+            "expected": "Current source and evidence identities pass; intake open."
           },
-          "bottleneck_link": "research/ASSESSMENT.md",
-          "first_experiment": "Audit a round-two witness, joint-search control or goal-revisit case; preserve a minimized counterexample.",
+          "bottleneck_link": "research/distribution-prep-20261022/STATUS.md",
+          "first_experiment": "python -m pytest -q tests",
           "scope_change_triggers": [
-            "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "workloads",
-      "weight": 25,
-      "tasks": [
-        {
-          "id": "workloads",
-          "question": "Does a worthwhile fresh workload reveal useful headroom with competitive baselines?",
-          "starting_points": [
-            "research/round2/ASSESSMENT.md",
-            "discover/incumbents.json",
-            "DISTRIBUTION.md"
+            "Record a separate protocol before expanding the declared experiment."
           ],
-          "methods": [
-            "bounded experiment",
-            "independent certificate check",
-            "scoped review"
-          ],
-          "acceptance_gate": "Correct input binding and all route checks; report SOC, SOL, makespan, failure rates, budget and all attempts. Scientific acceptance remains separate.",
-          "first_step": {
-            "command": [
-              "python",
-              "tools/check.py",
-              "--quick"
-            ],
-            "expected": "Pinned artifacts and schemas pass; intake open."
-          },
-          "bottleneck_link": "research/ASSESSMENT.md",
-          "first_experiment": "Predeclare new scenarios and matched objectives; reproduce MAPF-LNS2 or another substantial current baseline.",
-          "scope_change_triggers": [
-            "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "expert-review",
-      "weight": 15,
-      "tasks": [
-        {
-          "id": "expert-review",
-          "question": "Are the baseline set, budgets and small gains a useful research direction?",
-          "starting_points": [
-            "research/round2/ASSESSMENT.md",
-            "discover/incumbents.json",
-            "DISTRIBUTION.md"
-          ],
-          "methods": [
-            "bounded experiment",
-            "independent certificate check",
-            "scoped review"
-          ],
-          "acceptance_gate": "Correct input binding and all route checks; report SOC, SOL, makespan, failure rates, budget and all attempts. Scientific acceptance remains separate.",
-          "first_step": {
-            "command": [
-              "python",
-              "tools/check.py",
-              "--quick"
-            ],
-            "expected": "Pinned artifacts and schemas pass; intake open."
-          },
-          "bottleneck_link": "research/ASSESSMENT.md",
-          "first_experiment": "Review round-two protocol, all failures, archive selection and computation differences; propose one testable next question.",
-          "scope_change_triggers": [
-            "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
-          ]
+          "budget": "30 minutes; one minimized counterexample or scoped audit"
         }
       ]
     }

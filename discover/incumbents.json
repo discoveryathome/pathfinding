@@ -302,6 +302,24 @@
           "sol": 5935,
           "makespan": 73
         }
+      },
+      {
+        "path": "research/distribution-prep-20261022/lns2-anytime/room-32-32-4-s2-n160-503-lns2.json",
+        "sha256": "a4e27a472e10854d8ec5247c7d4fec45b4944de27eebf30b9032be24be67d261",
+        "metrics": {
+          "soc": 6314,
+          "sol": 6309,
+          "makespan": 70
+        }
+      },
+      {
+        "path": "research/distribution-prep-20261022/lns2-anytime/room-32-32-4-s2-n160-419-lns2.json",
+        "sha256": "2f209b302bbd5e008d0289a48d3a6736b35470e10a63532b5958646f1181d2d7",
+        "metrics": {
+          "soc": 6421,
+          "sol": 6412,
+          "makespan": 69
+        }
       }
     ]
   },
@@ -349,6 +367,15 @@
           "soc": 6839,
           "sol": 6558,
           "makespan": 91
+        }
+      },
+      {
+        "path": "research/distribution-prep-20261022/lns2-anytime/maze-32-32-4-s2-n128-419-lns2.json",
+        "sha256": "d97b1c604bc32609418696175082fa555a48ac024494ab794e26e8223b262585",
+        "metrics": {
+          "soc": 6725,
+          "sol": 6725,
+          "makespan": 100
         }
       }
     ]

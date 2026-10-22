@@ -44,3 +44,7 @@ Pilot code is MIT. Moving AI data remain ODC-By; solver notices are preserved in
 THIRD-PARTY.md. The manifest is local and no hub or remote is configured. Shareable
 source archives and full-history Git bundles can be produced with tools/make_release.py.
 Scientific review is pending; intake is open.
+
+## Distribution preparation
+
+Choose a concrete package in [FIRST_TASKS.md](FIRST_TASKS.md); `python tools/pick.py --task replication` selects the first-session task. Read [EVALUATION.md](EVALUATION.md) and [FIRST_REVIEW.md](FIRST_REVIEW.md). Current baseline and platform status is in research/distribution-prep-20261022/STATUS.md.

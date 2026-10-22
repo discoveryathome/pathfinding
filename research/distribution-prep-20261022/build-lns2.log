@@ -1,0 +1,273 @@
+CMake Warning (author) at CMakeLists.txt:1 (project):
+  cmake_minimum_required() should be called prior to this top-level project()
+  call.  Please see the cmake-commands(7) manual for usage documentation of
+  both commands.
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+-- The C compiler identification is AppleClang 21.0.0.21000334
+-- The CXX compiler identification is AppleClang 21.0.0.21000334
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (policy) at CMakeLists.txt:15 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+-- Found Boost: /opt/homebrew/lib/cmake/Boost-1.92.0/BoostConfig.cmake (found version "1.92.0") found components: program_options system filesystem
+CMake Error at CMakeLists.txt:18 (find_package):
+  Could not find a configuration file for package "Eigen3" that is compatible
+  with requested version "3.3".
+
+  The following configuration files were considered but not accepted:
+
+    /opt/homebrew/share/eigen3/cmake/Eigen3Config.cmake, version: 5.0.1
+      The version found is not compatible with the version requested.
+
+
+
+-- Configuring incomplete, errors occurred!
+CMake Warning (author) at CMakeLists.txt:1 (project):
+  cmake_minimum_required() should be called prior to this top-level project()
+  call.  Please see the cmake-commands(7) manual for usage documentation of
+  both commands.
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+CMake Warning (policy) at CMakeLists.txt:15 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/lns2
+[  2%] Building CXX object CMakeFiles/lns.dir/src/AnytimeBCBS.cpp.o
+[  5%] Building CXX object CMakeFiles/lns.dir/src/AnytimeEECBS.cpp.o
+[  7%] Building CXX object CMakeFiles/lns.dir/src/BasicLNS.cpp.o
+[ 10%] Building CXX object CMakeFiles/lns.dir/src/CBS/CBS.cpp.o
+[ 12%] Building CXX object CMakeFiles/lns.dir/src/CBS/CBSHeuristic.cpp.o
+[ 15%] Building CXX object CMakeFiles/lns.dir/src/CBS/CBSNode.cpp.o
+[ 17%] Building CXX object CMakeFiles/lns.dir/src/CBS/Conflict.cpp.o
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/CBS/CBSNode.cpp:51:21: warning: enumeration value 'CONSTRAINT_COUNT' not handled in switch [-Wswitch]
+   51 |             switch (type)
+      |                     ^~~~
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/CBS/CBSNode.cpp:51:21: note: add missing switch cases
+   51 |             switch (type)
+      |                     ^
+   52 |             {
+   53 |                 case constraint_type::LEQLENGTH:
+   54 |                 case constraint_type::POSITIVE_VERTEX:
+   55 |                 case constraint_type::POSITIVE_EDGE:
+   56 |                     cout << constr/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/CBS/Conflict.cpp:10:10: warning: enumeration value 'CONSTRAINT_COUNT' not handled in switch [-Wswitch]aint << ",";
+   57 |                     break;
+   58 |                 case constraint_type::GLENGTH:
+   59 |                 case constraint_type::VERTEX:
+   60 |                 case  constraint_type::EDGE:
+   61 |                 case constraint_type::BARRIER:
+   62 |                 case constraint_type::RANGE:
+   63 |                     if (a == id)
+   64 |                         cout << constraint << ",";
+   65 |                     break;
+   66 |             }
+
+   10 |         switch (get<4>(constraint))
+      |                 ^~~~~~~~~~~~~~~~~~
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/CBS/Conflict.cpp:10:10: note: add missing switch cases
+   10 |         switch (get<4>(constraint))
+      |                 ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/CBS/Conflict.cpp:44:10: warning: enumeration value 'UNKNOWN' not handled in switch [-Wswitch]
+   44 |         switch (conflict.priority)
+      |                 ^~~~~~~~~~~~~~~~~
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/CBS/Conflict.cpp:44:10: note: add missing switch cases
+   44 |         switch (conflict.priority)
+      |                 ^
+   45 |         {
+   46 |                 case conflict_priority::CARDINAL:
+   47 |                         os << "cardinal ";
+   48 |                         break;
+   49 |                 case conflict_priority::PSEUDO_CARDINAL:
+   50 |                         os << "pseudo-cardinal ";
+   51 |                         break;
+   52 |                 case conflict_priority::SEMI:
+   53 |                         os << "semi-cardinal ";
+   54 |                         break;
+   55 |                 case conflict_priority::NON:
+   56 |                         os << "non-cardinal ";
+   57 |                         break;
+   58 |         case conflict_priority::PRIORITY_COUNT:
+1 warning generated.
+2 warnings generated.
+[ 20%] Building CXX object CMakeFiles/lns.dir/src/CBS/ConstraintPropagation.cpp.o
+[ 22%] Building CXX object CMakeFiles/lns.dir/src/CBS/CorridorReasoning.cpp.o
+[ 25%] Building CXX object CMakeFiles/lns.dir/src/CBS/ECBS.cpp.o
+[ 27%] Building CXX object CMakeFiles/lns.dir/src/CBS/GCBS.cpp.o
+[ 30%] Building CXX object CMakeFiles/lns.dir/src/CBS/IncrementalPairwiseMutexPropagation.cpp.o
+[ 32%] Building CXX object CMakeFiles/lns.dir/src/CBS/MDD.cpp.o
+[ 35%] Building CXX object CMakeFiles/lns.dir/src/CBS/MutexReasoning.cpp.o
+[ 37%] Building CXX object CMakeFiles/lns.dir/src/CBS/PBS.cpp.o
+[ 40%] Building CXX object CMakeFiles/lns.dir/src/CBS/RectangleReasoning.cpp.o
+[ 42%] Building CXX object CMakeFiles/lns.dir/src/ConstraintTable.cpp.o
+[ 45%] Building CXX object CMakeFiles/lns.dir/src/InitLNS.cpp.o
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/ConstraintTable.cpp:66:13: warning: enumeration value 'CONSTRAINT_COUNT' not handled in switch [-Wswitch]
+   66 |     switch (type)
+      |             ^~~~
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/ConstraintTable.cpp:66:13: note: add missing switch cases
+   66 |     switch (type)
+      |             ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/InitLNS.cpp:296:10: warning: 'random_shuffle<std::__wrap_iter<int *>>' is deprecated [-Wdeprecated-declarations]
+  296 |     std::random_shuffle(shuffled_agents.begin(), shuffled_agents.end());
+      |          ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shuffle.h:95:23: note: 'random_shuffle<std::__wrap_iter<int *>>' has been explicitly marked deprecated here
+   95 | _LIBCPP_HIDE_FROM_ABI _LIBCPP_DEPRECATED_IN_CXX14 void
+      |                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:534:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX14'
+  534 | #    define _LIBCPP_DEPRECATED_IN_CXX14 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:504:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  504 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/InitLNS.cpp:382:10: warning: 'random_shuffle<std::__wrap_iter<int *>>' is deprecated [-Wdeprecated-declarations]
+  382 |     std::random_shuffle(neighbor.agents.begin(), neighbor.agents.end());
+      |          ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shuffle.h:95:23: note: 'random_shuffle<std::__wrap_iter<int *>>' has been explicitly marked deprecated here
+   95 | _LIBCPP_HIDE_FROM_ABI _LIBCPP_DEPRECATED_IN_CXX14 void
+      |                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:534:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX14'
+  534 | #    define _LIBCPP_DEPRECATED_IN_CXX14 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:504:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  504 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/InitLNS.cpp:636:18: warning: 'random_shuffle<std::__wrap_iter<int *>>' is deprecated [-Wdeprecated-declarations]
+  636 |             std::random_shuffle(shuffled_agents.begin(), shuffled_agents.end());
+      |                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shuffle.h:95:23: note: 'random_shuffle<std::__wrap_iter<int *>>' has been explicitly marked deprecated here
+   95 | _LIBCPP_HIDE_FROM_ABI _LIBCPP_DEPRECATED_IN_CXX14 void
+      |                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:534:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX14'
+  534 | #    define _LIBCPP_DEPRECATED_IN_CXX14 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:504:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  504 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/InitLNS.cpp:642:18: warning: 'random_shuffle<std::__wrap_iter<int *>>' is deprecated [-Wdeprecated-declarations]
+  642 |             std::random_shuffle(shuffled_agents.begin(), shuffled_agents.end());
+      |                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shuffle.h:95:23: note: 'random_shuffle<std::__wrap_iter<int *>>' has been explicitly marked deprecated here
+   95 | _LIBCPP_HIDE_FROM_ABI _LIBCPP_DEPRECATED_IN_CXX14 void
+      |                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:534:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX14'
+  534 | #    define _LIBCPP_DEPRECATED_IN_CXX14 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:504:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  504 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+1 warning generated.
+[ 47%] Building CXX object CMakeFiles/lns.dir/src/Instance.cpp.o
+4 warnings generated.
+[ 50%] Building CXX object CMakeFiles/lns.dir/src/LNS.cpp.o
+[ 52%] Building CXX object CMakeFiles/lns.dir/src/PIBT/graph.cpp.o
+[ 55%] Building CXX object CMakeFiles/lns.dir/src/PIBT/grid.cpp.o
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/LNS.cpp:125:26: warning: 'random_shuffle<std::__wrap_iter<int *>>' is deprecated [-Wdeprecated-declarations]
+  125 |                     std::random_shuffle(neighbor.agents.begin(), neighbor.agents.end());
+      |                          ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shuffle.h:95:23: note: 'random_shuffle<std::__wrap_iter<int *>>' has been explicitly marked deprecated here
+   95 | _LIBCPP_HIDE_FROM_ABI _LIBCPP_DEPRECATED_IN_CXX14 void
+      |                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:534:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX14'
+  534 | #    define _LIBCPP_DEPRECATED_IN_CXX14 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:504:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  504 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/LNS.cpp:356:10: warning: 'random_shuffle<std::__wrap_iter<int *>>' is deprecated [-Wdeprecated-declarations]
+  356 |     std::random_shuffle(shuffled_agents.begin(), shuffled_agents.end());
+      |          ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shuffle.h:95:23: note: 'random_shuffle<std::__wrap_iter<int *>>' has been explicitly marked deprecated here
+   95 | _LIBCPP_HIDE_FROM_ABI _LIBCPP_DEPRECATED_IN_CXX14 void
+      |                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:534:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX14'
+  534 | #    define _LIBCPP_DEPRECATED_IN_CXX14 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:504:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  504 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/LNS.cpp:420:10: warning: 'random_shuffle<std::__wrap_iter<int *>>' is deprecated [-Wdeprecated-declarations]
+  420 |     std::random_shuffle(shuffled_agents.begin(), shuffled_agents.end());
+      |          ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shuffle.h:95:23: note: 'random_shuffle<std::__wrap_iter<int *>>' has been explicitly marked deprecated here
+   95 | _LIBCPP_HIDE_FROM_ABI _LIBCPP_DEPRECATED_IN_CXX14 void
+      |                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:534:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX14'
+  534 | #    define _LIBCPP_DEPRECATED_IN_CXX14 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:504:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  504 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/LNS.cpp:437:11: warning: 'random_shuffle<std::__wrap_iter<int *>>' is deprecated [-Wdeprecated-declarations]
+  437 |      std::random_shuffle(shuffled_agents.begin(), shuffled_agents.end());
+      |           ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shuffle.h:95:23: note: 'random_shuffle<std::__wrap_iter<int *>>' has been explicitly marked deprecated here
+   95 | _LIBCPP_HIDE_FROM_ABI _LIBCPP_DEPRECATED_IN_CXX14 void
+      |                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:534:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX14'
+  534 | #    define _LIBCPP_DEPRECATED_IN_CXX14 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:504:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  504 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/LNS.cpp:452:10: warning: 'random_shuffle<std::__wrap_iter<int *>>' is deprecated [-Wdeprecated-declarations]
+  452 |     std::random_shuffle(shuffled_agents.begin(), shuffled_agents.end());
+      |          ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shuffle.h:95:23: note: 'random_shuffle<std::__wrap_iter<int *>>' has been explicitly marked deprecated here
+   95 | _LIBCPP_HIDE_FROM_ABI _LIBCPP_DEPRECATED_IN_CXX14 void
+      |                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:534:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX14'
+  534 | #    define _LIBCPP_DEPRECATED_IN_CXX14 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:504:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  504 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/vendor/mapf-lns2/src/LNS.cpp:592:14: warning: 'random_shuffle<std::__wrap_iter<int *>>' is deprecated [-Wdeprecated-declarations]
+  592 |         std::random_shuffle(neighbor.agents.begin(), neighbor.agents.end());
+      |              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shuffle.h:95:23: note: 'random_shuffle<std::__wrap_iter<int *>>' has been explicitly marked deprecated here
+   95 | _LIBCPP_HIDE_FROM_ABI _LIBCPP_DEPRECATED_IN_CXX14 void
+      |                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:534:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX14'
+  534 | #    define _LIBCPP_DEPRECATED_IN_CXX14 _LIBCPP_DEPRECATED
+      |                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:504:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+  504 | #      define _LIBCPP_DEPRECATED __attribute__((__deprecated__))
+      |                                                 ^
+[ 57%] Building CXX object CMakeFiles/lns.dir/src/PIBT/mapf.cpp.o
+[ 60%] Building CXX object CMakeFiles/lns.dir/src/PIBT/node.cpp.o
+6 warnings generated.
+[ 62%] Building CXX object CMakeFiles/lns.dir/src/PIBT/pibt.cpp.o
+[ 65%] Building CXX object CMakeFiles/lns.dir/src/PIBT/pibt_agent.cpp.o
+[ 67%] Building CXX object CMakeFiles/lns.dir/src/PIBT/pps.cpp.o
+[ 70%] Building CXX object CMakeFiles/lns.dir/src/PIBT/problem.cpp.o
+[ 72%] Building CXX object CMakeFiles/lns.dir/src/PIBT/simplegrid.cpp.o
+[ 75%] Building CXX object CMakeFiles/lns.dir/src/PIBT/solver.cpp.o
+[ 77%] Building CXX object CMakeFiles/lns.dir/src/PIBT/task.cpp.o
+[ 82%] Building CXX object CMakeFiles/lns.dir/src/PathTable.cpp.o
+[ 82%] Building CXX object CMakeFiles/lns.dir/src/PIBT/winpibt.cpp.o
+[ 85%] Building CXX object CMakeFiles/lns.dir/src/ReservationTable.cpp.o
+[ 87%] Building CXX object CMakeFiles/lns.dir/src/SIPP.cpp.o
+[ 90%] Building CXX object CMakeFiles/lns.dir/src/SingleAgentSolver.cpp.o
+[ 92%] Building CXX object CMakeFiles/lns.dir/src/SpaceTimeAStar.cpp.o
+[ 95%] Building CXX object CMakeFiles/lns.dir/src/common.cpp.o
+[ 97%] Building CXX object CMakeFiles/lns.dir/src/driver.cpp.o
+[100%] Linking CXX executable lns
+[100%] Built target lns

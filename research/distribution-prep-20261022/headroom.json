@@ -1,0 +1,4698 @@
+[
+  {
+    "case": "maze-32-32-4-n128",
+    "instance_sha256": "7e7552052ec38ba31bb0cccaf2b5a0ed625b389a882c0a30d3e639aad9b450dc",
+    "incumbent": {
+      "source": "random4-seed29",
+      "path": "results/repair/maze-32-32-4-n128-random4-s29.json",
+      "metrics": {
+        "soc": 8225,
+        "sol": 7815,
+        "makespan": 125
+      },
+      "sha256": "3252b87901a11be179737867b595060b01f84b4f285be35cdadc6c5c52bfab72"
+    },
+    "metrics": {
+      "soc": 8225,
+      "sol": 7815,
+      "makespan": 125
+    },
+    "individual_distance_bound": 5926,
+    "pair_conflict_bound": 5969,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          4,
+          7
+        ],
+        "time": 9,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          1,
+          13
+        ],
+        "time": 31,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          3,
+          15
+        ],
+        "time": 30,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          14,
+          19
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          18,
+          29
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          20,
+          30
+        ],
+        "time": 18,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          8,
+          37
+        ],
+        "time": 29,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          6,
+          42
+        ],
+        "time": 29,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          21,
+          48
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          22,
+          50
+        ],
+        "time": 24,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          10,
+          52
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          9,
+          54
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          40,
+          56
+        ],
+        "time": 31,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          51,
+          58
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          24,
+          64
+        ],
+        "time": 22,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          49,
+          66
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          41,
+          74
+        ],
+        "time": 13,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          55,
+          76
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          46,
+          77
+        ],
+        "time": 21,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          34,
+          78
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          60,
+          79
+        ],
+        "time": 25,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          12,
+          81
+        ],
+        "time": 32,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          69,
+          84
+        ],
+        "time": 15,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          71,
+          85
+        ],
+        "time": 30,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          86,
+          89
+        ],
+        "time": 28,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          26,
+          90
+        ],
+        "time": 26,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          11,
+          93
+        ],
+        "time": 30,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          38,
+          94
+        ],
+        "time": 7,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          72,
+          98
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          28,
+          100
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          39,
+          102
+        ],
+        "time": 32,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          75,
+          108
+        ],
+        "time": 30,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          92,
+          110
+        ],
+        "time": 2,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          25,
+          111
+        ],
+        "time": 18,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          106,
+          113
+        ],
+        "time": 9,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          95,
+          114
+        ],
+        "time": 29,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          112,
+          117
+        ],
+        "time": 30,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          35,
+          119
+        ],
+        "time": 7,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          99,
+          121
+        ],
+        "time": 29,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          91,
+          122
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          68,
+          124
+        ],
+        "time": 24,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          44,
+          125
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          47,
+          127
+        ],
+        "time": 21,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 290,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 1846
+  },
+  {
+    "case": "room-32-32-4-s3-n160",
+    "instance_sha256": "3e5b3d3d25c30bc6e3d066474b9cd4669e2cac7175aa22bff33d196a5ed743b7",
+    "incumbent": {
+      "path": "research/round2/repair/room-32-32-4-s3-n160-random4-307.json",
+      "sha256": "4de3c337b830d55d1424e7b6ca896b7966f45c54d7d33f6f99b0d743d407ce14",
+      "metrics": {
+        "soc": 6419,
+        "sol": 5809,
+        "makespan": 71
+      }
+    },
+    "metrics": {
+      "soc": 6419,
+      "sol": 5809,
+      "makespan": 71
+    },
+    "individual_distance_bound": 3936,
+    "pair_conflict_bound": 3998,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          2,
+          3
+        ],
+        "time": 25,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          10,
+          19
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          20,
+          21
+        ],
+        "time": 18,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          1,
+          22
+        ],
+        "time": 2,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          0,
+          24
+        ],
+        "time": 16,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          23,
+          29
+        ],
+        "time": 16,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          17,
+          30
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          12,
+          31
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          28,
+          32
+        ],
+        "time": 10,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          26,
+          34
+        ],
+        "time": 5,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          9,
+          36
+        ],
+        "time": 12,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          16,
+          38
+        ],
+        "time": 8,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          14,
+          39
+        ],
+        "time": 2,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          6,
+          41
+        ],
+        "time": 21,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          35,
+          43
+        ],
+        "time": 29,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          18,
+          46
+        ],
+        "time": 28,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          27,
+          50
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          13,
+          52
+        ],
+        "time": 25,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          48,
+          54
+        ],
+        "time": 25,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          25,
+          55
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          44,
+          58
+        ],
+        "time": 30,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          33,
+          59
+        ],
+        "time": 9,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          4,
+          63
+        ],
+        "time": 30,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          11,
+          70
+        ],
+        "time": 10,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          68,
+          72
+        ],
+        "time": 25,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          62,
+          74
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          67,
+          75
+        ],
+        "time": 11,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          64,
+          76
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          7,
+          81
+        ],
+        "time": 28,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          51,
+          84
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          79,
+          86
+        ],
+        "time": 19,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          82,
+          87
+        ],
+        "time": 12,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          85,
+          88
+        ],
+        "time": 10,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          5,
+          89
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          42,
+          91
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          40,
+          92
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          60,
+          93
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          80,
+          101
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          45,
+          103
+        ],
+        "time": 2,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          57,
+          104
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          8,
+          105
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          94,
+          106
+        ],
+        "time": 22,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          15,
+          107
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          66,
+          109
+        ],
+        "time": 16,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          99,
+          110
+        ],
+        "time": 26,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          111,
+          114
+        ],
+        "time": 7,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          113,
+          115
+        ],
+        "time": 14,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          77,
+          123
+        ],
+        "time": 13,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          56,
+          124
+        ],
+        "time": 3,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          118,
+          126
+        ],
+        "time": 15,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          96,
+          127
+        ],
+        "time": 14,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          71,
+          131
+        ],
+        "time": 31,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          119,
+          132
+        ],
+        "time": 14,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          122,
+          134
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          133,
+          141
+        ],
+        "time": 30,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          61,
+          142
+        ],
+        "time": 28,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          78,
+          147
+        ],
+        "time": 16,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          145,
+          148
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          129,
+          149
+        ],
+        "time": 10,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          143,
+          153
+        ],
+        "time": 6,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          152,
+          155
+        ],
+        "time": 13,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          102,
+          157
+        ],
+        "time": 23,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 432,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 1811
+  },
+  {
+    "case": "room-32-32-4-n160",
+    "instance_sha256": "9e77450d14186641cbefb86206db2d944ad9fe3f9d1c777d5654ce4d19e07304",
+    "incumbent": {
+      "source": "LaCAM3-6s",
+      "path": "results/baselines/room-32-32-4-n160-6s.json",
+      "metrics": {
+        "soc": 6185,
+        "sol": 5732,
+        "makespan": 68
+      },
+      "sha256": "51c2c56f97bb672e6b9174e8597d8114be5d6f984a3cd53a8fbbb5d233040b47"
+    },
+    "metrics": {
+      "soc": 6185,
+      "sol": 5732,
+      "makespan": 68
+    },
+    "individual_distance_bound": 3952,
+    "pair_conflict_bound": 4008,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          4,
+          6
+        ],
+        "time": 2,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          11,
+          27
+        ],
+        "time": 14,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          8,
+          28
+        ],
+        "time": 30,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          13,
+          29
+        ],
+        "time": 4,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          21,
+          31
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          17,
+          32
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          1,
+          34
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          20,
+          35
+        ],
+        "time": 21,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          12,
+          36
+        ],
+        "time": 23,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          5,
+          39
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          40,
+          46
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          15,
+          49
+        ],
+        "time": 31,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          38,
+          50
+        ],
+        "time": 14,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          10,
+          51
+        ],
+        "time": 21,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          3,
+          52
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          18,
+          56
+        ],
+        "time": 8,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          37,
+          58
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          14,
+          59
+        ],
+        "time": 2,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          22,
+          62
+        ],
+        "time": 15,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          64,
+          66
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          48,
+          69
+        ],
+        "time": 16,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          19,
+          71
+        ],
+        "time": 3,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          2,
+          73
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          55,
+          78
+        ],
+        "time": 18,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          43,
+          82
+        ],
+        "time": 23,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          24,
+          87
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          80,
+          90
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          26,
+          92
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          74,
+          93
+        ],
+        "time": 2,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          44,
+          94
+        ],
+        "time": 28,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          7,
+          95
+        ],
+        "time": 11,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          86,
+          96
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          91,
+          101
+        ],
+        "time": 11,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          23,
+          103
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          25,
+          105
+        ],
+        "time": 17,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          42,
+          109
+        ],
+        "time": 8,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          67,
+          112
+        ],
+        "time": 9,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          45,
+          114
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          65,
+          116
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          68,
+          118
+        ],
+        "time": 5,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          110,
+          119
+        ],
+        "time": 10,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          77,
+          120
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          113,
+          121
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          81,
+          122
+        ],
+        "time": 15,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          70,
+          124
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          99,
+          129
+        ],
+        "time": 23,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          85,
+          132
+        ],
+        "time": 26,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          88,
+          135
+        ],
+        "time": 22,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          61,
+          136
+        ],
+        "time": 2,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          98,
+          137
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          133,
+          144
+        ],
+        "time": 26,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          104,
+          147
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          139,
+          149
+        ],
+        "time": 22,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          141,
+          150
+        ],
+        "time": 4,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          83,
+          152
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          63,
+          159
+        ],
+        "time": 32,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 332,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 1724
+  },
+  {
+    "case": "room-32-32-4-s2-n160",
+    "instance_sha256": "3c2067dc9bdadfdf25faa8dbb62b04bba68599bdd661acf1d97d2eea4407537e",
+    "incumbent": {
+      "path": "research/round2/repair/room-32-32-4-s2-n160-random4-101.json",
+      "sha256": "f2bd5f400176b08be1c7a5c2ac8183aa5c4d9e96301953487bb4027e2cd5b948",
+      "metrics": {
+        "soc": 6659,
+        "sol": 5901,
+        "makespan": 74
+      }
+    },
+    "metrics": {
+      "soc": 6659,
+      "sol": 5901,
+      "makespan": 74
+    },
+    "individual_distance_bound": 4139,
+    "pair_conflict_bound": 4200,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          3,
+          5
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          6,
+          11
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          10,
+          16
+        ],
+        "time": 21,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          15,
+          21
+        ],
+        "time": 12,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          7,
+          22
+        ],
+        "time": 12,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          18,
+          27
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          20,
+          28
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          14,
+          31
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          0,
+          33
+        ],
+        "time": 12,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          1,
+          36
+        ],
+        "time": 2,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          25,
+          39
+        ],
+        "time": 23,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          12,
+          40
+        ],
+        "time": 7,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          9,
+          41
+        ],
+        "time": 8,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          23,
+          45
+        ],
+        "time": 5,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          35,
+          46
+        ],
+        "time": 8,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          26,
+          49
+        ],
+        "time": 25,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          13,
+          50
+        ],
+        "time": 24,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          19,
+          53
+        ],
+        "time": 19,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          51,
+          55
+        ],
+        "time": 22,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          43,
+          59
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          17,
+          60
+        ],
+        "time": 5,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          58,
+          62
+        ],
+        "time": 22,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          48,
+          66
+        ],
+        "time": 3,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          61,
+          70
+        ],
+        "time": 26,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          29,
+          71
+        ],
+        "time": 15,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          56,
+          72
+        ],
+        "time": 20,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          68,
+          74
+        ],
+        "time": 9,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          8,
+          76
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          37,
+          82
+        ],
+        "time": 7,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          67,
+          83
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          64,
+          84
+        ],
+        "time": 25,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          79,
+          89
+        ],
+        "time": 19,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          77,
+          91
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          90,
+          92
+        ],
+        "time": 19,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          57,
+          94
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          54,
+          96
+        ],
+        "time": 2,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          87,
+          99
+        ],
+        "time": 32,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          86,
+          100
+        ],
+        "time": 24,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          78,
+          103
+        ],
+        "time": 13,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          95,
+          105
+        ],
+        "time": 10,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          80,
+          106
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          73,
+          108
+        ],
+        "time": 8,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          30,
+          109
+        ],
+        "time": 2,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          63,
+          118
+        ],
+        "time": 10,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          113,
+          119
+        ],
+        "time": 22,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          98,
+          121
+        ],
+        "time": 19,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          47,
+          122
+        ],
+        "time": 6,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          102,
+          125
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          101,
+          126
+        ],
+        "time": 10,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          131,
+          132
+        ],
+        "time": 11,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          114,
+          133
+        ],
+        "time": 8,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          107,
+          135
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          120,
+          137
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          112,
+          139
+        ],
+        "time": 5,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          141,
+          145
+        ],
+        "time": 10,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          104,
+          148
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          116,
+          152
+        ],
+        "time": 7,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          97,
+          153
+        ],
+        "time": 31,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          128,
+          154
+        ],
+        "time": 31,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          140,
+          156
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          2,
+          158
+        ],
+        "time": 9,
+        "kind": "edge-swap"
+      }
+    ],
+    "conflicting_pairs": 501,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 1701
+  },
+  {
+    "case": "maze-32-32-4-s2-n128",
+    "instance_sha256": "daf0f8bc7c7df3d46657d9599eb24d9aa75d025adb03ae376824b26296181705",
+    "incumbent": {
+      "path": "research/round2/repair/maze-32-32-4-s2-n128-proximity4-211.json",
+      "sha256": "26f3c436e17d57c77c028132411e0da9999100fb9dac9c6e6b7705fed897305b",
+      "metrics": {
+        "soc": 6841,
+        "sol": 6553,
+        "makespan": 91
+      }
+    },
+    "metrics": {
+      "soc": 6841,
+      "sol": 6553,
+      "makespan": 91
+    },
+    "individual_distance_bound": 5315,
+    "pair_conflict_bound": 5358,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          1,
+          6
+        ],
+        "time": 25,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          7,
+          10
+        ],
+        "time": 23,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          9,
+          15
+        ],
+        "time": 30,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          2,
+          18
+        ],
+        "time": 6,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          14,
+          23
+        ],
+        "time": 24,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          20,
+          24
+        ],
+        "time": 26,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          13,
+          27
+        ],
+        "time": 11,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          26,
+          28
+        ],
+        "time": 25,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          22,
+          29
+        ],
+        "time": 14,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          25,
+          33
+        ],
+        "time": 28,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          32,
+          39
+        ],
+        "time": 10,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          31,
+          49
+        ],
+        "time": 29,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          45,
+          51
+        ],
+        "time": 23,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          43,
+          53
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          8,
+          56
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          0,
+          58
+        ],
+        "time": 6,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          35,
+          61
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          37,
+          68
+        ],
+        "time": 19,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          38,
+          71
+        ],
+        "time": 16,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          62,
+          72
+        ],
+        "time": 10,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          47,
+          75
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          70,
+          78
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          40,
+          81
+        ],
+        "time": 27,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          48,
+          82
+        ],
+        "time": 32,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          67,
+          83
+        ],
+        "time": 23,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          74,
+          86
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          64,
+          88
+        ],
+        "time": 15,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          11,
+          90
+        ],
+        "time": 24,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          57,
+          95
+        ],
+        "time": 3,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          36,
+          101
+        ],
+        "time": 10,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          41,
+          102
+        ],
+        "time": 25,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          44,
+          107
+        ],
+        "time": 32,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          66,
+          110
+        ],
+        "time": 18,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          59,
+          113
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          80,
+          114
+        ],
+        "time": 28,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          94,
+          115
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          46,
+          116
+        ],
+        "time": 31,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          3,
+          118
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          17,
+          120
+        ],
+        "time": 16,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          77,
+          122
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          12,
+          123
+        ],
+        "time": 26,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          87,
+          125
+        ],
+        "time": 14,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          91,
+          126
+        ],
+        "time": 32,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 384,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 1195
+  },
+  {
+    "case": "maze-32-32-4-s3-n128",
+    "instance_sha256": "7fb991438981f466fe12730062a0ca3181c92a91990dd76cd24c8978fc48e12d",
+    "incumbent": {
+      "path": "research/round2-clean-smoke/candidate.json",
+      "sha256": "e99be2c8b8d6ffd498182ffc6b286fd766192b61002beee0328691f7e27af6b4",
+      "metrics": {
+        "soc": 6474,
+        "sol": 6200,
+        "makespan": 108
+      }
+    },
+    "metrics": {
+      "soc": 6474,
+      "sol": 6200,
+      "makespan": 108
+    },
+    "individual_distance_bound": 5374,
+    "pair_conflict_bound": 5413,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          2,
+          7
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          1,
+          8
+        ],
+        "time": 7,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          0,
+          10
+        ],
+        "time": 20,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          9,
+          25
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          26,
+          29
+        ],
+        "time": 29,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          28,
+          32
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          21,
+          38
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          14,
+          40
+        ],
+        "time": 23,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          31,
+          46
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          3,
+          50
+        ],
+        "time": 22,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          4,
+          53
+        ],
+        "time": 19,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          35,
+          56
+        ],
+        "time": 29,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          30,
+          57
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          39,
+          58
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          19,
+          59
+        ],
+        "time": 31,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          45,
+          61
+        ],
+        "time": 10,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          6,
+          62
+        ],
+        "time": 12,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          33,
+          64
+        ],
+        "time": 16,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          17,
+          66
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          44,
+          68
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          69,
+          73
+        ],
+        "time": 26,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          36,
+          76
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          27,
+          78
+        ],
+        "time": 32,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          13,
+          82
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          84,
+          88
+        ],
+        "time": 15,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          55,
+          90
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          37,
+          94
+        ],
+        "time": 25,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          42,
+          96
+        ],
+        "time": 19,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          48,
+          101
+        ],
+        "time": 16,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          11,
+          102
+        ],
+        "time": 13,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          34,
+          103
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          80,
+          105
+        ],
+        "time": 32,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          87,
+          108
+        ],
+        "time": 25,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          51,
+          109
+        ],
+        "time": 21,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          63,
+          111
+        ],
+        "time": 14,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          60,
+          112
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          106,
+          114
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          77,
+          119
+        ],
+        "time": 4,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          15,
+          120
+        ],
+        "time": 6,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 242,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 787
+  },
+  {
+    "case": "random-32-32-20-n192",
+    "instance_sha256": "ddf41f87d69fc79f6482c99449f9dbd054030e478481a5e95d3c383416283538",
+    "incumbent": {
+      "source": "LaCAM3-6s",
+      "path": "results/baselines/random-32-32-20-n192-6s.json",
+      "metrics": {
+        "soc": 5416,
+        "sol": 4929,
+        "makespan": 55
+      },
+      "sha256": "9f33c528c451f215981922072483890a6b287ff32757a05b36c0802eb00dee5c"
+    },
+    "metrics": {
+      "soc": 5416,
+      "sol": 4929,
+      "makespan": 55
+    },
+    "individual_distance_bound": 4209,
+    "pair_conflict_bound": 4245,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          0,
+          1
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          4,
+          12
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          2,
+          17
+        ],
+        "time": 19,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          18,
+          21
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          5,
+          22
+        ],
+        "time": 10,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          11,
+          26
+        ],
+        "time": 24,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          7,
+          38
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          10,
+          53
+        ],
+        "time": 13,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          3,
+          57
+        ],
+        "time": 32,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          19,
+          63
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          28,
+          70
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          33,
+          74
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          25,
+          77
+        ],
+        "time": 13,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          47,
+          85
+        ],
+        "time": 15,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          49,
+          89
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          90,
+          99
+        ],
+        "time": 13,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          39,
+          102
+        ],
+        "time": 24,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          20,
+          103
+        ],
+        "time": 30,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          66,
+          104
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          75,
+          113
+        ],
+        "time": 21,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          54,
+          128
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          121,
+          132
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          86,
+          135
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          87,
+          138
+        ],
+        "time": 2,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          139,
+          141
+        ],
+        "time": 24,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          133,
+          142
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          27,
+          143
+        ],
+        "time": 6,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          144,
+          147
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          45,
+          148
+        ],
+        "time": 21,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          93,
+          154
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          62,
+          156
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          95,
+          163
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          6,
+          166
+        ],
+        "time": 6,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          145,
+          173
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          36,
+          178
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          98,
+          182
+        ],
+        "time": 25,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 105,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 684
+  },
+  {
+    "case": "random-32-32-20-s3-n192",
+    "instance_sha256": "83059a078c4f7dc057b8dce948f5aab12d5076f9a4e59aea43f9457706571c2d",
+    "incumbent": {
+      "path": "research/round2/repair/random-32-32-20-s3-n192-proximity4-211.json",
+      "sha256": "0e9bd1a72bbccbcd2a40e5c1932b4216d8e9d9367f26a2c217c988ae7f36ece9",
+      "metrics": {
+        "soc": 5006,
+        "sol": 4777,
+        "makespan": 53
+      }
+    },
+    "metrics": {
+      "soc": 5006,
+      "sol": 4777,
+      "makespan": 53
+    },
+    "individual_distance_bound": 4140,
+    "pair_conflict_bound": 4175,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          8,
+          42
+        ],
+        "time": 29,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          28,
+          44
+        ],
+        "time": 7,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          38,
+          61
+        ],
+        "time": 19,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          23,
+          72
+        ],
+        "time": 2,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          13,
+          83
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          64,
+          86
+        ],
+        "time": 22,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          0,
+          88
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          9,
+          90
+        ],
+        "time": 8,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          50,
+          100
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          52,
+          101
+        ],
+        "time": 28,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          66,
+          102
+        ],
+        "time": 2,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          56,
+          107
+        ],
+        "time": 12,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          5,
+          117
+        ],
+        "time": 13,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          89,
+          119
+        ],
+        "time": 32,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          59,
+          120
+        ],
+        "time": 32,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          91,
+          121
+        ],
+        "time": 7,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          24,
+          125
+        ],
+        "time": 6,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          118,
+          134
+        ],
+        "time": 21,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          80,
+          135
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          36,
+          140
+        ],
+        "time": 1,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          43,
+          144
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          18,
+          146
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          68,
+          150
+        ],
+        "time": 14,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          60,
+          158
+        ],
+        "time": 10,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          85,
+          166
+        ],
+        "time": 16,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          70,
+          167
+        ],
+        "time": 10,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          87,
+          168
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          122,
+          169
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          29,
+          170
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          19,
+          176
+        ],
+        "time": 19,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          108,
+          181
+        ],
+        "time": 14,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          136,
+          182
+        ],
+        "time": 28,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          175,
+          185
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          49,
+          188
+        ],
+        "time": 22,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          139,
+          191
+        ],
+        "time": 26,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 98,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 602
+  },
+  {
+    "case": "random-32-32-20-s2-n192",
+    "instance_sha256": "eba175483d832697cded87aeaa5541f24aa33937623bcc0ee62bde39c8b006f3",
+    "incumbent": {
+      "path": "research/round2/repair/random-32-32-20-s2-n192-random4-211.json",
+      "sha256": "f3d912f8e73b8d8d5e23232dd6cdcf34bd99ae787609449a70ccec400409be76",
+      "metrics": {
+        "soc": 5190,
+        "sol": 4889,
+        "makespan": 54
+      }
+    },
+    "metrics": {
+      "soc": 5190,
+      "sol": 4889,
+      "makespan": 54
+    },
+    "individual_distance_bound": 4324,
+    "pair_conflict_bound": 4359,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          9,
+          12
+        ],
+        "time": 7,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          5,
+          24
+        ],
+        "time": 15,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          19,
+          29
+        ],
+        "time": 6,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          6,
+          32
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          10,
+          54
+        ],
+        "time": 12,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          34,
+          62
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          2,
+          63
+        ],
+        "time": 15,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          55,
+          66
+        ],
+        "time": 16,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          25,
+          76
+        ],
+        "time": 22,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          35,
+          79
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          13,
+          83
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          4,
+          93
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          88,
+          95
+        ],
+        "time": 12,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          81,
+          98
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          82,
+          108
+        ],
+        "time": 31,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          109,
+          115
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          36,
+          119
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          110,
+          121
+        ],
+        "time": 1,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          72,
+          124
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          26,
+          126
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          69,
+          128
+        ],
+        "time": 14,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          7,
+          131
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          100,
+          136
+        ],
+        "time": 18,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          68,
+          140
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          147,
+          148
+        ],
+        "time": 12,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          90,
+          152
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          28,
+          153
+        ],
+        "time": 7,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          161,
+          163
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          43,
+          169
+        ],
+        "time": 15,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          96,
+          170
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          135,
+          173
+        ],
+        "time": 24,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          101,
+          179
+        ],
+        "time": 10,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          167,
+          182
+        ],
+        "time": 2,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          142,
+          189
+        ],
+        "time": 2,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          51,
+          190
+        ],
+        "time": 31,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 100,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 530
+  },
+  {
+    "case": "room-32-32-4-n96",
+    "instance_sha256": "27d8c82266450608980bde3e684e1e1f89dab6426209d36c00c856d2b47d1a6b",
+    "incumbent": {
+      "source": "LaCAM3-6s",
+      "path": "results/baselines/room-32-32-4-n96-6s.json",
+      "metrics": {
+        "soc": 3047,
+        "sol": 2830,
+        "makespan": 61
+      },
+      "sha256": "676866216b2d8b583ed39bf3b6cf5fded91675e0106dfc8ddf58e248a6864552"
+    },
+    "metrics": {
+      "soc": 3047,
+      "sol": 2830,
+      "makespan": 61
+    },
+    "individual_distance_bound": 2434,
+    "pair_conflict_bound": 2465,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          4,
+          6
+        ],
+        "time": 2,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          11,
+          27
+        ],
+        "time": 14,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          8,
+          28
+        ],
+        "time": 30,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          13,
+          29
+        ],
+        "time": 4,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          21,
+          31
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          17,
+          32
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          1,
+          34
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          20,
+          35
+        ],
+        "time": 21,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          12,
+          36
+        ],
+        "time": 23,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          5,
+          39
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          40,
+          46
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          15,
+          49
+        ],
+        "time": 31,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          38,
+          50
+        ],
+        "time": 14,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          10,
+          51
+        ],
+        "time": 21,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          3,
+          52
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          18,
+          56
+        ],
+        "time": 8,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          37,
+          58
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          14,
+          59
+        ],
+        "time": 2,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          22,
+          62
+        ],
+        "time": 15,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          64,
+          66
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          48,
+          69
+        ],
+        "time": 16,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          19,
+          71
+        ],
+        "time": 3,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          2,
+          73
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          55,
+          78
+        ],
+        "time": 18,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          43,
+          82
+        ],
+        "time": 23,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          24,
+          87
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          80,
+          90
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          26,
+          92
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          74,
+          93
+        ],
+        "time": 2,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          44,
+          94
+        ],
+        "time": 28,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          7,
+          95
+        ],
+        "time": 11,
+        "kind": "edge-swap"
+      }
+    ],
+    "conflicting_pairs": 133,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 365
+  },
+  {
+    "case": "empty-32-32-n256",
+    "instance_sha256": "8e958d34ce53d3592cdac656e9f8214d7842a04444e2c5b7b7588a7ebe072d0f",
+    "incumbent": {
+      "source": "LaCAM3-6s",
+      "path": "results/baselines/empty-32-32-n256-6s.json",
+      "metrics": {
+        "soc": 5845,
+        "sol": 5699,
+        "makespan": 52
+      },
+      "sha256": "8a41f2f3b2e61dfb6dde53c822f3e5712badd5c55ef0a185e4ba459c468bc232"
+    },
+    "metrics": {
+      "soc": 5845,
+      "sol": 5699,
+      "makespan": 52
+    },
+    "individual_distance_bound": 5341,
+    "pair_conflict_bound": 5344,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          91,
+          106
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          9,
+          123
+        ],
+        "time": 23,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          25,
+          125
+        ],
+        "time": 16,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 6,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 355
+  },
+  {
+    "case": "empty-32-32-s2-n256",
+    "instance_sha256": "909f7922628125a0bd97360c6f6a80e370163b7ea2c60c35dc22596f22c250ac",
+    "incumbent": {
+      "path": "research/round2/repair/empty-32-32-s2-n256-proximity4-211.json",
+      "sha256": "af8372587e4c5b153d6a5451853235ead14781584b22cf847bffb92a5ccffcfa",
+      "metrics": {
+        "soc": 5944,
+        "sol": 5912,
+        "makespan": 49
+      }
+    },
+    "metrics": {
+      "soc": 5944,
+      "sol": 5912,
+      "makespan": 49
+    },
+    "individual_distance_bound": 5640,
+    "pair_conflict_bound": 5647,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          81,
+          97
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          110,
+          121
+        ],
+        "time": 19,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          87,
+          136
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          41,
+          170
+        ],
+        "time": 13,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          24,
+          182
+        ],
+        "time": 23,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          88,
+          209
+        ],
+        "time": 13,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          133,
+          245
+        ],
+        "time": 25,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 13,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 265
+  },
+  {
+    "case": "maze-32-32-4-n64",
+    "instance_sha256": "c010a598822538bc3558c3762abe5cff95de5fa178ce143cbccab249b16dbf13",
+    "incumbent": {
+      "source": "LaCAM3-6s",
+      "path": "results/baselines/maze-32-32-4-n64-6s.json",
+      "metrics": {
+        "soc": 3197,
+        "sol": 3107,
+        "makespan": 92
+      },
+      "sha256": "dc3cb8368f1896f3df9d9754976564d5173c6dc0e85c3c25524646a41ad74d21"
+    },
+    "metrics": {
+      "soc": 3197,
+      "sol": 3107,
+      "makespan": 92
+    },
+    "individual_distance_bound": 2884,
+    "pair_conflict_bound": 2898,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          4,
+          7
+        ],
+        "time": 9,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          1,
+          13
+        ],
+        "time": 31,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          3,
+          15
+        ],
+        "time": 30,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          14,
+          19
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          18,
+          29
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          20,
+          30
+        ],
+        "time": 18,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          8,
+          37
+        ],
+        "time": 29,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          6,
+          42
+        ],
+        "time": 29,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          21,
+          48
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          22,
+          50
+        ],
+        "time": 24,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          10,
+          52
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          9,
+          54
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          40,
+          56
+        ],
+        "time": 31,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          51,
+          58
+        ],
+        "time": 5,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 64,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 209
+  },
+  {
+    "case": "empty-32-32-s3-n256",
+    "instance_sha256": "d3c4478b8925606a94b1f50cf808f4ffbbb1b3d468547152c80a834014f050af",
+    "incumbent": {
+      "path": "research/round2/repair/empty-32-32-s3-n256-proximity4-307.json",
+      "sha256": "6d9a2790dc1f8ebbb071d2e0749b6e3dab7c5491a8028c95341de6de41ad838c",
+      "metrics": {
+        "soc": 5713,
+        "sol": 5644,
+        "makespan": 57
+      }
+    },
+    "metrics": {
+      "soc": 5713,
+      "sol": 5644,
+      "makespan": 57
+    },
+    "individual_distance_bound": 5441,
+    "pair_conflict_bound": 5451,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          23,
+          29
+        ],
+        "time": 11,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          14,
+          77
+        ],
+        "time": 6,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          88,
+          89
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          163,
+          175
+        ],
+        "time": 17,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          147,
+          178
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          3,
+          201
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          125,
+          229
+        ],
+        "time": 23,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          4,
+          237
+        ],
+        "time": 3,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          114,
+          250
+        ],
+        "time": 6,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          135,
+          251
+        ],
+        "time": 7,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 15,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 193
+  },
+  {
+    "case": "random-64-64-20-s2-n192",
+    "instance_sha256": "7ff8ef1541040ac8a129f33bd440a65da174d9fa485430c7abf8d70b34d07ad3",
+    "incumbent": {
+      "path": "research/round2/repair/random-64-64-20-s2-n192-random4-101.json",
+      "sha256": "ddc5155ce42fca3ae1b55b6f900eef3fd52295552b503305f099942d9df83bf3",
+      "metrics": {
+        "soc": 8676,
+        "sol": 8623,
+        "makespan": 99
+      }
+    },
+    "metrics": {
+      "soc": 8676,
+      "sol": 8623,
+      "makespan": 99
+    },
+    "individual_distance_bound": 8488,
+    "pair_conflict_bound": 8502,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          10,
+          14
+        ],
+        "time": 26,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          24,
+          34
+        ],
+        "time": 18,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          1,
+          75
+        ],
+        "time": 25,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          8,
+          84
+        ],
+        "time": 14,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          0,
+          88
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          39,
+          94
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          15,
+          115
+        ],
+        "time": 31,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          33,
+          120
+        ],
+        "time": 10,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          87,
+          126
+        ],
+        "time": 24,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          64,
+          146
+        ],
+        "time": 8,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          32,
+          147
+        ],
+        "time": 25,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          72,
+          161
+        ],
+        "time": 24,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          128,
+          165
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          166,
+          184
+        ],
+        "time": 1,
+        "kind": "edge-swap"
+      }
+    ],
+    "conflicting_pairs": 20,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 121
+  },
+  {
+    "case": "random-32-32-20-n96",
+    "instance_sha256": "a880b4c40056e12d1a59e5f41ff96375239b3a1843dba69446b0c2c8272f9aa9",
+    "incumbent": {
+      "source": "proximity4-seed29",
+      "path": "results/repair/random-32-32-20-n96-proximity4-s29.json",
+      "metrics": {
+        "soc": 2422,
+        "sol": 2310,
+        "makespan": 51
+      },
+      "sha256": "d37b2736d7e66f0d0e67cd46e7ef2249a47ba6b8a2c343e03c08cfbd6bb127b1"
+    },
+    "metrics": {
+      "soc": 2422,
+      "sol": 2310,
+      "makespan": 51
+    },
+    "individual_distance_bound": 2175,
+    "pair_conflict_bound": 2190,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          0,
+          1
+        ],
+        "time": 27,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          4,
+          12
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          2,
+          17
+        ],
+        "time": 19,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          18,
+          21
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          5,
+          22
+        ],
+        "time": 10,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          11,
+          26
+        ],
+        "time": 24,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          7,
+          38
+        ],
+        "time": 4,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          10,
+          53
+        ],
+        "time": 13,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          3,
+          57
+        ],
+        "time": 32,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          19,
+          63
+        ],
+        "time": 1,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          28,
+          70
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          33,
+          74
+        ],
+        "time": 20,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          25,
+          77
+        ],
+        "time": 13,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          47,
+          85
+        ],
+        "time": 15,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          49,
+          89
+        ],
+        "time": 11,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 29,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 120
+  },
+  {
+    "case": "random-64-64-20-s3-n192",
+    "instance_sha256": "0b8ff5f9ad041aac565ed7b15da97c24fefc9d54bc94ba072fadb506800af463",
+    "incumbent": {
+      "path": "research/round2/repair/random-64-64-20-s3-n192-proximity4-307.json",
+      "sha256": "c72041b60c4285f5414cca41380308b66163a169ab818729758b133e03daf473",
+      "metrics": {
+        "soc": 8712,
+        "sol": 8654,
+        "makespan": 113
+      }
+    },
+    "metrics": {
+      "soc": 8712,
+      "sol": 8654,
+      "makespan": 113
+    },
+    "individual_distance_bound": 8568,
+    "pair_conflict_bound": 8577,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          22,
+          36
+        ],
+        "time": 21,
+        "kind": "edge-swap"
+      },
+      {
+        "agents": [
+          24,
+          90
+        ],
+        "time": 5,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          25,
+          107
+        ],
+        "time": 31,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          88,
+          130
+        ],
+        "time": 9,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          128,
+          150
+        ],
+        "time": 29,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          126,
+          159
+        ],
+        "time": 16,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          118,
+          169
+        ],
+        "time": 24,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          161,
+          175
+        ],
+        "time": 15,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          26,
+          178
+        ],
+        "time": 21,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 12,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 77
+  },
+  {
+    "case": "empty-48-48-s3-n256",
+    "instance_sha256": "5a7b73dcfe013423abd295f94cd418c0f9020422e64a06665f9f07a8f71d516d",
+    "incumbent": {
+      "path": "research/round2/repair/empty-48-48-s3-n256-proximity4-307.json",
+      "sha256": "aa3a34fe5a125390648dd2492dfb5fdff889d2174876581d8112046676ea802d",
+      "metrics": {
+        "soc": 7895,
+        "sol": 7895,
+        "makespan": 77
+      }
+    },
+    "metrics": {
+      "soc": 7895,
+      "sol": 7895,
+      "makespan": 77
+    },
+    "individual_distance_bound": 7842,
+    "pair_conflict_bound": 7846,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          107,
+          149
+        ],
+        "time": 22,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          21,
+          159
+        ],
+        "time": 21,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          79,
+          171
+        ],
+        "time": 6,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          64,
+          207
+        ],
+        "time": 8,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 4,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 49
+  },
+  {
+    "case": "empty-48-48-s2-n256",
+    "instance_sha256": "762060320303aa89f707cdce6a77e3fc1fa63855c01f602313cf34bcaa9b1756",
+    "incumbent": {
+      "path": "research/round2/repair/empty-48-48-s2-n256-proximity4-307.json",
+      "sha256": "a77a09f2050a8e87b9fe6b4a5bec4f2e5d2f81197957a650e563177e5bb26d8d",
+      "metrics": {
+        "soc": 7948,
+        "sol": 7948,
+        "makespan": 84
+      }
+    },
+    "metrics": {
+      "soc": 7948,
+      "sol": 7948,
+      "makespan": 84
+    },
+    "individual_distance_bound": 7903,
+    "pair_conflict_bound": 7904,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          63,
+          137
+        ],
+        "time": 17,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 2,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 44
+  },
+  {
+    "case": "empty-32-32-n128",
+    "instance_sha256": "092f6d3c694d3201762e58d47d117a606323743d52465d2e381ea8e8a9e0a814",
+    "incumbent": {
+      "source": "LaCAM3-6s",
+      "path": "results/baselines/empty-32-32-n128-6s.json",
+      "metrics": {
+        "soc": 2776,
+        "sol": 2776,
+        "makespan": 48
+      },
+      "sha256": "82e50253ecd14898079ad6ef0992230a17bce141bf2f27ed372e643622209180"
+    },
+    "metrics": {
+      "soc": 2776,
+      "sol": 2776,
+      "makespan": 48
+    },
+    "individual_distance_bound": 2740,
+    "pair_conflict_bound": 2743,
+    "disjoint_pair_witnesses": [
+      {
+        "agents": [
+          91,
+          106
+        ],
+        "time": 18,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          9,
+          123
+        ],
+        "time": 23,
+        "kind": "vertex"
+      },
+      {
+        "agents": [
+          25,
+          125
+        ],
+        "time": 16,
+        "kind": "vertex"
+      }
+    ],
+    "conflicting_pairs": 3,
+    "horizon": 32,
+    "claim": "Lower bound on both SOL and SOC; remaining gap is not necessarily attainable.",
+    "sol_gap": 33
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "schema": "discover-frontier/v0",
+  "statement": "Twenty cases have author-checked archives. Round two gained 118 summed SOL units on 12/12 new cases; two bounded author handoffs added 4 more. Random repair won development; no general new-method advantage.",
+  "status": "Open for pre-release contributor trials and expert-agent review; scientific acceptance pending.",
+  "evidence_level": [
+    "author-checked"
+  ],
+  "scope": "Four-neighbor static point agents; 32x32, 48x48 and 64x64 grids; explicit budgets and separate SOC/SOL/makespan.",
+  "review": "research/review.json",
+  "updated_on": "2026-10-22",
+  "artifacts": [
+    {
+      "path": "research/round2/trial.json",
+      "sha256": "709eb8b698320ec78e62718003385de39b51c496f5365a29181b0572e649b9de"
+    },
+    {
+      "path": "research/round2/summary.json",
+      "sha256": "97d12a457d2968e963bc63bd8188211122dcd1d57627f89eeb619179c3640947"
+    },
+    {
+      "path": "discover/incumbents.json",
+      "sha256": "f523ddc02019307239374eefdcf2d61caeebb3dedcfdb974f2180417afc1abd3"
+    },
+    {
+      "path": "research/round2/PROTOCOL.md",
+      "sha256": "6453e88d0e068f1d1d67bd1371b1ccece2d7f48b4157edf4b0642fe5a9b31d40"
+    }
+  ],
+  "reproduce": "python tools/check.py",
+  "reproduce_full": "python tools/prepare.py; python tools/run_trial.py (in a copy; native deadline runs may differ)",
+  "assumptions": [
+    {
+      "id": "baseline",
+      "statement": "MAPF-LNS2 and other strong alternatives still need matched-objective comparison; no exhaustive state-of-art claim.",
+      "status": "open"
+    },
+    {
+      "id": "transfer",
+      "statement": "Broader local archive gains are established, but a new generally superior policy is not.",
+      "status": "open"
+    }
+  ]
+}

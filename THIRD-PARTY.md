@@ -47,3 +47,7 @@ Additional Moving AI maps and scenarios retain the same ODC Attribution License
 1.0. Exact archive URLs, archive/member hashes and selected members are in
 research/round2/data-sources.json. Empty-48-48 replaces a nonexistent empty-64-64
 member before measurement, as recorded in the protocol.
+
+## Optional MAPF-LNS2 comparator
+
+MAPF-LNS2 commit 1369823985a15944f9a339226d521f61605a6d17 is under the USC Research License; its PIBT component has MIT terms. See https://github.com/Jiaoyang-Li/MAPF-LNS2/blob/1369823985a15944f9a339226d521f61605a6d17/license.txt. The research comparator is optional, fetched separately into ignored vendor/, and no upstream code or binary is included in this pilot release. It is not relicensed under the pilot MIT license. Source, dependency and build information is recorded in research/distribution-prep-20261022/lns2-source.json.

@@ -1,0 +1,2 @@
+runtime,solution cost,initial solution cost,lower bound,sum of distance,iterations,group size,runtime of initial solution,restart times,area under curve,LL expanded nodes,LL generated,LL reopened,LL runs,preprocessing runtime,solver name,instance name
+6.00009,5942,7366,5640,5640,3643,7.8564,0.0575666,0,3318.72,1833329,3908826,78933,28753,0.0891467,LNS(PP;PP),/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/round2/empty-32-32-random-2.scen
