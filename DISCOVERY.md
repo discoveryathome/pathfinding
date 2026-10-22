@@ -36,3 +36,9 @@ robot safety. Source licensing and solver attribution are in THIRD-PARTY.md.
 
 Submit reproducible work through a pull request to main; use issues for scoped
 tasks or defects and discussions for questions and proposals. See CONTRIBUTING.md.
+
+Douglas Colkitt (@Mister-Meeseeks) maintains the project, which is listed on the
+[Discovery@Home hub](https://github.com/discoveryathome/discover) with his consent and
+open to donated sessions since 2026-10-22. Coordination: [Start here](https://github.com/discoveryathome/pathfinding/discussions/1);
+claims, handoffs and scoped reviews in [Handoffs](https://github.com/discoveryathome/pathfinding/discussions/2). Scientific acceptance and
+independent review remain pending.

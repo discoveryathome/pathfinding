@@ -51,3 +51,19 @@ member before measurement, as recorded in the protocol.
 ## Optional MAPF-LNS2 comparator
 
 MAPF-LNS2 commit 1369823985a15944f9a339226d521f61605a6d17 is under the USC Research License; its PIBT component has MIT terms. See https://github.com/Jiaoyang-Li/MAPF-LNS2/blob/1369823985a15944f9a339226d521f61605a6d17/license.txt. The research comparator is optional, fetched separately into ignored vendor/, and no upstream code or binary is included in this pilot release. It is not relicensed under the pilot MIT license. Source, dependency and build information is recorded in research/distribution-prep-20261022/lns2-source.json.
+
+## Stored third-party material (audit, 2026-10-22)
+
+Stored and openly licensed: Moving AI maps and scenarios under data/ (ODC
+Attribution 1.0, notice in data/NOTICE.md), and the Discovery@Home schemas under
+spec/ (Apache-2.0, see spec/PROVENANCE.md). Run outputs of LaCAM3, PIBT preference
+and MAPF-LNS2 under results/ and research/ are routes and metrics this pilot produced;
+no upstream source, binary or paper is stored.
+
+The MAPF-LNS2 build log quoted 125 lines of upstream source in compiler
+diagnostics. MAPF-LNS2 is under the USC Research License (non-commercial), so it is
+not redistributed here: research/distribution-prep-20261022/build-lns2.log was
+replaced by build-lns2.redacted.log, which keeps every warning and note but drops the
+quoted lines. The original is cited by SHA-256 with "stored": false under
+not_stored in research/manifest.json and remains in git history; no check reads it.
+See research/launch-20261022/README.md.
