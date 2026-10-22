@@ -1,0 +1,2792 @@
+[
+  {
+    "case": "empty-32-32-s2-n256",
+    "split": "development",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 101,
+    "instance": "data/round2/empty-32-32-s2-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "after": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "certificate": "research/round2/repair/empty-32-32-s2-n256-random4-101.json",
+    "trace": "research/round2/repair/empty-32-32-s2-n256-random4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 30149,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.0982726669171825,
+    "improvements": 0,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-32-32-s2-n256",
+    "split": "development",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 211,
+    "instance": "data/round2/empty-32-32-s2-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "after": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "certificate": "research/round2/repair/empty-32-32-s2-n256-random4-211.json",
+    "trace": "research/round2/repair/empty-32-32-s2-n256-random4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 34269,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.2426390829496086,
+    "improvements": 0,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-32-32-s2-n256",
+    "split": "development",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 307,
+    "instance": "data/round2/empty-32-32-s2-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "after": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "certificate": "research/round2/repair/empty-32-32-s2-n256-random4-307.json",
+    "trace": "research/round2/repair/empty-32-32-s2-n256-random4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 33673,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.2336477920180187,
+    "improvements": 0,
+    "failed_attempts": 1
+  },
+  {
+    "case": "empty-32-32-s2-n256",
+    "split": "development",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 101,
+    "instance": "data/round2/empty-32-32-s2-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "after": {
+      "soc": 5938,
+      "sol": 5914,
+      "makespan": 49
+    },
+    "certificate": "research/round2/repair/empty-32-32-s2-n256-proximity4-101.json",
+    "trace": "research/round2/repair/empty-32-32-s2-n256-proximity4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 55334,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 3.430399375036359,
+    "improvements": 4,
+    "failed_attempts": 1
+  },
+  {
+    "case": "empty-32-32-s2-n256",
+    "split": "development",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 211,
+    "instance": "data/round2/empty-32-32-s2-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "after": {
+      "soc": 5944,
+      "sol": 5912,
+      "makespan": 49
+    },
+    "certificate": "research/round2/repair/empty-32-32-s2-n256-proximity4-211.json",
+    "trace": "research/round2/repair/empty-32-32-s2-n256-proximity4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 73279,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 4.184000041917898,
+    "improvements": 3,
+    "failed_attempts": 2
+  },
+  {
+    "case": "empty-32-32-s2-n256",
+    "split": "development",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 307,
+    "instance": "data/round2/empty-32-32-s2-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "after": {
+      "soc": 5937,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "certificate": "research/round2/repair/empty-32-32-s2-n256-proximity4-307.json",
+    "trace": "research/round2/repair/empty-32-32-s2-n256-proximity4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 72592,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 3.7093305840389803,
+    "improvements": 2,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-32-32-s2-n256",
+    "split": "development",
+    "status": "verified",
+    "variant": "corridor4",
+    "seed": 101,
+    "instance": "data/round2/empty-32-32-s2-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "after": {
+      "soc": 5951,
+      "sol": 5915,
+      "makespan": 49
+    },
+    "certificate": "research/round2/repair/empty-32-32-s2-n256-corridor4-101.json",
+    "trace": "research/round2/repair/empty-32-32-s2-n256-corridor4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 35443,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.4431827920489013,
+    "improvements": 1,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-32-32-s2-n256",
+    "split": "development",
+    "status": "verified",
+    "variant": "corridor4",
+    "seed": 211,
+    "instance": "data/round2/empty-32-32-s2-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "after": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "certificate": "research/round2/repair/empty-32-32-s2-n256-corridor4-211.json",
+    "trace": "research/round2/repair/empty-32-32-s2-n256-corridor4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 38832,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.1932975410018116,
+    "improvements": 0,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-32-32-s2-n256",
+    "split": "development",
+    "status": "verified",
+    "variant": "corridor4",
+    "seed": 307,
+    "instance": "data/round2/empty-32-32-s2-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "after": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "certificate": "research/round2/repair/empty-32-32-s2-n256-corridor4-307.json",
+    "trace": "research/round2/repair/empty-32-32-s2-n256-corridor4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 37160,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.427415292011574,
+    "improvements": 0,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-32-32-s2-n256",
+    "split": "development",
+    "status": "verified",
+    "variant": "joint2",
+    "seed": 101,
+    "instance": "data/round2/empty-32-32-s2-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "after": {
+      "soc": 5947,
+      "sol": 5915,
+      "makespan": 49
+    },
+    "certificate": "research/round2/repair/empty-32-32-s2-n256-joint2-101.json",
+    "trace": "research/round2/repair/empty-32-32-s2-n256-joint2-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 60,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 5.589059917023405,
+    "improvements": 2,
+    "failed_attempts": 2
+  },
+  {
+    "case": "empty-32-32-s2-n256",
+    "split": "development",
+    "status": "verified",
+    "variant": "joint2",
+    "seed": 211,
+    "instance": "data/round2/empty-32-32-s2-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "after": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "certificate": "research/round2/repair/empty-32-32-s2-n256-joint2-211.json",
+    "trace": "research/round2/repair/empty-32-32-s2-n256-joint2-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 50,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 4.802466416032985,
+    "improvements": 0,
+    "failed_attempts": 2
+  },
+  {
+    "case": "empty-32-32-s2-n256",
+    "split": "development",
+    "status": "verified",
+    "variant": "joint2",
+    "seed": 307,
+    "instance": "data/round2/empty-32-32-s2-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5952,
+      "sol": 5916,
+      "makespan": 49
+    },
+    "after": {
+      "soc": 5947,
+      "sol": 5915,
+      "makespan": 49
+    },
+    "certificate": "research/round2/repair/empty-32-32-s2-n256-joint2-307.json",
+    "trace": "research/round2/repair/empty-32-32-s2-n256-joint2-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 59,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 5.034205042058602,
+    "improvements": 2,
+    "failed_attempts": 2
+  },
+  {
+    "case": "random-32-32-20-s2-n192",
+    "split": "development",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 101,
+    "instance": "data/round2/random-32-32-20-s2-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5194,
+      "sol": 4901,
+      "makespan": 54
+    },
+    "after": {
+      "soc": 5189,
+      "sol": 4897,
+      "makespan": 54
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s2-n192-random4-101.json",
+    "trace": "research/round2/repair/random-32-32-20-s2-n192-random4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 84,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.6318708340404555,
+    "improvements": 3,
+    "failed_attempts": 3
+  },
+  {
+    "case": "random-32-32-20-s2-n192",
+    "split": "development",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 211,
+    "instance": "data/round2/random-32-32-20-s2-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5194,
+      "sol": 4901,
+      "makespan": 54
+    },
+    "after": {
+      "soc": 5190,
+      "sol": 4889,
+      "makespan": 54
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s2-n192-random4-211.json",
+    "trace": "research/round2/repair/random-32-32-20-s2-n192-random4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 89,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.6621372499503195,
+    "improvements": 5,
+    "failed_attempts": 3
+  },
+  {
+    "case": "random-32-32-20-s2-n192",
+    "split": "development",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 307,
+    "instance": "data/round2/random-32-32-20-s2-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5194,
+      "sol": 4901,
+      "makespan": 54
+    },
+    "after": {
+      "soc": 5189,
+      "sol": 4892,
+      "makespan": 54
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s2-n192-random4-307.json",
+    "trace": "research/round2/repair/random-32-32-20-s2-n192-random4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 98790,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.9129478330723941,
+    "improvements": 4,
+    "failed_attempts": 1
+  },
+  {
+    "case": "random-32-32-20-s2-n192",
+    "split": "development",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 101,
+    "instance": "data/round2/random-32-32-20-s2-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5194,
+      "sol": 4901,
+      "makespan": 54
+    },
+    "after": {
+      "soc": 5187,
+      "sol": 4895,
+      "makespan": 54
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s2-n192-proximity4-101.json",
+    "trace": "research/round2/repair/random-32-32-20-s2-n192-proximity4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 58,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.8415096669923514,
+    "improvements": 3,
+    "failed_attempts": 7
+  },
+  {
+    "case": "random-32-32-20-s2-n192",
+    "split": "development",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 211,
+    "instance": "data/round2/random-32-32-20-s2-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5194,
+      "sol": 4901,
+      "makespan": 54
+    },
+    "after": {
+      "soc": 5188,
+      "sol": 4897,
+      "makespan": 54
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s2-n192-proximity4-211.json",
+    "trace": "research/round2/repair/random-32-32-20-s2-n192-proximity4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 47,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.5523700839839876,
+    "improvements": 4,
+    "failed_attempts": 9
+  },
+  {
+    "case": "random-32-32-20-s2-n192",
+    "split": "development",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 307,
+    "instance": "data/round2/random-32-32-20-s2-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5194,
+      "sol": 4901,
+      "makespan": 54
+    },
+    "after": {
+      "soc": 5183,
+      "sol": 4897,
+      "makespan": 54
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s2-n192-proximity4-307.json",
+    "trace": "research/round2/repair/random-32-32-20-s2-n192-proximity4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 43,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.5227909999666736,
+    "improvements": 5,
+    "failed_attempts": 5
+  },
+  {
+    "case": "random-32-32-20-s2-n192",
+    "split": "development",
+    "status": "verified",
+    "variant": "corridor4",
+    "seed": 101,
+    "instance": "data/round2/random-32-32-20-s2-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5194,
+      "sol": 4901,
+      "makespan": 54
+    },
+    "after": {
+      "soc": 5192,
+      "sol": 4898,
+      "makespan": 54
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s2-n192-corridor4-101.json",
+    "trace": "research/round2/repair/random-32-32-20-s2-n192-corridor4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 29,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.8208076660521328,
+    "improvements": 1,
+    "failed_attempts": 6
+  },
+  {
+    "case": "random-32-32-20-s2-n192",
+    "split": "development",
+    "status": "verified",
+    "variant": "corridor4",
+    "seed": 211,
+    "instance": "data/round2/random-32-32-20-s2-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5194,
+      "sol": 4901,
+      "makespan": 54
+    },
+    "after": {
+      "soc": 5192,
+      "sol": 4893,
+      "makespan": 54
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s2-n192-corridor4-211.json",
+    "trace": "research/round2/repair/random-32-32-20-s2-n192-corridor4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 28,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.8354032080387697,
+    "improvements": 3,
+    "failed_attempts": 4
+  },
+  {
+    "case": "random-32-32-20-s2-n192",
+    "split": "development",
+    "status": "verified",
+    "variant": "corridor4",
+    "seed": 307,
+    "instance": "data/round2/random-32-32-20-s2-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5194,
+      "sol": 4901,
+      "makespan": 54
+    },
+    "after": {
+      "soc": 5190,
+      "sol": 4896,
+      "makespan": 54
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s2-n192-corridor4-307.json",
+    "trace": "research/round2/repair/random-32-32-20-s2-n192-corridor4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 35,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.903284874977544,
+    "improvements": 2,
+    "failed_attempts": 5
+  },
+  {
+    "case": "random-32-32-20-s2-n192",
+    "split": "development",
+    "status": "verified",
+    "variant": "joint2",
+    "seed": 101,
+    "instance": "data/round2/random-32-32-20-s2-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5194,
+      "sol": 4901,
+      "makespan": 54
+    },
+    "after": {
+      "soc": 5184,
+      "sol": 4899,
+      "makespan": 54
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s2-n192-joint2-101.json",
+    "trace": "research/round2/repair/random-32-32-20-s2-n192-joint2-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 24,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 3.2579121659509838,
+    "improvements": 1,
+    "failed_attempts": 7
+  },
+  {
+    "case": "random-32-32-20-s2-n192",
+    "split": "development",
+    "status": "verified",
+    "variant": "joint2",
+    "seed": 211,
+    "instance": "data/round2/random-32-32-20-s2-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5194,
+      "sol": 4901,
+      "makespan": 54
+    },
+    "after": {
+      "soc": 5178,
+      "sol": 4890,
+      "makespan": 54
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s2-n192-joint2-211.json",
+    "trace": "research/round2/repair/random-32-32-20-s2-n192-joint2-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 35,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 3.254783457960002,
+    "improvements": 5,
+    "failed_attempts": 2
+  },
+  {
+    "case": "random-32-32-20-s2-n192",
+    "split": "development",
+    "status": "verified",
+    "variant": "joint2",
+    "seed": 307,
+    "instance": "data/round2/random-32-32-20-s2-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5194,
+      "sol": 4901,
+      "makespan": 54
+    },
+    "after": {
+      "soc": 5194,
+      "sol": 4901,
+      "makespan": 54
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s2-n192-joint2-307.json",
+    "trace": "research/round2/repair/random-32-32-20-s2-n192-joint2-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 37,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 3.3598723330069333,
+    "improvements": 0,
+    "failed_attempts": 4
+  },
+  {
+    "case": "room-32-32-4-s2-n160",
+    "split": "development",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 101,
+    "instance": "data/round2/room-32-32-4-s2-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s2-n160-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6668,
+      "sol": 5921,
+      "makespan": 74
+    },
+    "after": {
+      "soc": 6659,
+      "sol": 5901,
+      "makespan": 74
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s2-n160-random4-101.json",
+    "trace": "research/round2/repair/room-32-32-4-s2-n160-random4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 32,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.8397167080547661,
+    "improvements": 7,
+    "failed_attempts": 7
+  },
+  {
+    "case": "room-32-32-4-s2-n160",
+    "split": "development",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 211,
+    "instance": "data/round2/room-32-32-4-s2-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s2-n160-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6668,
+      "sol": 5921,
+      "makespan": 74
+    },
+    "after": {
+      "soc": 6659,
+      "sol": 5906,
+      "makespan": 74
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s2-n160-random4-211.json",
+    "trace": "research/round2/repair/room-32-32-4-s2-n160-random4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 27,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.7940540420822799,
+    "improvements": 6,
+    "failed_attempts": 5
+  },
+  {
+    "case": "room-32-32-4-s2-n160",
+    "split": "development",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 307,
+    "instance": "data/round2/room-32-32-4-s2-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s2-n160-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6668,
+      "sol": 5921,
+      "makespan": 74
+    },
+    "after": {
+      "soc": 6666,
+      "sol": 5908,
+      "makespan": 74
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s2-n160-random4-307.json",
+    "trace": "research/round2/repair/room-32-32-4-s2-n160-random4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 32,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.8413501660106704,
+    "improvements": 6,
+    "failed_attempts": 6
+  },
+  {
+    "case": "room-32-32-4-s2-n160",
+    "split": "development",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 101,
+    "instance": "data/round2/room-32-32-4-s2-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s2-n160-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6668,
+      "sol": 5921,
+      "makespan": 74
+    },
+    "after": {
+      "soc": 6664,
+      "sol": 5919,
+      "makespan": 74
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s2-n160-proximity4-101.json",
+    "trace": "research/round2/repair/room-32-32-4-s2-n160-proximity4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 21,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.854683541925624,
+    "improvements": 3,
+    "failed_attempts": 16
+  },
+  {
+    "case": "room-32-32-4-s2-n160",
+    "split": "development",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 211,
+    "instance": "data/round2/room-32-32-4-s2-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s2-n160-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6668,
+      "sol": 5921,
+      "makespan": 74
+    },
+    "after": {
+      "soc": 6658,
+      "sol": 5914,
+      "makespan": 74
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s2-n160-proximity4-211.json",
+    "trace": "research/round2/repair/room-32-32-4-s2-n160-proximity4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 21,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.8309150829445571,
+    "improvements": 2,
+    "failed_attempts": 14
+  },
+  {
+    "case": "room-32-32-4-s2-n160",
+    "split": "development",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 307,
+    "instance": "data/round2/room-32-32-4-s2-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s2-n160-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6668,
+      "sol": 5921,
+      "makespan": 74
+    },
+    "after": {
+      "soc": 6663,
+      "sol": 5912,
+      "makespan": 74
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s2-n160-proximity4-307.json",
+    "trace": "research/round2/repair/room-32-32-4-s2-n160-proximity4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 24,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.9229130420135334,
+    "improvements": 6,
+    "failed_attempts": 8
+  },
+  {
+    "case": "room-32-32-4-s2-n160",
+    "split": "development",
+    "status": "verified",
+    "variant": "corridor4",
+    "seed": 101,
+    "instance": "data/round2/room-32-32-4-s2-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s2-n160-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6668,
+      "sol": 5921,
+      "makespan": 74
+    },
+    "after": {
+      "soc": 6661,
+      "sol": 5913,
+      "makespan": 74
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s2-n160-corridor4-101.json",
+    "trace": "research/round2/repair/room-32-32-4-s2-n160-corridor4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 18,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.420221040956676,
+    "improvements": 3,
+    "failed_attempts": 13
+  },
+  {
+    "case": "room-32-32-4-s2-n160",
+    "split": "development",
+    "status": "verified",
+    "variant": "corridor4",
+    "seed": 211,
+    "instance": "data/round2/room-32-32-4-s2-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s2-n160-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6668,
+      "sol": 5921,
+      "makespan": 74
+    },
+    "after": {
+      "soc": 6668,
+      "sol": 5919,
+      "makespan": 74
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s2-n160-corridor4-211.json",
+    "trace": "research/round2/repair/room-32-32-4-s2-n160-corridor4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 19,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.6210159589536488,
+    "improvements": 1,
+    "failed_attempts": 15
+  },
+  {
+    "case": "room-32-32-4-s2-n160",
+    "split": "development",
+    "status": "verified",
+    "variant": "corridor4",
+    "seed": 307,
+    "instance": "data/round2/room-32-32-4-s2-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s2-n160-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6668,
+      "sol": 5921,
+      "makespan": 74
+    },
+    "after": {
+      "soc": 6668,
+      "sol": 5906,
+      "makespan": 74
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s2-n160-corridor4-307.json",
+    "trace": "research/round2/repair/room-32-32-4-s2-n160-corridor4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 24,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.7184645420638844,
+    "improvements": 5,
+    "failed_attempts": 11
+  },
+  {
+    "case": "room-32-32-4-s2-n160",
+    "split": "development",
+    "status": "verified",
+    "variant": "joint2",
+    "seed": 101,
+    "instance": "data/round2/room-32-32-4-s2-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s2-n160-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6668,
+      "sol": 5921,
+      "makespan": 74
+    },
+    "after": {
+      "soc": 6666,
+      "sol": 5916,
+      "makespan": 74
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s2-n160-joint2-101.json",
+    "trace": "research/round2/repair/room-32-32-4-s2-n160-joint2-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 15,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.388150415965356,
+    "improvements": 3,
+    "failed_attempts": 7
+  },
+  {
+    "case": "room-32-32-4-s2-n160",
+    "split": "development",
+    "status": "verified",
+    "variant": "joint2",
+    "seed": 211,
+    "instance": "data/round2/room-32-32-4-s2-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s2-n160-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6668,
+      "sol": 5921,
+      "makespan": 74
+    },
+    "after": {
+      "soc": 6668,
+      "sol": 5916,
+      "makespan": 74
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s2-n160-joint2-211.json",
+    "trace": "research/round2/repair/room-32-32-4-s2-n160-joint2-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 12,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.4693112089298666,
+    "improvements": 3,
+    "failed_attempts": 7
+  },
+  {
+    "case": "room-32-32-4-s2-n160",
+    "split": "development",
+    "status": "verified",
+    "variant": "joint2",
+    "seed": 307,
+    "instance": "data/round2/room-32-32-4-s2-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s2-n160-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6668,
+      "sol": 5921,
+      "makespan": 74
+    },
+    "after": {
+      "soc": 6662,
+      "sol": 5907,
+      "makespan": 74
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s2-n160-joint2-307.json",
+    "trace": "research/round2/repair/room-32-32-4-s2-n160-joint2-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 18,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.5708083340432495,
+    "improvements": 3,
+    "failed_attempts": 3
+  },
+  {
+    "case": "empty-32-32-s3-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 101,
+    "instance": "data/round2/empty-32-32-s3-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s3-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5745,
+      "sol": 5650,
+      "makespan": 57
+    },
+    "after": {
+      "soc": 5745,
+      "sol": 5650,
+      "makespan": 57
+    },
+    "certificate": "research/round2/repair/empty-32-32-s3-n256-random4-101.json",
+    "trace": "research/round2/repair/empty-32-32-s3-n256-random4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 44782,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.9623994999565184,
+    "improvements": 0,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-32-32-s3-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 211,
+    "instance": "data/round2/empty-32-32-s3-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s3-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5745,
+      "sol": 5650,
+      "makespan": 57
+    },
+    "after": {
+      "soc": 5745,
+      "sol": 5650,
+      "makespan": 57
+    },
+    "certificate": "research/round2/repair/empty-32-32-s3-n256-random4-211.json",
+    "trace": "research/round2/repair/empty-32-32-s3-n256-random4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 43799,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.9701833749422804,
+    "improvements": 0,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-32-32-s3-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 307,
+    "instance": "data/round2/empty-32-32-s3-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s3-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5745,
+      "sol": 5650,
+      "makespan": 57
+    },
+    "after": {
+      "soc": 5745,
+      "sol": 5650,
+      "makespan": 57
+    },
+    "certificate": "research/round2/repair/empty-32-32-s3-n256-random4-307.json",
+    "trace": "research/round2/repair/empty-32-32-s3-n256-random4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 40124,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.972023208043538,
+    "improvements": 0,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-32-32-s3-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 101,
+    "instance": "data/round2/empty-32-32-s3-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s3-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5745,
+      "sol": 5650,
+      "makespan": 57
+    },
+    "after": {
+      "soc": 5715,
+      "sol": 5645,
+      "makespan": 57
+    },
+    "certificate": "research/round2/repair/empty-32-32-s3-n256-proximity4-101.json",
+    "trace": "research/round2/repair/empty-32-32-s3-n256-proximity4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 87,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.9322471669875085,
+    "improvements": 2,
+    "failed_attempts": 1
+  },
+  {
+    "case": "empty-32-32-s3-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 211,
+    "instance": "data/round2/empty-32-32-s3-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s3-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5745,
+      "sol": 5650,
+      "makespan": 57
+    },
+    "after": {
+      "soc": 5716,
+      "sol": 5646,
+      "makespan": 57
+    },
+    "certificate": "research/round2/repair/empty-32-32-s3-n256-proximity4-211.json",
+    "trace": "research/round2/repair/empty-32-32-s3-n256-proximity4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 98662,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 3.2547971659805626,
+    "improvements": 3,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-32-32-s3-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 307,
+    "instance": "data/round2/empty-32-32-s3-n256.json",
+    "inherited": "research/round2/native/empty-32-32-s3-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5745,
+      "sol": 5650,
+      "makespan": 57
+    },
+    "after": {
+      "soc": 5713,
+      "sol": 5644,
+      "makespan": 57
+    },
+    "certificate": "research/round2/repair/empty-32-32-s3-n256-proximity4-307.json",
+    "trace": "research/round2/repair/empty-32-32-s3-n256-proximity4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 91795,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.759591209003702,
+    "improvements": 3,
+    "failed_attempts": 0
+  },
+  {
+    "case": "random-32-32-20-s3-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 101,
+    "instance": "data/round2/random-32-32-20-s3-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s3-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5023,
+      "sol": 4788,
+      "makespan": 53
+    },
+    "after": {
+      "soc": 5021,
+      "sol": 4782,
+      "makespan": 53
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s3-n192-random4-101.json",
+    "trace": "research/round2/repair/random-32-32-20-s3-n192-random4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 80,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.1986876250011846,
+    "improvements": 3,
+    "failed_attempts": 1
+  },
+  {
+    "case": "random-32-32-20-s3-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 211,
+    "instance": "data/round2/random-32-32-20-s3-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s3-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5023,
+      "sol": 4788,
+      "makespan": 53
+    },
+    "after": {
+      "soc": 5020,
+      "sol": 4781,
+      "makespan": 53
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s3-n192-random4-211.json",
+    "trace": "research/round2/repair/random-32-32-20-s3-n192-random4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 91168,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.4834562910255045,
+    "improvements": 3,
+    "failed_attempts": 0
+  },
+  {
+    "case": "random-32-32-20-s3-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 307,
+    "instance": "data/round2/random-32-32-20-s3-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s3-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5023,
+      "sol": 4788,
+      "makespan": 53
+    },
+    "after": {
+      "soc": 5023,
+      "sol": 4784,
+      "makespan": 53
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s3-n192-random4-307.json",
+    "trace": "research/round2/repair/random-32-32-20-s3-n192-random4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 95433,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.3365312919486314,
+    "improvements": 2,
+    "failed_attempts": 1
+  },
+  {
+    "case": "random-32-32-20-s3-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 101,
+    "instance": "data/round2/random-32-32-20-s3-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s3-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5023,
+      "sol": 4788,
+      "makespan": 53
+    },
+    "after": {
+      "soc": 5014,
+      "sol": 4782,
+      "makespan": 53
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s3-n192-proximity4-101.json",
+    "trace": "research/round2/repair/random-32-32-20-s3-n192-proximity4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 56,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.3221351669635624,
+    "improvements": 2,
+    "failed_attempts": 6
+  },
+  {
+    "case": "random-32-32-20-s3-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 211,
+    "instance": "data/round2/random-32-32-20-s3-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s3-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5023,
+      "sol": 4788,
+      "makespan": 53
+    },
+    "after": {
+      "soc": 5006,
+      "sol": 4777,
+      "makespan": 53
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s3-n192-proximity4-211.json",
+    "trace": "research/round2/repair/random-32-32-20-s3-n192-proximity4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 53,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.2852005420718342,
+    "improvements": 3,
+    "failed_attempts": 12
+  },
+  {
+    "case": "random-32-32-20-s3-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 307,
+    "instance": "data/round2/random-32-32-20-s3-n192.json",
+    "inherited": "research/round2/native/random-32-32-20-s3-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 5023,
+      "sol": 4788,
+      "makespan": 53
+    },
+    "after": {
+      "soc": 5023,
+      "sol": 4785,
+      "makespan": 53
+    },
+    "certificate": "research/round2/repair/random-32-32-20-s3-n192-proximity4-307.json",
+    "trace": "research/round2/repair/random-32-32-20-s3-n192-proximity4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 46,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.148221791954711,
+    "improvements": 1,
+    "failed_attempts": 10
+  },
+  {
+    "case": "room-32-32-4-s3-n160",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 101,
+    "instance": "data/round2/room-32-32-4-s3-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s3-n160-lacam3-6s-seed0.json",
+    "before": {
+      "soc": 6452,
+      "sol": 5846,
+      "makespan": 71
+    },
+    "after": {
+      "soc": 6436,
+      "sol": 5832,
+      "makespan": 71
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s3-n160-random4-101.json",
+    "trace": "research/round2/repair/room-32-32-4-s3-n160-random4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 34,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.6570928749861196,
+    "improvements": 8,
+    "failed_attempts": 4
+  },
+  {
+    "case": "room-32-32-4-s3-n160",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 211,
+    "instance": "data/round2/room-32-32-4-s3-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s3-n160-lacam3-6s-seed0.json",
+    "before": {
+      "soc": 6452,
+      "sol": 5846,
+      "makespan": 71
+    },
+    "after": {
+      "soc": 6442,
+      "sol": 5813,
+      "makespan": 71
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s3-n160-random4-211.json",
+    "trace": "research/round2/repair/room-32-32-4-s3-n160-random4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 38,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.6826409579953179,
+    "improvements": 8,
+    "failed_attempts": 7
+  },
+  {
+    "case": "room-32-32-4-s3-n160",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 307,
+    "instance": "data/round2/room-32-32-4-s3-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s3-n160-lacam3-6s-seed0.json",
+    "before": {
+      "soc": 6452,
+      "sol": 5846,
+      "makespan": 71
+    },
+    "after": {
+      "soc": 6419,
+      "sol": 5809,
+      "makespan": 71
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s3-n160-random4-307.json",
+    "trace": "research/round2/repair/room-32-32-4-s3-n160-random4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 33,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.6295842080144212,
+    "improvements": 13,
+    "failed_attempts": 4
+  },
+  {
+    "case": "room-32-32-4-s3-n160",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 101,
+    "instance": "data/round2/room-32-32-4-s3-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s3-n160-lacam3-6s-seed0.json",
+    "before": {
+      "soc": 6452,
+      "sol": 5846,
+      "makespan": 71
+    },
+    "after": {
+      "soc": 6449,
+      "sol": 5837,
+      "makespan": 71
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s3-n160-proximity4-101.json",
+    "trace": "research/round2/repair/room-32-32-4-s3-n160-proximity4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 19,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.3092711669160053,
+    "improvements": 2,
+    "failed_attempts": 15
+  },
+  {
+    "case": "room-32-32-4-s3-n160",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 211,
+    "instance": "data/round2/room-32-32-4-s3-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s3-n160-lacam3-6s-seed0.json",
+    "before": {
+      "soc": 6452,
+      "sol": 5846,
+      "makespan": 71
+    },
+    "after": {
+      "soc": 6452,
+      "sol": 5832,
+      "makespan": 71
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s3-n160-proximity4-211.json",
+    "trace": "research/round2/repair/room-32-32-4-s3-n160-proximity4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 21,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.8182322910288349,
+    "improvements": 2,
+    "failed_attempts": 13
+  },
+  {
+    "case": "room-32-32-4-s3-n160",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 307,
+    "instance": "data/round2/room-32-32-4-s3-n160.json",
+    "inherited": "research/round2/native/room-32-32-4-s3-n160-lacam3-6s-seed0.json",
+    "before": {
+      "soc": 6452,
+      "sol": 5846,
+      "makespan": 71
+    },
+    "after": {
+      "soc": 6439,
+      "sol": 5826,
+      "makespan": 71
+    },
+    "certificate": "research/round2/repair/room-32-32-4-s3-n160-proximity4-307.json",
+    "trace": "research/round2/repair/room-32-32-4-s3-n160-proximity4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 21,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.6320227090036497,
+    "improvements": 6,
+    "failed_attempts": 14
+  },
+  {
+    "case": "maze-32-32-4-s2-n128",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 101,
+    "instance": "data/round2/maze-32-32-4-s2-n128.json",
+    "inherited": "research/round2/native/maze-32-32-4-s2-n128-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6848,
+      "sol": 6560,
+      "makespan": 91
+    },
+    "after": {
+      "soc": 6848,
+      "sol": 6560,
+      "makespan": 91
+    },
+    "certificate": "research/round2/repair/maze-32-32-4-s2-n128-random4-101.json",
+    "trace": "research/round2/repair/maze-32-32-4-s2-n128-random4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 26,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.5286082089878619,
+    "improvements": 0,
+    "failed_attempts": 4
+  },
+  {
+    "case": "maze-32-32-4-s2-n128",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 211,
+    "instance": "data/round2/maze-32-32-4-s2-n128.json",
+    "inherited": "research/round2/native/maze-32-32-4-s2-n128-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6848,
+      "sol": 6560,
+      "makespan": 91
+    },
+    "after": {
+      "soc": 6844,
+      "sol": 6556,
+      "makespan": 91
+    },
+    "certificate": "research/round2/repair/maze-32-32-4-s2-n128-random4-211.json",
+    "trace": "research/round2/repair/maze-32-32-4-s2-n128-random4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 24,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.552457166952081,
+    "improvements": 4,
+    "failed_attempts": 3
+  },
+  {
+    "case": "maze-32-32-4-s2-n128",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 307,
+    "instance": "data/round2/maze-32-32-4-s2-n128.json",
+    "inherited": "research/round2/native/maze-32-32-4-s2-n128-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6848,
+      "sol": 6560,
+      "makespan": 91
+    },
+    "after": {
+      "soc": 6839,
+      "sol": 6558,
+      "makespan": 91
+    },
+    "certificate": "research/round2/repair/maze-32-32-4-s2-n128-random4-307.json",
+    "trace": "research/round2/repair/maze-32-32-4-s2-n128-random4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 21,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.5575429169693962,
+    "improvements": 1,
+    "failed_attempts": 5
+  },
+  {
+    "case": "maze-32-32-4-s2-n128",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 101,
+    "instance": "data/round2/maze-32-32-4-s2-n128.json",
+    "inherited": "research/round2/native/maze-32-32-4-s2-n128-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6848,
+      "sol": 6560,
+      "makespan": 91
+    },
+    "after": {
+      "soc": 6846,
+      "sol": 6558,
+      "makespan": 91
+    },
+    "certificate": "research/round2/repair/maze-32-32-4-s2-n128-proximity4-101.json",
+    "trace": "research/round2/repair/maze-32-32-4-s2-n128-proximity4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 14,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.5840895000146702,
+    "improvements": 1,
+    "failed_attempts": 9
+  },
+  {
+    "case": "maze-32-32-4-s2-n128",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 211,
+    "instance": "data/round2/maze-32-32-4-s2-n128.json",
+    "inherited": "research/round2/native/maze-32-32-4-s2-n128-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6848,
+      "sol": 6560,
+      "makespan": 91
+    },
+    "after": {
+      "soc": 6841,
+      "sol": 6553,
+      "makespan": 91
+    },
+    "certificate": "research/round2/repair/maze-32-32-4-s2-n128-proximity4-211.json",
+    "trace": "research/round2/repair/maze-32-32-4-s2-n128-proximity4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 12,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.7141466250177473,
+    "improvements": 2,
+    "failed_attempts": 10
+  },
+  {
+    "case": "maze-32-32-4-s2-n128",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 307,
+    "instance": "data/round2/maze-32-32-4-s2-n128.json",
+    "inherited": "research/round2/native/maze-32-32-4-s2-n128-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6848,
+      "sol": 6560,
+      "makespan": 91
+    },
+    "after": {
+      "soc": 6846,
+      "sol": 6560,
+      "makespan": 91
+    },
+    "certificate": "research/round2/repair/maze-32-32-4-s2-n128-proximity4-307.json",
+    "trace": "research/round2/repair/maze-32-32-4-s2-n128-proximity4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 12,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.5621692910790443,
+    "improvements": 1,
+    "failed_attempts": 6
+  },
+  {
+    "case": "maze-32-32-4-s3-n128",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 101,
+    "instance": "data/round2/maze-32-32-4-s3-n128.json",
+    "inherited": "research/round2/native/maze-32-32-4-s3-n128-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6511,
+      "sol": 6213,
+      "makespan": 109
+    },
+    "after": {
+      "soc": 6508,
+      "sol": 6210,
+      "makespan": 109
+    },
+    "certificate": "research/round2/repair/maze-32-32-4-s3-n128-random4-101.json",
+    "trace": "research/round2/repair/maze-32-32-4-s3-n128-random4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 32,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.6345417919801548,
+    "improvements": 2,
+    "failed_attempts": 5
+  },
+  {
+    "case": "maze-32-32-4-s3-n128",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 211,
+    "instance": "data/round2/maze-32-32-4-s3-n128.json",
+    "inherited": "research/round2/native/maze-32-32-4-s3-n128-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6511,
+      "sol": 6213,
+      "makespan": 109
+    },
+    "after": {
+      "soc": 6509,
+      "sol": 6211,
+      "makespan": 109
+    },
+    "certificate": "research/round2/repair/maze-32-32-4-s3-n128-random4-211.json",
+    "trace": "research/round2/repair/maze-32-32-4-s3-n128-random4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 28,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.5805450000334531,
+    "improvements": 2,
+    "failed_attempts": 5
+  },
+  {
+    "case": "maze-32-32-4-s3-n128",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 307,
+    "instance": "data/round2/maze-32-32-4-s3-n128.json",
+    "inherited": "research/round2/native/maze-32-32-4-s3-n128-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6511,
+      "sol": 6213,
+      "makespan": 109
+    },
+    "after": {
+      "soc": 6503,
+      "sol": 6210,
+      "makespan": 109
+    },
+    "certificate": "research/round2/repair/maze-32-32-4-s3-n128-random4-307.json",
+    "trace": "research/round2/repair/maze-32-32-4-s3-n128-random4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 27,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.5745249589672312,
+    "improvements": 3,
+    "failed_attempts": 4
+  },
+  {
+    "case": "maze-32-32-4-s3-n128",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 101,
+    "instance": "data/round2/maze-32-32-4-s3-n128.json",
+    "inherited": "research/round2/native/maze-32-32-4-s3-n128-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6511,
+      "sol": 6213,
+      "makespan": 109
+    },
+    "after": {
+      "soc": 6506,
+      "sol": 6204,
+      "makespan": 109
+    },
+    "certificate": "research/round2/repair/maze-32-32-4-s3-n128-proximity4-101.json",
+    "trace": "research/round2/repair/maze-32-32-4-s3-n128-proximity4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 10,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.48641495895572007,
+    "improvements": 1,
+    "failed_attempts": 5
+  },
+  {
+    "case": "maze-32-32-4-s3-n128",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 211,
+    "instance": "data/round2/maze-32-32-4-s3-n128.json",
+    "inherited": "research/round2/native/maze-32-32-4-s3-n128-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6511,
+      "sol": 6213,
+      "makespan": 109
+    },
+    "after": {
+      "soc": 6503,
+      "sol": 6208,
+      "makespan": 109
+    },
+    "certificate": "research/round2/repair/maze-32-32-4-s3-n128-proximity4-211.json",
+    "trace": "research/round2/repair/maze-32-32-4-s3-n128-proximity4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 12,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.4797046669991687,
+    "improvements": 2,
+    "failed_attempts": 7
+  },
+  {
+    "case": "maze-32-32-4-s3-n128",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 307,
+    "instance": "data/round2/maze-32-32-4-s3-n128.json",
+    "inherited": "research/round2/native/maze-32-32-4-s3-n128-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 6511,
+      "sol": 6213,
+      "makespan": 109
+    },
+    "after": {
+      "soc": 6480,
+      "sol": 6204,
+      "makespan": 109
+    },
+    "certificate": "research/round2/repair/maze-32-32-4-s3-n128-proximity4-307.json",
+    "trace": "research/round2/repair/maze-32-32-4-s3-n128-proximity4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 12,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 0.4573114999802783,
+    "improvements": 2,
+    "failed_attempts": 3
+  },
+  {
+    "case": "empty-48-48-s2-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 101,
+    "instance": "data/round2/empty-48-48-s2-n256.json",
+    "inherited": "research/round2/native/empty-48-48-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 7954,
+      "sol": 7953,
+      "makespan": 84
+    },
+    "after": {
+      "soc": 7954,
+      "sol": 7953,
+      "makespan": 84
+    },
+    "certificate": "research/round2/repair/empty-48-48-s2-n256-random4-101.json",
+    "trace": "research/round2/repair/empty-48-48-s2-n256-random4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 19518,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.9779627500101924,
+    "improvements": 0,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-48-48-s2-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 211,
+    "instance": "data/round2/empty-48-48-s2-n256.json",
+    "inherited": "research/round2/native/empty-48-48-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 7954,
+      "sol": 7953,
+      "makespan": 84
+    },
+    "after": {
+      "soc": 7954,
+      "sol": 7953,
+      "makespan": 84
+    },
+    "certificate": "research/round2/repair/empty-48-48-s2-n256-random4-211.json",
+    "trace": "research/round2/repair/empty-48-48-s2-n256-random4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 24558,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.4550842499593273,
+    "improvements": 0,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-48-48-s2-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 307,
+    "instance": "data/round2/empty-48-48-s2-n256.json",
+    "inherited": "research/round2/native/empty-48-48-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 7954,
+      "sol": 7953,
+      "makespan": 84
+    },
+    "after": {
+      "soc": 7954,
+      "sol": 7953,
+      "makespan": 84
+    },
+    "certificate": "research/round2/repair/empty-48-48-s2-n256-random4-307.json",
+    "trace": "research/round2/repair/empty-48-48-s2-n256-random4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 24138,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.2169119160389528,
+    "improvements": 0,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-48-48-s2-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 101,
+    "instance": "data/round2/empty-48-48-s2-n256.json",
+    "inherited": "research/round2/native/empty-48-48-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 7954,
+      "sol": 7953,
+      "makespan": 84
+    },
+    "after": {
+      "soc": 7951,
+      "sol": 7950,
+      "makespan": 84
+    },
+    "certificate": "research/round2/repair/empty-48-48-s2-n256-proximity4-101.json",
+    "trace": "research/round2/repair/empty-48-48-s2-n256-proximity4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 65536,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 3.1877371669979766,
+    "improvements": 3,
+    "failed_attempts": 1
+  },
+  {
+    "case": "empty-48-48-s2-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 211,
+    "instance": "data/round2/empty-48-48-s2-n256.json",
+    "inherited": "research/round2/native/empty-48-48-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 7954,
+      "sol": 7953,
+      "makespan": 84
+    },
+    "after": {
+      "soc": 7950,
+      "sol": 7950,
+      "makespan": 84
+    },
+    "certificate": "research/round2/repair/empty-48-48-s2-n256-proximity4-211.json",
+    "trace": "research/round2/repair/empty-48-48-s2-n256-proximity4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 46800,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 3.6691201670328155,
+    "improvements": 2,
+    "failed_attempts": 1
+  },
+  {
+    "case": "empty-48-48-s2-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 307,
+    "instance": "data/round2/empty-48-48-s2-n256.json",
+    "inherited": "research/round2/native/empty-48-48-s2-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 7954,
+      "sol": 7953,
+      "makespan": 84
+    },
+    "after": {
+      "soc": 7948,
+      "sol": 7948,
+      "makespan": 84
+    },
+    "certificate": "research/round2/repair/empty-48-48-s2-n256-proximity4-307.json",
+    "trace": "research/round2/repair/empty-48-48-s2-n256-proximity4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 48188,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 3.1686821249313653,
+    "improvements": 4,
+    "failed_attempts": 1
+  },
+  {
+    "case": "empty-48-48-s3-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 101,
+    "instance": "data/round2/empty-48-48-s3-n256.json",
+    "inherited": "research/round2/native/empty-48-48-s3-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 7899,
+      "sol": 7899,
+      "makespan": 77
+    },
+    "after": {
+      "soc": 7899,
+      "sol": 7899,
+      "makespan": 77
+    },
+    "certificate": "research/round2/repair/empty-48-48-s3-n256-random4-101.json",
+    "trace": "research/round2/repair/empty-48-48-s3-n256-random4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 55486,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.006974749965593,
+    "improvements": 0,
+    "failed_attempts": 2
+  },
+  {
+    "case": "empty-48-48-s3-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 211,
+    "instance": "data/round2/empty-48-48-s3-n256.json",
+    "inherited": "research/round2/native/empty-48-48-s3-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 7899,
+      "sol": 7899,
+      "makespan": 77
+    },
+    "after": {
+      "soc": 7899,
+      "sol": 7899,
+      "makespan": 77
+    },
+    "certificate": "research/round2/repair/empty-48-48-s3-n256-random4-211.json",
+    "trace": "research/round2/repair/empty-48-48-s3-n256-random4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 23766,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.97023137495853,
+    "improvements": 0,
+    "failed_attempts": 0
+  },
+  {
+    "case": "empty-48-48-s3-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 307,
+    "instance": "data/round2/empty-48-48-s3-n256.json",
+    "inherited": "research/round2/native/empty-48-48-s3-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 7899,
+      "sol": 7899,
+      "makespan": 77
+    },
+    "after": {
+      "soc": 7899,
+      "sol": 7899,
+      "makespan": 77
+    },
+    "certificate": "research/round2/repair/empty-48-48-s3-n256-random4-307.json",
+    "trace": "research/round2/repair/empty-48-48-s3-n256-random4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 37981,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.9624671660130844,
+    "improvements": 0,
+    "failed_attempts": 1
+  },
+  {
+    "case": "empty-48-48-s3-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 101,
+    "instance": "data/round2/empty-48-48-s3-n256.json",
+    "inherited": "research/round2/native/empty-48-48-s3-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 7899,
+      "sol": 7899,
+      "makespan": 77
+    },
+    "after": {
+      "soc": 7897,
+      "sol": 7897,
+      "makespan": 77
+    },
+    "certificate": "research/round2/repair/empty-48-48-s3-n256-proximity4-101.json",
+    "trace": "research/round2/repair/empty-48-48-s3-n256-proximity4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 54468,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 3.056855082977563,
+    "improvements": 2,
+    "failed_attempts": 1
+  },
+  {
+    "case": "empty-48-48-s3-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 211,
+    "instance": "data/round2/empty-48-48-s3-n256.json",
+    "inherited": "research/round2/native/empty-48-48-s3-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 7899,
+      "sol": 7899,
+      "makespan": 77
+    },
+    "after": {
+      "soc": 7898,
+      "sol": 7898,
+      "makespan": 77
+    },
+    "certificate": "research/round2/repair/empty-48-48-s3-n256-proximity4-211.json",
+    "trace": "research/round2/repair/empty-48-48-s3-n256-proximity4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 64288,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 3.1171880830079317,
+    "improvements": 1,
+    "failed_attempts": 2
+  },
+  {
+    "case": "empty-48-48-s3-n256",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 307,
+    "instance": "data/round2/empty-48-48-s3-n256.json",
+    "inherited": "research/round2/native/empty-48-48-s3-n256-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 7899,
+      "sol": 7899,
+      "makespan": 77
+    },
+    "after": {
+      "soc": 7895,
+      "sol": 7895,
+      "makespan": 77
+    },
+    "certificate": "research/round2/repair/empty-48-48-s3-n256-proximity4-307.json",
+    "trace": "research/round2/repair/empty-48-48-s3-n256-proximity4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 44662,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 3.176863167085685,
+    "improvements": 4,
+    "failed_attempts": 1
+  },
+  {
+    "case": "random-64-64-20-s2-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 101,
+    "instance": "data/round2/random-64-64-20-s2-n192.json",
+    "inherited": "research/round2/native/random-64-64-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 8677,
+      "sol": 8624,
+      "makespan": 99
+    },
+    "after": {
+      "soc": 8676,
+      "sol": 8623,
+      "makespan": 99
+    },
+    "certificate": "research/round2/repair/random-64-64-20-s2-n192-random4-101.json",
+    "trace": "research/round2/repair/random-64-64-20-s2-n192-random4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 83833,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.6235504579963163,
+    "improvements": 1,
+    "failed_attempts": 0
+  },
+  {
+    "case": "random-64-64-20-s2-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 211,
+    "instance": "data/round2/random-64-64-20-s2-n192.json",
+    "inherited": "research/round2/native/random-64-64-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 8677,
+      "sol": 8624,
+      "makespan": 99
+    },
+    "after": {
+      "soc": 8677,
+      "sol": 8624,
+      "makespan": 99
+    },
+    "certificate": "research/round2/repair/random-64-64-20-s2-n192-random4-211.json",
+    "trace": "research/round2/repair/random-64-64-20-s2-n192-random4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 73282,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.1131555419415236,
+    "improvements": 0,
+    "failed_attempts": 0
+  },
+  {
+    "case": "random-64-64-20-s2-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 307,
+    "instance": "data/round2/random-64-64-20-s2-n192.json",
+    "inherited": "research/round2/native/random-64-64-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 8677,
+      "sol": 8624,
+      "makespan": 99
+    },
+    "after": {
+      "soc": 8677,
+      "sol": 8624,
+      "makespan": 99
+    },
+    "certificate": "research/round2/repair/random-64-64-20-s2-n192-random4-307.json",
+    "trace": "research/round2/repair/random-64-64-20-s2-n192-random4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 94,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.4935900419950485,
+    "improvements": 0,
+    "failed_attempts": 4
+  },
+  {
+    "case": "random-64-64-20-s2-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 101,
+    "instance": "data/round2/random-64-64-20-s2-n192.json",
+    "inherited": "research/round2/native/random-64-64-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 8677,
+      "sol": 8624,
+      "makespan": 99
+    },
+    "after": {
+      "soc": 8677,
+      "sol": 8624,
+      "makespan": 99
+    },
+    "certificate": "research/round2/repair/random-64-64-20-s2-n192-proximity4-101.json",
+    "trace": "research/round2/repair/random-64-64-20-s2-n192-proximity4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 39,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.7038108750712126,
+    "improvements": 0,
+    "failed_attempts": 1
+  },
+  {
+    "case": "random-64-64-20-s2-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 211,
+    "instance": "data/round2/random-64-64-20-s2-n192.json",
+    "inherited": "research/round2/native/random-64-64-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 8677,
+      "sol": 8624,
+      "makespan": 99
+    },
+    "after": {
+      "soc": 8677,
+      "sol": 8624,
+      "makespan": 99
+    },
+    "certificate": "research/round2/repair/random-64-64-20-s2-n192-proximity4-211.json",
+    "trace": "research/round2/repair/random-64-64-20-s2-n192-proximity4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 26,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.296049500000663,
+    "improvements": 0,
+    "failed_attempts": 1
+  },
+  {
+    "case": "random-64-64-20-s2-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 307,
+    "instance": "data/round2/random-64-64-20-s2-n192.json",
+    "inherited": "research/round2/native/random-64-64-20-s2-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 8677,
+      "sol": 8624,
+      "makespan": 99
+    },
+    "after": {
+      "soc": 8677,
+      "sol": 8624,
+      "makespan": 99
+    },
+    "certificate": "research/round2/repair/random-64-64-20-s2-n192-proximity4-307.json",
+    "trace": "research/round2/repair/random-64-64-20-s2-n192-proximity4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 28,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.3658243330428377,
+    "improvements": 0,
+    "failed_attempts": 3
+  },
+  {
+    "case": "random-64-64-20-s3-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 101,
+    "instance": "data/round2/random-64-64-20-s3-n192.json",
+    "inherited": "research/round2/native/random-64-64-20-s3-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 8714,
+      "sol": 8656,
+      "makespan": 113
+    },
+    "after": {
+      "soc": 8714,
+      "sol": 8656,
+      "makespan": 113
+    },
+    "certificate": "research/round2/repair/random-64-64-20-s3-n192-random4-101.json",
+    "trace": "research/round2/repair/random-64-64-20-s3-n192-random4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 90896,
+      "attempt_limit": 96,
+      "attempts_used": 96,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.617995582986623,
+    "improvements": 0,
+    "failed_attempts": 5
+  },
+  {
+    "case": "random-64-64-20-s3-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 211,
+    "instance": "data/round2/random-64-64-20-s3-n192.json",
+    "inherited": "research/round2/native/random-64-64-20-s3-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 8714,
+      "sol": 8656,
+      "makespan": 113
+    },
+    "after": {
+      "soc": 8714,
+      "sol": 8656,
+      "makespan": 113
+    },
+    "certificate": "research/round2/repair/random-64-64-20-s3-n192-random4-211.json",
+    "trace": "research/round2/repair/random-64-64-20-s3-n192-random4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 92,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.5807369999820367,
+    "improvements": 0,
+    "failed_attempts": 7
+  },
+  {
+    "case": "random-64-64-20-s3-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "random4",
+    "seed": 307,
+    "instance": "data/round2/random-64-64-20-s3-n192.json",
+    "inherited": "research/round2/native/random-64-64-20-s3-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 8714,
+      "sol": 8656,
+      "makespan": 113
+    },
+    "after": {
+      "soc": 8714,
+      "sol": 8656,
+      "makespan": 113
+    },
+    "certificate": "research/round2/repair/random-64-64-20-s3-n192-random4-307.json",
+    "trace": "research/round2/repair/random-64-64-20-s3-n192-random4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 81,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 2.2313263749238104,
+    "improvements": 0,
+    "failed_attempts": 7
+  },
+  {
+    "case": "random-64-64-20-s3-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 101,
+    "instance": "data/round2/random-64-64-20-s3-n192.json",
+    "inherited": "research/round2/native/random-64-64-20-s3-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 8714,
+      "sol": 8656,
+      "makespan": 113
+    },
+    "after": {
+      "soc": 8714,
+      "sol": 8656,
+      "makespan": 113
+    },
+    "certificate": "research/round2/repair/random-64-64-20-s3-n192-proximity4-101.json",
+    "trace": "research/round2/repair/random-64-64-20-s3-n192-proximity4-101-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 25,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.3634934589499608,
+    "improvements": 0,
+    "failed_attempts": 9
+  },
+  {
+    "case": "random-64-64-20-s3-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 211,
+    "instance": "data/round2/random-64-64-20-s3-n192.json",
+    "inherited": "research/round2/native/random-64-64-20-s3-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 8714,
+      "sol": 8656,
+      "makespan": 113
+    },
+    "after": {
+      "soc": 8714,
+      "sol": 8656,
+      "makespan": 113
+    },
+    "certificate": "research/round2/repair/random-64-64-20-s3-n192-proximity4-211.json",
+    "trace": "research/round2/repair/random-64-64-20-s3-n192-proximity4-211-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 15,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.016547792009078,
+    "improvements": 0,
+    "failed_attempts": 10
+  },
+  {
+    "case": "random-64-64-20-s3-n192",
+    "split": "heldout",
+    "status": "verified",
+    "variant": "proximity4",
+    "seed": 307,
+    "instance": "data/round2/random-64-64-20-s3-n192.json",
+    "inherited": "research/round2/native/random-64-64-20-s3-n192-lacam3-12s-seed0.json",
+    "before": {
+      "soc": 8714,
+      "sol": 8656,
+      "makespan": 113
+    },
+    "after": {
+      "soc": 8712,
+      "sol": 8654,
+      "makespan": 113
+    },
+    "certificate": "research/round2/repair/random-64-64-20-s3-n192-proximity4-307.json",
+    "trace": "research/round2/repair/random-64-64-20-s3-n192-proximity4-307-trace.json",
+    "budget": {
+      "node_limit": 100000,
+      "nodes_used": 100000,
+      "attempt_limit": 96,
+      "attempts_used": 26,
+      "per_agent_limit": 10000
+    },
+    "elapsed_seconds": 1.2836040830006823,
+    "improvements": 1,
+    "failed_attempts": 9
+  }
+]

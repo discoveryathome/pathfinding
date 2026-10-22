@@ -1,0 +1,22 @@
+{
+  "selected": "random4",
+  "totals": {
+    "random4": [
+      50141,
+      53408
+    ],
+    "proximity4": [
+      50176,
+      53362
+    ],
+    "corridor4": [
+      50172,
+      53426
+    ],
+    "joint2": [
+      50175,
+      53398
+    ]
+  },
+  "rule": "protocol lexicographic SOL then SOC; strict improvement over random4 required"
+}

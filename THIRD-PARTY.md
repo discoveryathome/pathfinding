@@ -34,3 +34,16 @@ under ignored build/ fix the working-directory assumptions. Assertions remain
 enabled. All six upstream tests pass. The initial fixture-location failure is
 retained. The pilot checker also explicitly rejects empty solutions rather than
 using upstream's empty-solution feasibility convention as success.
+
+## Round-two additions
+
+The separately fetched PIBT preference implementation is MIT, from
+https://github.com/HirokiNagai-39/pibt-tiebreaking at the commit and argparse
+submodule pins in research/round2/baseline-source.json. It is based on LaCAM3; retain
+all upstream notices. No upstream endorsement is implied. Its source/binaries are
+not bundled in the pilot source archive.
+
+Additional Moving AI maps and scenarios retain the same ODC Attribution License
+1.0. Exact archive URLs, archive/member hashes and selected members are in
+research/round2/data-sources.json. Empty-48-48 replaces a nonexistent empty-64-64
+member before measurement, as recorded in the protocol.

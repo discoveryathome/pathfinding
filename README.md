@@ -1,47 +1,46 @@
-# Multi-agent pathfinding — local Discovery@Home pilot
+# Multi-agent pathfinding
 
-**Open for local trial contributions and expert-agent review.**
+**Open for pre-release trial contributions and expert-agent reviews.**
+Coordinate many agents through a grid without collisions. Contributions can improve
+a verified plan, audit the checker, reproduce a baseline or add a useful workload.
 
-This pilot tests whether bounded neighborhood repairs can improve verified grid
-plans inherited from LaCAM3. Eight instances with 64–256 agents, 56 repair trials,
-separate collision/cost verification and an interactive playback are prepared.
+Two author-run rounds now cover 20 cases. Round two ran 60 native baselines and
+90 repairs on 12 fresh scenarios; the local archive improved primary cost on all
+12, by small amounts. Random repair won development selection. No generally better
+new method, global record or physical-robot result is claimed.
 
-Read [the assessment](research/ASSESSMENT.md), then open
-[the verified-plan playback](visuals/pathfinding.html). All initial evidence is
-author-checked; no novel algorithm or accepted performance record is claimed.
+Read [the current assessment](research/round2/ASSESSMENT.md), open the
+[round-two playback](visuals/round2.html), and follow [distribution instructions](DISTRIBUTION.md).
+The [original playback](visuals/pathfinding.html) and original trial evidence remain available.
 
-## Start
+## First contribution
 
-Requires Python 3.12, `uv`, Git and a C++17 compiler. Tested on macOS/Apple Clang.
+Requires Python 3.12, uv, Git and a C++17 compiler. Tested on macOS/Apple Clang.
+The included macOS/Linux CI recipe has not yet run on GitHub.
 
 ```sh
 sh tools/setup.sh
 source .venv/bin/activate
 python tools/check.py --quick
-python tools/pick.py --seed 42
+python tools/contribute.py --case maze-32-32-4-s3-n128 --variant random4 --seed 419 --nodes 30000 --out research/my-first-trial
+python tools/verify_candidate.py data/round2/maze-32-32-4-s3-n128.json research/my-first-trial/candidate.json
 ```
 
-`python tools/check.py` runs the tests and rechecks every archived route, including
-accepted intermediate repairs. A lightweight candidate check is:
+This begins from the current archive, including prior gains. An unchanged result
+is a valid handoff. `tools/pick.py --seed 419` also offers verification, workload
+and expert-review tasks. Full original-suite checks use `python tools/check.py`;
+round-two evidence checks use `python tools/check_round2.py`. Both can take minutes.
 
-```sh
-python tools/verify_candidate.py data/instances/room-32-32-4-n160.json results/repair/room-32-32-4-n160-proximity4-s17.json
-```
+## Reproduction and attribution
 
-See DISCOVERY.md for a one-command contribution from the current local incumbent.
-Replay experiments in a copy: `tools/prepare.py` and `tools/run_trial.py` overwrite
-experiment outputs, and asynchronous native deadline runs can produce new routes.
-The verifier is reproducible from frozen routes; repair reruns are deterministic.
+Keep contributions in new research/session directories. Read AGENTS.md, DISCOVERY.md
+and the frozen round-two protocol. Replays belong in separate copies with fresh
+output directories: preparation scripts intentionally protect completed experiments.
+For the extra native comparison, run `sh tools/build_pibt.sh` to fetch/build the
+pinned SoCS-2025 PIBT implementation. Standard contribution/verification needs only
+the primary setup. Browser checks are optional and use requirements-visual.txt.
 
-The playback is a self-contained local file. To rebuild it, run
-`python tools/build_visual.py`. Browser checks optionally use requirements-visual.txt
-and a local Chrome installation; they are not needed for route verification.
-
-The local `discover.json` has a file URI and no hub enrollment. No remote was
-created. Pilot-owned code is MIT; solver and benchmark notices remain separate.
-
-- [Contributor entry](AGENTS.md)
-- [Trial protocol](research/PROTOCOL.md)
-- [Current candidate archive](discover/incumbents.json)
-- [Sources and licenses](THIRD-PARTY.md)
-- [Review handoff](research/REVIEW.md)
+Pilot code is MIT. Moving AI data remain ODC-By; solver notices are preserved in
+THIRD-PARTY.md. The manifest is local and no hub or remote is configured. Shareable
+source archives and full-history Git bundles can be produced with tools/make_release.py.
+Scientific review is pending; intake is open.

@@ -8,6 +8,8 @@ for name,path in [('manifest','discover.json'),('catalog','discover/catalog.json
 assert sum(t['weight'] for t in json.loads((ROOT/'discover/catalog.json').read_text())['tracks'])==100
 for path,h in json.loads((ROOT/'research/manifest.json').read_text())['sha256'].items():assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==h,f'Frozen artifact changed: {path}'
 assert json.loads((ROOT/'discover.json').read_text())['review']['paused'] is False
+for item in json.loads((ROOT/'discover/frontier.json').read_text())['artifacts']:
+ assert hashlib.sha256((ROOT/item['path']).read_bytes()).hexdigest()==item['sha256'], 'Frontier binding mismatch'
 count=0
 if not a.quick:
  subprocess.run([sys.executable,'-m','pytest','-q','tests'],cwd=ROOT,check=True)

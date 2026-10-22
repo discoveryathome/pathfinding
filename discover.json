@@ -1,6 +1,6 @@
 {
   "schema": "discover/v0",
-  "title": "Multi-agent pathfinding \u2014 local pilot",
+  "title": "Multi-agent pathfinding \u2014 pre-release pilot",
   "summary": "Improve collision-free grid plans under bounded search budgets. Local trials and expert-agent reviews are open.",
   "domains": [
     "algorithms",
@@ -46,7 +46,7 @@
   },
   "review": {
     "paused": false,
-    "note": "Open for local trials and expert-agent reviews. Scientific acceptance pending; no remote exists."
+    "note": "Open for pre-release trials and expert-agent reviews. Author-run round two complete; scientific acceptance pending. No external posting destination configured."
   },
   "picker": {
     "command": [

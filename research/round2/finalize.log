@@ -1,0 +1,110 @@
+{
+  "selected": "random4",
+  "instances": 12,
+  "repair_runs": 90,
+  "aggregates": {
+    "development/corridor4": {
+      "runs": 9,
+      "before": {
+        "sol": 50214,
+        "soc": 53442
+      },
+      "after": {
+        "sol": 50172,
+        "soc": 53426
+      },
+      "primary_improved_runs": 7,
+      "any_improved_runs": 7,
+      "elapsed_seconds": 12.383092916104943,
+      "nodes_used": 711435,
+      "failed_attempts": 54
+    },
+    "development/joint2": {
+      "runs": 9,
+      "before": {
+        "sol": 50214,
+        "soc": 53442
+      },
+      "after": {
+        "sol": 50175,
+        "soc": 53398
+      },
+      "primary_improved_runs": 7,
+      "any_improved_runs": 7,
+      "elapsed_seconds": 32.72656929097138,
+      "nodes_used": 900000,
+      "failed_attempts": 36
+    },
+    "development/proximity4": {
+      "runs": 9,
+      "before": {
+        "sol": 50214,
+        "soc": 53442
+      },
+      "after": {
+        "sol": 50176,
+        "soc": 53362
+      },
+      "primary_improved_runs": 8,
+      "any_improved_runs": 9,
+      "elapsed_seconds": 18.848912418819964,
+      "nodes_used": 801205,
+      "failed_attempts": 62
+    },
+    "development/random4": {
+      "runs": 9,
+      "before": {
+        "sol": 50214,
+        "soc": 53442
+      },
+      "after": {
+        "sol": 50141,
+        "soc": 53408
+      },
+      "primary_improved_runs": 6,
+      "any_improved_runs": 6,
+      "elapsed_seconds": 14.256636375095695,
+      "nodes_used": 696881,
+      "failed_attempts": 26
+    },
+    "heldout/proximity4": {
+      "runs": 27,
+      "before": {
+        "sol": 186567,
+        "soc": 191469
+      },
+      "after": {
+        "sol": 186437,
+        "soc": 191259
+      },
+      "primary_improved_runs": 21,
+      "any_improved_runs": 22,
+      "elapsed_seconds": 46.15133158606477,
+      "nodes_used": 2414399,
+      "failed_attempts": 151
+    },
+    "heldout/random4": {
+      "runs": 27,
+      "before": {
+        "sol": 186567,
+        "soc": 191469
+      },
+      "after": {
+        "sol": 186451,
+        "soc": 191378
+      },
+      "primary_improved_runs": 12,
+      "any_improved_runs": 12,
+      "elapsed_seconds": 43.57080658257473,
+      "nodes_used": 2048764,
+      "failed_attempts": 69
+    }
+  },
+  "native_runs": 60,
+  "native_verified": 57,
+  "cases_with_primary_archive_gain": 12,
+  "sum_best_case_primary_gains": 120,
+  "trial_only_sum_primary_gains": 118,
+  "additional_author_smoke_primary_gain": 2,
+  "replay_equal": true
+}

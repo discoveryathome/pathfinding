@@ -1,0 +1,104 @@
+[
+  {
+    "url": "https://movingai.com/benchmarks/mapf/mapf-map.zip",
+    "sha256": "9da2e4c5ce03aa4e063b3a283ce874590b36cc4f31a297fe7ecb00d105abf288",
+    "members": [
+      {
+        "member": "empty-32-32.map",
+        "path": "data/round2/empty-32-32.map",
+        "sha256": "5b11a28f65d09a0ba260b77cb698bb22c73cfe1e1f5e159997de6108cd31bf68"
+      },
+      {
+        "member": "random-32-32-20.map",
+        "path": "data/round2/random-32-32-20.map",
+        "sha256": "8c5a83498ab92a2579aeef91c5f42d9ecf9019ef038cf98e623061a15beb6f56"
+      },
+      {
+        "member": "room-32-32-4.map",
+        "path": "data/round2/room-32-32-4.map",
+        "sha256": "f107fefbf63c7a1a3753e4a033452301a1cdd7043cab7f45e4ed0e7dec1e90a9"
+      },
+      {
+        "member": "maze-32-32-4.map",
+        "path": "data/round2/maze-32-32-4.map",
+        "sha256": "7ff67aa59f71933b8cf2605e12631b8a28d9ebcfb9b941de3afdc7dce3123fee"
+      },
+      {
+        "member": "empty-48-48.map",
+        "path": "data/round2/empty-48-48.map",
+        "sha256": "9d13ddc8f39d3e64f2cabea9a81c8d298d0f4a955b104589aea71b07b2606d4f"
+      },
+      {
+        "member": "random-64-64-20.map",
+        "path": "data/round2/random-64-64-20.map",
+        "sha256": "0702bcc7df0529a819845c5d70050464c0946ae234881f27b9f4202b81f40c83"
+      }
+    ]
+  },
+  {
+    "url": "https://movingai.com/benchmarks/mapf/mapf-scen-random.zip",
+    "sha256": "20b7838f7a51f13e90a63ee138e9435fb4e41b0381becbc7313b7d3a7d859276",
+    "members": [
+      {
+        "member": "scen-random/empty-32-32-random-2.scen",
+        "path": "data/round2/empty-32-32-random-2.scen",
+        "sha256": "b347f7d40035dbe4b2c81d5a0e23c152ed6d555080c7427f39f565f22ee94cd3"
+      },
+      {
+        "member": "scen-random/empty-32-32-random-3.scen",
+        "path": "data/round2/empty-32-32-random-3.scen",
+        "sha256": "8fdb7946659e00f459a698236d2ddaf5a7832dbff640f28f3f18a4ed4f90ab08"
+      },
+      {
+        "member": "scen-random/random-32-32-20-random-2.scen",
+        "path": "data/round2/random-32-32-20-random-2.scen",
+        "sha256": "005533b1f90d70d552340812a1a4a985a52699a31cde78dee0b756e802d6964e"
+      },
+      {
+        "member": "scen-random/random-32-32-20-random-3.scen",
+        "path": "data/round2/random-32-32-20-random-3.scen",
+        "sha256": "96bff51b6d147608e858d0ea9e600a50c5a40cf0a5f05c225a5a647f884f801f"
+      },
+      {
+        "member": "scen-random/room-32-32-4-random-2.scen",
+        "path": "data/round2/room-32-32-4-random-2.scen",
+        "sha256": "04fb777fd103a7a48cc08eaabcee2de03017b03bf55385199d3ff966f7c72d21"
+      },
+      {
+        "member": "scen-random/room-32-32-4-random-3.scen",
+        "path": "data/round2/room-32-32-4-random-3.scen",
+        "sha256": "f6c3ef8fe0e06cd6d5b8e2e7da1659f009e7522eb1c2ba44c6ea45c589509312"
+      },
+      {
+        "member": "scen-random/maze-32-32-4-random-2.scen",
+        "path": "data/round2/maze-32-32-4-random-2.scen",
+        "sha256": "59fa2bb9c982f40cc85b53a80449202a419dae298c92c56886c053f0502e851f"
+      },
+      {
+        "member": "scen-random/maze-32-32-4-random-3.scen",
+        "path": "data/round2/maze-32-32-4-random-3.scen",
+        "sha256": "69dfb3a711db1301333ba1ee1b2fcf5763f9f6a58458497ceee1f4aff2d0bb7c"
+      },
+      {
+        "member": "scen-random/empty-48-48-random-2.scen",
+        "path": "data/round2/empty-48-48-random-2.scen",
+        "sha256": "578ee9a1d23e21241360df47c9f36a3eee85c951bf8a48a8edaaffc27e90542e"
+      },
+      {
+        "member": "scen-random/empty-48-48-random-3.scen",
+        "path": "data/round2/empty-48-48-random-3.scen",
+        "sha256": "dde6b02f753f8cfc77c95b1b820e1aad4b96a5ce7b4339571bf310d73be6568b"
+      },
+      {
+        "member": "scen-random/random-64-64-20-random-2.scen",
+        "path": "data/round2/random-64-64-20-random-2.scen",
+        "sha256": "db2aaf69522aed10d104f3819642c033bcca2afa2f9b3cdae9e29dd1f5b620de"
+      },
+      {
+        "member": "scen-random/random-64-64-20-random-3.scen",
+        "path": "data/round2/random-64-64-20-random-3.scen",
+        "sha256": "3a32af85bb49f3598b146523821e0d812d958ea7a80f07eaa1346d5ae708d9d7"
+      }
+    ]
+  }
+]

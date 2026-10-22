@@ -1,0 +1,15 @@
+# Round 2 protocol — fixed before measurement
+
+Author-run computational MAPF experiment, no independent review or physical-robot claim. Preserve original witnesses. Four-neighbor moves plus waits; vertex and opposing-edge collisions forbidden; hold final goals. Track SOL, SOC and makespan separately.
+
+Fresh Moving AI scenarios 2 and 3 on empty-32-32 (256 agents), random-32-32-20 (192), room-32-32-4 (160), maze-32-32-4 (128), empty-64-64 (256), random-64-64-20 (192). Three development instances: scenario 2 on empty32/random32/room32. Other nine instances evaluation; the larger map families are new, scenario 3 on old families is fresh-scenario transfer only. Counts fixed before observing solutions.
+
+Starting solutions: unmodified pinned LaCAM3 default enhancements, deadlines 6 and 12 seconds, seed 0; pinned newer PIBT preference construction (SoCS-2025) as another native context baseline, seeds 0/1/2, 6-second limit. Validate every returned witness independently; failures remain recorded. Use lowest (SOL,SOC,makespan) feasible witness as common repair start. Native timing is context only; asynchronous/deadline variation prevents equal-CPU claims. MAPF-LNS2 remains an explicit comparison gap if not reproduced.
+
+Repair alternatives: existing proximity4; corridor4 (agents sharing low-degree bottlenecks); joint2 (joint space-time A* for two nearby agents, optimizing SOL). Control: existing random4 prioritized repair. Each seed 101/211/307, max 100000 popped states, 96 attempts, 10000 states per individual/joint search. Same common starting witness. Preprocessing and neighbor-generation cost reported by elapsed time; popped states across different solvers are not equal computation. Accept strict SOC or SOL gain with no regression in either and no makespan increase.
+
+Run all four methods on three development instances × three seeds. Select lexicographic total (SOL,SOC) with name tie-break. Promote an alternative for evaluation only if it beats random4 on development, else retain random4 and run proximity4 as prespecified challenger. Freeze choice before nine held-out instances × three seeds × two methods. Report aggregate plus every case, solved rate, expansion caps, failed attempts, runtime, and gain against all observed native baselines. No significance/novelty claim from this small panel.
+
+Joint-search controls: compare tiny cases with exact enumeration, collision negatives, future-goal blocking and deterministic replay. All final and accepted intermediate solutions get separate route checks. Merge nondominated results into inherited archive, including native improvements. Null contributions remain valid handoffs. Build a portable source distribution, run a clean unpacked contributor smoke, keep intake open and scientific acceptance pending.
+
+Pre-measurement acquisition amendment: the published archive has no empty-64-64 map. Use its empty-48-48 map with the same 256 agents. No native solutions or repair results were observed before this correction; original download error retained.

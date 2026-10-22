@@ -1,0 +1,384 @@
+{
+  "selected": "random4",
+  "instances": 12,
+  "repair_runs": 90,
+  "aggregates": {
+    "development/corridor4": {
+      "runs": 9,
+      "before": {
+        "sol": 50214,
+        "soc": 53442
+      },
+      "after": {
+        "sol": 50172,
+        "soc": 53426
+      },
+      "primary_improved_runs": 7,
+      "any_improved_runs": 7,
+      "elapsed_seconds": 12.383092916104943,
+      "nodes_used": 711435,
+      "failed_attempts": 54
+    },
+    "development/joint2": {
+      "runs": 9,
+      "before": {
+        "sol": 50214,
+        "soc": 53442
+      },
+      "after": {
+        "sol": 50175,
+        "soc": 53398
+      },
+      "primary_improved_runs": 7,
+      "any_improved_runs": 7,
+      "elapsed_seconds": 32.72656929097138,
+      "nodes_used": 900000,
+      "failed_attempts": 36
+    },
+    "development/proximity4": {
+      "runs": 9,
+      "before": {
+        "sol": 50214,
+        "soc": 53442
+      },
+      "after": {
+        "sol": 50176,
+        "soc": 53362
+      },
+      "primary_improved_runs": 8,
+      "any_improved_runs": 9,
+      "elapsed_seconds": 18.848912418819964,
+      "nodes_used": 801205,
+      "failed_attempts": 62
+    },
+    "development/random4": {
+      "runs": 9,
+      "before": {
+        "sol": 50214,
+        "soc": 53442
+      },
+      "after": {
+        "sol": 50141,
+        "soc": 53408
+      },
+      "primary_improved_runs": 6,
+      "any_improved_runs": 6,
+      "elapsed_seconds": 14.256636375095695,
+      "nodes_used": 696881,
+      "failed_attempts": 26
+    },
+    "heldout/proximity4": {
+      "runs": 27,
+      "before": {
+        "sol": 186567,
+        "soc": 191469
+      },
+      "after": {
+        "sol": 186437,
+        "soc": 191259
+      },
+      "primary_improved_runs": 21,
+      "any_improved_runs": 22,
+      "elapsed_seconds": 46.15133158606477,
+      "nodes_used": 2414399,
+      "failed_attempts": 151
+    },
+    "heldout/random4": {
+      "runs": 27,
+      "before": {
+        "sol": 186567,
+        "soc": 191469
+      },
+      "after": {
+        "sol": 186451,
+        "soc": 191378
+      },
+      "primary_improved_runs": 12,
+      "any_improved_runs": 12,
+      "elapsed_seconds": 43.57080658257473,
+      "nodes_used": 2048764,
+      "failed_attempts": 69
+    }
+  },
+  "native_runs": 60,
+  "native_verified": 57,
+  "native_failures": [
+    {
+      "case": "maze-32-32-4-s2-n128",
+      "method": "pibt-preference",
+      "deadline_seconds": 6,
+      "seed": 0,
+      "command": [
+        "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/pibt/main",
+        "-m",
+        "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/round2/maze-32-32-4.map",
+        "-i",
+        "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/round2/maze-32-32-4-random-2.scen",
+        "-N",
+        "128",
+        "-s",
+        "0",
+        "-t",
+        "6",
+        "-o",
+        "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/research/round2/native/maze-32-32-4-s2-n128-pibt-preference-6s-seed0.txt",
+        "-v",
+        "0"
+      ],
+      "status": "failed",
+      "returncode": 0,
+      "elapsed_seconds": 6.0669946250272915
+    },
+    {
+      "case": "maze-32-32-4-s2-n128",
+      "method": "pibt-preference",
+      "deadline_seconds": 6,
+      "seed": 1,
+      "command": [
+        "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/pibt/main",
+        "-m",
+        "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/round2/maze-32-32-4.map",
+        "-i",
+        "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/round2/maze-32-32-4-random-2.scen",
+        "-N",
+        "128",
+        "-s",
+        "1",
+        "-t",
+        "6",
+        "-o",
+        "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/research/round2/native/maze-32-32-4-s2-n128-pibt-preference-6s-seed1.txt",
+        "-v",
+        "0"
+      ],
+      "status": "failed",
+      "returncode": 0,
+      "elapsed_seconds": 6.07118787500076
+    },
+    {
+      "case": "maze-32-32-4-s2-n128",
+      "method": "pibt-preference",
+      "deadline_seconds": 6,
+      "seed": 2,
+      "command": [
+        "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/build/pibt/main",
+        "-m",
+        "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/round2/maze-32-32-4.map",
+        "-i",
+        "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/data/round2/maze-32-32-4-random-2.scen",
+        "-N",
+        "128",
+        "-s",
+        "2",
+        "-t",
+        "6",
+        "-o",
+        "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/research/round2/native/maze-32-32-4-s2-n128-pibt-preference-6s-seed2.txt",
+        "-v",
+        "0"
+      ],
+      "status": "failed",
+      "returncode": 0,
+      "elapsed_seconds": 6.061514333006926
+    }
+  ],
+  "cases_with_primary_archive_gain": 12,
+  "sum_best_case_primary_gains": 120,
+  "trial_only_sum_primary_gains": 118,
+  "additional_author_smoke_primary_gain": 2,
+  "cases": [
+    {
+      "case": "empty-32-32-s2-n256",
+      "native_best": {
+        "sol": 5916,
+        "soc": 5952,
+        "makespan": 49
+      },
+      "archive_best": {
+        "soc": 5944,
+        "sol": 5912,
+        "makespan": 49
+      },
+      "primary_gain": 4,
+      "best_path": "research/round2/repair/empty-32-32-s2-n256-proximity4-211.json",
+      "pareto_candidates": 3
+    },
+    {
+      "case": "empty-32-32-s3-n256",
+      "native_best": {
+        "sol": 5650,
+        "soc": 5745,
+        "makespan": 57
+      },
+      "archive_best": {
+        "soc": 5713,
+        "sol": 5644,
+        "makespan": 57
+      },
+      "primary_gain": 6,
+      "best_path": "research/round2/repair/empty-32-32-s3-n256-proximity4-307.json",
+      "pareto_candidates": 1
+    },
+    {
+      "case": "random-32-32-20-s2-n192",
+      "native_best": {
+        "sol": 4901,
+        "soc": 5194,
+        "makespan": 54
+      },
+      "archive_best": {
+        "soc": 5190,
+        "sol": 4889,
+        "makespan": 54
+      },
+      "primary_gain": 12,
+      "best_path": "research/round2/repair/random-32-32-20-s2-n192-random4-211.json",
+      "pareto_candidates": 2
+    },
+    {
+      "case": "random-32-32-20-s3-n192",
+      "native_best": {
+        "sol": 4788,
+        "soc": 5023,
+        "makespan": 53
+      },
+      "archive_best": {
+        "soc": 5006,
+        "sol": 4777,
+        "makespan": 53
+      },
+      "primary_gain": 11,
+      "best_path": "research/round2/repair/random-32-32-20-s3-n192-proximity4-211.json",
+      "pareto_candidates": 1
+    },
+    {
+      "case": "room-32-32-4-s2-n160",
+      "native_best": {
+        "sol": 5921,
+        "soc": 6668,
+        "makespan": 74
+      },
+      "archive_best": {
+        "soc": 6659,
+        "sol": 5901,
+        "makespan": 74
+      },
+      "primary_gain": 20,
+      "best_path": "research/round2/repair/room-32-32-4-s2-n160-random4-101.json",
+      "pareto_candidates": 3
+    },
+    {
+      "case": "room-32-32-4-s3-n160",
+      "native_best": {
+        "sol": 5846,
+        "soc": 6452,
+        "makespan": 71
+      },
+      "archive_best": {
+        "soc": 6419,
+        "sol": 5809,
+        "makespan": 71
+      },
+      "primary_gain": 37,
+      "best_path": "research/round2/repair/room-32-32-4-s3-n160-random4-307.json",
+      "pareto_candidates": 2
+    },
+    {
+      "case": "maze-32-32-4-s2-n128",
+      "native_best": {
+        "sol": 6560,
+        "soc": 6848,
+        "makespan": 91
+      },
+      "archive_best": {
+        "soc": 6841,
+        "sol": 6553,
+        "makespan": 91
+      },
+      "primary_gain": 7,
+      "best_path": "research/round2/repair/maze-32-32-4-s2-n128-proximity4-211.json",
+      "pareto_candidates": 2
+    },
+    {
+      "case": "maze-32-32-4-s3-n128",
+      "native_best": {
+        "sol": 6213,
+        "soc": 6511,
+        "makespan": 109
+      },
+      "archive_best": {
+        "soc": 6478,
+        "sol": 6202,
+        "makespan": 108
+      },
+      "primary_gain": 11,
+      "best_path": "research/round2-smoke/candidate.json",
+      "pareto_candidates": 2
+    },
+    {
+      "case": "empty-48-48-s2-n256",
+      "native_best": {
+        "sol": 7953,
+        "soc": 7954,
+        "makespan": 84
+      },
+      "archive_best": {
+        "soc": 7948,
+        "sol": 7948,
+        "makespan": 84
+      },
+      "primary_gain": 5,
+      "best_path": "research/round2/repair/empty-48-48-s2-n256-proximity4-307.json",
+      "pareto_candidates": 1
+    },
+    {
+      "case": "empty-48-48-s3-n256",
+      "native_best": {
+        "sol": 7899,
+        "soc": 7899,
+        "makespan": 77
+      },
+      "archive_best": {
+        "soc": 7895,
+        "sol": 7895,
+        "makespan": 77
+      },
+      "primary_gain": 4,
+      "best_path": "research/round2/repair/empty-48-48-s3-n256-proximity4-307.json",
+      "pareto_candidates": 1
+    },
+    {
+      "case": "random-64-64-20-s2-n192",
+      "native_best": {
+        "sol": 8624,
+        "soc": 8677,
+        "makespan": 99
+      },
+      "archive_best": {
+        "soc": 8676,
+        "sol": 8623,
+        "makespan": 99
+      },
+      "primary_gain": 1,
+      "best_path": "research/round2/repair/random-64-64-20-s2-n192-random4-101.json",
+      "pareto_candidates": 1
+    },
+    {
+      "case": "random-64-64-20-s3-n192",
+      "native_best": {
+        "sol": 8656,
+        "soc": 8714,
+        "makespan": 113
+      },
+      "archive_best": {
+        "soc": 8712,
+        "sol": 8654,
+        "makespan": 113
+      },
+      "primary_gain": 2,
+      "best_path": "research/round2/repair/random-64-64-20-s3-n192-proximity4-307.json",
+      "pareto_candidates": 2
+    }
+  ],
+  "replay_equal": true
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/HirokiNagai-39/pibt-tiebreaking",
+  "commit": "36b2c28b3f0fcdcbb9824b6556207c7552a5e461",
+  "submodules": "d924b84eba1f0f0adf38b20b7b4829f6f65b6570 lifelong/third_party/argparse (v3.2-2-gd924b84)\n d924b84eba1f0f0adf38b20b7b4829f6f65b6570 one-shot/third_party/argparse (v3.2-2-gd924b84)",
+  "license": "MIT",
+  "configuration": "one-shot defaults; hindrance and regret preference enabled"
+}

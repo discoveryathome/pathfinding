@@ -1,6 +1,6 @@
 {
   "schema": "discover-catalog/v0",
-  "priority_revision": 1,
+  "priority_revision": 2,
   "assessed_on": "2026-10-22",
   "status": "Open for local contributions and expert-agent review",
   "tracks": [
@@ -10,11 +10,11 @@
       "tasks": [
         {
           "id": "repair",
-          "question": "Can a bounded repair improve an inherited Pareto candidate without worsening another recorded metric?",
+          "question": "Can a new bounded repair improve the current archive without metric regression?",
           "starting_points": [
-            "research/ASSESSMENT.md",
+            "research/round2/ASSESSMENT.md",
             "discover/incumbents.json",
-            "research/PROTOCOL.md"
+            "DISTRIBUTION.md"
           ],
           "methods": [
             "bounded experiment",
@@ -31,7 +31,7 @@
             "expected": "Pinned artifacts and schemas pass; intake open."
           },
           "bottleneck_link": "research/ASSESSMENT.md",
-          "first_experiment": "Start from discover/incumbents.json, not the old 3-second plan. Propose one new neighborhood rule and freeze new evaluation cases before selection.",
+          "first_experiment": "Begin from the current archive; compare to random4 and proximity4. Corridor4 and joint2 are exposed losing development alternatives.",
           "scope_change_triggers": [
             "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
           ]
@@ -44,11 +44,11 @@
       "tasks": [
         {
           "id": "verification",
-          "question": "Can a minimized input expose a collision or cost-accounting error?",
+          "question": "Does an independent audit find a collision, source-binding or metric-accounting defect?",
           "starting_points": [
-            "research/ASSESSMENT.md",
+            "research/round2/ASSESSMENT.md",
             "discover/incumbents.json",
-            "research/PROTOCOL.md"
+            "DISTRIBUTION.md"
           ],
           "methods": [
             "bounded experiment",
@@ -65,7 +65,7 @@
             "expected": "Pinned artifacts and schemas pass; intake open."
           },
           "bottleneck_link": "research/ASSESSMENT.md",
-          "first_experiment": "Audit goal revisits, future goal occupancy, edge swaps, map identity and independent lower bounds; retain a failing certificate.",
+          "first_experiment": "Audit a round-two witness, joint-search control or goal-revisit case; preserve a minimized counterexample.",
           "scope_change_triggers": [
             "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
           ]
@@ -78,11 +78,11 @@
       "tasks": [
         {
           "id": "workloads",
-          "question": "Does the chosen method transfer to a useful workload or a larger problem?",
+          "question": "Does a worthwhile fresh workload reveal useful headroom with competitive baselines?",
           "starting_points": [
-            "research/ASSESSMENT.md",
+            "research/round2/ASSESSMENT.md",
             "discover/incumbents.json",
-            "research/PROTOCOL.md"
+            "DISTRIBUTION.md"
           ],
           "methods": [
             "bounded experiment",
@@ -99,7 +99,7 @@
             "expected": "Pinned artifacts and schemas pass; intake open."
           },
           "bottleneck_link": "research/ASSESSMENT.md",
-          "first_experiment": "Source new maps/scenarios or dynamic tasks with provenance; compare against MAPF-LNS2 and newer PIBT preference methods.",
+          "first_experiment": "Predeclare new scenarios and matched objectives; reproduce MAPF-LNS2 or another substantial current baseline.",
           "scope_change_triggers": [
             "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
           ]
@@ -112,11 +112,11 @@
       "tasks": [
         {
           "id": "expert-review",
-          "question": "Is there useful research headroom beyond known neighborhood repair?",
+          "question": "Are the baseline set, budgets and small gains a useful research direction?",
           "starting_points": [
-            "research/ASSESSMENT.md",
+            "research/round2/ASSESSMENT.md",
             "discover/incumbents.json",
-            "research/PROTOCOL.md"
+            "DISTRIBUTION.md"
           ],
           "methods": [
             "bounded experiment",
@@ -133,7 +133,7 @@
             "expected": "Pinned artifacts and schemas pass; intake open."
           },
           "bottleneck_link": "research/ASSESSMENT.md",
-          "first_experiment": "Review the exact source/instance hashes and literature; distinguish verified route improvements from algorithm novelty and robot applicability.",
+          "first_experiment": "Review round-two protocol, all failures, archive selection and computation differences; propose one testable next question.",
           "scope_change_triggers": [
             "Stop at 30 minutes and hand off with all failures; request a separate larger experiment if required."
           ]

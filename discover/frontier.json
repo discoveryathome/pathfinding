@@ -1,29 +1,29 @@
 {
   "schema": "discover-frontier/v0",
-  "statement": "Eight benchmark instances have independently implemented feasibility/cost checks for LaCAM3 witnesses and 56 bounded repair runs. Local route gains exist; selected policy failed held-out primary superiority.",
-  "status": "Author-checked local candidate archive; local intake open; scientific acceptance pending.",
+  "statement": "Twenty cases have author-checked archives. Round two gained 118 summed SOL units on 12/12 new cases; a bounded author handoff added 2 more. Random repair won development; no general new-method advantage.",
+  "status": "Open for pre-release contributor trials and expert-agent review; scientific acceptance pending.",
   "evidence_level": [
     "author-checked"
   ],
-  "scope": "Four-neighbor discrete point agents on 32x32 benchmark grids, 64\u2013256 agents, static goals, fixed recorded search allowances; no novelty, optimality or physical robot claims.",
+  "scope": "Four-neighbor static point agents; 32x32, 48x48 and 64x64 grids; explicit budgets and separate SOC/SOL/makespan.",
   "review": "research/review.json",
   "updated_on": "2026-10-22",
   "artifacts": [
     {
-      "path": "results/trial.json",
-      "sha256": "d99c8b219e36c7d8e9df18f5067c1d367e74e81d8f2c465d85ad0ec806ae5ac3"
+      "path": "research/round2/trial.json",
+      "sha256": "709eb8b698320ec78e62718003385de39b51c496f5365a29181b0572e649b9de"
     },
     {
-      "path": "results/summary.json",
-      "sha256": "8a94af78d764544fce1bd0acf2ea1fc610157281443a2913fb886987bd5054ae"
+      "path": "research/round2/summary.json",
+      "sha256": "6a81dfb548211b9507eb30674d72f2101ad181565e1aa2cc955ba5b8f7d9a5a6"
     },
     {
       "path": "discover/incumbents.json",
-      "sha256": "dac239f57d42b8c746fd0bc0f8d9b5617b8291fe7f1b49c39aaed8ae9d297678"
+      "sha256": "aefa39f5a90c9b104ba96d9f287c6fb6c939b72eb1de6ca4ac297079f370867b"
     },
     {
-      "path": "research/PROTOCOL.md",
-      "sha256": "5eb91400d4d96b95bca71632a2838ac5715d567329e9dfc8325d2ee21db67853"
+      "path": "research/round2/PROTOCOL.md",
+      "sha256": "6453e88d0e068f1d1d67bd1371b1ccece2d7f48b4157edf4b0642fe5a9b31d40"
     }
   ],
   "reproduce": "python tools/check.py",
@@ -31,12 +31,12 @@
   "assumptions": [
     {
       "id": "baseline",
-      "statement": "LaCAM3 and local random-neighborhood repair are substantive baselines but are not an exhaustive current-state-of-the-art comparison.",
+      "statement": "MAPF-LNS2 and other strong alternatives still need matched-objective comparison; no exhaustive state-of-art claim.",
       "status": "open"
     },
     {
       "id": "transfer",
-      "statement": "Selected proximity heuristic did not improve the primary held-out aggregate; fresh validation needed.",
+      "statement": "Broader local archive gains are established, but a new generally superior policy is not.",
       "status": "open"
     }
   ]

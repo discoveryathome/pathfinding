@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/tools/prepare_round2.py", line 95, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/pathfinding/tools/prepare_round2.py", line 31, in main
+    p.write_bytes(archive.read(member))
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/colkitt/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/zipfile/__init__.py", line 1571, in read
+    with self.open(name, "r", pwd) as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/colkitt/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/zipfile/__init__.py", line 1608, in open
+    zinfo = self.getinfo(name)
+            ^^^^^^^^^^^^^^^^^^
+  File "/Users/colkitt/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/zipfile/__init__.py", line 1536, in getinfo
+    raise KeyError(
+KeyError: "There is no item named 'empty-64-64.map' in the archive"

@@ -1,0 +1,30 @@
+{
+  "case": "maze-32-32-4-s3-n128",
+  "inherited": {
+    "path": "research/round2/repair/maze-32-32-4-s3-n128-proximity4-307.json",
+    "sha256": "553c710daf2673b890fae0095a5261ff28de14a3b71daea32e3713506cce955c",
+    "metrics": {
+      "soc": 6480,
+      "sol": 6204,
+      "makespan": 109
+    }
+  },
+  "candidate_metrics": {
+    "soc": 6478,
+    "sol": 6202,
+    "makespan": 108,
+    "individual_distance_lower_bound": 5374,
+    "agents": 128,
+    "checked_timesteps": 109
+  },
+  "budget": {
+    "node_limit": 30000,
+    "nodes_used": 30000,
+    "attempt_limit": 96,
+    "attempts_used": 15,
+    "per_agent_limit": 10000
+  },
+  "agent_provenance": "Fill in before review",
+  "independent_review": false,
+  "exposed_inputs": true
+}

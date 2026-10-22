@@ -3,7 +3,8 @@ from pathlib import Path
 import argparse,json,sys,hashlib
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'))
 from model import read_instance
-from repair import improve,VARIANTS
+from repair_round2 import run as improve
+VARIANTS=['random4','proximity4','corridor4','joint2']
 from verify import check
 p=argparse.ArgumentParser();p.add_argument('--case',required=True);p.add_argument('--variant',choices=list(VARIANTS),default='random4');p.add_argument('--seed',type=int,required=True);p.add_argument('--nodes',type=int,default=30000);p.add_argument('--out',required=True);a=p.parse_args()
 if not 1<=a.nodes<=1000000:raise SystemExit('Use 1–1,000,000 popped states for this bounded command')

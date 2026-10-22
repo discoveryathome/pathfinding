@@ -16,3 +16,6 @@ Run the standalone checker for every submitted route and document agent provenan
 and prior involvement. An author-run or agent review is not independent human
 signoff. Credit LaCAM3, known neighborhood methods, and Moving AI benchmark sources.
 No remote exists; external posting requires the running user's actual permission.
+
+Round two is the current handoff: read DISTRIBUTION.md and research/round2/ASSESSMENT.md.
+Use the current archive/baselines and the bounded contribution command. Intake remains open.

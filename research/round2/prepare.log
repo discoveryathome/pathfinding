@@ -1,0 +1,14 @@
+Downloaded mapf-map.zip
+Downloaded mapf-scen-random.zip
+empty-32-32-s2-n256 [('lacam3', 'verified', 5936), ('lacam3', 'verified', 5916), ('pibt-preference', 'verified', 7528), ('pibt-preference', 'verified', 7449), ('pibt-preference', 'verified', 7611)]
+empty-32-32-s3-n256 [('lacam3', 'verified', 5684), ('lacam3', 'verified', 5650), ('pibt-preference', 'verified', 7266), ('pibt-preference', 'verified', 7328), ('pibt-preference', 'verified', 7364)]
+random-32-32-20-s2-n192 [('lacam3', 'verified', 4995), ('lacam3', 'verified', 4901), ('pibt-preference', 'verified', 6807), ('pibt-preference', 'verified', 6746), ('pibt-preference', 'verified', 6816)]
+random-32-32-20-s3-n192 [('lacam3', 'verified', 4795), ('lacam3', 'verified', 4788), ('pibt-preference', 'verified', 6927), ('pibt-preference', 'verified', 7070), ('pibt-preference', 'verified', 6793)]
+room-32-32-4-s2-n160 [('lacam3', 'verified', 5935), ('lacam3', 'verified', 5921), ('pibt-preference', 'verified', 8424), ('pibt-preference', 'verified', 8002), ('pibt-preference', 'verified', 7985)]
+room-32-32-4-s3-n160 [('lacam3', 'verified', 5846), ('lacam3', 'verified', 5857), ('pibt-preference', 'verified', 8325), ('pibt-preference', 'verified', 7966), ('pibt-preference', 'verified', 8313)]
+maze-32-32-4-s2-n128 [('lacam3', 'verified', 6842), ('lacam3', 'verified', 6560), ('pibt-preference', 'failed', None), ('pibt-preference', 'failed', None), ('pibt-preference', 'failed', None)]
+maze-32-32-4-s3-n128 [('lacam3', 'verified', 6268), ('lacam3', 'verified', 6213), ('pibt-preference', 'verified', 7956), ('pibt-preference', 'verified', 7684), ('pibt-preference', 'verified', 7984)]
+empty-48-48-s2-n256 [('lacam3', 'verified', 7963), ('lacam3', 'verified', 7953), ('pibt-preference', 'verified', 9036), ('pibt-preference', 'verified', 8982), ('pibt-preference', 'verified', 8973)]
+empty-48-48-s3-n256 [('lacam3', 'verified', 7909), ('lacam3', 'verified', 7899), ('pibt-preference', 'verified', 9125), ('pibt-preference', 'verified', 8999), ('pibt-preference', 'verified', 9132)]
+random-64-64-20-s2-n192 [('lacam3', 'verified', 8638), ('lacam3', 'verified', 8624), ('pibt-preference', 'verified', 9707), ('pibt-preference', 'verified', 9700), ('pibt-preference', 'verified', 9758)]
+random-64-64-20-s3-n192 [('lacam3', 'verified', 8657), ('lacam3', 'verified', 8656), ('pibt-preference', 'verified', 9668), ('pibt-preference', 'verified', 9719), ('pibt-preference', 'verified', 9575)]
