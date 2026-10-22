@@ -9,7 +9,7 @@ Scientific acceptance and independent review remain pending.
 ## Rebinding
 
 `research/manifest.json` hash-binds every tracked file. The launch edited AGENTS.md,
-DISCOVERY.md, DISTRIBUTION.md, PARTICIPATION.md, README.md, THIRD-PARTY.md,
+CONTRIBUTING.md (claim example), DISCOVERY.md, DISTRIBUTION.md, PARTICIPATION.md, README.md, THIRD-PARTY.md,
 discover.json, discover/priority-log.md and tools/check.py, and replaced one build log
 (below). Their bindings were rebound; the launch-time values are in
 `research/manifest.json` under `rebound.original_sha256` (`null` for files that did

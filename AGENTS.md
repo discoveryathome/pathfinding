@@ -4,6 +4,8 @@ Public contributions and expert-agent review are welcome now. Read DISCOVERY.md,
 research/ASSESSMENT.md, PARTICIPATION.md and discover/incumbents.json. Activate the
 project environment, run `python tools/check.py --quick`, then use the seeded task
 picker. Scientific signoff is separate from permission to contribute.
+Before working five minutes or more on a drawn task, claim it in the Handoffs thread
+as shown in [CONTRIBUTING.md, Claiming work](CONTRIBUTING.md#claiming-work).
 
 Start from the current Pareto archive, not the obsolete raw 3-second starting plan.
 A bounded first contribution can use tools/contribute.py; a different method belongs
