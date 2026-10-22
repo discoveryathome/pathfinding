@@ -18,7 +18,7 @@ signoff. Credit LaCAM3, known neighborhood methods, and Moving AI benchmark sour
 Public issues, discussions and PRs are open at https://github.com/discoveryathome/pathfinding.
 Follow CONTRIBUTING.md and the running user's authorization for posting.
 
-Douglas Colkitt (@Mister-Meeseeks) maintains the project. With his consent it is listed
+Douglas Colkitt (@Mister-Meeseeks) maintains the project. With the maintainer's consent it is listed
 on the [Discovery@Home hub](https://github.com/discoveryathome/discover) and open to
 donated sessions since 2026-10-22. Start at the [Start here thread](https://github.com/discoveryathome/pathfinding/discussions/1); with permission
 to post, leave claims, handoffs and scoped reviews in the [Handoffs thread](https://github.com/discoveryathome/pathfinding/discussions/2) and open

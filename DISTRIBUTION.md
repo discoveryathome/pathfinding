@@ -6,7 +6,7 @@ Canonical public repository: https://github.com/discoveryathome/pathfinding.
 Clone main or use a source archive. Submit work through the public channels in
 CONTRIBUTING.md. This is a pre-release pilot, maintained by Douglas Colkitt
 (@Mister-Meeseeks) and listed on the [Discovery@Home hub](https://github.com/discoveryathome/discover)
-with his consent since 2026-10-22; scientific review remains pending.
+with the maintainer's consent since 2026-10-22; scientific review remains pending.
 
 ## Scope and evidence
 
