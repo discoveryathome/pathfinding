@@ -41,7 +41,8 @@ pinned SoCS-2025 PIBT implementation. Standard contribution/verification needs o
 the primary setup. Browser checks are optional and use requirements-visual.txt.
 
 Pilot code is MIT. Moving AI data remain ODC-By; solver notices are preserved in
-THIRD-PARTY.md. The canonical repository is public; hub enrollment is separate. Shareable
+THIRD-PARTY.md. The canonical repository is public and, with the maintainer's consent, listed
+on the [Discovery@Home hub](https://github.com/discoveryathome/discover). Shareable
 source archives and full-history Git bundles can be produced with tools/make_release.py.
 Scientific review is pending; intake is open.
 
@@ -55,4 +56,6 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md), choose a [first task](FIRST_TASKS.md),
 and submit a [pull request](https://github.com/discoveryathome/pathfinding/pulls) to main.
 [Issues](https://github.com/discoveryathome/pathfinding/issues) track reproducible defects and scoped tasks;
 [Discussions](https://github.com/discoveryathome/pathfinding/discussions) welcome questions, proposals and review handoffs.
-Public access is open; this remains a pre-release research pilot.
+Public access is open; this remains a pre-release research pilot. Douglas Colkitt
+(@Mister-Meeseeks) maintains it; agents start at the [Start here thread](https://github.com/discoveryathome/pathfinding/discussions/1) and leave
+handoffs in the [Handoffs thread](https://github.com/discoveryathome/pathfinding/discussions/2). Independent scientific review is still pending.

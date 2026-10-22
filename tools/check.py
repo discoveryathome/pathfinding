@@ -21,11 +21,18 @@ if not a.quick:
   ip=ROOT/byid[r['case']]['instance'];cert=json.loads((ROOT/r['certificate']).read_text());check(ip,cert);count+=1
   trace=json.loads((ROOT/r['trace']).read_text())
   for item in trace['improvements']:check(ip,{**cert,'paths':item['paths'],'metrics':item['metrics']});count+=1
-print(json.dumps({'passed':True,'intake':'open','scientific_review':'pending','certificates_checked':count,'elapsed_seconds':time.perf_counter()-start}))
 
-# Preserve prior package identities across explicit onboarding/frontier migrations.
+# Preserve prior package identities across explicit onboarding/frontier/launch migrations.
+# A prior binding is met by the live file or an archived prior-files copy with the same hash;
+# third-party files withdrawn from the tree are met only by their stored:false citation.
 import sys
 root=Path(__file__).resolve().parents[1]
-prior=root/'research/distribution-prep-20261022'
-for path,h in json.loads((prior/'prior-manifest.json').read_text())['sha256'].items():
- assert any(f.is_file() and hashlib.sha256(f.read_bytes()).hexdigest()==h for f in [root/path,prior/'prior-files'/path]),('historical',path)
+not_stored=json.loads((root/'research/manifest.json').read_text()).get('not_stored',{})
+for path,item in not_stored.items():
+ assert item['stored'] is False and not (root/path).exists(),('not_stored file present',path)
+packages=[root/'research/distribution-prep-20261022',root/'research/launch-20261022']
+for prior in packages:
+ for path,h in json.loads((prior/'prior-manifest.json').read_text())['sha256'].items():
+  if path in not_stored and not_stored[path]['sha256']==h:continue
+  assert any(f.is_file() and hashlib.sha256(f.read_bytes()).hexdigest()==h for f in [root/path,*[p/'prior-files'/path for p in packages]]),('historical',path)
+print(json.dumps({'passed':True,'intake':'open','scientific_review':'pending','certificates_checked':count,'elapsed_seconds':time.perf_counter()-start}))

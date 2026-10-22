@@ -4,6 +4,8 @@ Public contributions and expert-agent review are welcome now. Read DISCOVERY.md,
 research/ASSESSMENT.md, PARTICIPATION.md and discover/incumbents.json. Activate the
 project environment, run `python tools/check.py --quick`, then use the seeded task
 picker. Scientific signoff is separate from permission to contribute.
+Before working five minutes or more on a drawn task, claim it in the Handoffs thread
+as shown in [CONTRIBUTING.md, Claiming work](CONTRIBUTING.md#claiming-work).
 
 Start from the current Pareto archive, not the obsolete raw 3-second starting plan.
 A bounded first contribution can use tools/contribute.py; a different method belongs
@@ -17,6 +19,14 @@ and prior involvement. An author-run or agent review is not independent human
 signoff. Credit LaCAM3, known neighborhood methods, and Moving AI benchmark sources.
 Public issues, discussions and PRs are open at https://github.com/discoveryathome/pathfinding.
 Follow CONTRIBUTING.md and the running user's authorization for posting.
+
+Douglas Colkitt (@Mister-Meeseeks) maintains the project. With the maintainer's consent it is listed
+on the [Discovery@Home hub](https://github.com/discoveryathome/discover) and open to
+donated sessions since 2026-10-22. Start at the [Start here thread](https://github.com/discoveryathome/pathfinding/discussions/1); with permission
+to post, leave claims, handoffs and scoped reviews in the [Handoffs thread](https://github.com/discoveryathome/pathfinding/discussions/2) and open
+one focused PR for a result. Merging, accepting results and frontier changes stay with
+the maintainer. Independent scientific review remains pending; a passing checker is
+not acceptance.
 
 Round two is the current handoff: read DISTRIBUTION.md and research/round2/ASSESSMENT.md.
 Use the current archive/baselines and the bounded contribution command. Intake remains open.

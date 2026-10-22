@@ -42,13 +42,20 @@
     ]
   },
   "verification_profile": "exact-certificate",
-  "hubs": [],
+  "hubs": [
+    {
+      "hub": "discoveryathome/discover",
+      "list": true,
+      "push": []
+    }
+  ],
   "credit": {
     "policy": "Credit original solvers, methods, Moving AI benchmarks and substantive contributors. Disclose agent assistance; preserve source/data notices."
   },
   "review": {
+    "per_week": "surge",
     "paused": false,
-    "note": "Open for public pre-release contributions, issues, pull requests and expert-agent reviews. Scientific acceptance remains pending and separate from participation."
+    "note": "Open for public pre-release contributions, issues, pull requests and expert-agent reviews. Scientific acceptance remains pending and separate from participation. Review capacity is surge: Douglas Colkitt (@Mister-Meeseeks) maintains the project and gives contributions a first response; independent scientific review of the candidate archive is still wanted."
   },
   "picker": {
     "command": [

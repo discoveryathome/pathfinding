@@ -4,7 +4,9 @@
 archive or Git bundle from this release with reviewers and trial contributors.
 Canonical public repository: https://github.com/discoveryathome/pathfinding.
 Clone main or use a source archive. Submit work through the public channels in
-CONTRIBUTING.md. This is a pre-release pilot; hub enrollment remains separate.
+CONTRIBUTING.md. This is a pre-release pilot, maintained by Douglas Colkitt
+(@Mister-Meeseeks) and listed on the [Discovery@Home hub](https://github.com/discoveryathome/discover)
+with the maintainer's consent since 2026-10-22; scientific review remains pending.
 
 ## Scope and evidence
 
@@ -17,8 +19,8 @@ is a valid contribution; no improvement is required for a complete handoff.
 
 ## First session
 
-Tested platform: macOS/Apple Clang, Python 3.12. A Linux CI recipe is included but
-its result is not claimed until that workflow actually runs. Native artifacts are
+Tested platform: macOS/Apple Clang, Python 3.12. The CI workflow (full check and
+round-two check) has since passed on ubuntu-latest and macos-latest; see Actions. Native artifacts are
 rebuilt on the recipient's machine. Source archives exclude vendor code, binaries
 and environments; setup retrieves pinned upstream sources with their own licenses.
 Requires Git, a C/C++ compiler, Python 3.12 and uv.
