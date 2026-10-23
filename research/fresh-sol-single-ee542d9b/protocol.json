@@ -1,0 +1,368 @@
+{
+  "base_commit": "37823dca1bea271510e3ed62205620466ec6f0f9",
+  "seed_hex": "ee542d9b4c91949140f009a90142f5ba",
+  "track": "headroom",
+  "priority_revision": 3,
+  "claim": "https://github.com/discoveryathome/pathfinding/discussions/2#discussioncomment-19143368",
+  "scope": "Frozen SOL-aware versus current random4 repair on 12 fresh within-map queries with pinned native starts and three paired seeds",
+  "question": "Replicate the frozen SOL-aware versus unchanged random4 policy on the same twelve queries after native defaults failed under the declared cap.",
+  "policy_source_commit": "5c54e6e",
+  "policy_sha256": "bf2a499402cc52ce482e09ef814d32bc6c99a5c0db1f42f00322a73599b4a780",
+  "policy_selection_commit": "b99c1ec",
+  "source_package": "research/sol-repair-ee542d9b",
+  "baseline": "Unchanged src.repair_round2.run(random4); same strongest available native start, repair seeds,100000pops,96attempts,10000per-agent cap; retain Pareto gate.",
+  "generation": "After source/protocol commit, use Python Random(int(draw_seed_decimal)); sample unique starts, then independent unique goals, from sorted largest four-neighbor free-cell component; ties choose component with smallest vertex. Allow start==goal. Never resample or filter by outputs.",
+  "seed_derivation": "draw:SHA256(donationseedbytes+b':fresh-v1:'+caseid)[:16]; repair:SHA256(donationseedbytes+b':repair-fresh-v1:'+caseid+b':'+trialdecimal)[:16]. Big-endian128bit integers stored as strings.",
+  "evaluation": "All12fixed queries,3pairedrepairseeds for each verified native start; fixed alternating method order by(caseindex+trial)%2. No development, retuning,pivot or output-based selection. Retain every native failure; skip repair only without a verified start, with no replacement. This is separate attemptB, declared before any single-thread native or repair result. Recreate the identical attemptA query cohort, now exposed. No query resampling or repair-policy tuning.",
+  "native": {
+    "url": "https://github.com/Kei18/lacam3",
+    "commit": "1c3ecf8ade40298f16047544634e9c0c1cf3b93c",
+    "argparse_commit": "69dabd88a8e6680b1a1a18397eb3e165e4019ce6",
+    "binary": "build/upstream/main",
+    "binary_sha256": "86d0c9f6caf3044c47bfc3433003bb7be4e80aa8081235edd817e22358bcd686",
+    "seed": 0,
+    "internal_deadline_seconds": 12,
+    "external_deadline_seconds": 45,
+    "configuration": "Pinned defaults with the single explicit --no-multi-thread flag, optimizing SOL, seed0 and12sec; identical source/binary/toolchain/assertions/caps as retained attemptA.",
+    "extra_flags": [
+      "--no-multi-thread"
+    ]
+  },
+  "caps": {
+    "repair_pops": 100000,
+    "repair_attempts": 96,
+    "per_agent_pops": 10000,
+    "repair_worker_wall_seconds": 600,
+    "native_worker_wall_seconds": 60,
+    "phase_wall_seconds": 3600,
+    "address_space_mib": 1024,
+    "package_mib": 500,
+    "build_wall_seconds": 180,
+    "research_cutoff_utc": "2026-10-23T12:05:00+00:00",
+    "end_allowance_utc": "2026-10-23T14:05:00+00:00"
+  },
+  "reporting": "Verify every initial/final/accepted intermediate route using unchanged standalone checker; preserve raw native output, complete compressed repair traces, exactcohort/seed/source/input bindings, all failures and capped searches, preprocessing/core/fullwall,CPU andRSS. Compare paired SOL/SOC/makespan wins/ties/losses and tradeoffs. Fixedpops aren't matchedCPU; no speed claim. Do not edit accepted archive.",
+  "exposure": "Same twelve queries already exposed by attemptA. Frozen repair policy predates their first generation. Native configuration is changed after twelve startup failures before any repair outcomes. This is within-map replication, not independent human evaluation or unseen transfer.",
+  "credit": "Continues predecessor headroom handoff19132179 and this session PR5-8. Same posting account, author-assisted Codex methods/audits/reviews; project authors, prioritizedMAPF/LNS/A*,LaCAM3 and MovingAI notices.",
+  "cases": [
+    {
+      "id": "maze-32-32-4-fresh0-n64",
+      "map": "data/maps/maze-32-32-4.map",
+      "map_sha256": "7ff67aa59f71933b8cf2605e12631b8a28d9ebcfb9b941de3afdc7dce3123fee",
+      "agents": 64,
+      "query": 0,
+      "draw_seed_hex": "0b4c6a622cadf5d7620c162522df4d58",
+      "draw_seed_decimal": "15018280228488280528516057005985582424",
+      "repair_seeds": [
+        {
+          "trial": 0,
+          "hex": "377da64a302d5e6c0117f8ce19eddef1",
+          "decimal": "73759949633275586724210833924054441713"
+        },
+        {
+          "trial": 1,
+          "hex": "3961a0606d8a44c2da2b86f25d27f8b2",
+          "decimal": "76272901380359291221072125172747073714"
+        },
+        {
+          "trial": 2,
+          "hex": "4a86e9fe7ebcababc735b35b184945b1",
+          "decimal": "99063385431741570944448750287550236081"
+        }
+      ]
+    },
+    {
+      "id": "maze-32-32-4-fresh1-n64",
+      "map": "data/maps/maze-32-32-4.map",
+      "map_sha256": "7ff67aa59f71933b8cf2605e12631b8a28d9ebcfb9b941de3afdc7dce3123fee",
+      "agents": 64,
+      "query": 1,
+      "draw_seed_hex": "dfd5def376af7082a087fa08c02cf880",
+      "draw_seed_decimal": "297528324275010984071535699962624800896",
+      "repair_seeds": [
+        {
+          "trial": 0,
+          "hex": "297c3648f4207d2836f459eb080126a1",
+          "decimal": "55143293667739786692504946297874228897"
+        },
+        {
+          "trial": 1,
+          "hex": "2e7c0c16d378af6c44670f43ecc4cbad",
+          "decimal": "61788577813946504495342772994728840109"
+        },
+        {
+          "trial": 2,
+          "hex": "ba8053b9844291bcd42145c1fb194005",
+          "decimal": "247902719352026477151033251032641126405"
+        }
+      ]
+    },
+    {
+      "id": "maze-32-32-4-fresh0-n128",
+      "map": "data/maps/maze-32-32-4.map",
+      "map_sha256": "7ff67aa59f71933b8cf2605e12631b8a28d9ebcfb9b941de3afdc7dce3123fee",
+      "agents": 128,
+      "query": 0,
+      "draw_seed_hex": "e82648918a72579ccb1e92708cabe1ce",
+      "draw_seed_decimal": "308579674167146996089160941330370388430",
+      "repair_seeds": [
+        {
+          "trial": 0,
+          "hex": "5ce914be0fd6f39e0fa45057f0724b7c",
+          "decimal": "123499201486695961611716198698407054204"
+        },
+        {
+          "trial": 1,
+          "hex": "0eba2f4690fbb1b0fa0bbc3c45859175",
+          "decimal": "19575918020769168705082616650626601333"
+        },
+        {
+          "trial": 2,
+          "hex": "17a03ea640eeebe83bfbc363ba7e130b",
+          "decimal": "31404282081784920282523495766696006411"
+        }
+      ]
+    },
+    {
+      "id": "maze-32-32-4-fresh1-n128",
+      "map": "data/maps/maze-32-32-4.map",
+      "map_sha256": "7ff67aa59f71933b8cf2605e12631b8a28d9ebcfb9b941de3afdc7dce3123fee",
+      "agents": 128,
+      "query": 1,
+      "draw_seed_hex": "587acf9d28e5ae76b3ffe387a665d88f",
+      "draw_seed_decimal": "117609734756080384708494209593846913167",
+      "repair_seeds": [
+        {
+          "trial": 0,
+          "hex": "00dcb3e9eba45b35eef733fa5fe37cbb",
+          "decimal": "1145954393286253423552811276163054779"
+        },
+        {
+          "trial": 1,
+          "hex": "ec99260b0af414090bf390810fb5dae5",
+          "decimal": "314493000031060623665258420788977326821"
+        },
+        {
+          "trial": 2,
+          "hex": "a607bdd1e19832c3005e6c015252d006",
+          "decimal": "220692043382224957992238247916017471494"
+        }
+      ]
+    },
+    {
+      "id": "room-32-32-4-fresh0-n64",
+      "map": "data/maps/room-32-32-4.map",
+      "map_sha256": "f107fefbf63c7a1a3753e4a033452301a1cdd7043cab7f45e4ed0e7dec1e90a9",
+      "agents": 64,
+      "query": 0,
+      "draw_seed_hex": "1746ed11ef5ddbb1c29a08b6af68bcc5",
+      "draw_seed_decimal": "30940513035185716125050523126149463237",
+      "repair_seeds": [
+        {
+          "trial": 0,
+          "hex": "5f3d07507f0b19cf757a18eaf0d59739",
+          "decimal": "126593538062375875431471791611904890681"
+        },
+        {
+          "trial": 1,
+          "hex": "5890373cfd7ffed6a62d369b7b546b0e",
+          "decimal": "117720874741374008196332513469486361358"
+        },
+        {
+          "trial": 2,
+          "hex": "e56349122605b0647067693f797cd85a",
+          "decimal": "304908730477515982650479497136045873242"
+        }
+      ]
+    },
+    {
+      "id": "room-32-32-4-fresh1-n64",
+      "map": "data/maps/room-32-32-4.map",
+      "map_sha256": "f107fefbf63c7a1a3753e4a033452301a1cdd7043cab7f45e4ed0e7dec1e90a9",
+      "agents": 64,
+      "query": 1,
+      "draw_seed_hex": "f92002800b7d9190dca8cca75234731e",
+      "draw_seed_decimal": "331143975159497314217194964379453649694",
+      "repair_seeds": [
+        {
+          "trial": 0,
+          "hex": "66d1d6b233b0dc6c1ce45c075caa373b",
+          "decimal": "136670800167760854367171264880732419899"
+        },
+        {
+          "trial": 1,
+          "hex": "d68673ab73b27f1e7088ab533db0b7f7",
+          "decimal": "285152904937942438812338932893785044983"
+        },
+        {
+          "trial": 2,
+          "hex": "626235504bd51f619ba5780cb61ce0a6",
+          "decimal": "130774270008489188461937999955997024422"
+        }
+      ]
+    },
+    {
+      "id": "room-32-32-4-fresh0-n128",
+      "map": "data/maps/room-32-32-4.map",
+      "map_sha256": "f107fefbf63c7a1a3753e4a033452301a1cdd7043cab7f45e4ed0e7dec1e90a9",
+      "agents": 128,
+      "query": 0,
+      "draw_seed_hex": "5aa0747d5fd7febea2bb56a90c23feeb",
+      "draw_seed_decimal": "120463649810704536840657902947006676715",
+      "repair_seeds": [
+        {
+          "trial": 0,
+          "hex": "993c7b65d27e5b9030a3df161832ea6e",
+          "decimal": "203685923970174490419094438143612611182"
+        },
+        {
+          "trial": 1,
+          "hex": "7d858488621d2ad2c971e310973875f2",
+          "decimal": "166846763038762192187001122025564042738"
+        },
+        {
+          "trial": 2,
+          "hex": "47c6375bb0348c1d7cdee356f3ca190e",
+          "decimal": "95404385275542800032985129433092987150"
+        }
+      ]
+    },
+    {
+      "id": "room-32-32-4-fresh1-n128",
+      "map": "data/maps/room-32-32-4.map",
+      "map_sha256": "f107fefbf63c7a1a3753e4a033452301a1cdd7043cab7f45e4ed0e7dec1e90a9",
+      "agents": 128,
+      "query": 1,
+      "draw_seed_hex": "fee47f5c15aa8f5abac7cb95e60e2f40",
+      "draw_seed_decimal": "338810337774830567058990546633362386752",
+      "repair_seeds": [
+        {
+          "trial": 0,
+          "hex": "908e8490426b9d365f81c16a6d234b9c",
+          "decimal": "192148826254419023421411646407201475484"
+        },
+        {
+          "trial": 1,
+          "hex": "b9a44820e45b483fcfcef6deb62fd0b2",
+          "decimal": "246760178844474747271370062175113564338"
+        },
+        {
+          "trial": 2,
+          "hex": "3b53f6e18f4b4c9e12043e1f69284d63",
+          "decimal": "78860419734014878871552831975181536611"
+        }
+      ]
+    },
+    {
+      "id": "random-32-32-20-fresh0-n64",
+      "map": "data/maps/random-32-32-20.map",
+      "map_sha256": "8c5a83498ab92a2579aeef91c5f42d9ecf9019ef038cf98e623061a15beb6f56",
+      "agents": 64,
+      "query": 0,
+      "draw_seed_hex": "7caa34c7ee5e96b1527882703109f188",
+      "draw_seed_decimal": "165708032468756002152900162342022148488",
+      "repair_seeds": [
+        {
+          "trial": 0,
+          "hex": "36e655c0dff48ede53c736f5670ee8fe",
+          "decimal": "72974279335782790389506974838189648126"
+        },
+        {
+          "trial": 1,
+          "hex": "e0c1bf58d40a2aa8196f05ecfd17cd6d",
+          "decimal": "298753065327454088767671125309683912045"
+        },
+        {
+          "trial": 2,
+          "hex": "c8fd752a5f4508e7d99c4c3da6ce73aa",
+          "decimal": "267161626661183472685712835140857525162"
+        }
+      ]
+    },
+    {
+      "id": "random-32-32-20-fresh1-n64",
+      "map": "data/maps/random-32-32-20.map",
+      "map_sha256": "8c5a83498ab92a2579aeef91c5f42d9ecf9019ef038cf98e623061a15beb6f56",
+      "agents": 64,
+      "query": 1,
+      "draw_seed_hex": "2073f771865a3209e90dc04c1c251254",
+      "draw_seed_decimal": "43137428753383310125631382047512924756",
+      "repair_seeds": [
+        {
+          "trial": 0,
+          "hex": "b590a435e6a0efe14591abee049a27b7",
+          "decimal": "241341288570342513495224394992706004919"
+        },
+        {
+          "trial": 1,
+          "hex": "04430cf4cb68007f714950f4098165bc",
+          "decimal": "5665058656199581873142844241978942908"
+        },
+        {
+          "trial": 2,
+          "hex": "be637fda012080221dea7d0df3f678eb",
+          "decimal": "253069949726236831387021089176911509739"
+        }
+      ]
+    },
+    {
+      "id": "random-32-32-20-fresh0-n128",
+      "map": "data/maps/random-32-32-20.map",
+      "map_sha256": "8c5a83498ab92a2579aeef91c5f42d9ecf9019ef038cf98e623061a15beb6f56",
+      "agents": 128,
+      "query": 0,
+      "draw_seed_hex": "ffcb4aa3f79b1b7c8a223bb18f920673",
+      "draw_seed_decimal": "340008689076567588376918276848330344051",
+      "repair_seeds": [
+        {
+          "trial": 0,
+          "hex": "065754b9b104bc068b1c251e913c90fa",
+          "decimal": "8428816235803367487582769217441403130"
+        },
+        {
+          "trial": 1,
+          "hex": "446ce2c9dbfe9d42ea5b1acd9e0b5442",
+          "decimal": "90952871591612158340954568042153202754"
+        },
+        {
+          "trial": 2,
+          "hex": "588adb181fee7f386cf359d206ace6e2",
+          "decimal": "117693044354611863517380865271941359330"
+        }
+      ]
+    },
+    {
+      "id": "random-32-32-20-fresh1-n128",
+      "map": "data/maps/random-32-32-20.map",
+      "map_sha256": "8c5a83498ab92a2579aeef91c5f42d9ecf9019ef038cf98e623061a15beb6f56",
+      "agents": 128,
+      "query": 1,
+      "draw_seed_hex": "d1c4f65d91b2e8032d213e0ef46e3b4b",
+      "draw_seed_decimal": "278831338189393466657197985679421619019",
+      "repair_seeds": [
+        {
+          "trial": 0,
+          "hex": "db991ee78f150f64614070b52a8abacd",
+          "decimal": "291895979314527871672117242065496750797"
+        },
+        {
+          "trial": 1,
+          "hex": "f9efc5b5663ae6695890740bb34006ab",
+          "decimal": "332222739906261887404081130197995226795"
+        },
+        {
+          "trial": 2,
+          "hex": "bc56ea24c6d1c00eb8c679b0f4913c7f",
+          "decimal": "250346149734990888693224079299527654527"
+        }
+      ]
+    }
+  ],
+  "predecessor_attempt": {
+    "package": "research/fresh-sol-ee542d9b",
+    "commit": "3503edb1abf42dca81b968d10efc58f1d72b9b1a",
+    "inputs_sha256": "0b0a2aacba8ec30aa5f9f5972d90ed4e243f86325b0bc87d4c71629766836242",
+    "outcome": "All12native calls SIGABRT before route output under1GiB; no repair policy outcomes observed."
+  },
+  "infrastructure_amendment": "One native execution flag disables multithreading; preserve attemptA source/protocol/allfailures. Same binary,inputgeometry,seed0,12s,1GiB,repairpolicyandseeds. The specific internal abort cause is not established."
+}
