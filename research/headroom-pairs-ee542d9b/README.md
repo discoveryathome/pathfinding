@@ -72,9 +72,11 @@ distances. It uses cost-ordered search and admissible pruning to exhaust every
 pair route cheaper than each claimed bound. It imports neither the optimizer nor
 its model/grid helpers. A verification cap produces an inconclusive result and
 cannot pass a bound. All 521 claims and their disjoint sums pass; the checker used
-124,151 pops in 4.2052 seconds. [verification.json](verification.json) binds the
+124,151 pops in the original 4.2052-second check. [verification-v3.json](verification-v3.json) binds the
 report and verifier hashes and records every case. It also rejects an inflated
-bound with an explicit cheaper cost-6 route and rejects overlapping pair counts.
+bound with an explicit cheaper cost-6 route, rejects overlapping/aliased agent IDs,
+and validates canonical case coverage and fixed pair identities against the pinned
+headroom scope. A duplicate case is rejected even when row and pair counts match.
 This is a separate implementation run by the author, not independent human review.
 
 The tiny controls exhaust all 1080 start/goal assignments on a six-cell loop,
@@ -82,8 +84,9 @@ four-cell branch and three-cell corridor across seven pop caps, comparing agains
 a separate unheuristic Dijkstra oracle. Additional controls require an initial-goal
 departure, distinguish SOL 7 from SOC 8, reject swaps and malformed inputs, test
 terminal holding, and reject inflated bounds and overlapping matchings. The 21
-existing repository tests plus eight package tests pass (29 total). The quick
-source/historical-artifact check passes. Commands and outputs are in [checks.json](checks.json).
+existing repository tests plus ten package tests pass (31 total). The quick
+source/historical-artifact check passes. Final commands and outputs are in
+[checks-v3.json](checks-v3.json); prior check versions remain preserved.
 
 With the project environment active, from the repository root:
 
@@ -102,6 +105,15 @@ hash-matching bytes and explains isolated replay at the protocol commit. The sav
 [pilot replay](pilot-replayed.json), [journal](pilot-replayed.jsonl) and
 [comparison](pilot-replay-check.json) match every non-timing field of the original.
 The post-pilot changes were validation/accounting checks, not search-method tuning.
+
+The first separate-checker version accepted negative Python aliases for agent IDs
+and checked counts without canonical case/pair identity. Both defects were found
+and fixed before submission, with rejecting regression controls. All actual panel
+IDs and cases were valid, so bounds did not change. `verification.json` and its
+source at commit `7f07fda130fc4cd009c7dbe9036de2377d813ea4` retain version 1;
+`verification-v2.json` and source commit `5af1cabe3a3ee13cb65d1763fe028a6e8ffc8e40`
+retain the ID fix; `verification-v3.json` records the final scope-aware checker.
+All three runs certify the same 521 bounds with 124,151 threshold-search pops.
 
 ## Review, provenance and limits
 

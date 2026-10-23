@@ -63,6 +63,20 @@ def check_matching(records, agent_count):
         used.update(agents)
 
 
+def validate_scope(rows, archive, fixed_pairs):
+    names = [row["case"] for row in rows]
+    if len(names) != len(archive) or len(set(names)) != len(names) or set(names) != set(archive):
+        raise ValueError("Panel must cover each canonical case exactly once")
+    for row in rows:
+        case = row["case"]
+        if (row["instance"] != archive[case]["instance"]
+                or row["inherited"] != archive[case]["pareto_candidates"][0]):
+            raise ValueError("Wrong canonical instance or incumbent binding")
+        if ([record["witness"] for record in row["pair_results"]] != fixed_pairs[case]
+                or any(record["case"] != case for record in row["pair_results"])):
+            raise ValueError("Pair list differs from the declared canonical matching")
+
+
 def raw_grid(instance):
     data = (ROOT / instance["map"]).read_bytes()
     assert hashlib.sha256(data).hexdigest() == instance["map_sha256"]
@@ -91,6 +105,13 @@ if __name__ == "__main__":
     assert report["all_cases_completed"] and len(report["cases"]) == 20
     for path, expected in report["source_sha256"].items():
         assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == expected, path
+    scope_path = ROOT / "research/distribution-prep-20261022/headroom.json"
+    scope_sha256 = hashlib.sha256(scope_path.read_bytes()).hexdigest()
+    assert scope_sha256 == "18a57ffab7f44ae9659ff55f137b02d8313b1a0873839c4090deab2ab300a350"
+    fixed_pairs = {row["case"]: row["disjoint_pair_witnesses"] for row in json.loads(scope_path.read_text())}
+    archive = {row["case"]: row for row in json.loads((ROOT / "discover/incumbents.json").read_text())}
+    assert set(fixed_pairs) == set(archive) and len(archive) == 20
+    validate_scope(report["cases"], archive, fixed_pairs)
     journal = [json.loads(line) for line in (PACKAGE / "panel.jsonl").read_text().splitlines()]
     assert journal == [r for row in report["cases"] for r in row["pair_results"]]
     tick = time.perf_counter()
@@ -131,11 +152,21 @@ if __name__ == "__main__":
         overlap_error = str(error)
     else:
         raise AssertionError("Overlapping matching accepted")
+    duplicates = report["cases"][:]
+    duplicates[1] = duplicates[0]
+    try:
+        validate_scope(duplicates, archive, fixed_pairs)
+    except ValueError as error:
+        scope_error = str(error)
+    else:
+        raise AssertionError("Duplicated canonical case accepted")
     result = {"verified": True, "evidence_level": "author-checked separate implementation",
               "optimizer_imports": False, "cases": results, "pairs_checked": pairs,
               "verification_pops": total_pops, "per_pair_verification_pop_cap": 500000,
               "elapsed_seconds": time.perf_counter() - tick,
-              "failure_controls": {"inflated_bound": bad_bound, "overlapping_matching": overlap_error},
+              "canonical_scope_verified": True, "canonical_scope_sha256": scope_sha256,
+              "failure_controls": {"inflated_bound": bad_bound, "overlapping_matching": overlap_error,
+                                   "duplicated_case": scope_error},
               "panel_sha256": hashlib.sha256((PACKAGE / "panel.json").read_bytes()).hexdigest(),
               "verifier_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
     with output.open("x") as handle:

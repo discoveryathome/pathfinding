@@ -41,3 +41,24 @@ def test_negative_agent_alias_is_rejected():
         records = [{"witness": {"agents": [invalid, 0]}}, {"witness": {"agents": [3, 1]}}]
         with pytest.raises(ValueError):
             verify.check_matching(records, 4)
+
+
+def test_canonical_case_coverage_and_pair_identity():
+    import copy
+    archive = {name: {"instance": name + ".json", "pareto_candidates": [{"path": name}]}
+               for name in ("a", "b")}
+    fixed = {name: [{"agents": [0, 1], "time": 1, "kind": "vertex"}] for name in archive}
+    rows = [{"case": name, "instance": item["instance"], "inherited": item["pareto_candidates"][0],
+             "pair_results": [{"case": name, "witness": fixed[name][0]}]}
+            for name, item in archive.items()]
+    verify.validate_scope(rows, archive, fixed)
+    with pytest.raises(ValueError, match="exactly once"):
+        verify.validate_scope([rows[0], rows[0]], archive, fixed)
+    altered = copy.deepcopy(rows)
+    altered[0]["pair_results"][0]["witness"]["agents"] = [0, 2]
+    with pytest.raises(ValueError, match="canonical matching"):
+        verify.validate_scope(altered, archive, fixed)
+    altered = copy.deepcopy(rows)
+    altered[0]["instance"] = "another.json"
+    with pytest.raises(ValueError, match="canonical instance"):
+        verify.validate_scope(altered, archive, fixed)

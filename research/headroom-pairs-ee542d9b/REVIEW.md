@@ -17,8 +17,8 @@ standard or baseline-smell findings were reported.
 Response: recover both exact hash-matching script versions in `pilot-source/`,
 leave the original output unchanged, and replay in a detached `9f29e7f` checkout.
 The replay matches all non-timing fields and all source hashes. Saved replay,
-journal and comparison are included. A follow-up Standards review is requested
-before publication.
+journal and comparison are included. The round-2 Standards task failed at model
+capacity without running; a new follow-up will check this repair and later additions.
 
 ## Spec
 
@@ -29,8 +29,20 @@ expansions; aggregation preserves disjointness and incumbent consistency. The
 reviewer ran all five tiny controls and reproduced both capped pair results;
 it did not rerun the full panel or baseline tests.
 
-The later separate threshold checker and its negative controls are additional
-author verification. A follow-up Spec review is requested for those additions
-before publication.
+Round 2 found two P2 issues in the separate threshold checker. Negative IDs could
+alias positive Python indices and bypass disjointness; matching validation now
+requires integer IDs inside the actual instance range. Counts also permitted a
+duplicate case to replace another while retaining 20 rows and 521 pairs. The
+checker now requires exact canonical case coverage, instance/incumbent binding,
+and pair witness identity against the pinned published headroom scope. Rejecting
+regression tests cover both. The saved panel already has canonical IDs/scope, and
+all three checker versions certify identical numerical bounds. Original checker
+sources/outputs remain in git history; versioned final output is verification-v3.json.
 
-Initial totals: Standards 1 finding (pilot source retention, repaired); Spec 0.
+Round 2 also checked the original retained panel, reproduced 124,151 verification
+pops and compared the threshold routine with the unpruned oracle on all 1080 tiny
+assignments. It did not rerun frozen-solver or baseline tests. A final follow-up
+will check the two fixes. Author verification passes all 31 tests and quick hashes.
+
+Findings to date: Standards 1 (pilot source retention, repaired); Spec 2 (checker
+identifier and canonical-scope validation, repaired). No frozen-solver defect.
