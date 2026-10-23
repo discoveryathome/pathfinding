@@ -1,0 +1,20 @@
+{
+  "supersedes": "pilot-replay-check.json",
+  "deterministic_fields_equal": true,
+  "excluded_observation_fields": [
+    "started_at",
+    "elapsed_seconds",
+    "elapsed_seconds_including_checks",
+    "process_cpu_seconds",
+    "peak_rss_kib_on_linux"
+  ],
+  "peak_rss_kib_on_linux": {
+    "original": 25188,
+    "replay": 25612
+  },
+  "pilot_source_sha256_exact": true,
+  "pairs_checked": 8,
+  "original_code_commit": "9f29e7f0ca81c02d48ba0633060d5a5af865f70b",
+  "replay_code_commit": "9f29e7f0ca81c02d48ba0633060d5a5af865f70b",
+  "verification_result": "complete"
+}

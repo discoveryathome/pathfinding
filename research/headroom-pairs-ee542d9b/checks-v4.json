@@ -1,0 +1,32 @@
+{
+  "evidence_level": "author-checked",
+  "tests": {
+    "command": "../repo/.venv/bin/python -m pytest -q tests research/headroom-pairs-ee542d9b/test_*.py",
+    "passed": 32,
+    "exit_code": 0,
+    "reported_seconds": 0.57
+  },
+  "quick_check": {
+    "command": "../repo/.venv/bin/python tools/check.py --quick",
+    "passed": true,
+    "exit_code": 0,
+    "scientific_review": "pending",
+    "certificates_checked": 0,
+    "elapsed_seconds": 0.6881521610193886
+  },
+  "separate_checker": {
+    "command": "../repo/.venv/bin/python research/headroom-pairs-ee542d9b/verify_panel.py --out verification-v4.json",
+    "report": "verification-v4.json",
+    "passed": true,
+    "cases": 20,
+    "pairs_checked": 521,
+    "verification_pops": 124151,
+    "elapsed_seconds": 4.081725411990192,
+    "verifier_source_commit": "d5af369517db888507da484bffaa55a6c9dbaa85",
+    "verifier_sha256": "3cb6027c59584861c8109e4bbd05566479e753dda1f86bc7f3259d796fbeb46f",
+    "panel_sha256": "f972d9fae4f9173b60130c13124eb27cd0164f2084d63bd520561f71a7cb093d"
+  },
+  "source_manifest_controls": "empty, extra, all seven single omissions, every wrong hash; reviewer also checked all 127 incomplete subsets",
+  "new_solver_panel_run": false,
+  "independent_human_scientific_signoff": false
+}

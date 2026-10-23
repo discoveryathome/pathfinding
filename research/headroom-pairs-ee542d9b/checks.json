@@ -1,0 +1,31 @@
+{
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests",
+        "research/headroom-pairs-ee542d9b/test_pair_bounds.py",
+        "research/headroom-pairs-ee542d9b/test_verify_panel.py"
+      ],
+      "returncode": 0,
+      "wall_seconds": 1.100192411977332,
+      "stdout": ".............................                                            [100%]\n29 passed in 0.64s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "tools/check.py",
+        "--quick"
+      ],
+      "returncode": 0,
+      "wall_seconds": 1.0031787159969099,
+      "stdout": "{\"passed\": true, \"intake\": \"open\", \"scientific_review\": \"pending\", \"certificates_checked\": 0, \"elapsed_seconds\": 0.6808304359437898}\n",
+      "stderr": ""
+    }
+  ]
+}

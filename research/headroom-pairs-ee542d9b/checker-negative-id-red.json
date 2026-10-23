@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "research/headroom-pairs-ee542d9b/test_verify_panel.py::test_negative_agent_alias_is_rejected"
+  ],
+  "expected_failure_before_fix": true,
+  "returncode": 1,
+  "stdout": "F                                                                        [100%]\n=================================== FAILURES ===================================\n____________________ test_negative_agent_alias_is_rejected _____________________\n\n    def test_negative_agent_alias_is_rejected():\n        # On four agents, -1 and 3 name the same Python-indexed agent.\n        records = [{\"witness\": {\"agents\": [-1, 0]}}, {\"witness\": {\"agents\": [3, 1]}}]\n>       with pytest.raises(ValueError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE ValueError\n\nresearch/headroom-pairs-ee542d9b/test_verify_panel.py:41: Failed\n=========================== short test summary info ============================\nFAILED research/headroom-pairs-ee542d9b/test_verify_panel.py::test_negative_agent_alias_is_rejected\n1 failed in 0.06s\n",
+  "stderr": "",
+  "source_commit": "7f07fda"
+}

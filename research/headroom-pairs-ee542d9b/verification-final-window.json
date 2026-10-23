@@ -1,0 +1,145 @@
+{
+  "verified": true,
+  "evidence_level": "author-checked separate implementation",
+  "optimizer_imports": false,
+  "cases": [
+    {
+      "case": "empty-32-32-n128",
+      "verified_pair_bound": 2745,
+      "pairs_checked": 3,
+      "verification_pops": 210
+    },
+    {
+      "case": "empty-32-32-n256",
+      "verified_pair_bound": 5346,
+      "pairs_checked": 3,
+      "verification_pops": 210
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "verified_pair_bound": 2201,
+      "pairs_checked": 15,
+      "verification_pops": 1772
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "verified_pair_bound": 4268,
+      "pairs_checked": 36,
+      "verification_pops": 3352
+    },
+    {
+      "case": "room-32-32-4-n96",
+      "verified_pair_bound": 2488,
+      "pairs_checked": 31,
+      "verification_pops": 2484
+    },
+    {
+      "case": "room-32-32-4-n160",
+      "verified_pair_bound": 4049,
+      "pairs_checked": 56,
+      "verification_pops": 3803
+    },
+    {
+      "case": "maze-32-32-4-n64",
+      "verified_pair_bound": 2928,
+      "pairs_checked": 14,
+      "verification_pops": 15355
+    },
+    {
+      "case": "maze-32-32-4-n128",
+      "verified_pair_bound": 6041,
+      "pairs_checked": 43,
+      "verification_pops": 40392
+    },
+    {
+      "case": "empty-32-32-s2-n256",
+      "verified_pair_bound": 5652,
+      "pairs_checked": 7,
+      "verification_pops": 659
+    },
+    {
+      "case": "empty-32-32-s3-n256",
+      "verified_pair_bound": 5461,
+      "pairs_checked": 10,
+      "verification_pops": 678
+    },
+    {
+      "case": "random-32-32-20-s2-n192",
+      "verified_pair_bound": 4386,
+      "pairs_checked": 35,
+      "verification_pops": 4439
+    },
+    {
+      "case": "random-32-32-20-s3-n192",
+      "verified_pair_bound": 4202,
+      "pairs_checked": 35,
+      "verification_pops": 5450
+    },
+    {
+      "case": "room-32-32-4-s2-n160",
+      "verified_pair_bound": 4248,
+      "pairs_checked": 61,
+      "verification_pops": 4182
+    },
+    {
+      "case": "room-32-32-4-s3-n160",
+      "verified_pair_bound": 4054,
+      "pairs_checked": 62,
+      "verification_pops": 5581
+    },
+    {
+      "case": "maze-32-32-4-s2-n128",
+      "verified_pair_bound": 5413,
+      "pairs_checked": 43,
+      "verification_pops": 17358
+    },
+    {
+      "case": "maze-32-32-4-s3-n128",
+      "verified_pair_bound": 5451,
+      "pairs_checked": 39,
+      "verification_pops": 14831
+    },
+    {
+      "case": "empty-48-48-s2-n256",
+      "verified_pair_bound": 7905,
+      "pairs_checked": 1,
+      "verification_pops": 46
+    },
+    {
+      "case": "empty-48-48-s3-n256",
+      "verified_pair_bound": 7849,
+      "pairs_checked": 4,
+      "verification_pops": 275
+    },
+    {
+      "case": "random-64-64-20-s2-n192",
+      "verified_pair_bound": 8513,
+      "pairs_checked": 14,
+      "verification_pops": 1762
+    },
+    {
+      "case": "random-64-64-20-s3-n192",
+      "verified_pair_bound": 8583,
+      "pairs_checked": 9,
+      "verification_pops": 1312
+    }
+  ],
+  "pairs_checked": 521,
+  "verification_pops": 124151,
+  "per_pair_verification_pop_cap": 500000,
+  "elapsed_seconds": 4.593735543021467,
+  "canonical_scope_verified": true,
+  "canonical_scope_sha256": "18a57ffab7f44ae9659ff55f137b02d8313b1a0873839c4090deab2ab300a350",
+  "failure_controls": {
+    "inflated_bound": {
+      "verified": false,
+      "reason": "cheaper_pair_route",
+      "cost": 6,
+      "popped": 12
+    },
+    "overlapping_matching": "Overlapping or malformed pair matching",
+    "duplicated_case": "Panel must cover each canonical case exactly once"
+  },
+  "panel_sha256": "f972d9fae4f9173b60130c13124eb27cd0164f2084d63bd520561f71a7cb093d",
+  "verifier_sha256": "beefa5afe449c81d1eb3dd33016a8e1167f4b623e02a9612dd99e5b271a85c56"
+}

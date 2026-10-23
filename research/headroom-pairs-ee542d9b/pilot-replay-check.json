@@ -1,0 +1,8 @@
+{
+  "pilot_all_non_timing_fields_equal": true,
+  "pilot_source_sha256_exact": true,
+  "pairs_checked": 8,
+  "original_code_commit": "9f29e7f0ca81c02d48ba0633060d5a5af865f70b",
+  "replay_code_commit": "9f29e7f0ca81c02d48ba0633060d5a5af865f70b",
+  "verification_result": "complete"
+}
