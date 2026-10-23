@@ -72,12 +72,19 @@ address-space cap. The declared maximum including the conditional pivot was
 include startup, validation and orchestration wall time; they are not solver-only
 timings.
 
-| Method, 60 runs each | Search pops | Core wall seconds | Worker user CPU seconds | Worker system CPU seconds |
+| Method, 60 runs each | Search pops | Inclusive engine wall seconds | Worker user CPU seconds | Worker system CPU seconds |
 | --- | ---: | ---: | ---: | ---: |
 | Current arrival repair | 4,539,643 | 90.8520 | 173.0800 | 2.6313 |
 | SOL-aware repair | 3,565,892 | 98.5922 | 195.7496 | 2.3294 |
 
-The challenger used fewer pops but more observed wall and CPU time. Fixed pops
+The historical raw field `core_elapsed_seconds` and summary field `core_seconds`
+include preprocessing because both engines start their elapsed timer before BFS.
+Those original records remain unchanged. `clarify_timing.py` derives
+`timing-clarification.json` from all 120 retained records: after subtracting
+preprocessing, actual core totals are 82.3147 seconds for arrival and 90.1157
+seconds for SOL. The table above reports the original inclusive engine totals.
+
+The challenger used fewer pops but more observed engine/core wall and CPU time. Fixed pops
 are not equal CPU. Workers ran sequentially on a shared machine; no A/A or
 matched-time controls were run, so no speed claim is made. The frozen experiment
 used Python 3.13.5; upstream native solvers and Python 3.12 were not exercised.

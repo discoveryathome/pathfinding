@@ -1,5 +1,14 @@
 # Author-assisted review record
 
+A later fresh-study preflight identified that both engines' elapsed timer
+includes preprocessing. This package's historical fields named
+`core_elapsed_seconds` / `core_seconds` therefore mean inclusive engine time.
+The original fields and results remain unchanged; `clarify_timing.py` and
+`timing-clarification.json` retain the exact derivation of core time after
+subtracting preprocessing from all 60 runs per method. README labels now match
+that accounting. This is an author-checked documentation/derived-accounting
+correction, not an optimizer rerun or an extension of the earlier review scope.
+
 This package receives separate Standards and Spec agent reviews against canonical
 base `37823dca1bea271510e3ed62205620466ec6f0f9`. The reviews are commissioned by the
 author and do not constitute independent human scientific acceptance.
