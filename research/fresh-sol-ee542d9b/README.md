@@ -1,12 +1,29 @@
-# Frozen SOL repair on fresh within-map queries
+# Attempt A: native defaults abort under the declared cap
 
-This package evaluates the SOL-aware policy already selected in
+All twelve native-default attempts aborted with signal 6 (`SIGABRT`) before
+writing a route, under the declared 1 GiB address-space cap. Stderr reports
+`terminate called without an active exception`. No native start was verified,
+all twelve repair cases were explicitly skipped, and there are zero paired
+repair outcomes. This attempt provides no evidence about the policy's quality.
+
+This package attempted to evaluate the SOL-aware policy already selected in
 [PR #8](https://github.com/discoveryathome/pathfinding/pull/8) on twelve newly
 generated queries on three published maps. The comparison is against unchanged
 `repair_round2.run(random4)` from the same pinned LaCAM3 starting plan, with three
 paired seeds and the same search-pop allowance. No policy tuning or
-fresh-output-driven pivot is permitted. Results and final checks are recorded
-below before submission.
+fresh-output-driven policy pivot is permitted. The original protocol, all inputs,
+all twelve failure records/journal entries and the zero-run repair report remain
+unchanged. `verification.json` separately recomputed all twelve query draws and
+checked their source/input/journal bindings in 0.6370 seconds; it checked zero
+dataset routes. All 35 relevant baseline/control tests passed before the panel.
+
+A separately declared follow-up in `research/fresh-sol-single-ee542d9b` uses the
+same fixed queries with the pinned native's explicit `--no-multi-thread` flag.
+It is an infrastructure configuration change after these startup failures,
+before any repair-policy outcomes; it does not overwrite or reclassify this
+failed attempt. Inputs are now exposed. The repair policy remains frozen.
+The failure message alone does not establish the exact internal cause; the
+scope is this binary/configuration/environment/cap, not a general LaCAM3 defect.
 
 ## Fixed scope and exposure
 
