@@ -89,7 +89,8 @@ coverage, complete journals, initial and final metrics, every accepted
 intermediate route, Pareto gates, resource counts, development selection and the
 paired common random neighborhood prefixes. `verification.json` records all
 120 final routes and 313 accepted intermediate routes checked in 178.0431
-seconds. Optimizer traces are losslessly compressed; candidate certificates are
+seconds. This original audit is preserved; the tightened verifier's complete
+rerun is retained separately as `verification-v2.json`. Optimizer traces are losslessly compressed; candidate certificates are
 plain JSON. Separate checking is still author-assisted evidence.
 
 From repository root, with the documented project dependencies installed:
@@ -103,6 +104,10 @@ python research/sol-repair-ee542d9b/summarize.py --attempt a1 --out summary-repl
 
 The two output names must be unused filenames directly inside this package;
 absolute paths and overwriting retained outputs are deliberately rejected.
+Source provenance checking requires the recorded Git commit objects and their
+files. Fetch the contribution branch's retained history if needed; a source
+archive or shallow checkout without those objects cannot establish that check
+and is rejected explicitly, even when current file hashes match.
 
 For a new full optimizer replay after the recorded 2026-10-23 12:05 UTC research
 cutoff, make a separate checkout and a fresh research package as required by

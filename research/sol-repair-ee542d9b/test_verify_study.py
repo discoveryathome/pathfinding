@@ -38,12 +38,22 @@ def test_canonical_cohort_rejects_duplicates_and_trial_aliases():
             verify.validate_cohort(wrong, cases, "sol")
 
 
+def test_current_hashes_cannot_alias_a_missing_or_wrong_commit():
+    record = next((verify.PACKAGE / "runs/a1-dev-primary").glob("*/run.json"))
+    data = json.loads(record.read_text())
+    for commit in ("0" * 40, "37823dca1bea271510e3ed62205620466ec6f0f9"):
+        with pytest.raises(ValueError, match="source version unavailable"):
+            verify.validate_manifest(data["source_sha256"], commit)
+
+
 def test_wrong_trace_pop_accounting_and_metrics_rejected():
     initial = {"paths": [[0]], "metrics": {"sol": 0, "soc": 0, "makespan": 0}}
     candidate = copy.deepcopy(initial)
-    trace = {"paths": [[0]], "metrics": initial["metrics"], "history": [], "improvements": [],
-             "budget": {"node_limit": 100000, "nodes_used": 0, "attempt_limit": 96,
-                        "attempts_used": 0, "per_agent_limit": 10000}}
+    history = [{"attempt": i, "agents": [0], "popped": 1, "status": "complete", "accepted": False,
+                "before": initial["metrics"], "proposed": initial["metrics"]} for i in range(96)]
+    trace = {"paths": [[0]], "metrics": initial["metrics"], "history": history, "improvements": [],
+             "budget": {"node_limit": 100000, "nodes_used": 96, "attempt_limit": 96,
+                        "attempts_used": 96, "per_agent_limit": 10000}}
     assert verify.validate_trace(initial, trace, candidate, Path("unused"))["accepted_routes_checked"] == 0
     bad = copy.deepcopy(trace)
     bad["budget"]["nodes_used"] = 1
@@ -51,6 +61,13 @@ def test_wrong_trace_pop_accounting_and_metrics_rejected():
         verify.validate_trace(initial, bad, candidate, Path("unused"))
     with pytest.raises(ValueError):
         verify.metrics_shape({"sol": 0.0, "soc": 0, "makespan": 0})
+    for length in (0, 1, 95):
+        truncated = copy.deepcopy(trace)
+        truncated["history"] = truncated["history"][:length]
+        truncated["budget"]["attempts_used"] = length
+        truncated["budget"]["nodes_used"] = length
+        with pytest.raises(AssertionError, match="Incomplete search history"):
+            verify.validate_trace(initial, truncated, candidate, Path("unused"))
 
 
 def test_artifact_paths_cannot_escape_declared_runs():

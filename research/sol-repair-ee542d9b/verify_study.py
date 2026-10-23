@@ -31,7 +31,8 @@ def required_sources():
 def committed_sources(commit):
     if type(commit) is not str or len(commit) != 40 or any(c not in "0123456789abcdef" for c in commit):
         raise ValueError("Use a full code commit identity")
-    return {path: hashlib.sha256(subprocess.check_output(["git", "show", commit + ":" + path], cwd=ROOT)).hexdigest()
+    return {path: hashlib.sha256(subprocess.check_output(["git", "show", commit + ":" + path], cwd=ROOT,
+                                                        stderr=subprocess.DEVNULL)).hexdigest()
             for path in sorted(required_sources())}
 
 
@@ -40,15 +41,12 @@ def validate_manifest(manifest, commit):
         raise ValueError("Incomplete or unexpected source key set")
     if type(commit) is not str or len(commit) != 40 or any(c not in "0123456789abcdef" for c in commit):
         raise ValueError("Use a full code commit identity")
-    # Matching current bytes also supports source archives/shallow checkouts.
-    current = {path: sha(ROOT / path) for path in sorted(required_sources())}
-    if manifest != current:
-        try:
-            expected = committed_sources(commit)
-        except subprocess.CalledProcessError as error:
-            raise ValueError("Recorded source version unavailable") from error
-        if manifest != expected:
-            raise ValueError("Source hashes do not match the recorded commit")
+    try:
+        expected = committed_sources(commit)
+    except subprocess.CalledProcessError as error:
+        raise ValueError("Recorded source version unavailable; fetch the retained Git history") from error
+    if manifest != expected:
+        raise ValueError("Source hashes do not match the recorded commit")
 
 
 def metrics_shape(metrics):
@@ -82,6 +80,7 @@ def validate_trace(initial, trace, candidate, instance):
     assert budget["node_limit"] == 100000 and budget["attempt_limit"] == 96 and budget["per_agent_limit"] == 10000
     assert budget["attempts_used"] == len(history) <= 96
     assert budget["nodes_used"] == sum(r["popped"] for r in history) <= 100000
+    assert len(history) == 96 or budget["nodes_used"] == 100000, "Incomplete search history"
     improvements = {r["attempt"]: r for r in trace["improvements"]}
     assert len(improvements) == len(trace["improvements"])
     paths, before, used, checked_routes = [trimmed(p) for p in initial["paths"]], initial["metrics"], 0, 0
