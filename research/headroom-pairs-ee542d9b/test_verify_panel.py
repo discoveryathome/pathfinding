@@ -1,5 +1,6 @@
 """Failure controls for the separate lower-bound checker."""
 import importlib.util
+import json
 from pathlib import Path
 
 import pytest
@@ -7,6 +8,16 @@ import pytest
 spec = importlib.util.spec_from_file_location("verify_panel", Path(__file__).with_name("verify_panel.py"))
 verify = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(verify)
+
+
+def test_source_manifest_requires_every_declared_path():
+    source = json.loads((verify.PACKAGE / "panel.json").read_text())["source_sha256"]
+    verify.validate_sources(source)
+    variants = [{}, {**source, "unexpected.py": "0" * 64}]
+    variants.extend({key: value for key, value in source.items() if key != missing} for missing in source)
+    for invalid in variants:
+        with pytest.raises(ValueError, match="complete declared source manifest"):
+            verify.validate_sources(invalid)
 
 
 def test_certification_rejects_inflation_and_remains_inconclusive_at_cap():

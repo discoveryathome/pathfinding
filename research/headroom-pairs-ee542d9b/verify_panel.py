@@ -94,6 +94,16 @@ def raw_grid(instance):
     return adj
 
 
+def validate_sources(manifest):
+    prefix = str(PACKAGE.relative_to(ROOT)) + "/"
+    expected = {prefix + name for name in ("run_bounds.py", "pair_bounds.py", "protocol.json")} | {
+        "tools/headroom.py", "src/model.py", "src/verify.py", "discover/incumbents.json"}
+    if not isinstance(manifest, dict) or set(manifest) != expected:
+        raise ValueError("Require the complete declared source manifest")
+    for path, digest in manifest.items():
+        assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == digest, path
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", required=True)
@@ -103,8 +113,7 @@ if __name__ == "__main__":
         parser.error("Use a new output filename in this package")
     report = json.loads((PACKAGE / "panel.json").read_text())
     assert report["all_cases_completed"] and len(report["cases"]) == 20
-    for path, expected in report["source_sha256"].items():
-        assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == expected, path
+    validate_sources(report["source_sha256"])
     scope_path = ROOT / "research/distribution-prep-20261022/headroom.json"
     scope_sha256 = hashlib.sha256(scope_path.read_bytes()).hexdigest()
     assert scope_sha256 == "18a57ffab7f44ae9659ff55f137b02d8313b1a0873839c4090deab2ab300a350"
