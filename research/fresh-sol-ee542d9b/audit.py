@@ -216,6 +216,7 @@ def verify_native(plan, manifest, inputs):
         row, cid = native[case["id"]], case["id"]
         assert Path(event["command"][1]) == PACKAGE / "run_native.py" and event["command"][2:] == ["--case", cid]
         assert event["address_space_mib"] == 1024 and 0 < event["external_timeout_seconds"] <= 60
+        assert event["process_group_owned"] is True
         record = PACKAGE / "native" / cid / "run.json"
         if not record.exists():
             assert row["status"] != "verified" and row["candidate"] is None and event["record_sha256"] is None
@@ -232,6 +233,7 @@ def verify_native(plan, manifest, inputs):
         assert event["status"] == row["execution"]["status"] == "complete"
         assert event["returncode"] == row["execution"]["returncode"] == 0
         assert row["execution"]["address_space_mib"] == 1024 and 0 < row["execution"]["external_timeout_seconds"] <= 45
+        assert row["execution"]["process_group_owned"] is False
         expected_command = [str(ROOT / plan["native"]["binary"]), "-m", str(ROOT / case["map"]),
             "-i", str(ROOT / inputs[cid]["scenario"]), "-N", str(case["agents"]), "-s", "0", "-t", "12", "-o", str(raw), "-v", "0"]
         assert row["execution"]["command"] == expected_command
@@ -268,19 +270,38 @@ def verify_repairs(plan, manifest, inputs, native):
     expected = {(case["id"], trial, method) for case in eligible for trial in range(3) for method in ("arrival", "sol")}
     cohort(report["rows"], expected, ("case", "trial", "method"))
     journal = [json.loads(line) for line in (PACKAGE / "repair-journal.jsonl").read_text().splitlines()]
-    cohort(journal, expected, ("case", "trial", "method"))
+    attempted = {(row["case"], row["trial"], row["method"]) for row in report["rows"] if row["status"] != "not_attempted"}
+    cohort(journal, attempted, ("case", "trial", "method"))
     order = [(case["id"], trial, method) for index, case in enumerate(plan["cases"]) if case in eligible
              for trial in range(3) for method in (("arrival", "sol") if (index + trial) % 2 == 0 else ("sol", "arrival"))]
-    assert [(e["case"], e["trial"], e["method"]) for e in journal] == order
+    assert [(e["case"], e["trial"], e["method"]) for e in journal] == order[:len(journal)]
+    assert [(r["case"], r["trial"], r["method"]) for r in report["rows"] if r["status"] == "not_attempted"] == order[len(journal):]
+    assert report["all_jobs_attempted"] == (len(journal) == len(order))
     bykey = {(row["case"], row["trial"], row["method"]): row for row in report["rows"]}
     cases, groups, checked = {case["id"]: case for case in eligible}, {}, 0
     for event in journal:
         key = event["case"], event["trial"], event["method"]
         row, case = bykey[key], cases[key[0]]
-        validate_sources(row, manifest)
-        assert row["verified"] is True and row["seed"] == case["repair_seeds"][key[1]]
-        assert row["instance"] == inputs[key[0]] and row["inherited_sha256"] == native[key[0]]["candidate_sha256"]
         directory = PACKAGE / "runs" / f"{key[0]}-t{key[1]}-{key[2]}"
+        assert Path(event["command"][1]) == PACKAGE / "run_repair.py"
+        assert event["command"][2:] == ["--case", key[0], "--trial", str(key[1]), "--method", key[2]]
+        assert event["address_space_mib"] == 1024 and 0 < event["external_timeout_seconds"] <= 600
+        assert event["process_group_owned"] is True
+        if row["verified"] is False:
+            assert row["status"] in {"worker_failed", "worker_timeout", "invalid_record"}
+            assert row["artifacts"] == event["failure_artifacts"] == {
+                str(item.relative_to(PACKAGE)): sha(item) for item in directory.glob("*") if item.is_file()}
+            assert event["record_sha256"] == (sha(directory / "run.json") if (directory / "run.json").exists() else None)
+            if (directory / "request.json").exists():
+                request = load(directory / "request.json")
+                validate_sources(request, manifest)
+                assert (request["case"], request["trial"], request["method"]) == key
+                assert request["seed"] == case["repair_seeds"][key[1]] and request["instance"] == inputs[key[0]]
+            continue
+        validate_sources(row, manifest)
+        assert row["verified"] is True and row["status"] == "verified"
+        assert row["seed"] == case["repair_seeds"][key[1]]
+        assert row["instance"] == inputs[key[0]] and row["inherited_sha256"] == native[key[0]]["candidate_sha256"]
         assert load(directory / "run.json") == row and sha(directory / "run.json") == event["record_sha256"]
         assert row["candidate"] == str((directory / "candidate.json").relative_to(PACKAGE))
         assert row["trace"] == str((directory / "trace.json.gz").relative_to(PACKAGE))
@@ -289,9 +310,6 @@ def verify_repairs(plan, manifest, inputs, native):
                                                     "seed", "instance", "inherited_sha256")}
         assert not (directory / "failure.json").exists()
         assert event["status"] == "complete" and event["returncode"] == 0
-        assert Path(event["command"][1]) == PACKAGE / "run_repair.py"
-        assert event["command"][2:] == ["--case", key[0], "--trial", str(key[1]), "--method", key[2]]
-        assert event["address_space_mib"] == 1024 and 0 < event["external_timeout_seconds"] <= 600
         certificate_path, trace_path = artifact(row["candidate"], "runs"), artifact(row["trace"], "runs")
         assert sha(certificate_path) == row["candidate_sha256"] and sha(trace_path) == row["trace_sha256"]
         candidate, trace = load(certificate_path), json.loads(gzip.decompress(trace_path.read_bytes()))
@@ -299,24 +317,35 @@ def verify_repairs(plan, manifest, inputs, native):
         instance = ROOT / inputs[key[0]]["instance"]
         shape(candidate["metrics"])
         assert check(instance, candidate) == row["after"] and check(instance, initial) == row["before"]
-        assert trace["seed"] == int(row["seed"]["decimal"]) and type(trace["seed"]) is int
+        assert trace["seed"] == row["seed"]["decimal"] and type(trace["seed"]) is str
         assert trace["variant"] == ("random4" if key[2] == "arrival" else "sol")
         count, sequence = audit_trace(trace, initial, candidate, instance)
         assert row["accepted_intermediates"] == count and trace["budget"] == row["budget"]
         assert row["status_counts"] == dict(Counter(step["status"] for step in trace["history"]))
+        assert row["preprocess_seconds"] >= 0 and row["core_wall_seconds"] >= 0
+        assert row["engine_wall_seconds"] == trace["elapsed_seconds"]
+        assert row["preprocess_seconds"] == trace["preprocess_seconds"]
+        assert abs(row["engine_wall_seconds"] - row["core_wall_seconds"] - row["preprocess_seconds"]) < 1e-9
         assert all(row["after"][metric] <= row["before"][metric] for metric in ("sol", "soc", "makespan"))
         checked += count
         groups[key] = sequence
     pairs = []
+    incomplete = []
     for case in eligible:
         for trial in range(3):
             left, right = (case["id"], trial, "arrival"), (case["id"], trial, "sol")
             a, b = bykey[left], bykey[right]
+            if a["verified"] is not True or b["verified"] is not True:
+                incomplete.append({"case": case["id"], "trial": trial, "arrival_status": a["status"], "sol_status": b["status"]})
+                continue
             prefix = min(len(groups[left]), len(groups[right]))
             assert groups[left][:prefix] == groups[right][:prefix]
             pairs.append({"case": case["id"], "trial": trial,
                           **{metric + "_delta": b["after"][metric] - a["after"][metric] for metric in ("sol", "soc", "makespan")}})
-    return report["rows"], checked, pairs
+    successful = [row for row in report["rows"] if row["verified"] is True]
+    return successful, checked, pairs, {"planned_jobs": len(order), "attempted_jobs": len(journal),
+        "failed_or_unattempted": dict(Counter(row["status"] for row in report["rows"] if row["verified"] is False)),
+        "incomplete_pairs": incomplete}
 
 
 def main():
@@ -334,16 +363,17 @@ def main():
     assert sha(PACKAGE / "sol_repair.py") == plan["policy_sha256"] == manifest[prefix + "sol_repair.py"]
     inputs = verify_inputs(plan, manifest)
     native = verify_native(plan, manifest, inputs)
-    rows, intermediates, pairs = verify_repairs(plan, manifest, inputs, native)
+    rows, intermediates, pairs, coverage = verify_repairs(plan, manifest, inputs, native)
     assert not any(name in sys.modules for name in ("sol_repair", "repair", "repair_round2"))
     resources = {method: {field: sum(row[field] for row in rows if row["method"] == method)
-                         for field in ("core_wall_seconds", "preprocess_seconds", "worker_wall_seconds",
+                         for field in ("core_wall_seconds", "engine_wall_seconds", "preprocess_seconds", "worker_wall_seconds",
                                        "worker_user_cpu_seconds", "worker_system_cpu_seconds")}
                  for method in ("arrival", "sol")}
     result = {"verified": True, "evidence_level": "author-checked separate audit", "optimizer_imports": False,
               "native_status_counts": dict(Counter(row["status"] for row in native.values())),
               "fresh_queries_recomputed": len(inputs), "final_repair_routes_checked": len(rows),
               "accepted_intermediate_routes_checked": intermediates, "paired_runs": len(pairs), "pairs": pairs,
+              "coverage": coverage,
               "SOL_wins": sum(row["sol_delta"] < 0 for row in pairs),
               "SOL_ties": sum(row["sol_delta"] == 0 for row in pairs),
               "SOL_losses": sum(row["sol_delta"] > 0 for row in pairs),

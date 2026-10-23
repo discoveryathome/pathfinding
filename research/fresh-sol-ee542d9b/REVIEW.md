@@ -31,3 +31,38 @@ there were no fresh-panel outcomes to correct or discard.
 The reviewer checked the original 13-file diff, binding standards and connected
 producer dependencies, and passed 25 tests. It did not run the panel, rebuild
 native code, re-review math or check the subsequently added auditor/evidence/docs.
+
+## Spec preflight round 1
+
+Four P2 findings at `5ea28cc`, all before query exposure:
+
+1. A timed-out repair worker stopped the remaining panel; a two-case probe
+   launched only 1/12 scheduled runs. The protocol requires every planned pair
+   within global caps, skipping only cases without a verified native start.
+2. Both coordinator and worker created new process sessions. A coordinator
+   timeout killed its worker but left the nested native process running. The
+   reviewer reproduced this with a bounded probe and cleaned up that process.
+3. The compressed trace retained the engine's numeric 128-bit seed, contrary
+   to the protocol's exact-string interchange contract.
+4. `core_wall_seconds` used the engine's inclusive elapsed timer, counting
+   preprocessing again rather than separating preprocessing/core/full wall.
+
+Response: preserve explicit failed-worker rows and continue the fixed schedule.
+If global time/disk caps stop work, record the remaining jobs as unattempted,
+without adding journal entries for calls that never ran. The pinned native is
+one OS process with threads and now inherits its worker's process group, so the
+coordinator timeout kills both; its own inner timeout kills that native process.
+Store the trace seed as a decimal string while still passing the exact integer
+to the unchanged optimizer. Record inclusive `engine_wall_seconds` and subtract
+preprocessing for `core_wall_seconds`. The separate auditor checks these fields
+and reports incomplete pairs separately from policy wins/ties/losses.
+
+Regression controls cover 12 planned worker timeouts continuing to completion,
+explicit unattempted cap rows, a real nested-child timeout, exact 128-bit seed
+interchange and a 5-second engine / 2-second preprocessing / 3-second core timer.
+All 35 relevant tests pass. No fresh queries or panel results existed during
+these corrections. Earlier sources remain in the committed history.
+
+The Spec reviewer passed 25 tests against the frozen producer and ran bounded
+adapter/failure probes. It did not generate fresh inputs, run either panel,
+rebuild native code, inspect later files or re-prove the frozen SOL solver.

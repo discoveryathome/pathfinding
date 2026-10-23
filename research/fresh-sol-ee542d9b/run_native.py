@@ -60,8 +60,9 @@ def worker(case_id):
     raw_path = destination / "output.txt"
     command = [str(binary), "-m", str(ROOT / case["map"]), "-i", str(ROOT / item["scenario"]),
                "-N", str(case["agents"]), "-s", "0", "-t", "12", "-o", str(raw_path), "-v", "0"]
+    # The pinned native uses threads in one process; join the worker's kill group.
     execution = run_process(command, min(native["external_deadline_seconds"], remaining_seconds(plan)),
-                            plan["caps"]["address_space_mib"])
+                            plan["caps"]["address_space_mib"], own_group=False)
     status, error, certificate = "failed", None, None
     if execution["status"] == "complete":
         try:

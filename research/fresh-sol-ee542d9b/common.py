@@ -67,19 +67,22 @@ def check_limits(plan):
         raise RuntimeError("Package disk cap reached")
 
 
-def run_process(command, timeout, memory_mib):
+def run_process(command, timeout, memory_mib, own_group=True):
     def memory_limit():
         resource.setrlimit(resource.RLIMIT_AS, (memory_mib * 1024 ** 2,) * 2)
 
     started = time.perf_counter()
     before = resource.getrusage(resource.RUSAGE_CHILDREN)
     child = subprocess.Popen(command, cwd=ROOT, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                             text=True, start_new_session=True, preexec_fn=memory_limit)
+                             text=True, start_new_session=own_group, preexec_fn=memory_limit)
     try:
         out, err = child.communicate(timeout=timeout)
         status = "complete" if child.returncode == 0 else "failed"
     except subprocess.TimeoutExpired:
-        os.killpg(child.pid, signal.SIGKILL)
+        if own_group:
+            os.killpg(child.pid, signal.SIGKILL)
+        else:
+            child.kill()
         out, err = child.communicate()
         status = "timeout"
     after = resource.getrusage(resource.RUSAGE_CHILDREN)
@@ -88,7 +91,8 @@ def run_process(command, timeout, memory_mib):
             "child_user_cpu_seconds": after.ru_utime - before.ru_utime,
             "child_system_cpu_seconds": after.ru_stime - before.ru_stime,
             "max_child_rss_kib_on_linux_so_far": after.ru_maxrss,
-            "external_timeout_seconds": timeout, "address_space_mib": memory_mib}
+            "external_timeout_seconds": timeout, "address_space_mib": memory_mib,
+            "process_group_owned": own_group}
 
 
 def load_inputs():

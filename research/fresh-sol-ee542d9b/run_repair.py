@@ -44,7 +44,8 @@ def worker(case_id, trial, method):
                     node_budget=100000, attempts=96, agent_cap=10000)
     trace = destination / "trace.json.gz"
     with trace.open("xb") as handle:
-        handle.write(gzip.compress(json.dumps(result, separators=(",", ":")).encode(), mtime=0))
+        handle.write(gzip.compress(json.dumps({**result, "seed": str(result["seed"])},
+                                              separators=(",", ":")).encode(), mtime=0))
     try:
         candidate = {"instance_sha256": initial["instance_sha256"], "paths": result["paths"],
                      "metrics": result["metrics"], "method": method, "seed_decimal": seed["decimal"]}
@@ -65,14 +66,15 @@ def worker(case_id, trial, method):
               "before": initial_metrics, "after": checked, "budget": result["budget"],
               "accepted_intermediates": len(result["improvements"]),
               "status_counts": dict(Counter(row["status"] for row in result["history"])),
-              "preprocess_seconds": result["preprocess_seconds"], "core_wall_seconds": result["elapsed_seconds"],
+              "preprocess_seconds": result["preprocess_seconds"], "engine_wall_seconds": result["elapsed_seconds"],
+              "core_wall_seconds": result["elapsed_seconds"] - result["preprocess_seconds"],
               "worker_wall_seconds": time.perf_counter() - started,
               "worker_user_cpu_seconds": usage.ru_utime, "worker_system_cpu_seconds": usage.ru_stime,
               "worker_peak_rss_kib_on_linux": usage.ru_maxrss,
               "candidate": str((destination / "candidate.json").relative_to(PACKAGE)),
               "candidate_sha256": sha(destination / "candidate.json"),
               "trace": str(trace.relative_to(PACKAGE)), "trace_sha256": sha(trace),
-              "python": sys.version, "platform": platform.platform(), "verified": True}
+              "python": sys.version, "platform": platform.platform(), "status": "verified", "verified": True}
     save(destination / "run.json", record)
     print(json.dumps({"case": case_id, "trial": trial, "method": method, "after": checked}))
 
@@ -92,40 +94,63 @@ def main():
     plan = protocol()
     identity = source_identity(plan)
     native = json.loads((PACKAGE / "native.json").read_text())
-    rows, skipped, started = [], [], time.perf_counter()
+    rows, skipped, jobs, started = [], [], [], time.perf_counter()
     if (PACKAGE / "repair.json").exists():
         parser.error("Preserve the original repair attempt")
+    for index, case in enumerate(plan["cases"]):
+        start = next(row for row in native["rows"] if row["case"] == case["id"])
+        if start["status"] != "verified":
+            skipped.append({"case": case["id"], "reason": "native_not_verified", "native_status": start["status"]})
+            continue
+        for trial in range(3):
+            methods = ("arrival", "sol") if (index + trial) % 2 == 0 else ("sol", "arrival")
+            jobs.extend((case["id"], trial, method) for method in methods)
+    stopped = None
     with (PACKAGE / "repair-journal.jsonl").open("x") as journal:
-        for index, case in enumerate(plan["cases"]):
-            start = next(row for row in native["rows"] if row["case"] == case["id"])
-            if start["status"] != "verified":
-                skipped.append({"case": case["id"], "reason": "native_not_verified", "native_status": start["status"]})
-                continue
-            for trial in range(3):
-                methods = ("arrival", "sol") if (index + trial) % 2 == 0 else ("sol", "arrival")
-                for method in methods:
+        for case_id, trial, method in jobs:
+            if stopped is None:
+                try:
                     check_limits(plan)
-                    remaining = min(plan["caps"]["phase_wall_seconds"] - (time.perf_counter() - started),
-                                    remaining_seconds(plan))
-                    if remaining <= 0:
-                        raise TimeoutError("Repair phase cutoff reached; retain partial journal")
-                    command = [sys.executable, str(Path(__file__).resolve()), "--case", case["id"],
-                               "--trial", str(trial), "--method", method]
-                    event = run_process(command, min(plan["caps"]["repair_worker_wall_seconds"], remaining),
-                                        plan["caps"]["address_space_mib"])
-                    event.update(case=case["id"], trial=trial, method=method)
-                    path = PACKAGE / "runs" / f"{case['id']}-t{trial}-{method}" / "run.json"
-                    event["record_sha256"] = sha(path) if path.exists() else None
-                    journal.write(json.dumps(event) + "\n")
-                    journal.flush()
-                    if event["status"] != "complete" or not path.exists():
-                        raise RuntimeError("Repair worker failed; retain partial journal without replacing it")
+                except (TimeoutError, RuntimeError) as failure:
+                    stopped = str(failure)
+            remaining = min(plan["caps"]["phase_wall_seconds"] - (time.perf_counter() - started),
+                            remaining_seconds(plan))
+            if remaining <= 0:
+                stopped = stopped or "Repair phase cutoff reached"
+            if stopped is not None:
+                rows.append({"case": case_id, "trial": trial, "method": method, "status": "not_attempted",
+                             "verified": False, "reason": stopped})
+                continue
+            command = [sys.executable, str(Path(__file__).resolve()), "--case", case_id,
+                       "--trial", str(trial), "--method", method]
+            event = run_process(command, min(plan["caps"]["repair_worker_wall_seconds"], remaining),
+                                plan["caps"]["address_space_mib"])
+            event.update(case=case_id, trial=trial, method=method)
+            directory = PACKAGE / "runs" / f"{case_id}-t{trial}-{method}"
+            path = directory / "run.json"
+            event["record_sha256"] = sha(path) if path.exists() else None
+            row, error = None, None
+            if event["status"] == "complete" and path.exists():
+                try:
                     row = json.loads(path.read_text())
-                    rows.append(row)
-                    print(json.dumps({"case": case["id"], "trial": trial, "method": method, "after": row["after"]}), flush=True)
+                    assert row["verified"] is True
+                except Exception as failure:
+                    row, error = None, f"{type(failure).__name__}: {failure}"
+            if row is None:
+                artifacts = {str(item.relative_to(PACKAGE)): sha(item) for item in directory.glob("*") if item.is_file()}
+                row = {"case": case_id, "trial": trial, "method": method, "verified": False,
+                       "status": "worker_" + event["status"] if event["status"] != "complete" else "invalid_record",
+                       "artifacts": artifacts, "record_error": error}
+                event["failure_artifacts"] = artifacts
+            journal.write(json.dumps(event) + "\n")
+            journal.flush()
+            rows.append(row)
+            print(json.dumps({"case": case_id, "trial": trial, "method": method,
+                              "status": row["status"], "after": row.get("after")}), flush=True)
     save(PACKAGE / "repair.json", {**identity, "rows": rows, "skipped": skipped,
                                    "native_sha256": sha(PACKAGE / "native.json"),
                                    "wall_seconds": time.perf_counter() - started,
+                                   "all_jobs_attempted": stopped is None,
                                    "evidence_level": "author-checked fixed fresh within-map panel"})
 
 
