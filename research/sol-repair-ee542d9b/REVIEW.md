@@ -51,3 +51,54 @@ The reviewer passed all 31 prior tests, checked 60 seed derivations and all 120
 record/artifact hash sets, and checked geometry for 18 finals and 58 accepted
 intermediates. It did not replay the full optimizer, check the remaining route
 geometry, run native solvers or establish exhaustive optimality.
+
+## Spec round 2 at 6d7a063
+
+No remaining actionable Spec findings in the narrow follow-up. The original
+34,813-pop trace passed; consistently updated 0-, 1- and 95-attempt prefixes
+failed. A shortened trace passed at exactly 100,000 pops and failed at 99,999.
+Both recorded commits passed source checks; zero/base IDs, a wrong hash and
+unavailable history failed. Five focused verifier tests passed. Prior frozen
+solver/math conclusions were reused. This reviewer did not run the pending V2
+audit, optimizer replay, additional route geometry or native solvers.
+
+## Standards round 2 at 6d7a063
+
+Both original reproduction-documentation findings were verified as resolved.
+Two additional P2 provenance findings:
+
+1. Git tree `049b4401263313ecd58e03930e2dc6f87d6eeabf` passed the manifest helper,
+   because `git show oid:path` accepts trees as well as commits. AGENTS.md and
+   research/REVIEW.md require correct source identity; README promised a commit.
+2. In a relocated package the executed worker path changed but the journal's
+   hardcoded worker path still named the original package. CONTRIBUTING.md and
+   FIRST_REVIEW.md require faithful source/command provenance.
+
+Response at `c88118c`: require the Git object's type to be exactly `commit` and
+add a real retained-tree rejection control. Journal the exact command passed to
+the subprocess; a copied-package test with a controlled failed worker compares
+the recorded command to the executed one. The first new test run exposed a
+misplaced test-fixture line (`NameError`); its placement was corrected before
+commit, then all 33 tests passed. The runner correction concerns future replay
+bookkeeping only; original frozen sources and outputs remain retained.
+
+## Versioned audit evidence
+
+V1 source is recoverable at `0edb0a7`, V2 at `6d7a063` and V3 at `c88118c`.
+Each of `verification.json`, `verification-v2.json` and `verification-v3.json`
+binds its actual verifier SHA-256 and checks all 120 final plus 313 accepted
+intermediate routes. Original experiment source manifests still bind the
+development/evaluation commits, including the original runner. Final evidence
+does not relabel the earlier checks as independent review or optimizer replay.
+
+## Standards round 3 at c88118c
+
+No new findings; both outstanding P2s resolved. The actual offending tree is
+rejected, valid historical manifests pass, and the relocated-worker regression
+confirms journal/command equality. Three focused tests passed. All 120 records'
+ten-file manifests match retained blobs: 18 development records at `5c54e6e` and
+102 evaluation records at `b99c1ec`. Frozen original evidence remains unchanged.
+No useful additional smell finding. The reviewer did not run the full 33-test
+suite, execute the V3 audit, check route geometry, replay optimizers, run native
+solvers or renew math/Spec review. Root separately ran the full suite and V3
+audit recorded above. Both axes are author-assisted; human signoff remains pending.

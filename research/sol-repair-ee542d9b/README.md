@@ -41,6 +41,10 @@ at `b99c1ec` before launching the 102 evaluation runs on the other 17 published
 cases. The pivot did not run. Sources remained byte-identical across phases.
 All source identities, commands, failures, resource use and worker outcomes are
 retained in `a1-*.json`, the two JSONL journals and `runs/`.
+After the study, the runner's replay journal was corrected to retain the exact
+executed command when copied to another package. The original experiment runner
+remains recoverable at `5c54e6e` and matches the run manifests; no experiment was
+rerun or its outputs rewritten for that bookkeeping correction.
 
 | Declared panel | Paired runs | SOL wins / ties / losses | Sum SOL delta | Sum SOC delta | SOC / makespan regressions |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -89,8 +93,9 @@ coverage, complete journals, initial and final metrics, every accepted
 intermediate route, Pareto gates, resource counts, development selection and the
 paired common random neighborhood prefixes. `verification.json` records all
 120 final routes and 313 accepted intermediate routes checked in 178.0431
-seconds. This original audit is preserved; the tightened verifier's complete
-rerun is retained separately as `verification-v2.json`. Optimizer traces are losslessly compressed; candidate certificates are
+seconds. This original audit and the intermediate V2 audit are preserved. The
+final tightened verifier checked the same scope in 181.6307 seconds, retained
+as `verification-v3.json`. Optimizer traces are losslessly compressed; candidate certificates are
 plain JSON. Separate checking is still author-assisted evidence.
 
 From repository root, with the documented project dependencies installed:
@@ -125,7 +130,9 @@ RSS and worker code-commit metadata may differ.
 
 Tests cover the exact 70-walk counterexample, 150 deterministic tiny reservation
 draws against a time-layer DP oracle, goal departures/holds, deadlines, caps,
-macro guards, development eligibility and checker tamper controls. The full
+macro guards, development eligibility, copied-package journal paths and checker
+tamper controls. All 33 relevant tests pass; `checks-v3.json` records final checks,
+while `checks.json` retains the earlier 31-test state. The full
 120-run optimizer panel has not been replayed a second time. Rejected proposals'
 metrics and failure statuses are retained, but their full rejected or partial
 route geometry was not stored or separately checked. No unseen corpus,
