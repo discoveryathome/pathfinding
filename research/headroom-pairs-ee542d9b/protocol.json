@@ -1,0 +1,37 @@
+{
+  "base_commit": "37823dca1bea271510e3ed62205620466ec6f0f9",
+  "seed_hex": "ee542d9b4c91949140f009a90142f5ba",
+  "seed_decimal": 316793340945421113888006999147102270906,
+  "track": "headroom",
+  "priority_revision": 3,
+  "question": "Can bounded SOL-aware two-agent product search strengthen the current disjoint forced-conflict lower bounds without assuming goals are absorbing?",
+  "method": "For each fixed disjoint witness pair, search the static two-agent position graph with vertex/swap conflicts, four-neighbor moves and waits, charging one per agent transition unless both endpoints are its own goal. Aggregate certified pair lower bounds plus unmatched individual BFS distances.",
+  "published_inputs": "All 20 current accepted archive cases and the 521 disjoint pairs selected by the unchanged tools/headroom.py at this base; no new route/candidate selection.",
+  "development_case": "maze-32-32-4-n128",
+  "exposure": "All cases are published calibration material. No unseen-transfer or independent-heldout claim.",
+  "resource_caps": {
+    "popped_states_per_pair": 10000,
+    "fixed_pairs": 521,
+    "maximum_panel_popped_states": 5210000,
+    "pilot_pairs": 8,
+    "pilot_wall_cap_seconds": 180,
+    "panel_wall_cap_seconds": 1800,
+    "memory_cap_mib": 1024,
+    "initial_investigation_minutes": 90,
+    "stop_new_work_utc": "2026-10-23T12:05:00Z",
+    "final_verification_and_handoff_minutes_reserved": 120
+  },
+  "before_large_run": [
+    "Price the strongest possible fixed-pair gain using the inherited route's pair costs as upper bounds.",
+    "Prove the static product-graph objective and capped-search lower-bound rule, including zero-cost goal holding and allowed departures.",
+    "Compare against independent tiny exact search with positive and negative controls.",
+    "Run the first 8 existing maze witness pairs as the declared pilot; retain every attempted pair/status/cap.",
+    "Freeze the implementation before the 20-case panel; bind its commit/hash in the report."
+  ],
+  "success": "Admissible exact-integer lower bounds that improve at least one current case, or a precise obstruction/counterexample with all attempted pairs and resource accounting. A lower-bound gap is not an achievable route gain.",
+  "falsification": "Any tiny exact optimum below the reported bound, a bound above the inherited valid witness, an unsound capped-search frontier rule, a goal-departure counterexample, or nonreproducible binding rejects the method.",
+  "stopping_and_pivot": "No parameter search. If the fixed-pair pilot gives no useful bound gain, one separately recorded pivot may examine pair selection/overlapping pair constraints. Do not silently widen the pair set or caps.",
+  "verification": "Standalone route checker for inherited upper-bound witnesses; independent exact tiny controls; reproduce all reported pair bounds with frozen code; check disjointness, hashes and sums; existing repository quick/tests; primary-source and proof audit.",
+  "authorship": "OpenAI Codex gpt-6.1-sol author work, with a research-skill background agent for primary-source reading. Not independent human scientific review.",
+  "credit": "Predecessor @thakrarsagar headroom ranking/witness audit; project tools/headroom.py, model/checker and archive; established MAPF dependency/weighted-dependency lower bounds; LaCAM3 and Moving AI source notices. Exact paper citations will be recorded in LITERATURE.md."
+}
