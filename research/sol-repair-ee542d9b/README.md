@@ -97,16 +97,26 @@ From repository root, with the documented project dependencies installed:
 ```sh
 python -m pytest -q tests research/sol-repair-ee542d9b/test_*.py
 python tools/check.py --quick
-python research/sol-repair-ee542d9b/verify_study.py --attempt a1 --out /tmp/sol-verification-new.json
-python research/sol-repair-ee542d9b/summarize.py --attempt a1 --out /tmp/sol-summary-new.json
+python research/sol-repair-ee542d9b/verify_study.py --attempt a1 --out verification-replay.json
+python research/sol-repair-ee542d9b/summarize.py --attempt a1 --out summary-replay.json
 ```
 
-For a new full replay, retain the original evidence and choose an unused attempt
-identifier, then run `run_study.py --attempt replay --stage development` followed
-by `--stage evaluation` only if development selects a policy. The worker requires
-committed, clean method/input sources. A detached checkout of `5c54e6e` reproduces
-the development source state; `b99c1ec` retains the frozen selection for evaluation.
-Timing, timestamps, peak RSS and worker code-commit metadata may differ on replay.
+The two output names must be unused filenames directly inside this package;
+absolute paths and overwriting retained outputs are deliberately rejected.
+
+For a new full optimizer replay after the recorded 2026-10-23 12:05 UTC research
+cutoff, make a separate checkout and a fresh research package as required by
+DISTRIBUTION.md. Copy the method/runner, protocol and inputs while retaining this
+original package and its evidence. Record new absolute research/end cutoffs in
+the copied protocol, update any package-relative input references, and commit
+that new source identity before running. Use an unused attempt identifier with
+`run_study.py --attempt replay --stage development`, then `--stage evaluation`
+only if development selects a policy. A new identifier alone does not renew the
+original deadline. The worker requires committed, clean method/input sources.
+A detached checkout of `5c54e6e` preserves the original development source state;
+`b99c1ec` preserves the selection before evaluation. A later replay is a separately
+identified attempt, not an overwrite of these records. Timing, timestamps, peak
+RSS and worker code-commit metadata may differ.
 
 Tests cover the exact 70-walk counterexample, 150 deterministic tiny reservation
 draws against a time-layer DP oracle, goal departures/holds, deadlines, caps,
