@@ -1,5 +1,6 @@
 """Adversarial controls for the auditor, using no fresh experiment outputs."""
 import copy
+import json
 import importlib.util
 from pathlib import Path
 import subprocess
@@ -82,6 +83,19 @@ def test_recorded_commands_remain_bound_when_checkout_root_changes():
     for wrong in (str(worker.with_name("wrong.py")), "relative/run_repair.py"):
         with pytest.raises(ValueError):
             audit.command_root(["python", wrong], "run_repair.py")
+
+
+def test_verified_completed_runs_cannot_be_relabelled_as_failures(tmp_path):
+    record = tmp_path / "run.json"
+    record.write_text(json.dumps({"verified": True}))
+    completed = {"status": "complete", "returncode": 0}
+    with pytest.raises(ValueError, match="cannot be hidden"):
+        audit.failed_worker_status(completed, record)
+    assert audit.failed_worker_status({"status": "timeout", "returncode": -9}, record) == "worker_timeout"
+    record.write_text("invalid JSON")
+    assert audit.failed_worker_status(completed, record) == "invalid_record"
+    with pytest.raises(AssertionError):
+        audit.failed_worker_status({"status": "complete", "returncode": 7}, record)
 
 
 def test_artifacts_cannot_escape_the_declared_area():

@@ -1,0 +1,29 @@
+{
+  "evidence_level": "author-checked",
+  "package_tests": {
+    "command": ".venv/bin/python -m pytest -q tests research/fresh-sol-single-ee542d9b/test_controls.py research/fresh-sol-single-ee542d9b/test_audit.py",
+    "passed": 37,
+    "exit_code": 0,
+    "reported_seconds": 1.43
+  },
+  "quick_check": {
+    "command": ".venv/bin/python tools/check.py --quick",
+    "passed": true,
+    "exit_code": 0,
+    "scientific_review": "pending",
+    "certificates_checked": 0,
+    "elapsed_seconds": 0.6322580139967613
+  },
+  "native_routes_verified": 12,
+  "repair_workers_completed": 72,
+  "paired_runs": 36,
+  "completed_separate_audit": "verification-v2.json",
+  "final_repair_routes_checked": 72,
+  "accepted_intermediate_routes_checked": 1178,
+  "audit_failure_retained": "audit-failure-v1.json",
+  "relocated_current_auditor_check_pending": true,
+  "full_native_or_repair_panel_replayed": false,
+  "upstream_native_test_suite_run": false,
+  "AA_or_matched_time_performance_controls": false,
+  "independent_human_scientific_signoff": false
+}

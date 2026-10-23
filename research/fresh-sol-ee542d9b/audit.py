@@ -273,6 +273,26 @@ def verify_native(plan, manifest, inputs):
     return native
 
 
+def failed_worker_status(event, record_path):
+    status = event["status"]
+    assert type(event["returncode"]) is int
+    if status == "complete":
+        assert event["returncode"] == 0
+        if record_path.exists():
+            try:
+                payload = load(record_path)
+            except json.JSONDecodeError:
+                payload = None
+            if isinstance(payload, dict) and payload.get("verified") is True:
+                raise ValueError("A completed verified worker cannot be hidden as a failed row")
+        return "invalid_record"
+    if status not in {"failed", "timeout"}:
+        raise ValueError("Unknown worker outcome")
+    if status == "failed":
+        assert event["returncode"] != 0
+    return "worker_" + status
+
+
 def verify_repairs(plan, manifest, inputs, native):
     report = load(PACKAGE / "repair.json")
     validate_sources(report, manifest)
@@ -301,7 +321,7 @@ def verify_repairs(plan, manifest, inputs, native):
         assert event["address_space_mib"] == 1024 and 0 < event["external_timeout_seconds"] <= 600
         assert event["process_group_owned"] is True
         if row["verified"] is False:
-            assert row["status"] in {"worker_failed", "worker_timeout", "invalid_record"}
+            assert row["status"] == failed_worker_status(event, directory / "run.json")
             assert row["artifacts"] == event["failure_artifacts"] == {
                 str(item.relative_to(PACKAGE)): sha(item) for item in directory.glob("*") if item.is_file()}
             assert event["record_sha256"] == (sha(directory / "run.json") if (directory / "run.json").exists() else None)

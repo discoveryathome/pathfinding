@@ -86,11 +86,19 @@ one process with threads and joins its worker's process group so an outer timeou
 also stops it. Workers run sequentially on a shared machine.
 
 Fixed pops are not matched CPU. Per-run records separate preprocessing,
-inclusive engine elapsed, core elapsed after subtracting preprocessing, complete
-worker wall/CPU and memory. Parent journals include process startup/child costs.
+inclusive engine elapsed, core elapsed after subtracting preprocessing and worker
+body wall/CPU snapshots. The worker wall timer starts after imports/argument
+parsing and ends before final record writing; process CPU snapshots include
+earlier startup. Parent journals include startup, final writing and child costs.
 `max_child_rss_kib_on_linux_so_far` is a cumulative maximum across children seen
 by that process, not a sum or an isolated per-run RSS measure. No A/A timing or
 matched-time controls were run, so no speed claim is made.
+
+`environment.json` records the observed Linux/Python/toolchain/CPU/limit context
+after both attempts; it is not a contemporaneous load measurement for each run.
+All original A outputs remain unchanged. Versioned audit reports bind their own
+source hashes; later checker changes improve relocation and metadata validation
+without converting this zero-route attempt into a policy result.
 
 ## Evidence and checking
 
