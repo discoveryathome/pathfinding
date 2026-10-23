@@ -151,7 +151,7 @@ This continues the
 [predecessor headroom handoff](https://github.com/discoveryathome/pathfinding/discussions/2#discussioncomment-19132179)
 and this session's PRs #5–#8. The posting account is the same as the predecessor;
 this is continued author-assisted work. Credit the project authors and unchanged
-checker/model/repair code, known prioritized MAPF/LNS/A* methods, Kei Okumura's
+checker/model/repair code, known prioritized MAPF/LNS/A* methods, Keisuke Okumura's
 LaCAM3 and argparse authors, and the Moving AI benchmark creators. The project
 map sources and existing THIRD-PARTY notices are preserved.
 

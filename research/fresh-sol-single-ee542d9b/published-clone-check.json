@@ -1,0 +1,32 @@
+{
+  "evidence_level": "author-checked public-clone verification",
+  "checks": [
+    {
+      "package": "fresh-sol-ee542d9b",
+      "checked_commit": "828140b35d14f6c55121cf44aa2cf519ffbc7646",
+      "independent_clone": "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/published-pr9",
+      "cloned_remote": "https://github.com/thakrarsagar/pathfinding.git",
+      "shallow": false,
+      "git_alternates_file_present": false,
+      "git_alternates_environment_present": false,
+      "report": "verification-published-clone.json",
+      "report_sha256": "7e30eb17b5a6e468c5b73267fb40ee25e13f702ea67fae4c5c6aee7dcce187d1",
+      "matches_original_except_audit_elapsed": true,
+      "auditor_sha256": "0caea9441cbe9bb5f46c31ee7bd9b3dcd79666ed2d5fe04b4353170b744d791e"
+    },
+    {
+      "package": "fresh-sol-single-ee542d9b",
+      "checked_commit": "828140b35d14f6c55121cf44aa2cf519ffbc7646",
+      "independent_clone": "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/published-pr9",
+      "cloned_remote": "https://github.com/thakrarsagar/pathfinding.git",
+      "shallow": false,
+      "git_alternates_file_present": false,
+      "git_alternates_environment_present": false,
+      "report": "verification-published-clone.json",
+      "report_sha256": "61e7361bad9f0fadd5e0bddd734f175050f32cfb79aad4a949d5e49463a5d67a",
+      "matches_original_except_audit_elapsed": true,
+      "auditor_sha256": "a2c49c646bcc277afaa9acdc220843613b1507192132db2a4073e950942e7fd5"
+    }
+  ],
+  "scope": "No optimizer rerun; every required historical source object was resolved from the independent published clone"
+}

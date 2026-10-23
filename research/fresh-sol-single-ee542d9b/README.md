@@ -108,7 +108,7 @@ and their original records. Then run that copy's `inputs.py`, commit all inputs,
 an expired deadline. Keep the declared predecessor cohort binding available.
 
 Credit the project authors, unchanged standalone checker/model/repair code,
-established prioritized MAPF/LNS/A*, Kei Okumura's LaCAM3 and argparse authors,
+established prioritized MAPF/LNS/A*, Keisuke Okumura's LaCAM3 and argparse authors,
 and the Moving AI benchmark creators. Existing third-party notices apply.
 Continues the predecessor headroom handoff and PRs #5–#8 from the same posting
 account. Codex-authored and author-commissioned reviews/audits do not establish
@@ -131,3 +131,10 @@ Both final review axes and the narrow ID-binding follow-up report no remaining
 findings in their declared scopes. All original reports/sources remain retained.
 These are author-assisted checks, with no full optimizer replay or independent
 human scientific signoff.
+
+The published branch was also cloned with its own complete Git object store and
+no alternates. Both 38-test suites and both full auditors pass there. Reports are
+retained as `verification-published-clone.json` in each attempt package;
+`published-clone-check.json` records the checked head, source hashes and exact
+agreement with V4 apart from elapsed time. This confirms required historical
+source objects and artifacts are available from the published contribution.
