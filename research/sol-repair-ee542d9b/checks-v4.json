@@ -1,0 +1,28 @@
+{
+  "evidence_level": "author-checked",
+  "supersedes": "checks-v3.json; all earlier outputs remain retained",
+  "tests": {
+    "command": "../repo/.venv/bin/python -m pytest -q tests research/sol-repair-ee542d9b/test_sol_repair.py research/sol-repair-ee542d9b/test_study.py research/sol-repair-ee542d9b/test_verify_study.py",
+    "passed": 34,
+    "exit_code": 0,
+    "reported_seconds": 0.29
+  },
+  "quick_check": {
+    "command": "../repo/.venv/bin/python tools/check.py --quick",
+    "passed": true,
+    "exit_code": 0,
+    "scientific_review": "pending",
+    "certificates_checked": 0,
+    "elapsed_seconds": 0.731867571012117
+  },
+  "separate_panel_audit": "verification-v4.json",
+  "verifier_source_commit": "fbee9a17bbbe68cc9bdd181f0ee3821fb0c06d38",
+  "verifier_sha256": "3332e2d71e390cec2fe6ed14509048d661fd86bd591e4f59a0ad4fe2930d876c",
+  "runs_checked": 120,
+  "accepted_intermediate_routes_checked": 313,
+  "audit_elapsed_seconds": 179.06797886500135,
+  "timing_clarification": "timing-clarification.json",
+  "full_optimizer_panel_replayed": false,
+  "native_solvers_exercised_for_this_experiment": false,
+  "independent_human_scientific_signoff": false
+}

@@ -1,0 +1,86 @@
+{
+  "case": "random-64-64-20-s3-n192",
+  "trial": 0,
+  "method": "sol",
+  "panel": "evaluation",
+  "seed_hex": "0302044ed9c477891d9492fc9d54e92e",
+  "seed_decimal": "3998155957902669076091747213763733806",
+  "base_commit": "37823dca1bea271510e3ed62205620466ec6f0f9",
+  "code_commit": "b99c1ec200f97973b47ff5d628221cb31eb3b105",
+  "source_sha256": {
+    "research/sol-repair-ee542d9b/sol_repair.py": "bf2a499402cc52ce482e09ef814d32bc6c99a5c0db1f42f00322a73599b4a780",
+    "research/sol-repair-ee542d9b/run_one.py": "c6ef7827a3c82ce3419a02fddf993d967cac28a246472f3d905790c46d246378",
+    "research/sol-repair-ee542d9b/run_study.py": "93161105072a9949fb9e61d348eb7f51e3476e3c2b7cf2398e24a41e46c24f56",
+    "research/sol-repair-ee542d9b/protocol.json": "a9ba7271e02970cf6285ab05861a8e971ffe5a5314db57215fa9973643fae9e6",
+    "research/sol-repair-ee542d9b/inputs/maze-start.json": "1e2836611e43e0346ac1e24cf6bd40304cf40297d9f9ac8406aff8b039fc5561",
+    "src/model.py": "8f536e512b8f5a080f6b0d1d249b4b7dfa837fedf851bc541d8dabb22341eed9",
+    "src/repair.py": "a1cbf0769f05bedbd386197df6eb1351bb753f5954c31c7494ee2a397ac55b91",
+    "src/repair_round2.py": "05f2af815e7cab634532ba1fd74fa12fc352378dea19efaa22c79fbeacfe9ff2",
+    "src/verify.py": "7808cc0b665a7bfeb7dc177c84ab886c40b7d596d31200423a3f3e19f326fc94",
+    "discover/incumbents.json": "86a98c908b02fa2b69af9bb63f38915f6e911a9390c3d3dce53dd909d67a744c"
+  },
+  "instance": "data/round2/random-64-64-20-s3-n192.json",
+  "instance_sha256": "0b8ff5f9ad041aac565ed7b15da97c24fefc9d54bc94ba072fadb506800af463",
+  "inherited": {
+    "path": "research/round2/repair/random-64-64-20-s3-n192-proximity4-307.json",
+    "sha256": "c72041b60c4285f5414cca41380308b66163a169ab818729758b133e03daf473",
+    "metrics": {
+      "soc": 8712,
+      "sol": 8654,
+      "makespan": 113
+    }
+  },
+  "initial_metrics": {
+    "soc": 8712,
+    "sol": 8654,
+    "makespan": 113,
+    "individual_distance_lower_bound": 8568,
+    "agents": 192,
+    "checked_timesteps": 114
+  },
+  "candidate_metrics": {
+    "soc": 8712,
+    "sol": 8654,
+    "makespan": 113,
+    "individual_distance_lower_bound": 8568,
+    "agents": 192,
+    "checked_timesteps": 114
+  },
+  "budget": {
+    "node_limit": 100000,
+    "nodes_used": 36158,
+    "attempt_limit": 96,
+    "attempts_used": 96,
+    "per_agent_limit": 10000
+  },
+  "accepted_routes_checked": 0,
+  "status_counts": {
+    "complete": 96
+  },
+  "rejections": {
+    "completed_rejected": 96,
+    "SOL_better_SOC_worse": 0,
+    "guard_regressions": {
+      "sol": 3,
+      "soc": 3,
+      "makespan": 0
+    }
+  },
+  "core_elapsed_seconds": 3.0322048300295137,
+  "preprocess_seconds": 0.40445855900179595,
+  "verification_seconds": 1.0794743219739757,
+  "worker_elapsed_seconds": 5.280749389959965,
+  "worker_user_cpu_seconds": 5.252187,
+  "worker_system_cpu_seconds": 0.080814,
+  "worker_peak_rss_kib_on_linux": 55384,
+  "address_space_cap_bytes": 1073741824,
+  "candidate": "runs/a1-evaluation/random-64-64-20-s3-n192-t0-sol/candidate.json",
+  "candidate_sha256": "3f48a68882e88aaed1ef234b700f76ab99c79dd0d7b7c5b9a66f80192d4f7d5b",
+  "trace": "runs/a1-evaluation/random-64-64-20-s3-n192-t0-sol/trace.json.gz",
+  "trace_sha256": "2218a83bc0982f777fcffb17dc65dc4d091bc2fc98f87881b5a50e57de1c2858",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41",
+  "verified": true,
+  "recorded_at": "2026-10-23T09:25:46.649211+00:00",
+  "evidence_level": "author-checked"
+}

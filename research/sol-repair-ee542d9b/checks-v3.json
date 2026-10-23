@@ -1,0 +1,27 @@
+{
+  "evidence_level": "author-checked",
+  "python": "3.13.5",
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q tests research/sol-repair-ee542d9b/test_sol_repair.py research/sol-repair-ee542d9b/test_study.py research/sol-repair-ee542d9b/test_verify_study.py",
+    "exit_code": 0,
+    "passed": 33,
+    "reported_seconds": 0.27,
+    "prior_new_test_failure": "One misplaced test-fixture line raised NameError; fixed before c88118c. No experiment was run with that test error."
+  },
+  "quick_check": {
+    "command": ".venv/bin/python tools/check.py --quick",
+    "exit_code": 0,
+    "passed": true,
+    "intake": "open",
+    "scientific_review": "pending",
+    "certificates_checked": 0,
+    "elapsed_seconds": 0.6964504840434529
+  },
+  "separate_panel_audit": "verification-v3.json",
+  "verifier_sha256": "d39e7d764a9ce47b17c55df23fa9ddb04606daf73bacd22af34b88faf619ccc4",
+  "runs_checked": 120,
+  "accepted_intermediate_routes_checked": 313,
+  "full_optimizer_panel_replayed": false,
+  "native_solvers_exercised_for_this_experiment": false,
+  "independent_human_scientific_review": false
+}

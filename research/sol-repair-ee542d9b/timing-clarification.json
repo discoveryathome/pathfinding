@@ -1,0 +1,27 @@
+{
+  "correction_scope": "Timer labels and derived accounting only; no optimizer rerun or original evidence edit",
+  "historical_record_field": "core_elapsed_seconds includes preprocessing",
+  "historical_summary_field": "methods.*.core_seconds includes preprocessing",
+  "actual_core_definition": "inclusive engine elapsed minus preprocessing elapsed",
+  "methods": {
+    "arrival": {
+      "runs": 60,
+      "inclusive_engine_seconds": 90.85199951415416,
+      "preprocessing_seconds": 8.53731312265154,
+      "core_excluding_preprocessing_seconds": 82.31468639150262
+    },
+    "sol": {
+      "runs": 60,
+      "inclusive_engine_seconds": 98.59220038179774,
+      "preprocessing_seconds": 8.47650067473296,
+      "core_excluding_preprocessing_seconds": 90.11569970706478
+    }
+  },
+  "source_sha256": {
+    "a1-dev-primary.json": "4f5bb2b1422c2aa3bcc2913e920eee34497b22f76114f5e56badffc92b3180f2",
+    "a1-evaluation.json": "823c7f7f86354aee90fd2f8cf2d00bba0bab9edf3ff7aae9f3bf990a15826838",
+    "summary.json": "1c947b50a88c756980e3c393ccd76bc2c1a9c2b7e2600afe3baa032cd238853a"
+  },
+  "derivation_sha256": "5eb22459cab9d8e708ff5ec6cf17a0603a80d7c0c12edde7a192532164a35c9c",
+  "evidence_level": "author-checked"
+}

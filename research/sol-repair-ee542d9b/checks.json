@@ -1,0 +1,23 @@
+{
+  "evidence_level": "author-checked",
+  "python": "3.13.5",
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q tests research/sol-repair-ee542d9b/test_sol_repair.py research/sol-repair-ee542d9b/test_study.py research/sol-repair-ee542d9b/test_verify_study.py",
+    "exit_code": 0,
+    "passed": 31,
+    "reported_seconds": 0.22
+  },
+  "quick_check": {
+    "command": ".venv/bin/python tools/check.py --quick",
+    "exit_code": 0,
+    "passed": true,
+    "intake": "open",
+    "scientific_review": "pending",
+    "certificates_checked": 0,
+    "elapsed_seconds": 0.7681760310078971
+  },
+  "separate_panel_audit": "verification.json",
+  "full_optimizer_panel_replayed": false,
+  "native_solvers_built_or_rerun": false,
+  "independent_human_scientific_review": false
+}
