@@ -63,6 +63,15 @@ def test_incomplete_histories_and_aliased_agent_ids_fail():
             audit.audit_trace(bad, initial, initial, Path("unused"))
 
 
+def test_orphaned_intermediates_are_rejected():
+    initial, trace = complete_trace()
+    for number in (-1, 96):
+        bad = copy.deepcopy(trace)
+        bad["improvements"] = [{"attempt": number, "paths": initial["paths"], "metrics": initial["metrics"]}]
+        with pytest.raises(AssertionError, match="Unbound improvement attempt"):
+            audit.audit_trace(bad, initial, initial, Path("unused"))
+
+
 def test_short_history_requires_exact_total_budget():
     initial, trace = complete_trace()
     trace["history"] = trace["history"][:3]

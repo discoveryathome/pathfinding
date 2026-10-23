@@ -185,6 +185,7 @@ def audit_trace(trace, initial, candidate, instance):
     improvements = {row["attempt"]: row for row in trace["improvements"]}
     assert len(improvements) == len(trace["improvements"])
     assert all(type(number) is int for number in improvements)
+    assert all(0 <= number < len(history) for number in improvements), "Unbound improvement attempt"
     paths, before, used = [trim(path) for path in initial["paths"]], initial["metrics"], 0
     shape(before)
     for number, row in enumerate(history):

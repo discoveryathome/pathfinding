@@ -1,0 +1,33 @@
+{
+  "evidence_level": "author-checked",
+  "checks": [
+    {
+      "package": "fresh-sol-ee542d9b",
+      "original_checkout": "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo",
+      "relocated_checkout": "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/verify-fresh",
+      "original_report": "verification-current-root.json",
+      "original_report_sha256": "2da363226f9f3208c4b3f12f86f2880b84da01b735f11bb75f838238cf9b63ba",
+      "relocated_report": "verification-relocated.json",
+      "relocated_report_sha256": "277a8de7b4b214b234ddfc44239fb14c7e723898e55f71783ce4b39b132fdc31",
+      "equal_fields_except_elapsed_seconds": true,
+      "auditor_sha256": "d394bbd4cf6da34a7d79870ffe13720dc53e884fa35621839015a6dbe8cd9b80"
+    },
+    {
+      "package": "fresh-sol-single-ee542d9b",
+      "original_checkout": "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo",
+      "relocated_checkout": "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/verify-fresh",
+      "original_report": "verification-v3.json",
+      "original_report_sha256": "72bbe07fcf873e05d66b63893f02b32b933eb7576a7e840feaa3ef2db3c93918",
+      "relocated_report": "verification-relocated.json",
+      "relocated_report_sha256": "35cb177dc9ded30722bcad4dda2ef259f821aea7a4fa6b421fcdb70992795feb",
+      "equal_fields_except_elapsed_seconds": true,
+      "auditor_sha256": "305464573d34fbf7818b04f3dd8bd541383e39a368631cd9967ca31f88a96409"
+    }
+  ],
+  "index_scope": {
+    "traces_checked": 72,
+    "accepted_intermediates": 1178,
+    "all_improvements_bound_to_accepted_history": true,
+    "repair_sha256": "cce0a37d232d56909a960c209ea4b8260adfb1d30aabcb71d76eb11843286cf6"
+  }
+}
