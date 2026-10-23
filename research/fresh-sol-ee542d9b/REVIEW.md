@@ -66,3 +66,23 @@ these corrections. Earlier sources remain in the committed history.
 The Spec reviewer passed 25 tests against the frozen producer and ran bounded
 adapter/failure probes. It did not generate fresh inputs, run either panel,
 rebuild native code, inspect later files or re-prove the frozen SOL solver.
+
+## Narrow preflight follow-ups at d961f59
+
+Standards round 2: no remaining actionable findings for its two P2s. Valid raw
+coordinates pass, both aliases fail, and invalid returned intermediate geometry
+survives in the request/candidate/full trace/failure records. Two targeted tests
+passed. Frozen policy bytes match the protocol and all producer revisions.
+The reviewer did not rerun the full suite, inspect the new README/auditor,
+rebuild native code, generate queries or execute panels.
+
+Spec round 2: no actionable findings; all four P2s resolved. Fourteen
+producer/audit-helper controls passed, including the real nested-process timeout
+with no running descendant, all 12 failed-worker attempts retained, explicit
+cap rows, exact seed text and timing separation. Tracked producer files match
+the reviewed commit. No full evidence audit, native rebuild, fresh generation,
+panel or SOL proof review was performed in this narrow follow-up.
+
+The complete preflight suite passed 35 tests in 1.49 seconds before any fresh
+query generation. All subsequent panel/audit evidence has distinct committed
+identities and is described in the final review below.
