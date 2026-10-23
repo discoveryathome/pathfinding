@@ -18,6 +18,9 @@ def test_source_manifest_requires_every_declared_path():
     for invalid in variants:
         with pytest.raises(ValueError, match="complete declared source manifest"):
             verify.validate_sources(invalid)
+    for path in source:
+        with pytest.raises(AssertionError):
+            verify.validate_sources({**source, path: "0" * 64})
 
 
 def test_certification_rejects_inflation_and_remains_inconclusive_at_cap():
