@@ -54,7 +54,7 @@
   "predecessor_credit": [
     "@thakrarsagar: 20-case headroom ranking and 43-witness maze audit; open fixed-cap repair handoff.",
     "Douglas Colkitt (@Mister-Meeseeks) and repository contributors: archive, pilot implementation and contribution workflow.",
-    "Kei Okumura / LaCAM3: upstream solver underlying the inherited planning evidence.",
+    "Keisuke Okumura / LaCAM3: upstream solver underlying the inherited planning evidence.",
     "Known MAPF prioritized planning and large-neighborhood search methods; no new algorithm is proposed.",
     "Moving AI benchmark maps/scenarios; preserve repository THIRD-PARTY.md and ODC-By attribution."
   ]

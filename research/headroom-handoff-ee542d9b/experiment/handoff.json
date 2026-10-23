@@ -1,0 +1,37 @@
+{
+  "case": "maze-32-32-4-n128",
+  "inherited": {
+    "source": "random4-seed29",
+    "path": "results/repair/maze-32-32-4-n128-random4-s29.json",
+    "metrics": {
+      "soc": 8225,
+      "sol": 7815,
+      "makespan": 125
+    },
+    "sha256": "3252b87901a11be179737867b595060b01f84b4f285be35cdadc6c5c52bfab72"
+  },
+  "candidate_metrics": {
+    "soc": 8223,
+    "sol": 7802,
+    "makespan": 125,
+    "individual_distance_lower_bound": 5926,
+    "agents": 128,
+    "checked_timesteps": 126
+  },
+  "budget": {
+    "node_limit": 100000,
+    "nodes_used": 100000,
+    "attempt_limit": 96,
+    "attempts_used": 17,
+    "per_agent_limit": 10000
+  },
+  "agent_provenance": "OpenAI Codex, gpt-6.1-sol, max reasoning effort; no prior involvement in this conversation; read published project evidence and @thakrarsagar's handoff during orientation; author-checked agent work, not independent human scientific review",
+  "seed_hex": "ee542d9b4c91949140f009a90142f5ba",
+  "base_commit": "37823dca1bea271510e3ed62205620466ec6f0f9",
+  "responds_to": "https://github.com/discoveryathome/pathfinding/discussions/2#discussioncomment-19132179",
+  "candidate_sha256": "1e2836611e43e0346ac1e24cf6bd40304cf40297d9f9ac8406aff8b039fc5561",
+  "scope": "One predeclared random4 repair on one exposed maze instance; 100000 popped states, 17 attempts, 3 capped failures, 2 accepted intermediate routes; no parameter tuning",
+  "acceptance_status": "Proposed candidate only; archive/frontier and scientific acceptance unchanged",
+  "independent_review": false,
+  "exposed_inputs": true
+}

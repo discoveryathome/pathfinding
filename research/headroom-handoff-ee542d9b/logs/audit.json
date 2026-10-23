@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python",
+    "research/headroom-handoff-ee542d9b/audit.py"
+  ],
+  "cwd": "repository root",
+  "started_at": "2026-10-23T06:17:03.945303+00:00",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41",
+  "returncode": 0,
+  "timed_out": false,
+  "timeout_seconds": 600,
+  "wall_seconds_including_parent_capture": 2.4323627239791676,
+  "child_user_seconds": 2.362323,
+  "child_system_seconds": 0.033529,
+  "child_max_rss_kib_on_linux": 30544,
+  "stdout": "{\n  \"passed\": true,\n  \"evidence_level\": \"author-checked\",\n  \"inherited\": {\n    \"soc\": 8225,\n    \"sol\": 7815,\n    \"makespan\": 125,\n    \"individual_distance_lower_bound\": 5926,\n    \"agents\": 128,\n    \"checked_timesteps\": 126\n  },\n  \"candidate\": {\n    \"soc\": 8223,\n    \"sol\": 7802,\n    \"makespan\": 125,\n    \"individual_distance_lower_bound\": 5926,\n    \"agents\": 128,\n    \"checked_timesteps\": 126\n  },\n  \"candidate_sha256\": \"1e2836611e43e0346ac1e24cf6bd40304cf40297d9f9ac8406aff8b039fc5561\",\n  \"accepted_intermediate_routes_checked\": 2,\n  \"trace_accounting_passed\": true,\n  \"attempt_status_counts\": {\n    \"budget\": 3,\n    \"complete\": 14\n  },\n  \"failure_controls\": {\n    \"wrong_instance_binding\": \"Wrong instance binding\",\n    \"wrong_SOL\": \"Incorrect claimed metrics: {'soc': 8223, 'sol': 0, 'makespan': 125} != {'soc': 8223, 'sol': 7802, 'makespan': 125}\",\n    \"forged_pop_accounting\": \"\"\n  },\n  \"deterministic_replay_all_non_timing_fields_equal\": true,\n  \"verification_replay_nodes\": 100000,\n  \"verification_replay_elapsed_seconds\": 0.9474389009992592,\n  \"verification_replay_preprocess_seconds\": 0.050100688997190446,\n  \"remaining_SOL_bound_gap\": 1833,\n  \"changed_agents\": [\n    {\n      \"agent\": 4,\n      \"before\": {\n        \"soc\": 69,\n        \"sol\": 50,\n        \"makespan\": 69\n      },\n      \"after\": {\n        \"soc\": 69,\n        \"sol\": 48,\n        \"makespan\": 69\n      }\n    },\n    {\n      \"agent\": 21,\n      \"before\": {\n        \"soc\": 64,\n        \"sol\": 64,\n        \"makespan\": 64\n      },\n      \"after\": {\n        \"soc\": 64,\n        \"sol\": 64,\n        \"makespan\": 64\n      }\n    },\n    {\n      \"agent\": 29,\n      \"before\": {\n        \"soc\": 67,\n        \"sol\": 51,\n        \"makespan\": 67\n      },\n      \"after\": {\n        \"soc\": 65,\n        \"sol\": 49,\n        \"makespan\": 65\n      }\n    },\n    {\n      \"agent\": 31,\n      \"before\": {\n        \"soc\": 72,\n        \"sol\": 72,\n        \"makespan\": 72\n      },\n      \"after\": {\n        \"soc\": 72,\n        \"sol\": 63,\n        \"makespan\": 72\n      }\n    },\n    {\n      \"agent\": 35,\n      \"before\": {\n        \"soc\": 61,\n        \"sol\": 61,\n        \"makespan\": 61\n      },\n      \"after\": {\n        \"soc\": 61,\n        \"sol\": 61,\n        \"makespan\": 61\n      }\n    },\n    {\n      \"agent\": 66,\n      \"before\": {\n        \"soc\": 61,\n        \"sol\": 61,\n        \"makespan\": 61\n      },\n      \"after\": {\n        \"soc\": 61,\n        \"sol\": 61,\n        \"makespan\": 61\n      }\n    },\n    {\n      \"agent\": 94,\n      \"before\": {\n        \"soc\": 51,\n        \"sol\": 51,\n        \"makespan\": 51\n      },\n      \"after\": {\n        \"soc\": 51,\n        \"sol\": 51,\n        \"makespan\": 51\n      }\n    },\n    {\n      \"agent\": 115,\n      \"before\": {\n        \"soc\": 103,\n        \"sol\": 103,\n        \"makespan\": 103\n      },\n      \"after\": {\n        \"soc\": 103,\n        \"sol\": 103,\n        \"makespan\": 103\n      }\n    }\n  ]\n}\n",
+  "stderr": ""
+}

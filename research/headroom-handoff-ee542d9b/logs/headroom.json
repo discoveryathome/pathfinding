@@ -1,0 +1,21 @@
+{
+  "command": [
+    "python",
+    "tools/headroom.py",
+    "--out",
+    "research/headroom-handoff-ee542d9b/headroom.json"
+  ],
+  "cwd": "repository root",
+  "started_at": "2026-10-23T06:13:15.556011+00:00",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41",
+  "returncode": 0,
+  "timed_out": false,
+  "timeout_seconds": 600,
+  "wall_seconds_including_parent_capture": 7.606293355987873,
+  "child_user_seconds": 7.517919,
+  "child_system_seconds": 0.063093,
+  "child_max_rss_kib_on_linux": 19680,
+  "stdout": "{\"cases\": 20, \"bound_improved_cases\": 20, \"out\": \"/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/research/headroom-handoff-ee542d9b/headroom.json\"}\n",
+  "stderr": ""
+}
