@@ -1,0 +1,78 @@
+{
+  "code_commit": "abd5e89edef6106cf4ad9747aadf8a99eb2bd01b",
+  "source_sha256": {
+    "data/maps/maze-32-32-4.map": "7ff67aa59f71933b8cf2605e12631b8a28d9ebcfb9b941de3afdc7dce3123fee",
+    "data/maps/random-32-32-20.map": "8c5a83498ab92a2579aeef91c5f42d9ecf9019ef038cf98e623061a15beb6f56",
+    "data/maps/room-32-32-4.map": "f107fefbf63c7a1a3753e4a033452301a1cdd7043cab7f45e4ed0e7dec1e90a9",
+    "research/fresh-sol-single-ee542d9b/common.py": "1caea6de3ddb4e5faee27573ede3f45412aac6208547381a14c4173dec8c0274",
+    "research/fresh-sol-single-ee542d9b/inputs.py": "29e73c73df388defc45976a80d6e3ff1b06391825231219f3de084251360af03",
+    "research/fresh-sol-single-ee542d9b/protocol.json": "7fd5a7d2fa2ca14d27f6660b985e23e3dc8e735d2dbfadd09b6aadaed57b13b0",
+    "research/fresh-sol-single-ee542d9b/run_native.py": "d4a0e752ca608995a70ff3ca93859690d4a316814cb76bbd420620e136476615",
+    "research/fresh-sol-single-ee542d9b/run_repair.py": "86f660e64754e249190c3dca178da61f983bbf12b745a677a176039b187f93c5",
+    "research/fresh-sol-single-ee542d9b/sol_repair.py": "bf2a499402cc52ce482e09ef814d32bc6c99a5c0db1f42f00322a73599b4a780",
+    "src/model.py": "8f536e512b8f5a080f6b0d1d249b4b7dfa837fedf851bc541d8dabb22341eed9",
+    "src/repair.py": "a1cbf0769f05bedbd386197df6eb1351bb753f5954c31c7494ee2a397ac55b91",
+    "src/repair_round2.py": "05f2af815e7cab634532ba1fd74fa12fc352378dea19efaa22c79fbeacfe9ff2",
+    "src/verify.py": "7808cc0b665a7bfeb7dc177c84ab886c40b7d596d31200423a3f3e19f326fc94"
+  },
+  "case": "room-32-32-4-fresh1-n128",
+  "trial": 2,
+  "method": "sol",
+  "seed": {
+    "trial": 2,
+    "hex": "3b53f6e18f4b4c9e12043e1f69284d63",
+    "decimal": "78860419734014878871552831975181536611"
+  },
+  "instance": {
+    "case": "room-32-32-4-fresh1-n128",
+    "instance": "research/fresh-sol-single-ee542d9b/inputs/room-32-32-4-fresh1-n128.json",
+    "instance_sha256": "36d7f70c9f25e44dca1cfd7e28cfafc12396fb96d8e671f0169b83d2e89b43d1",
+    "scenario": "research/fresh-sol-single-ee542d9b/inputs/room-32-32-4-fresh1-n128.scen",
+    "scenario_sha256": "245353896a08b5737aa301cfc3eeb46423f7adbebfb3f107c9c6dbe9304192a6"
+  },
+  "inherited_sha256": "14c758f5bd203e74ddfd1803275240aeefd6fa15cb9b4aef8633958b12fa7101",
+  "before": {
+    "soc": 5185,
+    "sol": 4807,
+    "makespan": 66,
+    "individual_distance_lower_bound": 3375,
+    "agents": 128,
+    "checked_timesteps": 67
+  },
+  "after": {
+    "soc": 5080,
+    "sol": 4647,
+    "makespan": 66,
+    "individual_distance_lower_bound": 3375,
+    "agents": 128,
+    "checked_timesteps": 67
+  },
+  "budget": {
+    "node_limit": 100000,
+    "nodes_used": 100000,
+    "attempt_limit": 96,
+    "attempts_used": 48,
+    "per_agent_limit": 10000
+  },
+  "accepted_intermediates": 27,
+  "status_counts": {
+    "complete": 41,
+    "exhausted": 6,
+    "budget": 1
+  },
+  "preprocess_seconds": 0.06649121100781485,
+  "engine_wall_seconds": 1.1186773449881002,
+  "core_wall_seconds": 1.0521861339802854,
+  "worker_wall_seconds": 6.692169772984926,
+  "worker_user_cpu_seconds": 6.716806,
+  "worker_system_cpu_seconds": 0.036786,
+  "worker_peak_rss_kib_on_linux": 26512,
+  "candidate": "runs/room-32-32-4-fresh1-n128-t2-sol/candidate.json",
+  "candidate_sha256": "f79cd6d04c9b1744735ef1b2f74df4407dff839d60a56f1a46aae89de92cc65d",
+  "trace": "runs/room-32-32-4-fresh1-n128-t2-sol/trace.json.gz",
+  "trace_sha256": "b4384c9b2b6baf9aef21830fbefcf8b39cc10fd58c178ad1c8a1247be713ecb0",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41",
+  "status": "verified",
+  "verified": true
+}

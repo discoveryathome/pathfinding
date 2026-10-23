@@ -75,6 +75,15 @@ def test_short_history_requires_exact_total_budget():
         audit.audit_trace(trace, initial, initial, Path("unused"))
 
 
+def test_recorded_commands_remain_bound_when_checkout_root_changes():
+    previous = Path("/prior/checkout")
+    worker = previous / audit.PACKAGE.relative_to(audit.ROOT) / "run_repair.py"
+    assert audit.command_root(["python", str(worker)], "run_repair.py") == previous
+    for wrong in (str(worker.with_name("wrong.py")), "relative/run_repair.py"):
+        with pytest.raises(ValueError):
+            audit.command_root(["python", wrong], "run_repair.py")
+
+
 def test_artifacts_cannot_escape_the_declared_area():
     for path in ("../outside.json", "/tmp/outside.json", "runs/../native/wrong.json"):
         with pytest.raises(ValueError):

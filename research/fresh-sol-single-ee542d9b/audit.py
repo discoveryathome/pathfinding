@@ -82,6 +82,16 @@ def shape(metrics):
     assert all(type(value) is int and value >= 0 for value in metrics.values())
 
 
+def command_root(command, worker):
+    path = Path(command[1])
+    if not path.is_absolute() or ".." in path.parts or len(path.parents) < 3:
+        raise ValueError("Require an absolute recorded worker path")
+    recorded = path.parents[2]
+    if path != recorded / PACKAGE.relative_to(ROOT) / worker:
+        raise ValueError("Recorded worker is outside the declared package")
+    return recorded
+
+
 def trim(path):
     result = list(path)
     while len(result) > 1 and result[-1] == result[-2]:
@@ -214,7 +224,8 @@ def verify_native(plan, manifest, inputs):
     native = {row["case"]: row for row in report["rows"]}
     for case, event in zip(plan["cases"], journal):
         row, cid = native[case["id"]], case["id"]
-        assert Path(event["command"][1]) == PACKAGE / "run_native.py" and event["command"][2:] == ["--case", cid]
+        recorded_root = command_root(event["command"], "run_native.py")
+        assert event["command"][2:] == ["--case", cid]
         assert event["address_space_mib"] == 1024 and 0 < event["external_timeout_seconds"] <= 60
         assert event["process_group_owned"] is True
         record = PACKAGE / "native" / cid / "run.json"
@@ -227,16 +238,17 @@ def verify_native(plan, manifest, inputs):
         assert row["input"] == inputs[cid] and row["binary_sha256"] == plan["native"]["binary_sha256"]
         raw = PACKAGE / "native" / cid / "output.txt"
         assert (sha(raw) if raw.exists() else None) == row["raw_output_sha256"]
+        assert row["execution"]["address_space_mib"] == 1024 and 0 < row["execution"]["external_timeout_seconds"] <= 45
+        assert row["execution"]["process_group_owned"] is False
+        recorded_raw = recorded_root / PACKAGE.relative_to(ROOT) / "native" / cid / "output.txt"
+        expected_command = [str(recorded_root / plan["native"]["binary"]), "-m", str(recorded_root / case["map"]),
+            "-i", str(recorded_root / inputs[cid]["scenario"]), "-N", str(case["agents"]), "-s", "0", "-t", "12", "-o", str(recorded_raw), "-v", "0", "--no-multi-thread"]
+        assert row["execution"]["command"] == expected_command
         if row["status"] != "verified":
             assert row["candidate"] is None and row["candidate_sha256"] is None
             continue
         assert event["status"] == row["execution"]["status"] == "complete"
         assert event["returncode"] == row["execution"]["returncode"] == 0
-        assert row["execution"]["address_space_mib"] == 1024 and 0 < row["execution"]["external_timeout_seconds"] <= 45
-        assert row["execution"]["process_group_owned"] is False
-        expected_command = [str(ROOT / plan["native"]["binary"]), "-m", str(ROOT / case["map"]),
-            "-i", str(ROOT / inputs[cid]["scenario"]), "-N", str(case["agents"]), "-s", "0", "-t", "12", "-o", str(raw), "-v", "0", "--no-multi-thread"]
-        assert row["execution"]["command"] == expected_command
         assert row["candidate"] == f"native/{cid}/candidate.json"
         certificate_path = artifact(row["candidate"], "native")
         assert sha(certificate_path) == row["candidate_sha256"]
@@ -283,7 +295,7 @@ def verify_repairs(plan, manifest, inputs, native):
         key = event["case"], event["trial"], event["method"]
         row, case = bykey[key], cases[key[0]]
         directory = PACKAGE / "runs" / f"{key[0]}-t{key[1]}-{key[2]}"
-        assert Path(event["command"][1]) == PACKAGE / "run_repair.py"
+        command_root(event["command"], "run_repair.py")
         assert event["command"][2:] == ["--case", key[0], "--trial", str(key[1]), "--method", key[2]]
         assert event["address_space_mib"] == 1024 and 0 < event["external_timeout_seconds"] <= 600
         assert event["process_group_owned"] is True
