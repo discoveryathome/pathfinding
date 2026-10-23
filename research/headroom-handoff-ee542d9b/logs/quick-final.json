@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python",
+    "tools/check.py",
+    "--quick"
+  ],
+  "cwd": "repository root",
+  "started_at": "2026-10-23T06:18:36.057566+00:00",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41",
+  "returncode": 0,
+  "timed_out": false,
+  "timeout_seconds": 600,
+  "wall_seconds_including_parent_capture": 1.087764693016652,
+  "child_user_seconds": 0.886489,
+  "child_system_seconds": 0.186488,
+  "child_max_rss_kib_on_linux": 30816,
+  "stdout": "{\"passed\": true, \"intake\": \"open\", \"scientific_review\": \"pending\", \"certificates_checked\": 0, \"elapsed_seconds\": 0.7720374719938263}\n",
+  "stderr": ""
+}

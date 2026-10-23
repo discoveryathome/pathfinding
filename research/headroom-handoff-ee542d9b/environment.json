@@ -1,0 +1,26 @@
+{
+  "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "machine": "x86_64",
+  "logical_cpus_reported": 16,
+  "packages": {
+    "pip": "25.1.1",
+    "pytest": "9.1.1",
+    "jsonschema": "4.26.0",
+    "attrs": "25.3.0",
+    "jsonschema-specifications": "2023.12.1",
+    "referencing": "0.36.2",
+    "rpds-py": "2026.9.1",
+    "packaging": "25.0",
+    "pluggy": "1.7.0",
+    "iniconfig": "2.3.1",
+    "pygments": "2.21.0"
+  },
+  "environment_creation": "python3 -m venv .venv --system-site-packages --without-pip",
+  "dependency_setup": [
+    ".venv/bin/python -m ensurepip --default-pip",
+    ".venv/bin/python -m pip install pytest==9.1.1 jsonschema==4.26.0"
+  ],
+  "native_solver_built": false,
+  "timing_scope": "Shared-machine contextual observations, not an equal-CPU or isolated-machine comparison."
+}

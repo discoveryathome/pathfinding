@@ -1,0 +1,61 @@
+{
+  "schema": "pathfinding-session/v1",
+  "recorded_before_search": "2026-10-23T06:12:00Z",
+  "base_commit": "37823dca1bea271510e3ed62205620466ec6f0f9",
+  "priority_revision": 3,
+  "seed_hex": "ee542d9b4c91949140f009a90142f5ba",
+  "seed_decimal": 316793340945421113888006999147102270906,
+  "seed_conversion": "int(seed_hex, 16); pass the full integer to tools/pick.py and tools/contribute.py",
+  "drawn_track": "headroom",
+  "drawn_card": "headroom",
+  "responds_to": "https://github.com/discoveryathome/pathfinding/discussions/2#discussioncomment-19132179",
+  "claim": "https://github.com/discoveryathome/pathfinding/discussions/2#discussioncomment-19139269",
+  "scope_change": "Take the matching open handoff's fixed-cap repair of the highest-gap existing maze case, rather than repeat the predecessor's completed 20-case ranking audit.",
+  "question": "Can one predeclared random4 repair improve SOL below 7815 on maze-32-32-4-n128 without increasing SOC above 8225 or makespan above 125?",
+  "case": "maze-32-32-4-n128",
+  "instance": "data/instances/maze-32-32-4-n128.json",
+  "candidate_source": "results/repair/maze-32-32-4-n128-random4-s29.json",
+  "candidate_source_metrics": {"sol": 7815, "soc": 8225, "makespan": 125},
+  "method": "Existing prioritized random-four-agent neighborhood repair, unchanged; tools/contribute.py -> repair_round2.run -> repair.improve.",
+  "resource_limits": {
+    "node_limit": 100000,
+    "attempt_limit": 96,
+    "per_agent_limit": 10000,
+    "search_runs": 1,
+    "planned_wall_cap_seconds": 600,
+    "session_budget_minutes": 480,
+    "stop_new_work_no_later_than_utc": "2026-10-23T12:05:00Z",
+    "verification_reserved_minutes": 120
+  },
+  "development_inputs": ["The already published maze case and its current Pareto incumbent; exposed calibration material."],
+  "evaluation_inputs": "Same fixed exposed instance; no unseen transfer or policy-selection claim.",
+  "selection_rule": "One fixed seed and variant. Keep the final route, including a null result. No parameter search, alternate seeds, or best-of-many selection.",
+  "stopping_rule": "Stop search at the first of 100000 popped states, 96 attempts, or 600 wall seconds. Retain every attempt and failure. No research pivot is planned.",
+  "success_test": "Standalone checker accepts the exact bound route; SOL < 7815, SOC <= 8225, makespan <= 125. Otherwise report a null result or obstruction.",
+  "falsification_test": "Any invalid binding, illegal route, metric mismatch, resource-cap excess, or claimed no-regression violation rejects the result. Audit all accepted intermediate routes and replay deterministic non-timing outputs.",
+  "positive_controls": ["tools/check.py --quick", "Check the inherited route with tools/verify_candidate.py", "Regenerate the 20-case headroom report and confirm the selected case's bound witnesses."],
+  "baseline_identity": "Current archive random4-seed29 at the pinned base; existing LaCAM3-derived repair witness. No new native solver comparison.",
+  "sha256": {
+    "data/instances/maze-32-32-4-n128.json": "7e7552052ec38ba31bb0cccaf2b5a0ed625b389a882c0a30d3e639aad9b450dc",
+    "data/maps/maze-32-32-4.map": "7ff67aa59f71933b8cf2605e12631b8a28d9ebcfb9b941de3afdc7dce3123fee",
+    "results/repair/maze-32-32-4-n128-random4-s29.json": "3252b87901a11be179737867b595060b01f84b4f285be35cdadc6c5c52bfab72",
+    "src/repair.py": "a1cbf0769f05bedbd386197df6eb1351bb753f5954c31c7494ee2a397ac55b91",
+    "src/repair_round2.py": "05f2af815e7cab634532ba1fd74fa12fc352378dea19efaa22c79fbeacfe9ff2",
+    "src/model.py": "8f536e512b8f5a080f6b0d1d249b4b7dfa837fedf851bc541d8dabb22341eed9",
+    "src/verify.py": "7808cc0b665a7bfeb7dc177c84ab886c40b7d596d31200423a3f3e19f326fc94",
+    "tools/contribute.py": "d0d89d782665a99cd7746f067aef52392cecf6ee8f60e972636299dae3b079e6",
+    "tools/headroom.py": "d011b05fc3128404d610846e7c899c4cdbc39b81e271e41ad40255812dbad2e9"
+  },
+  "authorship": {
+    "agent": "OpenAI Codex, gpt-6.1-sol, max reasoning effort",
+    "prior_involvement": "No project preparation or prior session involvement in this conversation; read the published project evidence and predecessor handoff during orientation.",
+    "evidence_level": "author-checked agent work; not independent human scientific review"
+  },
+  "predecessor_credit": [
+    "@thakrarsagar: 20-case headroom ranking and 43-witness maze audit; open fixed-cap repair handoff.",
+    "Douglas Colkitt (@Mister-Meeseeks) and repository contributors: archive, pilot implementation and contribution workflow.",
+    "Keisuke Okumura / LaCAM3: upstream solver underlying the inherited planning evidence.",
+    "Known MAPF prioritized planning and large-neighborhood search methods; no new algorithm is proposed.",
+    "Moving AI benchmark maps/scenarios; preserve repository THIRD-PARTY.md and ODC-By attribution."
+  ]
+}

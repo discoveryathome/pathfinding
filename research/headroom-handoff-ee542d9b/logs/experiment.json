@@ -1,0 +1,29 @@
+{
+  "command": [
+    "python",
+    "tools/contribute.py",
+    "--case",
+    "maze-32-32-4-n128",
+    "--variant",
+    "random4",
+    "--seed",
+    "316793340945421113888006999147102270906",
+    "--nodes",
+    "100000",
+    "--out",
+    "research/headroom-handoff-ee542d9b/experiment"
+  ],
+  "cwd": "repository root",
+  "started_at": "2026-10-23T06:13:36.483399+00:00",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41",
+  "returncode": 0,
+  "timed_out": false,
+  "timeout_seconds": 600,
+  "wall_seconds_including_parent_capture": 2.3454167660092935,
+  "child_user_seconds": 2.283452,
+  "child_system_seconds": 0.03826,
+  "child_max_rss_kib_on_linux": 29716,
+  "stdout": "{\"saved\": \"/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/research/headroom-handoff-ee542d9b/experiment\", \"initial\": {\"soc\": 8225, \"sol\": 7815, \"makespan\": 125}, \"candidate\": {\"soc\": 8223, \"sol\": 7802, \"makespan\": 125, \"individual_distance_lower_bound\": 5926, \"agents\": 128, \"checked_timesteps\": 126}, \"budget\": {\"node_limit\": 100000, \"nodes_used\": 100000, \"attempt_limit\": 96, \"attempts_used\": 17, \"per_agent_limit\": 10000}}\n",
+  "stderr": ""
+}
