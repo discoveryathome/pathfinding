@@ -1,0 +1,96 @@
+[  5%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/collision_table.cpp.o
+[ 10%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/dist_table.cpp.o
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/collision_table.cpp: In member function ‘int CollisionTable::getCollisionCost(const Vertex*, const Vertex*, int)’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/collision_table.cpp:19:12: warning: comparison of integer expressions of different signedness: ‘const int’ and ‘std::vector<std::vector<int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   19 |   if (t_to < body[v_to->id].size()) {
+      |       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/collision_table.cpp:23:12: warning: comparison of integer expressions of different signedness: ‘const int’ and ‘std::vector<std::vector<int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   23 |   if (t_to < body[v_from->id].size() && t_from < body[v_to->id].size()) {
+      |       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/collision_table.cpp:23:48: warning: comparison of integer expressions of different signedness: ‘const int’ and ‘std::vector<std::vector<int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   23 |   if (t_to < body[v_from->id].size() && t_from < body[v_to->id].size()) {
+      |                                         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/collision_table.cpp: In member function ‘void CollisionTable::enrollPath(int, Path&)’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/collision_table.cpp:41:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const long unsigned int’ [-Wsign-compare]
+   41 |   for (auto t = 0; t <= T_i; ++t) {
+      |                    ~~^~~~~~
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/collision_table.cpp:48:31: warning: comparison of integer expressions of different signedness: ‘std::vector<std::vector<int> >::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+   48 |     while (body[v->id].size() <= t) body[v->id].emplace_back();
+      |            ~~~~~~~~~~~~~~~~~~~^~~~
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/collision_table.cpp: In member function ‘void CollisionTable::clearPath(int, Path&)’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/collision_table.cpp:93:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   93 |   for (auto t = T_i + 1; t < entry_body.size(); ++t) {
+      |                          ~~^~~~~~~~~~~~~~~~~~~
+[ 15%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/graph.cpp.o
+[ 20%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/heuristic.cpp.o
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/graph.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Paths&)’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/graph.cpp:128:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Vertex*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  128 |   for (auto i = 0; i < paths.size(); ++i) {
+      |                    ~~^~~~~~~~~~~~~~
+[ 25%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/hnode.cpp.o
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/hnode.cpp: In constructor ‘HNode::HNode(Config, DistTable*, HNode*, int, int)’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/hnode.cpp:32:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const long unsigned int’ [-Wsign-compare]
+   32 |     for (auto i = 0; i < N; ++i) priorities[i] = (float)D->get(i, C[i]) / 10000;
+      |                      ~~^~~
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/hnode.cpp:35:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const long unsigned int’ [-Wsign-compare]
+   35 |     for (auto i = 0; i < N; ++i) {
+      |                      ~~^~~
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/hnode.cpp: In member function ‘LNode* HNode::get_next_lowlevel_node(std::mt19937&)’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/hnode.cpp:64:16: warning: comparison of integer expressions of different signedness: ‘const int’ and ‘std::vector<Vertex*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   64 |   if (L->depth < C.size()) {
+      |       ~~~~~~~~~^~~~~~~~~~
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/hnode.cpp: In member function ‘bool CompareHNodePointers::operator()(const HNode*, const HNode*) const’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/hnode.cpp:84:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const long unsigned int’ [-Wsign-compare]
+   84 |   for (auto i = 0; i < N; ++i) {
+      |                    ~~^~~
+[ 30%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/instance.cpp.o
+[ 35%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/lacam.cpp.o
+[ 40%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/lnode.cpp.o
+[ 45%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/metrics.cpp.o
+[ 50%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/pibt.cpp.o
+[ 55%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/planner.cpp.o
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/planner.cpp: In member function ‘void Planner::apply_new_solution(const Solution&)’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/planner.cpp:178:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<Vertex*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  178 |   for (auto t = 1; t < plan.size(); ++t) {
+      |                    ~~^~~~~~~~~~~~~
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/planner.cpp: In member function ‘int Planner::get_edge_cost(const Config&, const Config&)’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/planner.cpp:278:22: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘const int’ [-Wsign-compare]
+  278 |   for (uint i = 0; i < N; ++i) {
+      |                    ~~^~~
+[ 60%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/post_processing.cpp.o
+[ 65%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/refiner.cpp.o
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/refiner.cpp: In function ‘Solution refine(const Instance*, const Deadline*, const Solution&, DistTable*, int, int)’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/refiner.cpp:17:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const unsigned int’ [-Wsign-compare]
+   17 |   for (auto i = 0; i < N; ++i) CT.enrollPath(i, paths[i]);
+      |                    ~~^~~
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/refiner.cpp:24:48: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const unsigned int’ [-Wsign-compare]
+   24 |   for (auto k = 0; (k + 1) * num_refine_agents < N; ++k) {
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[ 70%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/scatter.cpp.o
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/scatter.cpp: In member function ‘void Scatter::construct()’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/scatter.cpp:141:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Vertex*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  141 |     for (auto t = 0; t < paths[i].size() - 1; ++t) {
+      |                      ~~^~~~~~~~~~~~~~~~~~~~~
+[ 75%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/sipp.cpp.o
+[ 80%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/translator.cpp.o
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/sipp.cpp: In member function ‘SIs& SITable::get(Vertex*)’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/sipp.cpp:19:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   19 |   for (auto t = 0; t < entry.size(); ++t) {
+      |                    ~~^~~~~~~~~~~~~~
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/translator.cpp: In function ‘std::vector<std::vector<Vertex*> > translateConfigsToPaths(const std::vector<std::vector<Vertex*> >&)’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/translator.cpp:7:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const long unsigned int’ [-Wsign-compare]
+    7 |   for (auto i = 0; i < N; ++i) {
+      |                    ~~^~~
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/translator.cpp: In function ‘std::vector<std::vector<Vertex*> > translatePathsToConfigs(const std::vector<std::vector<Vertex*> >&)’:
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/translator.cpp:20:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const long unsigned int’ [-Wsign-compare]
+   20 |   for (int i = 0; i < N; ++i) {
+      |                   ~~^~~
+/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/vendor/lacam3/lacam3/src/translator.cpp:25:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const long unsigned int’ [-Wsign-compare]
+   25 |   for (auto i = 0; i < N; ++i) {
+      |                    ~~^~~
+[ 85%] Building CXX object lacam3/CMakeFiles/lacam3.dir/src/utils.cpp.o
+[ 90%] Linking CXX static library liblacam3.a
+[ 90%] Built target lacam3
+[ 95%] Building CXX object CMakeFiles/main.dir/main.cpp.o
+[100%] Linking CXX executable main
+[100%] Built target main

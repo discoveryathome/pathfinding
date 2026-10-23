@@ -1,0 +1,19 @@
+{
+  "command": [
+    "cmake",
+    "--build",
+    "build/upstream",
+    "--target",
+    "main",
+    "-j2"
+  ],
+  "status": "complete",
+  "returncode": 0,
+  "wall_seconds": 39.36656564794248,
+  "child_user_cpu_seconds": 64.20307,
+  "child_system_cpu_seconds": 4.147076,
+  "max_child_rss_kib_on_linux": 297568,
+  "wall_cap_seconds": 180,
+  "kill_grace_seconds": 5,
+  "earlier_attempt": "native-build.log: missing /usr/bin/time; compilation did not start"
+}

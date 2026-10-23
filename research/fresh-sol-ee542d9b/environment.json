@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-10-23T11:20:15.369255+00:00",
+  "scope": "Recorded after native/repair attempts A and B; context, not contemporaneous per-run load measurements",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41",
+  "logical_cpu_count": 16,
+  "cpu_affinity": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+  "load_average_at_recording": [1.92041015625, 2.34326171875, 2.3212890625],
+  "coordinator_limits": {
+    "RLIMIT_AS": [-1, -1],
+    "RLIMIT_STACK": [8388608, -1],
+    "RLIMIT_NPROC": [128174, 128174]
+  },
+  "child_address_space_cap_bytes": 1073741824,
+  "native_binary_sha256": "86d0c9f6caf3044c47bfc3433003bb7be4e80aa8081235edd817e22358bcd686",
+  "compiler": "c++ (Debian 14.2.0-19) 14.2.0",
+  "cmake": "3.31.6",
+  "native_internal_abort_cause_established": false
+}

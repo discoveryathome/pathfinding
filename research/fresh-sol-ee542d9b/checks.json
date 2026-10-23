@@ -1,0 +1,26 @@
+{
+  "evidence_level": "author-checked",
+  "package_tests": {
+    "command": ".venv/bin/python -m pytest -q tests research/fresh-sol-ee542d9b/test_controls.py research/fresh-sol-ee542d9b/test_audit.py",
+    "passed": 37,
+    "exit_code": 0,
+    "reported_seconds": 1.39
+  },
+  "quick_check": {
+    "command": ".venv/bin/python tools/check.py --quick",
+    "passed": true,
+    "exit_code": 0,
+    "scientific_review": "pending",
+    "certificates_checked": 0,
+    "elapsed_seconds": 0.6322580139967613
+  },
+  "native_attempts": 12,
+  "native_SIGABRT_before_route_output": 12,
+  "verified_native_routes": 0,
+  "paired_repair_runs": 0,
+  "completed_separate_audit": "verification-v3.json",
+  "audit_scope": "All twelve query draws, source/input/journal and native-failure bindings; zero dataset routes",
+  "relocated_current_auditor_check_pending": true,
+  "upstream_native_test_suite_run": false,
+  "independent_human_scientific_signoff": false
+}

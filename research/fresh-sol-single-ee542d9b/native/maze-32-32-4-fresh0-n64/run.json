@@ -1,0 +1,72 @@
+{
+  "code_commit": "ac1050e7b04f6b271a9e6b917c2be032f9c4281c",
+  "source_sha256": {
+    "data/maps/maze-32-32-4.map": "7ff67aa59f71933b8cf2605e12631b8a28d9ebcfb9b941de3afdc7dce3123fee",
+    "data/maps/random-32-32-20.map": "8c5a83498ab92a2579aeef91c5f42d9ecf9019ef038cf98e623061a15beb6f56",
+    "data/maps/room-32-32-4.map": "f107fefbf63c7a1a3753e4a033452301a1cdd7043cab7f45e4ed0e7dec1e90a9",
+    "research/fresh-sol-single-ee542d9b/common.py": "1caea6de3ddb4e5faee27573ede3f45412aac6208547381a14c4173dec8c0274",
+    "research/fresh-sol-single-ee542d9b/inputs.py": "29e73c73df388defc45976a80d6e3ff1b06391825231219f3de084251360af03",
+    "research/fresh-sol-single-ee542d9b/protocol.json": "7fd5a7d2fa2ca14d27f6660b985e23e3dc8e735d2dbfadd09b6aadaed57b13b0",
+    "research/fresh-sol-single-ee542d9b/run_native.py": "d4a0e752ca608995a70ff3ca93859690d4a316814cb76bbd420620e136476615",
+    "research/fresh-sol-single-ee542d9b/run_repair.py": "86f660e64754e249190c3dca178da61f983bbf12b745a677a176039b187f93c5",
+    "research/fresh-sol-single-ee542d9b/sol_repair.py": "bf2a499402cc52ce482e09ef814d32bc6c99a5c0db1f42f00322a73599b4a780",
+    "src/model.py": "8f536e512b8f5a080f6b0d1d249b4b7dfa837fedf851bc541d8dabb22341eed9",
+    "src/repair.py": "a1cbf0769f05bedbd386197df6eb1351bb753f5954c31c7494ee2a397ac55b91",
+    "src/repair_round2.py": "05f2af815e7cab634532ba1fd74fa12fc352378dea19efaa22c79fbeacfe9ff2",
+    "src/verify.py": "7808cc0b665a7bfeb7dc177c84ab886c40b7d596d31200423a3f3e19f326fc94"
+  },
+  "case": "maze-32-32-4-fresh0-n64",
+  "status": "verified",
+  "error": null,
+  "input": {
+    "case": "maze-32-32-4-fresh0-n64",
+    "instance": "research/fresh-sol-single-ee542d9b/inputs/maze-32-32-4-fresh0-n64.json",
+    "instance_sha256": "ada6b3113293074147d262715cec441529f457f5591ef1fb694eda46e9b06e69",
+    "scenario": "research/fresh-sol-single-ee542d9b/inputs/maze-32-32-4-fresh0-n64.scen",
+    "scenario_sha256": "cce2caa1be4bec6611bf4cb84422fbcfc039ed23e931b25325979e434dbff4ab"
+  },
+  "execution": {
+    "command": [
+      "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/build/upstream/main",
+      "-m",
+      "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/data/maps/maze-32-32-4.map",
+      "-i",
+      "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/research/fresh-sol-single-ee542d9b/inputs/maze-32-32-4-fresh0-n64.scen",
+      "-N",
+      "64",
+      "-s",
+      "0",
+      "-t",
+      "12",
+      "-o",
+      "/root/.t3/scratch/2026-10-23-fetch-https-discoveryathome-org-v0-827a161c/pathfinding-20261023T0605/repo/research/fresh-sol-single-ee542d9b/native/maze-32-32-4-fresh0-n64/output.txt",
+      "-v",
+      "0",
+      "--no-multi-thread"
+    ],
+    "status": "complete",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "wall_seconds": 12.435034705966245,
+    "child_user_cpu_seconds": 12.082495,
+    "child_system_cpu_seconds": 0.327083,
+    "max_child_rss_kib_on_linux_so_far": 176052,
+    "external_timeout_seconds": 45,
+    "address_space_mib": 1024,
+    "process_group_owned": false
+  },
+  "binary_sha256": "86d0c9f6caf3044c47bfc3433003bb7be4e80aa8081235edd817e22358bcd686",
+  "candidate": "native/maze-32-32-4-fresh0-n64/candidate.json",
+  "candidate_sha256": "6d07381090578a18e08eeae7afc22c05a602fa7c996b5aaa7b78615a3276c4a6",
+  "metrics": {
+    "soc": 3546,
+    "sol": 3474,
+    "makespan": 106
+  },
+  "raw_output_sha256": "7005b4940a25b967d99ff829adc0a745e686286fbd15c7272484c071eded5c39",
+  "worker_wall_seconds": 12.609394041995984,
+  "worker_user_cpu_seconds": 0.189628,
+  "worker_system_cpu_seconds": 0.02383,
+  "worker_peak_rss_kib_on_linux": 18832
+}

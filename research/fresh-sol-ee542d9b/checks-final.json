@@ -1,0 +1,36 @@
+{
+  "evidence_level": "author-checked",
+  "supersedes": "checks.json (retained pre-final snapshot)",
+  "package_tests": {
+    "command": ".venv/bin/python -m pytest -q tests research/fresh-sol-ee542d9b/test_controls.py research/fresh-sol-ee542d9b/test_audit.py",
+    "passed": 38,
+    "exit_code": 0,
+    "reported_seconds": 1.44
+  },
+  "quick_check": {
+    "command": ".venv/bin/python tools/check.py --quick",
+    "passed": true,
+    "exit_code": 0,
+    "scientific_review": "pending",
+    "certificates_checked": 0,
+    "elapsed_seconds": 0.6935675460263155
+  },
+  "current_auditor_source_commit": "9a2567f0b2d9efb8906f159dc0d7da161541f9a8",
+  "separate_audit": "verification-v4.json",
+  "auditor_sha256": "0caea9441cbe9bb5f46c31ee7bd9b3dcd79666ed2d5fe04b4353170b744d791e",
+  "audit_report_sha256": "2ae67000b736b412af608650f6880c8b6691d0a52c4b06b14138b3d4d01bec96",
+  "audit_elapsed_seconds": 0.6180814509862103,
+  "native_status_counts": {
+    "failed": 12
+  },
+  "final_repair_routes_checked": 0,
+  "accepted_intermediate_routes_checked": 0,
+  "paired_runs": 0,
+  "relocated_report": "verification-relocated.json",
+  "relocated_auditor_sha256": "d394bbd4cf6da34a7d79870ffe13720dc53e884fa35621839015a6dbe8cd9b80",
+  "relocation_check_completed": true,
+  "current_and_relocated_results_agree_except_elapsed_and_auditor_hash": true,
+  "full_optimizer_panel_replayed": false,
+  "upstream_native_test_suite_run": false,
+  "independent_human_scientific_signoff": false
+}

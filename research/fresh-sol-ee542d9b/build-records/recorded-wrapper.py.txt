@@ -1,0 +1,37 @@
+"""One bounded native build; preserve the earlier missing-time attempt."""
+from pathlib import Path
+import json
+import os
+import resource
+import signal
+import subprocess
+import time
+
+HERE = Path(__file__).resolve().parent
+command = ["cmake", "--build", "build/upstream", "--target", "main", "-j2"]
+started = time.perf_counter()
+with (HERE / "native-build-v2.log").open("x") as log:
+    process = subprocess.Popen(command, cwd=HERE / "repo", stdout=log,
+                               stderr=subprocess.STDOUT, start_new_session=True)
+    try:
+        code = process.wait(timeout=180)
+        status = "complete" if code == 0 else "failed"
+    except subprocess.TimeoutExpired:
+        os.killpg(process.pid, signal.SIGTERM)
+        try:
+            code = process.wait(timeout=5)
+        except subprocess.TimeoutExpired:
+            os.killpg(process.pid, signal.SIGKILL)
+            code = process.wait()
+        status = "timeout"
+usage = resource.getrusage(resource.RUSAGE_CHILDREN)
+result = {"command": command, "status": status, "returncode": code,
+          "wall_seconds": time.perf_counter() - started,
+          "child_user_cpu_seconds": usage.ru_utime,
+          "child_system_cpu_seconds": usage.ru_stime,
+          "max_child_rss_kib_on_linux": usage.ru_maxrss,
+          "wall_cap_seconds": 180, "kill_grace_seconds": 5,
+          "earlier_attempt": "native-build.log: missing /usr/bin/time; compilation did not start"}
+with (HERE / "native-build-v2.json").open("x") as handle:
+    handle.write(json.dumps(result, indent=2) + "\n")
+print(json.dumps(result))
