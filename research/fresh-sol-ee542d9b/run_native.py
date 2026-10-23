@@ -19,9 +19,13 @@ def parse_certificate(text, instance, count, instance_sha256):
                if (match := re.match(r"^(\d+):(.*)$", line))]
     assert matches and [tick for tick, _ in matches] == list(range(len(matches)))
     grid = read_instance(instance)["grid"]
-    states = [[int(y) * grid["w"] + int(x) for x, y in re.findall(r"\((\d+),(\d+)\)", row)]
-              for _, row in matches]
-    assert all(len(state) == count for state in states)
+    states = []
+    coordinate = r"\((-?\d+),(-?\d+)\)"
+    for _, row in matches:
+        points = [(int(x), int(y)) for x, y in re.findall(coordinate, row)]
+        assert len(points) == count and not re.sub(coordinate, "", row).strip(" ,\t")
+        assert all(0 <= x < grid["w"] and 0 <= y < grid["h"] for x, y in points)
+        states.append([y * grid["w"] + x for x, y in points])
     paths = [trim([state[agent] for state in states]) for agent in range(count)]
     certificate = {"instance_sha256": instance_sha256, "paths": paths,
                    "metrics": metrics(paths), "method": "pinned LaCAM3 defaults12s", "seed": 0}

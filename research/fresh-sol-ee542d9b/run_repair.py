@@ -35,20 +35,30 @@ def worker(case_id, trial, method):
     initial_metrics = check(instance, initial)
     engine, variant = (arrival_run, "random4") if method == "arrival" else (sol_run, "sol")
     seed = case["repair_seeds"][trial]
-    result = engine(read_instance(instance), initial["paths"], variant, int(seed["decimal"]),
-                    node_budget=100000, attempts=96, agent_cap=10000)
-    candidate = {"instance_sha256": initial["instance_sha256"], "paths": result["paths"],
-                 "metrics": result["metrics"], "method": method, "seed_decimal": seed["decimal"]}
-    checked = check(instance, candidate)
-    for step in result["improvements"]:
-        check(instance, {**candidate, "paths": step["paths"], "metrics": step["metrics"]})
-    assert all(checked[key] <= initial_metrics[key] for key in ("sol", "soc", "makespan"))
     destination = PACKAGE / "runs" / f"{case_id}-t{trial}-{method}"
     destination.mkdir(parents=True)
-    save(destination / "candidate.json", candidate)
+    save(destination / "request.json", {**identity, "case": case_id, "trial": trial, "method": method,
+                                       "seed": seed, "instance": native["input"],
+                                       "inherited_sha256": native["candidate_sha256"]})
+    result = engine(read_instance(instance), initial["paths"], variant, int(seed["decimal"]),
+                    node_budget=100000, attempts=96, agent_cap=10000)
     trace = destination / "trace.json.gz"
     with trace.open("xb") as handle:
         handle.write(gzip.compress(json.dumps(result, separators=(",", ":")).encode(), mtime=0))
+    try:
+        candidate = {"instance_sha256": initial["instance_sha256"], "paths": result["paths"],
+                     "metrics": result["metrics"], "method": method, "seed_decimal": seed["decimal"]}
+        save(destination / "candidate.json", candidate)
+        checked = check(instance, candidate)
+        for step in result["improvements"]:
+            check(instance, {**candidate, "paths": step["paths"], "metrics": step["metrics"]})
+        assert all(checked[key] <= initial_metrics[key] for key in ("sol", "soc", "makespan"))
+    except Exception as failure:
+        save(destination / "failure.json", {**identity, "case": case_id, "trial": trial, "method": method,
+            "status": "verification_failed", "error": f"{type(failure).__name__}: {failure}",
+            "trace_sha256": sha(trace), "candidate_sha256": sha(destination / "candidate.json")
+            if (destination / "candidate.json").exists() else None})
+        raise
     usage = resource.getrusage(resource.RUSAGE_SELF)
     record = {**identity, "case": case_id, "trial": trial, "method": method, "seed": seed,
               "instance": native["input"], "inherited_sha256": native["candidate_sha256"],

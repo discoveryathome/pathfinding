@@ -12,8 +12,8 @@ spec.loader.exec_module(audit)
 
 
 def test_source_manifest_requires_real_commits_and_all_thirteen_files():
-    manifest = {path: audit.sha(audit.ROOT / path) for path in audit.required_sources()}
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=audit.ROOT, text=True).strip()
+    manifest = audit.committed_sources(commit)
     record = {"source_sha256": manifest, "code_commit": commit}
     assert len(manifest) == 13 and audit.validate_sources(record) == manifest
     for bad in ({}, dict(list(manifest.items())[1:]), {**manifest, "extra": "0" * 64}):

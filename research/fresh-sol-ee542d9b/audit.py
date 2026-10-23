@@ -241,8 +241,15 @@ def verify_native(plan, manifest, inputs):
         certificate = load(certificate_path)
         shape(certificate["metrics"])
         assert check(ROOT / inputs[cid]["instance"], certificate) == row["metrics"]
-        states = [(int(match[1]), [int(y) * 32 + int(x) for x, y in re.findall(r"\((\d+),(\d+)\)", match[2])])
-                  for line in raw.read_text().splitlines() if (match := re.match(r"^(\d+):(.*)$", line))]
+        states = []
+        coordinate = r"\((-?\d+),(-?\d+)\)"
+        for line in raw.read_text().splitlines():
+            if not (match := re.match(r"^(\d+):(.*)$", line)):
+                continue
+            points = [(int(x), int(y)) for x, y in re.findall(coordinate, match[2])]
+            assert all(0 <= x < 32 and 0 <= y < 32 for x, y in points)
+            assert not re.sub(coordinate, "", match[2]).strip(" ,\t")
+            states.append((int(match[1]), [y * 32 + x for x, y in points]))
         assert [tick for tick, _ in states] == list(range(len(states)))
         assert all(len(state) == case["agents"] for _, state in states)
         assert certificate["paths"] == [trim([state[agent] for _, state in states]) for agent in range(case["agents"])]
@@ -277,6 +284,10 @@ def verify_repairs(plan, manifest, inputs, native):
         assert load(directory / "run.json") == row and sha(directory / "run.json") == event["record_sha256"]
         assert row["candidate"] == str((directory / "candidate.json").relative_to(PACKAGE))
         assert row["trace"] == str((directory / "trace.json.gz").relative_to(PACKAGE))
+        request = load(directory / "request.json")
+        assert request == {key: row[key] for key in ("code_commit", "source_sha256", "case", "trial", "method",
+                                                    "seed", "instance", "inherited_sha256")}
+        assert not (directory / "failure.json").exists()
         assert event["status"] == "complete" and event["returncode"] == 0
         assert Path(event["command"][1]) == PACKAGE / "run_repair.py"
         assert event["command"][2:] == ["--case", key[0], "--trial", str(key[1]), "--method", key[2]]
