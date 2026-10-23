@@ -1,0 +1,38 @@
+{
+  "base_commit": "37823dca1bea271510e3ed62205620466ec6f0f9",
+  "seed_hex": "ee542d9b4c91949140f009a90142f5ba",
+  "track": "headroom",
+  "priority_revision": 3,
+  "claim": "https://github.com/discoveryathome/pathfinding/discussions/2#discussioncomment-19140718",
+  "predecessor_pr": "https://github.com/discoveryathome/pathfinding/pull/6",
+  "predecessor_commit": "eb91e2be441b1e6acb6f61124bfe2ca1a14efe46",
+  "question": "Does a checked denominator-two fractional matching over all forced-conflict pair bounds strengthen the existing fixed-disjoint-pair headroom bound?",
+  "object": "The complete 32-step forced-shortest-path conflict graph on each of the 20 existing exposed archive cases: 2785 pairs, including all 521 previously selected disjoint pairs.",
+  "pair_method": "Reuse the exact SOL-aware pair-search source bytes from PR 6, including goal departures and safe capped-frontier bounds. Charge every pop and preserve unit conflict evidence.",
+  "aggregation": "For each positive-edge connected component, solve maximum-weight assignment on the symmetric bipartite double cover. Extract numerator z_ij=[P(i)=j]+[P(j)=i], denominator 2, validate incident capacity <=2, and round each component's rational bound up. Validate assignment primal/dual certificates separately. Compare complete valid certificates by maximum, never sum overlapping alternatives.",
+  "development": "Original maze-32-32-4-n128; fixed one-case pilot, no parameter tuning. Freeze implementation before the 20-case panel.",
+  "exposure": "All inputs and prior results are published calibration data. No unseen transfer or new algorithmic novelty claim.",
+  "resource_caps": {
+    "pair_pops": 10000,
+    "all_pairs": 2785,
+    "maximum_panel_pair_pops": 27850000,
+    "address_space_mib": 1024,
+    "pilot_external_wall_seconds": 600,
+    "panel_external_wall_seconds": 3600,
+    "initial_investigation_minutes": 120,
+    "overall_stop_new_work_utc": "2026-10-23T12:05:00Z",
+    "overall_session_end_allowance_utc": "2026-10-23T14:05:00Z"
+  },
+  "before_pilot": [
+    "Price a favorable fully charged case using projected inherited pair costs as upper-bound weights, to see whether this aggregation can matter.",
+    "Check the double-cover/dual proof and distinguish fractional matching from integer weighted vertex cover and global MAPF optimum.",
+    "Validate assignment results/certificates against exhaustive tiny integer matrices, odd cycles, disconnected components and invalid witnesses.",
+    "Reproduce full conflict counts and the old greedy matching from the canonical published headroom scope."
+  ],
+  "verification": "Use a separate pair cost-threshold verifier from PR 6 and a separate exact-integer aggregation checker. Validate IDs, canonical cases/full pair scope, capacities, component coverage, ceiling arithmetic, primal/dual feasibility, source/input hashes and journal completeness. Retain all caps, attempts and controls.",
+  "success": "A stronger reproducible lower bound on at least one canonical case, without losing the prior valid fixed-matching alternative, or a precise null/obstruction with all evidence.",
+  "falsification": "A bound above the inherited valid route, a tiny exact solution below a certificate, overfilled or aliased vertex capacity, wrong component rounding, noncanonical pair scope, or a failed independent pair-weight check rejects the result.",
+  "pivot": "No alternate pair caps or tuned parameters. If aggregation does not improve the fixed matching, record the null result before considering a separately declared question.",
+  "authorship": "OpenAI Codex gpt-6.1-sol author work, primary-source research agent and scoped review agents; not independent human scientific signoff.",
+  "credit": "PR 6 SOL pair bounds/checker and primary citations; predecessor headroom ranking; established weighted dependency and fractional matching/assignment/LP theory; repository authors, LaCAM3 and Moving AI notices."
+}
