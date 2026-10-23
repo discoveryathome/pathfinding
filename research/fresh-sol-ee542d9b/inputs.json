@@ -1,0 +1,108 @@
+{
+  "code_commit": "27a6697bf67bbdef1b2810898c6ac4fdb62729a8",
+  "source_sha256": {
+    "data/maps/maze-32-32-4.map": "7ff67aa59f71933b8cf2605e12631b8a28d9ebcfb9b941de3afdc7dce3123fee",
+    "data/maps/random-32-32-20.map": "8c5a83498ab92a2579aeef91c5f42d9ecf9019ef038cf98e623061a15beb6f56",
+    "data/maps/room-32-32-4.map": "f107fefbf63c7a1a3753e4a033452301a1cdd7043cab7f45e4ed0e7dec1e90a9",
+    "research/fresh-sol-ee542d9b/common.py": "1caea6de3ddb4e5faee27573ede3f45412aac6208547381a14c4173dec8c0274",
+    "research/fresh-sol-ee542d9b/inputs.py": "29e73c73df388defc45976a80d6e3ff1b06391825231219f3de084251360af03",
+    "research/fresh-sol-ee542d9b/protocol.json": "d7ae52ebbe6f669b3f74aa80c52638e6766f08f3daba8fb6c61ab7905faae644",
+    "research/fresh-sol-ee542d9b/run_native.py": "3a9039116c09ba11cfd8952ca1087e898f588c9c387e5a115489a078e644fe13",
+    "research/fresh-sol-ee542d9b/run_repair.py": "86f660e64754e249190c3dca178da61f983bbf12b745a677a176039b187f93c5",
+    "research/fresh-sol-ee542d9b/sol_repair.py": "bf2a499402cc52ce482e09ef814d32bc6c99a5c0db1f42f00322a73599b4a780",
+    "src/model.py": "8f536e512b8f5a080f6b0d1d249b4b7dfa837fedf851bc541d8dabb22341eed9",
+    "src/repair.py": "a1cbf0769f05bedbd386197df6eb1351bb753f5954c31c7494ee2a397ac55b91",
+    "src/repair_round2.py": "05f2af815e7cab634532ba1fd74fa12fc352378dea19efaa22c79fbeacfe9ff2",
+    "src/verify.py": "7808cc0b665a7bfeb7dc177c84ab886c40b7d596d31200423a3f3e19f326fc94"
+  },
+  "cases": [
+    {
+      "case": "maze-32-32-4-fresh0-n64",
+      "instance": "research/fresh-sol-ee542d9b/inputs/maze-32-32-4-fresh0-n64.json",
+      "instance_sha256": "ec0b28f9fcfe6f2a1572b659fd8f72e54be579433fabee840b330d1df6cb1243",
+      "scenario": "research/fresh-sol-ee542d9b/inputs/maze-32-32-4-fresh0-n64.scen",
+      "scenario_sha256": "cce2caa1be4bec6611bf4cb84422fbcfc039ed23e931b25325979e434dbff4ab"
+    },
+    {
+      "case": "maze-32-32-4-fresh1-n64",
+      "instance": "research/fresh-sol-ee542d9b/inputs/maze-32-32-4-fresh1-n64.json",
+      "instance_sha256": "766e0aa1be47666ace28bba5dc56a2860a54c9e46ecf350ce40da478c273c832",
+      "scenario": "research/fresh-sol-ee542d9b/inputs/maze-32-32-4-fresh1-n64.scen",
+      "scenario_sha256": "ba8d05ac8ad6b0030e689f5567333b3ca7c092e4a243128c0429d5663366603b"
+    },
+    {
+      "case": "maze-32-32-4-fresh0-n128",
+      "instance": "research/fresh-sol-ee542d9b/inputs/maze-32-32-4-fresh0-n128.json",
+      "instance_sha256": "474a7e705b1db4b46d027a266f600bf31c0280b44b7a07c888494e21c2a27667",
+      "scenario": "research/fresh-sol-ee542d9b/inputs/maze-32-32-4-fresh0-n128.scen",
+      "scenario_sha256": "7665e4220f7b27fbef8dc84e7388f7316deb04760d709bc87f225bf08cffa554"
+    },
+    {
+      "case": "maze-32-32-4-fresh1-n128",
+      "instance": "research/fresh-sol-ee542d9b/inputs/maze-32-32-4-fresh1-n128.json",
+      "instance_sha256": "e4b7751d6684b15c4c2c036e11f3800515170c8ce84eb5c141dd9c5689bf6db5",
+      "scenario": "research/fresh-sol-ee542d9b/inputs/maze-32-32-4-fresh1-n128.scen",
+      "scenario_sha256": "c42f1845ca380457bbff627fa4fb2501dbf4aa131049cd367b7624feccd14936"
+    },
+    {
+      "case": "room-32-32-4-fresh0-n64",
+      "instance": "research/fresh-sol-ee542d9b/inputs/room-32-32-4-fresh0-n64.json",
+      "instance_sha256": "66d7897f117dd13c6b62e5ec86a8fa6bdc48ef4153d80ee7f78e6bdaccb4a78f",
+      "scenario": "research/fresh-sol-ee542d9b/inputs/room-32-32-4-fresh0-n64.scen",
+      "scenario_sha256": "2f31c4275f0031065921fa640afc15872b6cec9d525c75805692f26299560e0e"
+    },
+    {
+      "case": "room-32-32-4-fresh1-n64",
+      "instance": "research/fresh-sol-ee542d9b/inputs/room-32-32-4-fresh1-n64.json",
+      "instance_sha256": "be7475c451dab9e23e77794c1aea82b765e0583f4be671a310de988897755ff1",
+      "scenario": "research/fresh-sol-ee542d9b/inputs/room-32-32-4-fresh1-n64.scen",
+      "scenario_sha256": "24d1f7a0186697031dc970ff89a809a788c1748d868b8ac420a3448ae2e9e747"
+    },
+    {
+      "case": "room-32-32-4-fresh0-n128",
+      "instance": "research/fresh-sol-ee542d9b/inputs/room-32-32-4-fresh0-n128.json",
+      "instance_sha256": "444efe52d0643f8fe4b5b09868f0b82b23675b85b174e3f2bcfc73bd119f844c",
+      "scenario": "research/fresh-sol-ee542d9b/inputs/room-32-32-4-fresh0-n128.scen",
+      "scenario_sha256": "f3806f29a1365878738639a43b62ef1eda4b4c6555af322c3b6f03a8bec07943"
+    },
+    {
+      "case": "room-32-32-4-fresh1-n128",
+      "instance": "research/fresh-sol-ee542d9b/inputs/room-32-32-4-fresh1-n128.json",
+      "instance_sha256": "b3ee9b7ef4d0d6587f4a61c20577ff2e242d7bbbd1a8d2458d6cc713dae80dba",
+      "scenario": "research/fresh-sol-ee542d9b/inputs/room-32-32-4-fresh1-n128.scen",
+      "scenario_sha256": "245353896a08b5737aa301cfc3eeb46423f7adbebfb3f107c9c6dbe9304192a6"
+    },
+    {
+      "case": "random-32-32-20-fresh0-n64",
+      "instance": "research/fresh-sol-ee542d9b/inputs/random-32-32-20-fresh0-n64.json",
+      "instance_sha256": "6881870254dfe32c9f88f2a2e21b57faad5e5ad528818427ce94f6ebfb7d55d3",
+      "scenario": "research/fresh-sol-ee542d9b/inputs/random-32-32-20-fresh0-n64.scen",
+      "scenario_sha256": "79a965a99196f29e9fd6d4080f1776fdc81bc22f05d14b64ed5d536cdaf59571"
+    },
+    {
+      "case": "random-32-32-20-fresh1-n64",
+      "instance": "research/fresh-sol-ee542d9b/inputs/random-32-32-20-fresh1-n64.json",
+      "instance_sha256": "7d6fa0e91402eb9e5393566262f80140164c7fc69691795990958e6af536fd8e",
+      "scenario": "research/fresh-sol-ee542d9b/inputs/random-32-32-20-fresh1-n64.scen",
+      "scenario_sha256": "b89b548dd4a1494948f4eae7cdbd5c72db4d2d527fc26470db224abe33d03e07"
+    },
+    {
+      "case": "random-32-32-20-fresh0-n128",
+      "instance": "research/fresh-sol-ee542d9b/inputs/random-32-32-20-fresh0-n128.json",
+      "instance_sha256": "70e578ed184df4c8c502cf673b17ce665bc06cc31dc8653446c59008d40b2e2f",
+      "scenario": "research/fresh-sol-ee542d9b/inputs/random-32-32-20-fresh0-n128.scen",
+      "scenario_sha256": "ff79bd2079bc3602309e9ef1a24e0bf91884ef756da95b91c732721feb0600e8"
+    },
+    {
+      "case": "random-32-32-20-fresh1-n128",
+      "instance": "research/fresh-sol-ee542d9b/inputs/random-32-32-20-fresh1-n128.json",
+      "instance_sha256": "cfc15549f0aa98afba58a38800145826065bd72cb2d70939546a4552773a1a09",
+      "scenario": "research/fresh-sol-ee542d9b/inputs/random-32-32-20-fresh1-n128.scen",
+      "scenario_sha256": "ad86d09483a9d6d786ba0e57d7d152ea2b56411a0ca21bfb3b072cc067d00d64"
+    }
+  ],
+  "protocol_sha256": "d7ae52ebbe6f669b3f74aa80c52638e6766f08f3daba8fb6c61ab7905faae644",
+  "generated_after_source_commit": true,
+  "generator": "inputs.py",
+  "evidence_level": "author-generated within-map variation"
+}
