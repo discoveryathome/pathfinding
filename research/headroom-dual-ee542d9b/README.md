@@ -81,13 +81,13 @@ separate raw-grid cost-threshold checker for every pair bound. It independently
 checks assignment permutations, all integer dual inequalities, primal/dual equality,
 edge numerators, capacity, group coverage, ceilings and the final maximum.
 All **2785 pair bounds** and **20 aggregate certificates** pass. Verification used
-1,785,750 pops in 32.8115 seconds; [verification.json](verification.json) binds all
+1,785,750 pops in the original 32.8115-second check; [verification-v2.json](verification-v2.json) binds all
 source/report hashes. The per-pair verification cap is 500,000 pops and cannot
 produce a passing result when reached. This is a separate implementation run by
 the author, not independent human scientific review.
 
-The 21 repository tests plus six package tests pass (27 total), as does the quick
-source/historical-artifact check; commands/output are in [checks.json](checks.json).
+The 21 repository tests plus seven package tests pass (28 total), as does the quick
+source/historical-artifact check; final commands/output are in [checks-v2.json](checks-v2.json).
 Assignment tests exhaust all 729 four-vertex symmetric matrices with weights 0–2
 against every permutation and exact integer cover. Further controls cover odd
 cycles, component merging, fixed points, K4's integrality gap, large integers,
@@ -106,6 +106,14 @@ Outputs refuse overwrite. All pair costs, statuses, assignment choices, potentia
 numerators and rounding groups are deterministic; timestamps, timings and peak RSS
 are observations and must be excluded when comparing replays. No binary, native
 solver build or new package dependency is needed.
+
+Review found that the first checker accepted an omitted source manifest because
+it only checked supplied entries. The final checker requires the exact 12 declared
+keys before opening/hash-checking their files and rejects empty, missing, extra
+and wrong-hash manifests. The committed panel already contains the complete correct
+manifest, so numerical bounds are unchanged. Original verification/check outputs
+and the original verifier source at `18dc819` are retained; final version-2 results
+certify the same 2785 bounds and 1,785,750 threshold pops.
 
 ## Provenance, limits and open next questions
 

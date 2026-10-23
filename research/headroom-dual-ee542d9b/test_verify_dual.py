@@ -34,3 +34,19 @@ def test_exact_case_and_full_pair_scope():
     changed[0]["pairs"][0]["witness"]["agents"] = [-1, 1]
     with pytest.raises(ValueError, match="full pair scope"):
         verify.validate_scope(changed, scope, archive)
+
+
+def test_source_manifest_cannot_omit_or_add_entries():
+    import json
+    manifest = json.loads((verify.PACKAGE / "panel.json").read_text())["source_sha256"]
+    verify.validate_sources(manifest)
+    missing = dict(manifest)
+    missing.pop(next(iter(missing)))
+    extra = {**manifest, "unexpected/path": "0" * 64}
+    for invalid in ({}, missing, extra):
+        with pytest.raises(ValueError, match="complete declared key set"):
+            verify.validate_sources(invalid)
+    wrong_hash = dict(manifest)
+    wrong_hash["src/model.py"] = "0" * 64
+    with pytest.raises(ValueError, match="Wrong source hash"):
+        verify.validate_sources(wrong_hash)

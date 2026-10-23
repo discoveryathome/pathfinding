@@ -19,6 +19,18 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def validate_sources(manifest):
+    prefix = str(PACKAGE.relative_to(ROOT)) + "/"
+    names = ("run_dual.py", "assignment.py", "check_assignment.py", "pair_bounds.py", "pair_verifier.py",
+             "scope.json", "predecessor.json", "protocol.json", "protocol-amendment-1.json")
+    expected = {prefix + name for name in names} | {"src/model.py", "src/verify.py", "discover/incumbents.json"}
+    if not isinstance(manifest, dict) or set(manifest) != expected:
+        raise ValueError("Source manifest must contain the complete declared key set")
+    for path in sorted(expected):
+        if digest(ROOT / path) != manifest[path]:
+            raise ValueError("Wrong source hash: " + path)
+
+
 def validate_scope(rows, scope, archive):
     names = [row["case"] for row in rows]
     if len(names) != len(scope) or len(set(names)) != len(names) or set(names) != set(scope):
@@ -57,8 +69,7 @@ if __name__ == "__main__":
     assert len(scope) == len(archive) == 20 and set(scope) == set(archive)
     report = json.loads((PACKAGE / "panel.json").read_text())
     validate_scope(report["cases"], scope, archive)
-    for path, expected in report["source_sha256"].items():
-        assert digest(ROOT / path) == expected, path
+    validate_sources(report["source_sha256"])
     journal = [json.loads(line) for line in (PACKAGE / "panel.jsonl").read_text().splitlines()]
     assert journal == [r for row in report["cases"] for r in row["pairs"]]
     tick = time.perf_counter()
