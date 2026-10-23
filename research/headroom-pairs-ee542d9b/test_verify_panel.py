@@ -29,7 +29,15 @@ def test_checker_handles_goal_departure_and_SOC_SOL_distinction():
 def test_overlapping_pair_aggregation_is_rejected():
     def edge(i, j):
         return {"witness": {"agents": [i, j]}}
-    verify.check_matching([edge(0, 1), edge(2, 3)])
+    verify.check_matching([edge(0, 1), edge(2, 3)], 4)
     for pairs in ([edge(0, 1), edge(1, 2)], [edge(0, 0)]):
         with pytest.raises(ValueError, match="Overlapping or malformed"):
-            verify.check_matching(pairs)
+            verify.check_matching(pairs, 4)
+
+
+def test_negative_agent_alias_is_rejected():
+    # On four agents, -1 and 3 name the same Python-indexed agent.
+    for invalid in (-1, 4, True, 1.0):
+        records = [{"witness": {"agents": [invalid, 0]}}, {"witness": {"agents": [3, 1]}}]
+        with pytest.raises(ValueError):
+            verify.check_matching(records, 4)

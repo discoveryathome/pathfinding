@@ -53,11 +53,12 @@ def certify(adj, starts, goals, ds, claimed, pop_cap=500000):
     return {"verified": True, "reason": "cheaper_routes_exhausted", "popped": popped}
 
 
-def check_matching(records):
+def check_matching(records, agent_count):
     used = set()
     for record in records:
         agents = record["witness"]["agents"]
-        if len(agents) != 2 or len(set(agents)) != 2 or used.intersection(agents):
+        if (len(agents) != 2 or any(type(i) is not int or not 0 <= i < agent_count for i in agents)
+                or len(set(agents)) != 2 or used.intersection(agents)):
             raise ValueError("Overlapping or malformed pair matching")
         used.update(agents)
 
@@ -102,7 +103,7 @@ if __name__ == "__main__":
         ds = [wavefront(adj, goal) for goal in instance["goals"]]
         individual = [d[s] for d, s in zip(ds, instance["starts"])]
         assert sum(individual) == row["individual_distance_bound"]
-        check_matching(row["pair_results"])
+        check_matching(row["pair_results"], len(individual))
         total, pair_pops = sum(individual), 0
         for record in row["pair_results"]:
             i, j = record["witness"]["agents"]
@@ -125,7 +126,7 @@ if __name__ == "__main__":
     assert bad_bound["cost"] == 6
     overlapping = [{"witness": {"agents": [0, 1]}}, {"witness": {"agents": [1, 2]}}]
     try:
-        check_matching(overlapping)
+        check_matching(overlapping, 3)
     except ValueError as error:
         overlap_error = str(error)
     else:
