@@ -1,5 +1,29 @@
 # Two-axis author-assisted review
 
+## Final-window source-manifest follow-up
+
+Author verification found the original source-hash loop checked only supplied
+entries, so an empty dictionary skipped those checks. `validate_sources()` now
+requires exactly the seven paths declared by the frozen producer, then hashes
+each. Source is retained at `d5af369`; regression extensions are at `d4794b5`.
+All original producer files, panel and prior reports remain unchanged.
+
+Standards round 4: no remaining findings in this delta. The reviewer accepted
+the valid manifest and rejected empty/extra, all seven omissions, all seven wrong
+hashes and four non-dictionary controls. Other existing package files remained
+unchanged at the reviewed baseline. V4 binds the original panel and new verifier,
+and matches all twenty V3 case results, 521 claims and 124,151 pops. It did not
+rerun the full threshold checker, solver panel, 32-test suite or broader proof.
+
+Spec round 4: no remaining new findings. The reviewer rejected all 127 incomplete
+key sets, extra/substituted paths, ten non-dictionary JSON values, and incorrect
+hashes/simulated changed bytes for every required file. The actual seven hashes
+and all twenty instance hashes match. Canonical/bound functions are unchanged;
+V4 matches V3. Pytest was unavailable in that review runtime; root separately
+ran all 32 tests and the complete checker successfully. Prior math/threshold/
+baseline conclusions were reused. Both reviews are author-assisted, not human
+scientific signoff.
+
 Fixed point: `37823dca1bea271510e3ed62205620466ec6f0f9`.
 Reviewed frozen implementation: `92c1d8c74c94f0dc65e6a3a04b63b89253a731af`.
 Reviews by separate gpt-6.1-sol code-review-skill agents, not independent human

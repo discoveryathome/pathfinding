@@ -84,7 +84,7 @@ four-cell branch and three-cell corridor across seven pop caps, comparing agains
 a separate unheuristic Dijkstra oracle. Additional controls require an initial-goal
 departure, distinguish SOL 7 from SOC 8, reject swaps and malformed inputs, test
 terminal holding, and reject inflated bounds and overlapping matchings. The 21
-existing repository tests plus ten package tests pass (31 total). The quick
+existing repository tests plus eleven package tests pass (32 total). The quick
 source/historical-artifact check passes. Final commands and outputs are in
 [checks-v3.json](checks-v3.json); prior check versions remain preserved.
 
@@ -115,8 +115,12 @@ and fixed before submission, with rejecting regression controls. All actual pane
 IDs and cases were valid, so bounds did not change. `verification.json` and its
 source at commit `7f07fda130fc4cd009c7dbe9036de2377d813ea4` retain version 1;
 `verification-v2.json` and source commit `5af1cabe3a3ee13cb65d1763fe028a6e8ffc8e40`
-retain the ID fix; `verification-v3.json` records the final scope-aware checker.
-All three runs certify the same 521 bounds with 124,151 threshold-search pops.
+retain the ID fix; `verification-v3.json` records the scope-aware checker.
+Final verification additionally requires the complete seven-file producer/source
+manifest before hashing, preventing an empty or partial dictionary from skipping
+checks. `verification-v4.json` binds this checker; `checks-v4.json` records the
+32-test suite and quick check. All four versions certify the same 521 bounds
+with 124,151 threshold-search pops; original source/data/reports remain retained.
 
 ## Review, provenance and limits
 
@@ -143,12 +147,10 @@ Okumura for SOL/configuration-graph semantics and LaCAM3; and Nathan Sturtevant 
 Moving AI Lab for the benchmark data. Preserve [THIRD-PARTY.md](../../THIRD-PARTY.md),
 [data/NOTICE.md](../../data/NOTICE.md), and ODC Attribution 1.0 notices.
 
-## Open next questions
+## Full-graph follow-up
 
-The fixed disjoint pairs leave overlapping pair constraints unused. A precise next
-question is whether a checked fractional-matching dual witness can aggregate
-SOL-aware bounds on the full forced-conflict graph more strongly, without counting
-an agent's excess cost twice. Start with one exposed maze, freeze its pair set and
-caps, and verify nonnegative rational edge multipliers whose incident sums are at
-most one. Success is a stronger reproducible lower bound or a documented null
-result. Exact pair costs and aggregation witnesses are separate obligations.
+[PR #7](https://github.com/discoveryathome/pathfinding/pull/7) now provides the
+full forced-conflict-graph study with explicit fractional-matching and integer
+assignment-dual certificates. It verifies pair weights and aggregation separately
+and improves sixteen of these twenty bounds. This package retains the fixed
+521 disjoint pairs as its reproducible baseline.
