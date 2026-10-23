@@ -103,7 +103,10 @@ used earlier uncommitted versions of two scripts. Standards review found those
 versions missing; [pilot-source/](pilot-source/README.md) now preserves their exact
 hash-matching bytes and explains isolated replay at the protocol commit. The saved
 [pilot replay](pilot-replayed.json), [journal](pilot-replayed.jsonl) and
-[comparison](pilot-replay-check.json) match every non-timing field of the original.
+[comparison](pilot-replay-check-v2.json) match every deterministic field of the
+original, explicitly excluding timestamps, timings and peak RSS. Peak RSS was
+25,188 KiB originally and 25,612 KiB on replay; neither is claimed equal. The
+original comparison's broader flag is retained but superseded by this correction.
 The post-pilot changes were validation/accounting checks, not search-method tuning.
 
 The first separate-checker version accepted negative Python aliases for agent IDs

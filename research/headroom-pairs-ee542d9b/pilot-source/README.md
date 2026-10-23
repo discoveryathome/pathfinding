@@ -24,7 +24,9 @@ python ../pair-pilot-replay/research/headroom-pairs-ee542d9b/run_bounds.py --cas
 ```
 
 This replay was performed in a detached protocol-commit checkout. Its saved
-`../pilot-replayed.json` and journal match **every non-timing field** of the original
+`../pilot-replayed.json` and journal match **every deterministic field** of the original
 pilot, including source hashes, eight pair optima, pops, discovered states, peak
-queue counts and the resulting 5991 bound. Keep the checkout or remove it with
+queue counts and the resulting 5991 bound. Timestamps, timings and peak RSS are
+explicitly excluded; the comparison does not claim memory observations are equal.
+Keep the checkout or remove it with
 normal `git worktree remove` when its local evidence is no longer needed.

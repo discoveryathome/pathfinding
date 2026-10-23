@@ -16,7 +16,8 @@ standard or baseline-smell findings were reported.
 
 Response: recover both exact hash-matching script versions in `pilot-source/`,
 leave the original output unchanged, and replay in a detached `9f29e7f` checkout.
-The replay matches all non-timing fields and all source hashes. Saved replay,
+The replay matches all deterministic fields and all source hashes, excluding
+timestamps, timings and peak RSS. Saved replay,
 journal and comparison are included. The round-2 Standards task failed at model
 capacity without running; a new follow-up will check this repair and later additions.
 
@@ -44,5 +45,20 @@ pops and compared the threshold routine with the unpruned oracle on all 1080 tin
 assignments. It did not rerun frozen-solver or baseline tests. A final follow-up
 will check the two fixes. Author verification passes all 31 tests and quick hashes.
 
-Findings to date: Standards 1 (pilot source retention, repaired); Spec 2 (checker
-identifier and canonical-scope validation, repaired). No frozen-solver defect.
+Round 3 Standards confirmed the source-retention repair and recovered checker
+source versions. It found one P3 wording defect: replay peak RSS differs, so the
+claim of every non-timing field matching was too broad. Documentation now says
+deterministic fields and explicitly excludes timestamps, timings and peak RSS.
+The original comparison is retained, with pilot-replay-check-v2.json superseding
+its overly broad flag. No other standards or useful smell findings were reported.
+
+Round 3 Spec confirmed both checker fixes with no new findings. Read-only probes
+tested 28,561 four-agent combinations (only 24 valid disjoint matchings passed),
+rejected 16 invalid coverage/alias mutations, and checked canonical scope, source
+hashes, journal equality and V3 bindings. It reused the prior threshold/frozen-solver
+correctness review and did not rerun the full panel. The final docs-only wording
+correction does not change the reviewed checker.
+
+Final totals: Standards 2 findings (P2 source retention, P3 replay precision; both
+repaired); Spec 2 findings (P2 identifier/scope validation; both repaired).
+No unresolved finding or frozen-solver defect. All checks remain author-assisted.
