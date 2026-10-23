@@ -1,0 +1,255 @@
+{
+  "started_at": "2026-10-23T06:50:35.429229+00:00",
+  "base_commit": "37823dca1bea271510e3ed62205620466ec6f0f9",
+  "code_commit": "9f29e7f0ca81c02d48ba0633060d5a5af865f70b",
+  "source_sha256": {
+    "research/headroom-pairs-ee542d9b/run_bounds.py": "a70367b592471d59802c4fff68552f5d92b092b64dc8ab91ddf44dd36272ada9",
+    "research/headroom-pairs-ee542d9b/pair_bounds.py": "1a1f75329df515fecaca77848c7e3338f8a1ac634eaff94069d8bbb92b29b1ce",
+    "research/headroom-pairs-ee542d9b/protocol.json": "5f1ad8dd53904bbb2f55424b9fada06f32f1eebf008b702db859916b82991dd1",
+    "tools/headroom.py": "d011b05fc3128404d610846e7c899c4cdbc39b81e271e41ad40255812dbad2e9",
+    "src/model.py": "8f536e512b8f5a080f6b0d1d249b4b7dfa837fedf851bc541d8dabb22341eed9",
+    "src/verify.py": "7808cc0b665a7bfeb7dc177c84ab886c40b7d596d31200423a3f3e19f326fc94",
+    "discover/incumbents.json": "86a98c908b02fa2b69af9bb63f38915f6e911a9390c3d3dce53dd909d67a744c"
+  },
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41",
+  "node_limit_per_pair": 10000,
+  "wall_cap_seconds": 180,
+  "effective_address_space_cap_bytes": 1073741824,
+  "exposed_inputs": true,
+  "evidence_level": "author-checked",
+  "cases": [
+    {
+      "case": "maze-32-32-4-n128",
+      "instance": "data/instances/maze-32-32-4-n128.json",
+      "instance_sha256": "7e7552052ec38ba31bb0cccaf2b5a0ed625b389a882c0a30d3e639aad9b450dc",
+      "map": "data/maps/maze-32-32-4.map",
+      "map_sha256": "7ff67aa59f71933b8cf2605e12631b8a28d9ebcfb9b941de3afdc7dce3123fee",
+      "inherited": {
+        "source": "random4-seed29",
+        "path": "results/repair/maze-32-32-4-n128-random4-s29.json",
+        "metrics": {
+          "soc": 8225,
+          "sol": 7815,
+          "makespan": 125
+        },
+        "sha256": "3252b87901a11be179737867b595060b01f84b4f285be35cdadc6c5c52bfab72"
+      },
+      "verified_inherited": {
+        "soc": 8225,
+        "sol": 7815,
+        "makespan": 125,
+        "individual_distance_lower_bound": 5926,
+        "agents": 128,
+        "checked_timesteps": 126
+      },
+      "individual_distance_bound": 5926,
+      "old_pair_bound": 5969,
+      "new_pair_bound": 5991,
+      "bound_gain": 22,
+      "old_SOL_gap": 1846,
+      "new_SOL_gap": 1824,
+      "optimistic_fixed_pair_extra_upper_bound": 1570,
+      "fixed_disjoint_pairs": 43,
+      "selected_pairs": 8,
+      "completed_pairs": 8,
+      "all_selected_pairs_completed": true,
+      "nodes_popped": 14155,
+      "status_counts": {
+        "optimal": 8
+      },
+      "pair_results": [
+        {
+          "case": "maze-32-32-4-n128",
+          "witness": {
+            "agents": [
+              4,
+              7
+            ],
+            "time": 9,
+            "kind": "edge-swap"
+          },
+          "individual_pair_bound": 65,
+          "inherited_pair_SOL_upper_bound": 81,
+          "combined_pair_bound": 67,
+          "search": {
+            "lower_bound": 67,
+            "status": "optimal",
+            "popped": 161,
+            "node_limit": 10000,
+            "discovered_states": 911,
+            "peak_queue_entries": 821,
+            "elapsed_seconds": 0.008754172013141215
+          }
+        },
+        {
+          "case": "maze-32-32-4-n128",
+          "witness": {
+            "agents": [
+              1,
+              13
+            ],
+            "time": 31,
+            "kind": "edge-swap"
+          },
+          "individual_pair_bound": 138,
+          "inherited_pair_SOL_upper_bound": 172,
+          "combined_pair_bound": 150,
+          "search": {
+            "lower_bound": 150,
+            "status": "optimal",
+            "popped": 7534,
+            "node_limit": 10000,
+            "discovered_states": 10298,
+            "peak_queue_entries": 3151,
+            "elapsed_seconds": 0.30620866594836116
+          }
+        },
+        {
+          "case": "maze-32-32-4-n128",
+          "witness": {
+            "agents": [
+              3,
+              15
+            ],
+            "time": 30,
+            "kind": "vertex"
+          },
+          "individual_pair_bound": 133,
+          "inherited_pair_SOL_upper_bound": 183,
+          "combined_pair_bound": 142,
+          "search": {
+            "lower_bound": 142,
+            "status": "optimal",
+            "popped": 4998,
+            "node_limit": 10000,
+            "discovered_states": 8537,
+            "peak_queue_entries": 3672,
+            "elapsed_seconds": 0.22764424403430894
+          }
+        },
+        {
+          "case": "maze-32-32-4-n128",
+          "witness": {
+            "agents": [
+              14,
+              19
+            ],
+            "time": 9,
+            "kind": "vertex"
+          },
+          "individual_pair_bound": 128,
+          "inherited_pair_SOL_upper_bound": 138,
+          "combined_pair_bound": 129,
+          "search": {
+            "lower_bound": 129,
+            "status": "optimal",
+            "popped": 92,
+            "node_limit": 10000,
+            "discovered_states": 826,
+            "peak_queue_entries": 777,
+            "elapsed_seconds": 0.003699599008541554
+          }
+        },
+        {
+          "case": "maze-32-32-4-n128",
+          "witness": {
+            "agents": [
+              18,
+              29
+            ],
+            "time": 3,
+            "kind": "vertex"
+          },
+          "individual_pair_bound": 85,
+          "inherited_pair_SOL_upper_bound": 112,
+          "combined_pair_bound": 86,
+          "search": {
+            "lower_bound": 86,
+            "status": "optimal",
+            "popped": 54,
+            "node_limit": 10000,
+            "discovered_states": 640,
+            "peak_queue_entries": 588,
+            "elapsed_seconds": 0.0022668950259685516
+          }
+        },
+        {
+          "case": "maze-32-32-4-n128",
+          "witness": {
+            "agents": [
+              20,
+              30
+            ],
+            "time": 18,
+            "kind": "edge-swap"
+          },
+          "individual_pair_bound": 109,
+          "inherited_pair_SOL_upper_bound": 136,
+          "combined_pair_bound": 111,
+          "search": {
+            "lower_bound": 111,
+            "status": "optimal",
+            "popped": 145,
+            "node_limit": 10000,
+            "discovered_states": 1078,
+            "peak_queue_entries": 956,
+            "elapsed_seconds": 0.009054998983629048
+          }
+        },
+        {
+          "case": "maze-32-32-4-n128",
+          "witness": {
+            "agents": [
+              8,
+              37
+            ],
+            "time": 29,
+            "kind": "vertex"
+          },
+          "individual_pair_bound": 114,
+          "inherited_pair_SOL_upper_bound": 116,
+          "combined_pair_bound": 115,
+          "search": {
+            "lower_bound": 115,
+            "status": "optimal",
+            "popped": 236,
+            "node_limit": 10000,
+            "discovered_states": 1801,
+            "peak_queue_entries": 1969,
+            "elapsed_seconds": 0.012946998002007604
+          }
+        },
+        {
+          "case": "maze-32-32-4-n128",
+          "witness": {
+            "agents": [
+              6,
+              42
+            ],
+            "time": 29,
+            "kind": "edge-swap"
+          },
+          "individual_pair_bound": 133,
+          "inherited_pair_SOL_upper_bound": 155,
+          "combined_pair_bound": 135,
+          "search": {
+            "lower_bound": 135,
+            "status": "optimal",
+            "popped": 935,
+            "node_limit": 10000,
+            "discovered_states": 3125,
+            "peak_queue_entries": 2849,
+            "elapsed_seconds": 0.0502563770278357
+          }
+        }
+      ],
+      "elapsed_seconds_including_checks": 1.1337437399779446
+    }
+  ],
+  "elapsed_seconds": 1.1436008239979856,
+  "process_cpu_seconds": 1.137846008,
+  "peak_rss_kib_on_linux": 25188,
+  "all_cases_completed": true,
+  "total_popped": 14155
+}
