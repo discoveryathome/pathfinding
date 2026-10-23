@@ -80,7 +80,7 @@ def run_batch(attempt, stage, panel, challenger, protocol, hashes):
                         stdout = error.stdout.decode() if isinstance(error.stdout, bytes) else (error.stdout or "")
                         stderr = error.stderr.decode() if isinstance(error.stderr, bytes) else (error.stderr or "")
                     event = {"case": case["case"], "trial": trial, "method": method,
-                             "command": ["python", "research/sol-repair-ee542d9b/run_one.py", *command[2:]],
+                             "command": command,
                              "returncode": code, "parent_observed_wall_seconds": time.perf_counter() - tick,
                              "stdout": stdout, "stderr": stderr,
                              "record": relative + "/run.json", "per_run_wall_cap_seconds": min(600, remaining)}

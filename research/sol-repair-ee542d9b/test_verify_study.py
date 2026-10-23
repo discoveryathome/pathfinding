@@ -3,6 +3,7 @@ import copy
 import importlib.util
 import json
 from pathlib import Path
+import subprocess
 
 import pytest
 
@@ -38,11 +39,13 @@ def test_canonical_cohort_rejects_duplicates_and_trial_aliases():
             verify.validate_cohort(wrong, cases, "sol")
 
 
-def test_current_hashes_cannot_alias_a_missing_or_wrong_commit():
+def test_current_hashes_cannot_alias_a_missing_wrong_or_noncommit_object():
     record = next((verify.PACKAGE / "runs/a1-dev-primary").glob("*/run.json"))
     data = json.loads(record.read_text())
-    for commit in ("0" * 40, "37823dca1bea271510e3ed62205620466ec6f0f9"):
-        with pytest.raises(ValueError, match="source version unavailable"):
+    tree = subprocess.check_output(["git", "rev-parse", data["code_commit"] + "^{tree}"],
+                                   cwd=verify.ROOT, text=True).strip()
+    for commit in ("0" * 40, "37823dca1bea271510e3ed62205620466ec6f0f9", tree):
+        with pytest.raises(ValueError):
             verify.validate_manifest(data["source_sha256"], commit)
 
 

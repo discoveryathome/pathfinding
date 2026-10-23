@@ -31,6 +31,10 @@ def required_sources():
 def committed_sources(commit):
     if type(commit) is not str or len(commit) != 40 or any(c not in "0123456789abcdef" for c in commit):
         raise ValueError("Use a full code commit identity")
+    object_type = subprocess.check_output(["git", "cat-file", "-t", commit], cwd=ROOT,
+                                          text=True, stderr=subprocess.DEVNULL).strip()
+    if object_type != "commit":
+        raise ValueError("Recorded source object is not a commit")
     return {path: hashlib.sha256(subprocess.check_output(["git", "show", commit + ":" + path], cwd=ROOT,
                                                         stderr=subprocess.DEVNULL)).hexdigest()
             for path in sorted(required_sources())}
