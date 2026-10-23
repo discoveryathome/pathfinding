@@ -21,11 +21,12 @@ when it completes. Budget/deadline interruption gives no such completed result.
 ## Local scope and source limitation
 
 Observed checkout HEAD was `53f33999362d55b06ba49afa9ac6245d69955b4d`.
-The supplied seed `ee542d9b4c91949140f009a90142f5ba` and short prefix
-`ee542d9b` did not resolve locally. No fetch or branch switch was attempted.
-Thus source observations and executable controls below apply to these inspected
-files, not a verified checkout of the supplied seed. Native and context-tool
-reads agreed on the following SHA-256 identities:
+The supplied `ee542d9b4c91949140f009a90142f5ba` is the donation's randomness seed,
+not a Git revision. The parent confirmed the source identities below also match
+canonical base `37823dca1bea271510e3ed62205620466ec6f0f9`. The original note's
+attempt to resolve the seed as a revision was a source-study interpretation error;
+it does not limit the hash-bound observations or executable controls. Native and
+context-tool reads agreed on the following SHA-256 identities:
 
 ```text
 src/repair.py        a1cbf0769f05bedbd386197df6eb1351bb753f5954c31c7494ee2a397ac55b91
@@ -170,7 +171,8 @@ do not silently select it after inspecting evaluation outcomes.
 
 Before implementation tuning, the parent should save the source/baseline hashes,
 inputs, seeds, budgets, selection rule and stopping rule required by
-[EVALUATION.md](../../EVALUATION.md), and revalidate the intended seed checkout.
+[EVALUATION.md](../../EVALUATION.md), pin the intended base commit, and record the
+separate seeded picker/experiment-seed mapping.
 
 1. Use an exact time-layer DP oracle on tiny synthetic graphs: retain minimum
    SOL per `(v,t)`, relax all legal transitions, then minimize `(SOL,t)` over safe
@@ -226,5 +228,6 @@ note is their retained description, so the parent should promote the fixed
 witness and oracle checks into reproducible tests before implementation claims.
 The context fetch tool failed with `Cannot find module 'turndown'`; official
 publisher pages/PDFs and the authors' paper copy were read with the web tool
-instead. The unresolved supplied seed limits all code-specific conclusions.
+instead. The donation seed is not a source revision; the hashes above pin the
+inspected canonical baseline, and experiment seeds are recorded separately.
 Existing records, witnesses, manifests and other session work were left alone.

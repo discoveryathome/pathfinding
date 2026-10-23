@@ -1,0 +1,691 @@
+{
+  "base_commit": "37823dca1bea271510e3ed62205620466ec6f0f9",
+  "seed_hex": "ee542d9b4c91949140f009a90142f5ba",
+  "track": "headroom",
+  "priority_revision": 3,
+  "claim": "https://github.com/discoveryathome/pathfinding/discussions/2#discussioncomment-19141633",
+  "question": "Can SOL-aware lexicographic space-time replanning improve guarded random4 repair from the strongest available exposed starts?",
+  "seed_mapping": "First16bytes SHA256(bytes.fromhex(donation_seed)+case_id.encode()+b':'+str(trial).encode()), big-endian integer; decimal strings preserve all128bits.",
+  "archive_sha256": "86a98c908b02fa2b69af9bb63f38915f6e911a9390c3d3dce53dd909d67a744c",
+  "baseline": "Unchanged repair_round2.run(random4), which delegates to earliest-arrival repair.improve; same initial plans, seeds, random groups,96attempt cap and10000 per-agent cap.",
+  "primary_challenger": "SOL transition cost0 iff both endpoints are own goal, otherwise1; state(v,t), minimumSOLlabelperstate, stale pop checks; queue firstkeys(gSOL+dist,t+dist), same global horizonT and goal-holding/edge reservations; macro acceptance unchanged.",
+  "pivot_challenger": "Only if the predeclared SOC-rejection trigger fires: same SOL solver but each replanned agent's arrival deadline is its pre-attempt incumbent arrival. Continue reservations/goal suffix checks through globalT. This is a separate restricted neighborhood policy, not a changed global model.",
+  "development_gate": "Across the3developmentcases x3seeds: challenger sumSOL strictly below paired arrivalbaseline, sumSOC no higher, and no paired run makespan higher. All candidates/intermediates must independently pass the unchanged standalone checker. Report any per-run metric tradeoffs explicitly.",
+  "pivot_trigger": "If primary fails development gate, consider exactly one deadline pivot only when at least10 completed-but-rejected primary proposals exist and more than half of that denominator strictly lowerSOL while increasingSOC versus their before metrics. Otherwise stop with the bounded null/mixed result. No evaluation-based pivot.",
+  "evaluation": "Run only if a challenger passes its development gate; freeze before17published evaluationcases x3seeds, comparing chosenchallenger to unchangedarrivalbaseline. These are exposed calibration cases, not unseen holdouts; seeds aren't independentmaps.",
+  "resource_caps": {
+    "popped_per_run": 100000,
+    "attempts_per_run": 96,
+    "popped_per_agent": 10000,
+    "trials_per_case": 3,
+    "maximum_runs_including_conditional_pivot": 138,
+    "maximum_search_pops": 13800000,
+    "per_run_external_wall_seconds": 600,
+    "development_batch_wall_seconds": 1800,
+    "evaluation_batch_wall_seconds": 3600,
+    "address_space_mib": 1024,
+    "stop_new_runs_when_package_exceeds_mib": 500,
+    "overall_research_cutoff_utc": "2026-10-23T12:05:00Z",
+    "overall_end_allowance_utc": "2026-10-23T14:05:00Z"
+  },
+  "controls_before_development": [
+    "Exact time-layer DP and selected full-walk controls on tiny reservation graphs; match(SOL,finalarrival).",
+    "Six-cell horizon7 counterexample: old pathSOL6, lexicographic optimumSOL5, both finalarrival7.",
+    "Goal revisits/departures, freeholds, futuregoalsuffix occupancy, reverseedges, start==goal, blocked/unreachablestarts, horizonboundary and popcap exhaustion.",
+    "Freeze allmethod/worker/study source and protocol before reading developmentoutputs; retain any subsequent corrections as new attempts."
+  ],
+  "reporting": "Record all attempts, failures, before/proposed/accepted metrics, rejection causes, every accepted intermediate route, preprocessing/core wall, full child wall/CPU/RSS and limits. Fixed pops are not equal CPU. Store complete traces losslessly compressed and final candidates uncompressed; verify every submitted/accepted route. No speed claim without A/A and matchedtime controls.",
+  "known_start_override": "Original maze starts from PR5's already verified unaccepted SOL7802/SOC8223/T125 proposal, explicitly retained byte-exact, so known gains aren't reset. Other19starts are current canonical minimumSOL Pareto candidates. No archive edit or acceptance is implied.",
+  "credit": "Predecessor headroom ranking, PR5/6/7, project author/standalonechecker and original repairs, known prioritized MAPF/LNS/A* and SOL literature, LaCAM3 and Moving AI source/data notices.",
+  "evidence_level": "author-checked agent research with separate implementation checks/reviews; not independent human scientific acceptance",
+  "cases": [
+    {
+      "case": "empty-32-32-n128",
+      "instance": "data/instances/empty-32-32-n128.json",
+      "instance_sha256": "092f6d3c694d3201762e58d47d117a606323743d52465d2e381ea8e8a9e0a814",
+      "panel": "evaluation",
+      "start": {
+        "source": "LaCAM3-6s",
+        "path": "results/baselines/empty-32-32-n128-6s.json",
+        "metrics": {
+          "soc": 2776,
+          "sol": 2776,
+          "makespan": 48
+        },
+        "sha256": "82e50253ecd14898079ad6ef0992230a17bce141bf2f27ed372e643622209180"
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "89fceea6f1d39080d684e44ffc956c10",
+          "seed_decimal": "183417534671086550727949546142974700560"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "a5feb0b70b5830ddc47ffb687c35b372",
+          "seed_decimal": "220645046912933899395785118684431102834"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "3eca5dbfc25968a4ecbc37761b400322",
+          "seed_decimal": "83462881160909179602562567786748445474"
+        }
+      ]
+    },
+    {
+      "case": "empty-32-32-n256",
+      "instance": "data/instances/empty-32-32-n256.json",
+      "instance_sha256": "8e958d34ce53d3592cdac656e9f8214d7842a04444e2c5b7b7588a7ebe072d0f",
+      "panel": "evaluation",
+      "start": {
+        "source": "LaCAM3-6s",
+        "path": "results/baselines/empty-32-32-n256-6s.json",
+        "metrics": {
+          "soc": 5845,
+          "sol": 5699,
+          "makespan": 52
+        },
+        "sha256": "8a41f2f3b2e61dfb6dde53c822f3e5712badd5c55ef0a185e4ba459c468bc232"
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "33a97dad66b040e8cce9211cbd850423",
+          "seed_decimal": "68670674993576215285743480806668829731"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "bd4a08baf74b915347fcb004df3a3659",
+          "seed_decimal": "251608498243129887231611292883900577369"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "68f7b5d8d2c8e160966f6f9fea30ab94",
+          "seed_decimal": "139525897180345418780278094094608149396"
+        }
+      ]
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "instance": "data/instances/random-32-32-20-n96.json",
+      "instance_sha256": "a880b4c40056e12d1a59e5f41ff96375239b3a1843dba69446b0c2c8272f9aa9",
+      "panel": "evaluation",
+      "start": {
+        "source": "proximity4-seed29",
+        "path": "results/repair/random-32-32-20-n96-proximity4-s29.json",
+        "metrics": {
+          "soc": 2422,
+          "sol": 2310,
+          "makespan": 51
+        },
+        "sha256": "d37b2736d7e66f0d0e67cd46e7ef2249a47ba6b8a2c343e03c08cfbd6bb127b1"
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "4d6b7257617c105fc1de09f9cd39f689",
+          "seed_decimal": "102908450557016733879848320037126010505"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "a7439bcb36e6d33db6f9c374361d0fb0",
+          "seed_decimal": "222332119059399581657251622334985211824"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "01ad2ed803d2120b24c4089ad6fa84d1",
+          "seed_decimal": "2228445457618726770319240443494827217"
+        }
+      ]
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "instance": "data/instances/random-32-32-20-n192.json",
+      "instance_sha256": "ddf41f87d69fc79f6482c99449f9dbd054030e478481a5e95d3c383416283538",
+      "panel": "evaluation",
+      "start": {
+        "source": "LaCAM3-6s",
+        "path": "results/baselines/random-32-32-20-n192-6s.json",
+        "metrics": {
+          "soc": 5416,
+          "sol": 4929,
+          "makespan": 55
+        },
+        "sha256": "9f33c528c451f215981922072483890a6b287ff32757a05b36c0802eb00dee5c"
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "d399040ab4abbf43fb797a8b789479ae",
+          "seed_decimal": "281261610507808048868240471697223088558"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "267660fbcce057d45e113762ae5d4f8f",
+          "seed_decimal": "51125321930130810621740785824845090703"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "e835014d336a8ff02c2325a6adf3a2fe",
+          "seed_decimal": "308656113154493506994593577347331629822"
+        }
+      ]
+    },
+    {
+      "case": "room-32-32-4-n96",
+      "instance": "data/instances/room-32-32-4-n96.json",
+      "instance_sha256": "27d8c82266450608980bde3e684e1e1f89dab6426209d36c00c856d2b47d1a6b",
+      "panel": "evaluation",
+      "start": {
+        "source": "LaCAM3-6s",
+        "path": "results/baselines/room-32-32-4-n96-6s.json",
+        "metrics": {
+          "soc": 3047,
+          "sol": 2830,
+          "makespan": 61
+        },
+        "sha256": "676866216b2d8b583ed39bf3b6cf5fded91675e0106dfc8ddf58e248a6864552"
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "9ff0557adf634f498a20bac478d3a9b1",
+          "seed_decimal": "212595136315637334824607286858492389809"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "f50796cd9db0e2e7ba6b88f8e3368eee",
+          "seed_decimal": "325700263697330984845244583014563221230"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "271fc6861f3bd6789e7ced8c38b7458a",
+          "seed_decimal": "52004879581567973381173946970388514186"
+        }
+      ]
+    },
+    {
+      "case": "room-32-32-4-n160",
+      "instance": "data/instances/room-32-32-4-n160.json",
+      "instance_sha256": "9e77450d14186641cbefb86206db2d944ad9fe3f9d1c777d5654ce4d19e07304",
+      "panel": "evaluation",
+      "start": {
+        "source": "LaCAM3-6s",
+        "path": "results/baselines/room-32-32-4-n160-6s.json",
+        "metrics": {
+          "soc": 6185,
+          "sol": 5732,
+          "makespan": 68
+        },
+        "sha256": "51c2c56f97bb672e6b9174e8597d8114be5d6f984a3cd53a8fbbb5d233040b47"
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "15e8bb7ac50d7c0387159958093247d7",
+          "seed_decimal": "29122203320079871552395419510828582871"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "63c4d34add3306a6cda215cf1b329a61",
+          "seed_decimal": "132615547286747767989182760473559472737"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "51d77fb023756714eb25ba3823704da9",
+          "seed_decimal": "108786401304313346372278446347921673641"
+        }
+      ]
+    },
+    {
+      "case": "maze-32-32-4-n64",
+      "instance": "data/instances/maze-32-32-4-n64.json",
+      "instance_sha256": "c010a598822538bc3558c3762abe5cff95de5fa178ce143cbccab249b16dbf13",
+      "panel": "evaluation",
+      "start": {
+        "source": "LaCAM3-6s",
+        "path": "results/baselines/maze-32-32-4-n64-6s.json",
+        "metrics": {
+          "soc": 3197,
+          "sol": 3107,
+          "makespan": 92
+        },
+        "sha256": "dc3cb8368f1896f3df9d9754976564d5173c6dc0e85c3c25524646a41ad74d21"
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "84ed0118f61a0baa97fdcdb7f1b10f6c",
+          "seed_decimal": "176688692059131952945569593199648903020"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "3ed4d0cbc1616ae2b12dcb7c93872137",
+          "seed_decimal": "83517137557037094972993861866022707511"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "6eb5470f2055e3dd0bc33fa1c97e79a6",
+          "seed_decimal": "147156326517247201866467889121723316646"
+        }
+      ]
+    },
+    {
+      "case": "maze-32-32-4-n128",
+      "instance": "data/instances/maze-32-32-4-n128.json",
+      "instance_sha256": "7e7552052ec38ba31bb0cccaf2b5a0ed625b389a882c0a30d3e639aad9b450dc",
+      "panel": "evaluation",
+      "start": {
+        "path": "research/sol-repair-ee542d9b/inputs/maze-start.json",
+        "sha256": "1e2836611e43e0346ac1e24cf6bd40304cf40297d9f9ac8406aff8b039fc5561",
+        "metrics": {
+          "soc": 8223,
+          "sol": 7802,
+          "makespan": 125
+        },
+        "source": "PR5 proposed witness, not accepted archive promotion"
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "6673fd57c93213b947b975cba64179b5",
+          "seed_decimal": "136183508113539813234934166516209383861"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "9c92530d529c798c2ee430467b9373e9",
+          "seed_decimal": "208119327179323114006318584238536094697"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "cd424c4111a19a58b3d8e85572b54687",
+          "seed_decimal": "272835977346988104627529648945359046279"
+        }
+      ]
+    },
+    {
+      "case": "empty-32-32-s2-n256",
+      "instance": "data/round2/empty-32-32-s2-n256.json",
+      "instance_sha256": "909f7922628125a0bd97360c6f6a80e370163b7ea2c60c35dc22596f22c250ac",
+      "panel": "development",
+      "start": {
+        "path": "research/round2/repair/empty-32-32-s2-n256-proximity4-211.json",
+        "sha256": "af8372587e4c5b153d6a5451853235ead14781584b22cf847bffb92a5ccffcfa",
+        "metrics": {
+          "soc": 5944,
+          "sol": 5912,
+          "makespan": 49
+        }
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "105820f9ac7127a1ea690e842fcea32e",
+          "seed_decimal": "21725238874397719169042704285077250862"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "03d00c9010a1744f166c1b8e3439074f",
+          "seed_decimal": "5067936536847584107075433017181275983"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "dd415709bfde1567a8ddce5245c9b0f2",
+          "seed_decimal": "294098651706340271521012008614942585074"
+        }
+      ]
+    },
+    {
+      "case": "empty-32-32-s3-n256",
+      "instance": "data/round2/empty-32-32-s3-n256.json",
+      "instance_sha256": "d3c4478b8925606a94b1f50cf808f4ffbbb1b3d468547152c80a834014f050af",
+      "panel": "evaluation",
+      "start": {
+        "path": "research/round2/repair/empty-32-32-s3-n256-proximity4-307.json",
+        "sha256": "6d9a2790dc1f8ebbb071d2e0749b6e3dab7c5491a8028c95341de6de41ad838c",
+        "metrics": {
+          "soc": 5713,
+          "sol": 5644,
+          "makespan": 57
+        }
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "7cf5e59b81f16007bb1579d6330c6316",
+          "seed_decimal": "166101041200050397831832476514276631318"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "51fa8ef799ac9035bef741aa4201e09f",
+          "seed_decimal": "108968441592291574928683602334470758559"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "10c3dda1b193c544a21e753d63980456",
+          "seed_decimal": "22284641043187007575865458027088315478"
+        }
+      ]
+    },
+    {
+      "case": "random-32-32-20-s2-n192",
+      "instance": "data/round2/random-32-32-20-s2-n192.json",
+      "instance_sha256": "eba175483d832697cded87aeaa5541f24aa33937623bcc0ee62bde39c8b006f3",
+      "panel": "development",
+      "start": {
+        "path": "research/round2/repair/random-32-32-20-s2-n192-random4-211.json",
+        "sha256": "f3d912f8e73b8d8d5e23232dd6cdcf34bd99ae787609449a70ccec400409be76",
+        "metrics": {
+          "soc": 5190,
+          "sol": 4889,
+          "makespan": 54
+        }
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "cd847863b71f8cc46c823016249bc5b7",
+          "seed_decimal": "273179564110648776557269274357116159415"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "ab6eb954a646e4f8b0ad35ccdfa0edee",
+          "seed_decimal": "227872898886061989787719970888641211886"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "377430136d60e992312f8baad1afab91",
+          "seed_decimal": "73710821298607502023190654913250044817"
+        }
+      ]
+    },
+    {
+      "case": "random-32-32-20-s3-n192",
+      "instance": "data/round2/random-32-32-20-s3-n192.json",
+      "instance_sha256": "83059a078c4f7dc057b8dce948f5aab12d5076f9a4e59aea43f9457706571c2d",
+      "panel": "evaluation",
+      "start": {
+        "path": "research/round2/repair/random-32-32-20-s3-n192-proximity4-211.json",
+        "sha256": "0e9bd1a72bbccbcd2a40e5c1932b4216d8e9d9367f26a2c217c988ae7f36ece9",
+        "metrics": {
+          "soc": 5006,
+          "sol": 4777,
+          "makespan": 53
+        }
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "629613c10f146d80e44b487c0290c3cb",
+          "seed_decimal": "131043588777186785102900541510487425995"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "7d0a106167849d590d31b45632bc7850",
+          "seed_decimal": "166205754677422531973665162730944624720"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "04e616d5f16ba80ac705edf383fc8442",
+          "seed_decimal": "6511603423928605707251096601667339330"
+        }
+      ]
+    },
+    {
+      "case": "room-32-32-4-s2-n160",
+      "instance": "data/round2/room-32-32-4-s2-n160.json",
+      "instance_sha256": "3c2067dc9bdadfdf25faa8dbb62b04bba68599bdd661acf1d97d2eea4407537e",
+      "panel": "development",
+      "start": {
+        "path": "research/round2/repair/room-32-32-4-s2-n160-random4-101.json",
+        "sha256": "f2bd5f400176b08be1c7a5c2ac8183aa5c4d9e96301953487bb4027e2cd5b948",
+        "metrics": {
+          "soc": 6659,
+          "sol": 5901,
+          "makespan": 74
+        }
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "efa6f78ff461fde21ec35c7c7e99281b",
+          "seed_decimal": "318552433431543823643552800254262323227"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "59b8e075202831f2d1547ed04ba8f464",
+          "seed_decimal": "119261226786226266337412076620023919716"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "5f0a3ccecabba6dbf3122aa5c77bcb26",
+          "seed_decimal": "126329815896472882323193813628931001126"
+        }
+      ]
+    },
+    {
+      "case": "room-32-32-4-s3-n160",
+      "instance": "data/round2/room-32-32-4-s3-n160.json",
+      "instance_sha256": "3e5b3d3d25c30bc6e3d066474b9cd4669e2cac7175aa22bff33d196a5ed743b7",
+      "panel": "evaluation",
+      "start": {
+        "path": "research/round2/repair/room-32-32-4-s3-n160-random4-307.json",
+        "sha256": "4de3c337b830d55d1424e7b6ca896b7966f45c54d7d33f6f99b0d743d407ce14",
+        "metrics": {
+          "soc": 6419,
+          "sol": 5809,
+          "makespan": 71
+        }
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "4ac2c85fea03dd68010c0e0a0e47f79e",
+          "seed_decimal": "99374241359659864981196638142165677982"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "abf7dc08acd3244da83f87bd65c1ee81",
+          "seed_decimal": "228584947420703496647332282573709766273"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "508bb6dc7d6334d429a4684130513fd6",
+          "seed_decimal": "107063677793678787975419205399390273494"
+        }
+      ]
+    },
+    {
+      "case": "maze-32-32-4-s2-n128",
+      "instance": "data/round2/maze-32-32-4-s2-n128.json",
+      "instance_sha256": "daf0f8bc7c7df3d46657d9599eb24d9aa75d025adb03ae376824b26296181705",
+      "panel": "evaluation",
+      "start": {
+        "path": "research/round2/repair/maze-32-32-4-s2-n128-proximity4-211.json",
+        "sha256": "26f3c436e17d57c77c028132411e0da9999100fb9dac9c6e6b7705fed897305b",
+        "metrics": {
+          "soc": 6841,
+          "sol": 6553,
+          "makespan": 91
+        }
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "783cf631b87ac58f885aa7bb792d8be1",
+          "seed_decimal": "159823890717738119627072865346807237601"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "1b4e6ae188dbd697b34e369f5e4d661b",
+          "seed_decimal": "36296322845268727384973613106404877851"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "d6ade130180018749b83805881595bab",
+          "seed_decimal": "285357625807038900015220203873229167531"
+        }
+      ]
+    },
+    {
+      "case": "maze-32-32-4-s3-n128",
+      "instance": "data/round2/maze-32-32-4-s3-n128.json",
+      "instance_sha256": "7fb991438981f466fe12730062a0ca3181c92a91990dd76cd24c8978fc48e12d",
+      "panel": "evaluation",
+      "start": {
+        "path": "research/round2-clean-smoke/candidate.json",
+        "sha256": "e99be2c8b8d6ffd498182ffc6b286fd766192b61002beee0328691f7e27af6b4",
+        "metrics": {
+          "soc": 6474,
+          "sol": 6200,
+          "makespan": 108
+        }
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "1314e961a24e6bcc205ab5229fb67654",
+          "seed_decimal": "25363911393884889724261145570482484820"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "459e18da90c6a8e6e4a1e750edf6c8b6",
+          "seed_decimal": "92537618707183620088738624479199414454"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "f963b731a038473f791834fb5ddfbeeb",
+          "seed_decimal": "331495523952162069619117174727544651499"
+        }
+      ]
+    },
+    {
+      "case": "empty-48-48-s2-n256",
+      "instance": "data/round2/empty-48-48-s2-n256.json",
+      "instance_sha256": "762060320303aa89f707cdce6a77e3fc1fa63855c01f602313cf34bcaa9b1756",
+      "panel": "evaluation",
+      "start": {
+        "path": "research/round2/repair/empty-48-48-s2-n256-proximity4-307.json",
+        "sha256": "a77a09f2050a8e87b9fe6b4a5bec4f2e5d2f81197957a650e563177e5bb26d8d",
+        "metrics": {
+          "soc": 7948,
+          "sol": 7948,
+          "makespan": 84
+        }
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "9d776e3b60d7e7752de10cff224ff0ed",
+          "seed_decimal": "209308914433886999581334199017527046381"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "0988b31a4ac917d66351c4da36c1f0a0",
+          "seed_decimal": "12672836969221255819204206083222663328"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "c6a206a04a4ed233287ec920d498926a",
+          "seed_decimal": "264028429650456788684465114288750105194"
+        }
+      ]
+    },
+    {
+      "case": "empty-48-48-s3-n256",
+      "instance": "data/round2/empty-48-48-s3-n256.json",
+      "instance_sha256": "5a7b73dcfe013423abd295f94cd418c0f9020422e64a06665f9f07a8f71d516d",
+      "panel": "evaluation",
+      "start": {
+        "path": "research/round2/repair/empty-48-48-s3-n256-proximity4-307.json",
+        "sha256": "aa3a34fe5a125390648dd2492dfb5fdff889d2174876581d8112046676ea802d",
+        "metrics": {
+          "soc": 7895,
+          "sol": 7895,
+          "makespan": 77
+        }
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "95de2e4a8616c02030013bfe1a263f18",
+          "seed_decimal": "199208600169771485800812899995564261144"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "cd3da334378b1b0ea405ce4cfb5d7dbc",
+          "seed_decimal": "272811779414098068397714412274433490364"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "42cca6edb99cc27a9cddd7ae94b07c14",
+          "seed_decimal": "88791661995458512151522473496957451284"
+        }
+      ]
+    },
+    {
+      "case": "random-64-64-20-s2-n192",
+      "instance": "data/round2/random-64-64-20-s2-n192.json",
+      "instance_sha256": "7ff8ef1541040ac8a129f33bd440a65da174d9fa485430c7abf8d70b34d07ad3",
+      "panel": "evaluation",
+      "start": {
+        "path": "research/round2/repair/random-64-64-20-s2-n192-random4-101.json",
+        "sha256": "ddc5155ce42fca3ae1b55b6f900eef3fd52295552b503305f099942d9df83bf3",
+        "metrics": {
+          "soc": 8676,
+          "sol": 8623,
+          "makespan": 99
+        }
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "ba6eb2c096dcdb575a9c19cfc81a6486",
+          "seed_decimal": "247811185397839587098507331911697458310"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "479b091e36972e53bf367fd55853f856",
+          "seed_decimal": "95180178649228190654387225044878358614"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "d97ec27a03744917a074fc633d3f2332",
+          "seed_decimal": "289100648943870103458762245813814895410"
+        }
+      ]
+    },
+    {
+      "case": "random-64-64-20-s3-n192",
+      "instance": "data/round2/random-64-64-20-s3-n192.json",
+      "instance_sha256": "0b8ff5f9ad041aac565ed7b15da97c24fefc9d54bc94ba072fadb506800af463",
+      "panel": "evaluation",
+      "start": {
+        "path": "research/round2/repair/random-64-64-20-s3-n192-proximity4-307.json",
+        "sha256": "c72041b60c4285f5414cca41380308b66163a169ab818729758b133e03daf473",
+        "metrics": {
+          "soc": 8712,
+          "sol": 8654,
+          "makespan": 113
+        }
+      },
+      "seeds": [
+        {
+          "trial": 0,
+          "seed_hex": "0302044ed9c477891d9492fc9d54e92e",
+          "seed_decimal": "3998155957902669076091747213763733806"
+        },
+        {
+          "trial": 1,
+          "seed_hex": "319670e98b8451db859cc052dd700ff1",
+          "seed_decimal": "65913306455456957861750203544010493937"
+        },
+        {
+          "trial": 2,
+          "seed_hex": "288d6fcfb3e03bfeb22d1cad0954d79e",
+          "seed_decimal": "53903501491814590859458900312502622110"
+        }
+      ]
+    }
+  ]
+}
