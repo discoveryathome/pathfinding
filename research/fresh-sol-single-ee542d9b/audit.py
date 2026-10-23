@@ -254,7 +254,8 @@ def verify_native(plan, manifest, inputs):
         assert sha(certificate_path) == row["candidate_sha256"]
         certificate = load(certificate_path)
         shape(certificate["metrics"])
-        assert check(ROOT / inputs[cid]["instance"], certificate) == row["metrics"]
+        checked = check(ROOT / inputs[cid]["instance"], certificate)
+        assert {key: checked[key] for key in ("sol", "soc", "makespan")} == row["metrics"]
         states = []
         coordinate = r"\((-?\d+),(-?\d+)\)"
         for line in raw.read_text().splitlines():

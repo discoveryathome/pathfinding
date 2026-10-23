@@ -1,0 +1,24 @@
+{
+  "command": ".venv/bin/python research/fresh-sol-single-ee542d9b/audit.py --out verification.json",
+  "exit_code": 1,
+  "source_commit": "b51509424f6dbdf0fb0d334c9d67fe936da45cca",
+  "auditor_sha256": "97212576fb6d448e73492d1a85fd3b4d7995b4d3a364aba7c5f372c32fec2d6d",
+  "repair_sha256": "cce0a37d232d56909a960c209ea4b8260adfb1d30aabcb71d76eb11843286cf6",
+  "case": "maze-32-32-4-fresh0-n64",
+  "exception": "AssertionError at verify_native: full standalone-checker return was compared to a three-objective native metric record",
+  "checker_return": {
+    "soc": 3546,
+    "sol": 3474,
+    "makespan": 106,
+    "individual_distance_lower_bound": 3062,
+    "agents": 64,
+    "checked_timesteps": 107
+  },
+  "recorded_objectives": {
+    "soc": 3546,
+    "sol": 3474,
+    "makespan": 106
+  },
+  "scope": "Auditor schema comparison only; no optimizer, query, native/repair output or route changed",
+  "output_file_created": false
+}
