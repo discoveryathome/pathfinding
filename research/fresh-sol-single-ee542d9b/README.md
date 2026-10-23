@@ -114,3 +114,20 @@ Continues the predecessor headroom handoff and PRs #5–#8 from the same posting
 account. Codex-authored and author-commissioned reviews/audits do not establish
 independent human scientific acceptance. Accepted records, frontier and frozen
 project witnesses remain untouched; acceptance and merges stay with the maintainer.
+
+## Final verification record
+
+`checks-final.json` supersedes the retained pre-final `checks.json`. All 38
+package/baseline controls and the repository quick check pass. The current
+V4 auditor (`verification-v4.json`, source `9a2567f`) validates all twelve native
+routes, 72 final repairs and 1,178 accepted intermediates in 198.3238 seconds.
+It additionally rejects intermediate IDs outside the actual history.
+
+The prior full checker ran from a separate clean checkout in 204.5432 seconds
+(`verification-relocated.json`). Its command-binding logic is unchanged in V4;
+`relocation-check.json` records exact original/relocated agreement apart from
+elapsed time, and all objective/data/coverage fields agree with V4 as well.
+Both final review axes and the narrow ID-binding follow-up report no remaining
+findings in their declared scopes. All original reports/sources remain retained.
+These are author-assisted checks, with no full optimizer replay or independent
+human scientific signoff.

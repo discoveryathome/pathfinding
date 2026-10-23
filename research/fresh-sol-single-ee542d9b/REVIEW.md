@@ -45,10 +45,51 @@ pass separately in each attempt package. This guard did not change the actual
 all-successful B cohort. A clean relocated checkout runs the latest full auditor
 as a separate version, preserving the prior successful report/source.
 
+## Full final reviews at 1b49626
+
+Standards round 3: no remaining supported Standards findings. The reviewer read
+the binding guidance and both attempt histories, checked 174 source-bearing
+records and complete 13-file manifests, unchanged baseline/policy bytes, both
+recomputed cohorts and reported results. Fourteen focused auditor controls
+passed across the two packages. Frozen attempt snapshots are intentional
+retention; no actionable smell finding arose. It did not rerun optimization,
+native builds/upstream tests, proof review or root-owned full route/relocation
+audits.
+
+Spec round 3: no actionable Spec findings. The reviewer checked both protocols,
+source/cohort/seed/journal/command/cap/history/Pareto bindings, original preservation
+(41 A and 353 B files), and exact A/B geometry/scenario equality. It independently
+recounted 36 pairs and the 26/9/1, -636/-349, two-SOC-regression/zero-makespan
+result. Fourteen focused auditor controls passed. Prior proof/preflight conclusions
+were reused; full route validation, checkout relocation, native rebuilds and
+optimizer reruns were left to root or explicitly not performed.
+
+## Author index control and narrow round 4
+
+Root then found that an extra intermediate with an out-of-history ID could be
+unvisited. Every actual retained ID was already valid. Source `9a2567f` adds
+strict range binding before iteration and regressions for -1 and 96. The same
+guard was added to PR #8's checker at `fbee9a1`; no optimizer/input/output changed.
+
+Standards round 4: no remaining findings in this delta or its provenance. Five
+focused controls passed across both fresh packages and PR #8. All original-base
+and raw evidence remains unchanged; paired original/relocated reports agree in
+every field except elapsed time. No unexplained scope or useful smell finding.
+It did not repeat math/Spec, full suites, optimizer runs or full V4 audits.
+
+Spec round 4: no remaining findings. All three orphan regressions and sixteen
+additional in-memory adversarial cases per checker passed, covering missing,
+extra, duplicate/boolean/noninteger/negative/out-of-history IDs and accepted-row
+mapping with a checker spy. All 1,178 B and 313 PR #8 actual intermediates have
+unique valid IDs exactly matching accepted history rows; metrics and hashes
+match. Route geometry/full audits and frozen proof were not repeated by this
+reviewer. Root separately passed both 38-test suites and full V4/relocation
+checks. These are commissioned agent reviews, not independent human signoff.
+
 ## Scope and limits
 
 Standards and Spec final reviews cover both attempts and retain findings and
-responses below before submission. Reviews are commissioned by the author and
+responses above. Reviews are commissioned by the author and
 reuse the prior frozen-policy proof; they are not independent human signoff.
 The optimizer/native panel has not been rerun. No unseen map/corpus, population
 inference, speed claim, full upstream native suite or independent human

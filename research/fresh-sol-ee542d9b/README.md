@@ -160,3 +160,16 @@ agent reviews and all findings/resolutions are retained in `REVIEW.md`; they are
 author-commissioned and not independent human signoff. Merges, accepted results
 and scientific acceptance remain with the maintainer. This package changes none
 of the project's accepted archive, frozen witnesses or frontier records.
+
+## Final verification record
+
+`checks-final.json` supersedes the retained pre-final `checks.json` snapshot.
+All 38 package/baseline controls and the repository quick check pass. The current
+V4 auditor (`verification-v4.json`) validates this null attempt's twelve input
+draws, failure records and journals, with zero dataset routes or policy pairs.
+`verification-relocated.json` checks the same evidence in a separate clean
+checkout; `../fresh-sol-single-ee542d9b/relocation-check.json` records exact
+agreement apart from audit elapsed time. Both final review axes and the narrow
+intermediate-index follow-up report no remaining findings within their scopes.
+See attempt B's `REVIEW.md` for the shared final review record. Human scientific
+acceptance and the native abort's exact cause remain pending/unestablished.
