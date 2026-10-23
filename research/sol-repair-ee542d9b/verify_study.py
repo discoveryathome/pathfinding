@@ -87,6 +87,7 @@ def validate_trace(initial, trace, candidate, instance):
     assert len(history) == 96 or budget["nodes_used"] == 100000, "Incomplete search history"
     improvements = {r["attempt"]: r for r in trace["improvements"]}
     assert len(improvements) == len(trace["improvements"])
+    assert all(type(number) is int and 0 <= number < len(history) for number in improvements), "Unbound improvement attempt"
     paths, before, used, checked_routes = [trimmed(p) for p in initial["paths"]], initial["metrics"], 0, 0
     for number, row in enumerate(history):
         metrics_shape(row["before"])

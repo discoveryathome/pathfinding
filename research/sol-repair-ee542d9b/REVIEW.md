@@ -1,5 +1,12 @@
 # Author-assisted review record
 
+An additional author control requires every retained intermediate's attempt ID
+to be an integer within the recorded history. Previously an extra negative or
+out-of-range entry could remain unvisited. All actual retained intermediates use
+valid IDs; original outcomes are unchanged. V4 adds the bounds assertion and a
+regression rejecting -1 and 96 on an otherwise valid 96-attempt trace. The full
+suite now has 34 passing tests; the new full audit is retained separately.
+
 A later fresh-study preflight identified that both engines' elapsed timer
 includes preprocessing. This package's historical fields named
 `core_elapsed_seconds` / `core_seconds` therefore mean inclusive engine time.

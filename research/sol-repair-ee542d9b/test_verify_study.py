@@ -73,6 +73,21 @@ def test_wrong_trace_pop_accounting_and_metrics_rejected():
             verify.validate_trace(initial, truncated, candidate, Path("unused"))
 
 
+def test_orphaned_intermediates_are_rejected():
+    initial = {"paths": [[0]], "metrics": {"sol": 0, "soc": 0, "makespan": 0}}
+    history = [{"attempt": i, "agents": [0], "popped": 1, "status": "complete", "accepted": False,
+                "before": initial["metrics"], "proposed": initial["metrics"]} for i in range(96)]
+    trace = {**copy.deepcopy(initial), "history": history, "improvements": [],
+             "budget": {"node_limit": 100000, "nodes_used": 96, "attempt_limit": 96,
+                        "attempts_used": 96, "per_agent_limit": 10000}}
+    verify.validate_trace(initial, trace, initial, Path("unused"))
+    for number in (-1, 96):
+        bad = copy.deepcopy(trace)
+        bad["improvements"] = [{"attempt": number, "paths": [[0]], "metrics": initial["metrics"]}]
+        with pytest.raises(AssertionError, match="Unbound improvement attempt"):
+            verify.validate_trace(initial, bad, initial, Path("unused"))
+
+
 def test_artifact_paths_cannot_escape_declared_runs():
     with pytest.raises(ValueError):
         verify.artifact("../outside.json")
