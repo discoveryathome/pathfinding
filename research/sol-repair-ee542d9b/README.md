@@ -100,9 +100,11 @@ coverage, complete journals, initial and final metrics, every accepted
 intermediate route, Pareto gates, resource counts, development selection and the
 paired common random neighborhood prefixes. `verification.json` records all
 120 final routes and 313 accepted intermediate routes checked in 178.0431
-seconds. This original audit and the intermediate V2 audit are preserved. The
-final tightened verifier checked the same scope in 181.6307 seconds, retained
-as `verification-v3.json`. Optimizer traces are losslessly compressed; candidate certificates are
+seconds. The original and all intermediate audit versions are preserved. V3
+checked the same scope in 181.6307 seconds. V4 additionally rejects intermediate
+IDs outside the actual history and checked all 120 finals and 313 accepted
+intermediates in 179.0680 seconds, retained as `verification-v4.json`.
+Optimizer traces are losslessly compressed; candidate certificates are
 plain JSON. Separate checking is still author-assisted evidence.
 
 From repository root, with the documented project dependencies installed:
@@ -138,8 +140,8 @@ RSS and worker code-commit metadata may differ.
 Tests cover the exact 70-walk counterexample, 150 deterministic tiny reservation
 draws against a time-layer DP oracle, goal departures/holds, deadlines, caps,
 macro guards, development eligibility, copied-package journal paths and checker
-tamper controls. All 33 relevant tests pass; `checks-v3.json` records final checks,
-while `checks.json` retains the earlier 31-test state. The full
+tamper controls. All 34 relevant tests pass; `checks-v4.json` records final checks,
+while `checks.json` and `checks-v3.json` retain earlier states. The full
 120-run optimizer panel has not been replayed a second time. Rejected proposals'
 metrics and failure statuses are retained, but their full rejected or partial
 route geometry was not stored or separately checked. No unseen corpus,

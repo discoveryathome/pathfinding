@@ -1,5 +1,14 @@
 # Author-assisted review record
 
+Final narrow Standards and Spec rechecks at `fbee9a1` report no remaining
+findings for the intermediate-ID guard and its provenance. Five focused tests
+across the two later fresh-study checkers and this one passed; the Spec reviewer
+also exercised sixteen additional adversarial mappings per checker. All 313
+retained intermediates match unique accepted history rows. Reviewers did not
+rerun geometry or full audits; root's V4 audit independently checked all 120
+finals and 313 intermediates, and the complete 34-test suite plus quick check
+passed. Prior proof/review conclusions were reused, not promoted to human signoff.
+
 An additional author control requires every retained intermediate's attempt ID
 to be an integer within the recorded history. Previously an extra negative or
 out-of-range entry could remain unvisited. All actual retained intermediates use
