@@ -1,0 +1,107 @@
+{
+  "source_pr": "https://github.com/discoveryathome/pathfinding/pull/6",
+  "source_commit": "eb91e2be441b1e6acb6f61124bfe2ca1a14efe46",
+  "source_panel_sha256": "f972d9fae4f9173b60130c13124eb27cd0164f2084d63bd520561f71a7cb093d",
+  "cases": [
+    {
+      "case": "empty-32-32-n128",
+      "instance_sha256": "092f6d3c694d3201762e58d47d117a606323743d52465d2e381ea8e8a9e0a814",
+      "fixed_pair_bound": 2745
+    },
+    {
+      "case": "empty-32-32-n256",
+      "instance_sha256": "8e958d34ce53d3592cdac656e9f8214d7842a04444e2c5b7b7588a7ebe072d0f",
+      "fixed_pair_bound": 5346
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "instance_sha256": "a880b4c40056e12d1a59e5f41ff96375239b3a1843dba69446b0c2c8272f9aa9",
+      "fixed_pair_bound": 2201
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "instance_sha256": "ddf41f87d69fc79f6482c99449f9dbd054030e478481a5e95d3c383416283538",
+      "fixed_pair_bound": 4268
+    },
+    {
+      "case": "room-32-32-4-n96",
+      "instance_sha256": "27d8c82266450608980bde3e684e1e1f89dab6426209d36c00c856d2b47d1a6b",
+      "fixed_pair_bound": 2488
+    },
+    {
+      "case": "room-32-32-4-n160",
+      "instance_sha256": "9e77450d14186641cbefb86206db2d944ad9fe3f9d1c777d5654ce4d19e07304",
+      "fixed_pair_bound": 4049
+    },
+    {
+      "case": "maze-32-32-4-n64",
+      "instance_sha256": "c010a598822538bc3558c3762abe5cff95de5fa178ce143cbccab249b16dbf13",
+      "fixed_pair_bound": 2928
+    },
+    {
+      "case": "maze-32-32-4-n128",
+      "instance_sha256": "7e7552052ec38ba31bb0cccaf2b5a0ed625b389a882c0a30d3e639aad9b450dc",
+      "fixed_pair_bound": 6041
+    },
+    {
+      "case": "empty-32-32-s2-n256",
+      "instance_sha256": "909f7922628125a0bd97360c6f6a80e370163b7ea2c60c35dc22596f22c250ac",
+      "fixed_pair_bound": 5652
+    },
+    {
+      "case": "empty-32-32-s3-n256",
+      "instance_sha256": "d3c4478b8925606a94b1f50cf808f4ffbbb1b3d468547152c80a834014f050af",
+      "fixed_pair_bound": 5461
+    },
+    {
+      "case": "random-32-32-20-s2-n192",
+      "instance_sha256": "eba175483d832697cded87aeaa5541f24aa33937623bcc0ee62bde39c8b006f3",
+      "fixed_pair_bound": 4386
+    },
+    {
+      "case": "random-32-32-20-s3-n192",
+      "instance_sha256": "83059a078c4f7dc057b8dce948f5aab12d5076f9a4e59aea43f9457706571c2d",
+      "fixed_pair_bound": 4202
+    },
+    {
+      "case": "room-32-32-4-s2-n160",
+      "instance_sha256": "3c2067dc9bdadfdf25faa8dbb62b04bba68599bdd661acf1d97d2eea4407537e",
+      "fixed_pair_bound": 4248
+    },
+    {
+      "case": "room-32-32-4-s3-n160",
+      "instance_sha256": "3e5b3d3d25c30bc6e3d066474b9cd4669e2cac7175aa22bff33d196a5ed743b7",
+      "fixed_pair_bound": 4054
+    },
+    {
+      "case": "maze-32-32-4-s2-n128",
+      "instance_sha256": "daf0f8bc7c7df3d46657d9599eb24d9aa75d025adb03ae376824b26296181705",
+      "fixed_pair_bound": 5413
+    },
+    {
+      "case": "maze-32-32-4-s3-n128",
+      "instance_sha256": "7fb991438981f466fe12730062a0ca3181c92a91990dd76cd24c8978fc48e12d",
+      "fixed_pair_bound": 5451
+    },
+    {
+      "case": "empty-48-48-s2-n256",
+      "instance_sha256": "762060320303aa89f707cdce6a77e3fc1fa63855c01f602313cf34bcaa9b1756",
+      "fixed_pair_bound": 7905
+    },
+    {
+      "case": "empty-48-48-s3-n256",
+      "instance_sha256": "5a7b73dcfe013423abd295f94cd418c0f9020422e64a06665f9f07a8f71d516d",
+      "fixed_pair_bound": 7849
+    },
+    {
+      "case": "random-64-64-20-s2-n192",
+      "instance_sha256": "7ff8ef1541040ac8a129f33bd440a65da174d9fa485430c7abf8d70b34d07ad3",
+      "fixed_pair_bound": 8513
+    },
+    {
+      "case": "random-64-64-20-s3-n192",
+      "instance_sha256": "0b8ff5f9ad041aac565ed7b15da97c24fefc9d54bc94ba072fadb506800af463",
+      "fixed_pair_bound": 8583
+    }
+  ]
+}

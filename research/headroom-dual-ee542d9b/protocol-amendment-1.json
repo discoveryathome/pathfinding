@@ -1,0 +1,7 @@
+{
+  "stage": "Before any pilot or panel pair search",
+  "reason": "Primary-source investigation identified that rounding over graph components can weaken after component merging. The selected permutation's positive witness support also partitions agents into disjoint budgets and can safely be rounded separately.",
+  "addition": "Report both positive-graph-component and positive-witness-support ceiling sums; retain the maximum with the complete upgraded fixed-matching certificate. Use one deterministic assignment implementation and fixed pair caps, without selecting among seeds or tuned policies.",
+  "unchanged": "The complete2785-pair domain, SOL pair solver, resource caps, exposure, pilot case, source freeze and independent verification obligations are unchanged.",
+  "mathematical_limit": "The chosen optimal permutation affects support rounding; no exact integer vertex-cover optimum or monotone rounding policy is claimed. Earlier complete valid witnesses remain valid when more constraints are added."
+}

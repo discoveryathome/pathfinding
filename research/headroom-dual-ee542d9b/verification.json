@@ -1,0 +1,155 @@
+{
+  "verified": true,
+  "evidence_level": "author-checked separate implementations",
+  "optimizer_imports": false,
+  "canonical_scope_verified": true,
+  "cases": [
+    {
+      "case": "empty-32-32-n128",
+      "pairs_checked": 3,
+      "verified_bound": 2745,
+      "verification_pops": 210,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "empty-32-32-n256",
+      "pairs_checked": 6,
+      "verified_bound": 5347,
+      "verification_pops": 617,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "random-32-32-20-n96",
+      "pairs_checked": 29,
+      "verified_bound": 2202,
+      "verification_pops": 4536,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "random-32-32-20-n192",
+      "pairs_checked": 105,
+      "verified_bound": 4278,
+      "verification_pops": 10504,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "room-32-32-4-n96",
+      "pairs_checked": 133,
+      "verified_bound": 2507,
+      "verification_pops": 9234,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "room-32-32-4-n160",
+      "pairs_checked": 332,
+      "verified_bound": 4091,
+      "verification_pops": 22906,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "maze-32-32-4-n64",
+      "pairs_checked": 64,
+      "verified_bound": 2951,
+      "verification_pops": 164941,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "maze-32-32-4-n128",
+      "pairs_checked": 290,
+      "verified_bound": 6084,
+      "verification_pops": 550503,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "empty-32-32-s2-n256",
+      "pairs_checked": 13,
+      "verified_bound": 5654,
+      "verification_pops": 1093,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "empty-32-32-s3-n256",
+      "pairs_checked": 15,
+      "verified_bound": 5461,
+      "verification_pops": 958,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "random-32-32-20-s2-n192",
+      "pairs_checked": 100,
+      "verified_bound": 4395,
+      "verification_pops": 11629,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "random-32-32-20-s3-n192",
+      "pairs_checked": 98,
+      "verified_bound": 4210,
+      "verification_pops": 10416,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "room-32-32-4-s2-n160",
+      "pairs_checked": 501,
+      "verified_bound": 4291,
+      "verification_pops": 39118,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "room-32-32-4-s3-n160",
+      "pairs_checked": 432,
+      "verified_bound": 4092,
+      "verification_pops": 33606,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "maze-32-32-4-s2-n128",
+      "pairs_checked": 384,
+      "verified_bound": 5491,
+      "verification_pops": 509194,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "maze-32-32-4-s3-n128",
+      "pairs_checked": 242,
+      "verified_bound": 5518,
+      "verification_pops": 410968,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "empty-48-48-s2-n256",
+      "pairs_checked": 2,
+      "verified_bound": 7905,
+      "verification_pops": 303,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "empty-48-48-s3-n256",
+      "pairs_checked": 4,
+      "verified_bound": 7849,
+      "verification_pops": 275,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "random-64-64-20-s2-n192",
+      "pairs_checked": 20,
+      "verified_bound": 8514,
+      "verification_pops": 2601,
+      "assignment_and_dual_valid": true
+    },
+    {
+      "case": "random-64-64-20-s3-n192",
+      "pairs_checked": 12,
+      "verified_bound": 8584,
+      "verification_pops": 2138,
+      "assignment_and_dual_valid": true
+    }
+  ],
+  "pairs_checked": 2785,
+  "verification_pops": 1785750,
+  "elapsed_seconds": 32.811509054969065,
+  "scope_sha256": "e40ec6b5f08d0d2d032e55921b5ed0d61051e14cf31b2ccc5e0611f002976cb0",
+  "panel_sha256": "82a431a965ccdf1d552608f0d3c8f98addc2b223fc87fc523e5526691e020655",
+  "verifier_sha256": "90c27a709ed0786d5b26cd28d32e53c1f20e212ac01ce255275aa08738f84558",
+  "aggregation_checker_sha256": "a72c42f5954daf07ebf363a66f73af5ee6be2915df6800ec5ce8cf7db2732dfc"
+}
