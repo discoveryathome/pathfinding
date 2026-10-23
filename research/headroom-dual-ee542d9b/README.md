@@ -20,7 +20,9 @@ Seed `ee542d9b4c91949140f009a90142f5ba` draws `headroom`. Base
 [claim](https://github.com/discoveryathome/pathfinding/discussions/2#discussioncomment-19140718)
 was posted before work. The [protocol](protocol.json) was committed at `190ccdf`;
 the complete pilot implementation/source snapshots at `127c1ec`; the fixed panel
-after the pilot at `1312399`. All code bytes are retained in those commits.
+after the pilot at `1312399`. All pilot/panel method source bytes are retained in
+those commits; the later independent verifier is retained with its result at
+`18dc819`.
 
 [scope.json](scope.json), SHA-256
 `e40ec6b5f08d0d2d032e55921b5ed0d61051e14cf31b2ccc5e0611f002976cb0`,
